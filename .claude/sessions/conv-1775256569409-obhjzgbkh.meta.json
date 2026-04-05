@@ -1,0 +1,20 @@
+{
+  "id": "conv-1775256569409-obhjzgbkh",
+  "title": "Setup Obsidian Second Brain Vault\n\n---\n\nAlles k...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775256569410,
+  "updatedAt": 1775348012579,
+  "lastResponseAt": 1775332131485,
+  "sessionId": "7624b7f5-1a7a-475e-a41b-eac936e235f3",
+  "sdkSessionId": "7624b7f5-1a7a-475e-a41b-eac936e235f3",
+  "currentNote": "CLAUDE.md",
+  "usage": {
+    "model": "sonnet[1m]",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 401,
+    "cacheReadInputTokens": 103022,
+    "contextWindow": 1000000,
+    "contextTokens": 103424,
+    "percentage": 10
+  }
+}

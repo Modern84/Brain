@@ -1,0 +1,9 @@
+{
+  "promptDelete": true,
+  "attachmentFolderPath": "07 Anhänge",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "01 Inbox",
+  "mobilePullAction": "editor:save-file",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true
+}
