@@ -1,0 +1,299 @@
+From The Bench: Episode 2 - Flashing a BTT U2C CAN Adapter with Updated Firmware
+Kanal: Steph AKA OGMP I³.0002
+Veröffentlicht: 28.06.2023
+Aufrufe: 14.748 | Likes: 167
+
+================================================================================
+VIDEOBESCHREIBUNG
+================================================================================
+
+Thanks to Shelley at @bigtreetech5117 for inspiring me to start making the "From The Bench" video series. She approached me a short while ago asking me if I would be interested in making some content featuring some of their products, which they would send me for free.
+For this first series, that product is the BTT EBB SB2240 CAN Bus Toolhead PCB. I walk you through the entire process to mod your printer for CAN Bus.
+
+Links:
+https://github.com/Esoterical/voron_canbus
+https://github.com/bigtreetech/EBB/tree/master/EBB%20SB2240_2209%20CAN
+
+================================================================================
+TRANSKRIPT
+================================================================================
+
+0:04 From the Bench installing a big tree
+0:08 Tech ebb SB 2240 part 2 configuring the
+0:14 UTC
+0:16 hey everyone thanks for watching all
+0:18 right so this is part two as I mentioned
+0:21 um
+0:21 if you watch part one before I left you
+0:24 where I had my octopus Pro was being
+0:27 powered via a USB from the pi over 5
+0:31 volts it had the boot jumper and the 5
+0:34 volt jumper installed I've removed both
+0:37 of those
+0:38 I have hooked up the octopus to my 24
+0:42 volt power supply
+0:43 using the power and ground leads here
+0:46 and I've turned on my power supply and
+0:50 now the octopus is powered up it's
+0:53 connected to the pi via USB I can see it
+0:57 if I go into the terminal
+0:59 and repeat that command
+1:10 is responding as it did before so we're
+1:14 ready to go to the next step so but at
+1:16 this point the main board is done and we
+1:20 shouldn't need to make any other changes
+1:22 in firmware flashing to it uh other than
+1:25 maybe you know jumping it for the right
+1:26 Hardware I haven't applied any jumpers
+1:29 to it because I don't have any hardware
+1:30 hooked up to it and that's fine
+1:32 um but now we're going to focus on our
+1:35 friend the u2c so uh big tree Tech
+1:39 produces the u2c this is version one dot
+1:44 or sorry 2.1 of the UTC module
+1:48 um there's the back side of it so it
+1:50 says big tree Tech
+1:52 u2c v21 and
+1:56 I paid for this device myself I did not
+1:59 send it to me for free
+2:01 I've used the UTC in a couple of
+2:03 different printers and I find I like the
+2:07 way that it
+2:09 takes the can bus away from the primary
+2:12 MCU
+2:13 so it leaves the primary MCU to do its
+2:15 job which is driving the motors and
+2:17 doing everything else
+2:20 uh so effectively when you think of the
+2:23 u2c it is a what's called a can adapter
+2:25 and in in computer terms think of it
+2:28 like a network card whose job is to talk
+2:31 on the can bus Network
+2:34 um and it is a network card that is
+2:35 connected directly to the pi via USB and
+2:39 it will it will you know hold that
+2:41 connection so it's going to be another
+2:42 device that you can see from the US from
+2:44 the the pi when you're doing an LS USB
+2:47 for example
+2:49 the can the UTC and other can adapters
+2:52 do not get can boot or Clipper flashed
+2:56 to them they have their own special
+2:59 firmware
+3:00 which I'm going to flash in just a
+3:03 moment
+3:03 but you do not flash Clipper or can boot
+3:07 to the u2c device so something to be
+3:10 aware of
+3:11 um so a little bit about the UTC before
+3:13 we we get going here
+3:15 um
+3:16 there are some jumper pins on this side
+3:20 we have over here we have the 120 Ohm
+3:24 resistor jumper which is needed on
+3:29 two devices on the can bus Network so we
+3:32 have to have resistor jumpers on two
+3:34 devices on the network in my case
+3:37 because I'm going to be setting up the
+3:39 SB 2240 it's going to get 120 ohm jumper
+3:43 and it's the UTC is also going to get a
+3:46 120 ohm jumper as the only two devices
+3:48 talking on that can bus Network they
+3:50 both need to be jumpered so I will be
+3:52 operating a jumper to these pins in a
+3:55 bit
+3:56 these other pins allow you to power via
+3:59 USB
+4:00 and or
+4:02 um
+4:05 and or do the boot reset the reset it
+4:08 into boot mode as well so
+4:11 um
+4:12 I lie sorry those are four that's what
+4:15 those are for these are for the 120 ohm
+4:18 resistors if you're attaching a can bus
+4:22 device to one of the USB ports that's
+4:24 what those pins are for so I'm not going
+4:27 to be doing that I'm going to be
+4:29 connecting my device via this Molex
+4:32 microfit connector here
+4:35 um and like you know if you did want to
+4:37 use can bus over USB you can however
+4:40 realize that most USB cables are not
+4:43 rated for motion so if it's a device
+4:46 where there's going to be lots of motion
+4:47 in the wiring
+4:49 um you might want to avoid using USB for
+4:51 that connection
+4:53 um and use one of the Molex connectors
+4:55 one of the Molex connectors instead I'm
+4:58 sorry there we go
+5:00 yeah one of the two Molex connectors on
+5:02 this
+5:04 um all right so for now what I need to
+5:06 do is
+5:08 power this guy on
+5:12 and get it into boot mode
+5:16 so again I'm going to plug it in
+5:19 and it's lit up so it has power
+5:24 and let's go back to our website
+5:36 and in this case what we want to do next
+5:38 is look at the
+5:43 we're done with main board flashing we
+5:45 shouldn't have to come back here
+5:47 we look at the can adapter
+5:51 and in this case I do have a big tree
+5:53 Tech UTC v21 so that's perfect so what
+5:56 it's telling us here is the UTC came
+5:58 stock with bad firmware that would cause
+6:00 flashing problems down the line there is
+6:02 a fixed version of the firmware
+6:04 um and you know I don't know if mine has
+6:07 the fixed firmware or not Flash from the
+6:09 factory so I'm just going to flash this
+6:11 firmware as a matter of course there's
+6:14 more details here on a message thread on
+6:16 arcsign's can boot page if you're
+6:19 interested in digging deeper it may not
+6:22 be strictly necessary to do this step
+6:24 but I it works for me so I'm just going
+6:26 to do it if you choose to skip it then
+6:29 realize that you know if you have
+6:31 problems down the road you may need to
+6:33 come back and redo this step
+6:37 all right so I've got the firmware
+6:40 already downloaded on my pi
+6:44 so I need to basically hold down the
+6:48 boot Button
+6:57 so it says to hold down the boot Button
+7:00 while plugging it into the pie so I'm
+7:03 going to press the boot Button I'm going
+7:05 to carefully
+7:06 plug into the pie and I'm going to let
+7:09 go of the boot Button
+7:13 and so what should happen is I should
+7:17 see the device in dfu mode when I go to
+7:20 the pi
+7:26 so LS USB
+7:31 in fact I see from my previous video you
+7:34 saw that I flashed the
+7:36 firmware on the octopus device which is
+7:39 the f446 device I now also see a STM
+7:43 microelectronics device in dfu mode
+7:45 which is the u2c so
+7:50 what do we do next
+7:58 we are in dfu mode it wants us to
+8:00 confirm that it is by running dfu util
+8:02 which we can do but I did just validate
+8:05 that it is so I'm good you can see where
+8:08 it just runs perfect okay so now I need
+8:12 to basically
+8:13 copy this command
+8:16 and go back to my pi
+8:24 I want to get out of the Clipper
+8:26 directory
+8:29 and I can see that I've got the file
+8:31 that it's looking for already downloaded
+8:33 I had copied it earlier knowing that I
+8:35 was going to be creating this video
+8:38 um so I'm going to go ahead and paste
+8:40 that command in it's grabbing the file
+8:43 from the the home slash Pi directory so
+8:47 the the user's home directory which I am
+8:50 in and that's where the file exists so
+8:51 we're good I'm going to hit enter on
+8:54 this command
+8:57 and it's going to think about it and
+9:00 start flashing that firmware to the u2c
+9:17 so again as we saw in the previous video
+9:20 the important here the important part
+9:23 here isn't that last error on the last
+9:25 line but the line immediately above it
+9:27 this is file downloaded successfully
+9:28 that tells us that the file was
+9:30 transferred to the UTC and we should be
+9:33 good to proceed to the next step if you
+9:36 do get errors during this step stop drop
+9:39 and roll go looking on your forums go
+9:42 looking on your Discord servers and your
+9:43 3D printing communities ask for help ask
+9:46 for advice research the errors you're
+9:48 seeing do a Google search don't try to
+9:51 push through blindly when you're seeing
+9:53 error messages it's always best to
+9:55 double check and confirm first otherwise
+9:57 you could end up with unusable system so
+10:00 all right so let's see what's next
+10:19 all right so it says to Once flash to
+10:23 unplug the UTC from the pi and put it
+10:25 back plug it back in so I'm going to do
+10:27 exactly that
+10:28 gonna unplug it
+10:31 I'm going to plug it back in
+10:34 without holding the boot key down in
+10:36 this case because now it won't go into
+10:37 dfu mode by default
+10:41 it says run an ifconfig and you should
+10:43 see a can zero interface on your in your
+10:46 networks so let's go have a look
+10:51 if config
+10:58 perfect so what I'm seeing here
+11:01 is that there's a can zero Network
+11:03 because I have at least one can device
+11:06 initialized and connected to the network
+11:09 this block appears when I do an ifconfig
+11:12 if you had no can zero devices or can
+11:15 bus devices attached then you wouldn't
+11:17 see this block when you run ifconfig
+11:20 so to illustrate I'm going to unplug my
+11:25 USB cable
+11:26 and if I run ifconfig again notice how
+11:31 the can zero block is gone
+11:34 if I plug it back in
+11:37 give it a moment get it set up I have
+11:40 config again can zero is back so the
+11:44 presence of this can zero Network in
+11:46 ifconfig tells us that there is a
+11:48 network that's available to the system
+11:51 that operates on the the can can bus
+11:53 interface
+11:55 um we're not seeing any traffic over yet
+11:56 because right now we haven't connected
+11:58 two devices that can talk to each other
+11:59 but at the very least we've initialized
+12:02 the network and it's ready to go
+12:09 going back to our site
+12:11 we've successfully flashed the can
+12:14 adapter with the updated
+12:17 updated firmware for the can adapter
+12:21 and we're basically done with that step
+12:23 so
+12:25 you may have a different can adapter for
+12:28 example makerbase makes it UTC the metal
+12:31 fly you talk board as well so you can
+12:35 look and see whether you know your can
+12:37 adapters are in the list and if not ask
+12:40 questions find out do your research what
+12:43 needs to be done to enable your can
+12:44 adapters on your boards but for mycan
+12:46 adapter which is the big tree Tech u2c
+12:48 v21 I'm basically done this step of the
+12:51 configuration
+12:54 um so the next step is going to involve
+12:57 feeding the UTC with 24 volt power
+13:01 um
+13:02 so
+13:04 like I did for my
+13:07 um
+13:08 big tree Tech octopus I have 24 volt
+13:11 power and ground here that I'm going to
+13:13 attach to the screw screw down terminals
+13:17 on the UTC so that it gets 24 volt power
+13:21 to feed into the rest of the can bus
+13:23 Network and drive the can bus tool head
+13:26 at 24 24 volts so I'm going to pause
+13:30 this video here
+13:31 I'm going to thank you again for
+13:34 watching tune into part three where
+13:36 we'll actually get to flashing the SB
+13:41 2240 from Big Tree Tech

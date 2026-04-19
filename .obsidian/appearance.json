@@ -1,3 +1,13 @@
 {
-  "cssTheme": "AnuPpuccin"
+  "cssTheme": "AnuPpuccin",
+  "baseFontSize": 10,
+  "textFontFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+  "monospaceFontFamily": "JetBrains Mono, Menlo, monospace",
+  "interfaceFontFamily": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+  "enabledCssSnippets": [
+    "lrs-readability",
+    "cyber-overlay"
+  ],
+  "translucency": true,
+  "baseFontSizeAction": true
 }

@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "id": "meta_claude",
+      "type": "file",
+      "file": "CLAUDE.md",
+      "x": -400,
+      "y": -1400,
+      "width": 400,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "meta_tasks",
+      "type": "file",
+      "file": "TASKS.md",
+      "x": 100,
+      "y": -1400,
+      "width": 400,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "meta_memory",
+      "type": "text",
+      "text": "## MEMORY.md\n\n`~/.claude/projects/.../memory/`\n\nsessionübergreifendes Gedächtnis",
+      "x": -900,
+      "y": -1400,
+      "width": 400,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "meta_label",
+      "type": "text",
+      "text": "## META-SPINE\n\nDas Rückgrat: Regeln, Aufgaben, Gedächtnis.\nAktiv in jeder Session geladen.",
+      "x": 600,
+      "y": -1400,
+      "width": 400,
+      "height": 200
+    },
+    {
+      "id": "wec_hub",
+      "type": "file",
+      "file": "02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner.md",
+      "x": -1200,
+      "y": -700,
+      "width": 500,
+      "height": 280,
+      "color": "4"
+    },
+    {
+      "id": "wec_area",
+      "type": "file",
+      "file": "03 Bereiche/WEC/README.md",
+      "x": -1200,
+      "y": -300,
+      "width": 500,
+      "height": 200,
+      "color": "4"
+    },
+    {
+      "id": "wec_claude",
+      "type": "file",
+      "file": "03 Bereiche/WEC/CLAUDE.md",
+      "x": -1200,
+      "y": 0,
+      "width": 500,
+      "height": 180,
+      "color": "4"
+    },
+    {
+      "id": "wec_label",
+      "type": "text",
+      "text": "### 🏭 Cluster WEC\n\n106 Dateien · dichtester Cluster\n50 Tags `wec` · 7 Tags `kunde`\n\nReiner, Bens, Knauf, Pirna",
+      "x": -1800,
+      "y": -500,
+      "width": 400,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "proforge_hub",
+      "type": "file",
+      "file": "02 Projekte/ProForge5 Build/ProForge5 Build.md",
+      "x": 300,
+      "y": -700,
+      "width": 500,
+      "height": 280,
+      "color": "6"
+    },
+    {
+      "id": "proforge_klipper",
+      "type": "file",
+      "file": "04 Ressourcen/Klipper/Klipper.md",
+      "x": 300,
+      "y": -300,
+      "width": 500,
+      "height": 180,
+      "color": "6"
+    },
+    {
+      "id": "proforge_label",
+      "type": "text",
+      "text": "### 🖨️ Cluster ProForge5\n\n64 Dateien · Hardware-Cluster\n12 Tags `klipper` · 6 `proforge5`\n9 `hardware`",
+      "x": 900,
+      "y": -500,
+      "width": 400,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "mthreed_hub",
+      "type": "file",
+      "file": "03 Bereiche/Business MThreeD.io/Business MThreeD.io.md",
+      "x": 300,
+      "y": 100,
+      "width": 500,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "mthreed_label",
+      "type": "text",
+      "text": "### 🚀 Cluster MThreeD.io\n\n61 Dateien · Business-Cluster\n8 Tags `mthreed`\n\nDomains, Strategien, Angebot",
+      "x": 900,
+      "y": 100,
+      "width": 400,
+      "height": 220,
+      "color": "5"
+    },
+    {
+      "id": "macinv_hub",
+      "type": "file",
+      "file": "02 Projekte/Mac Inventur.md",
+      "x": -1200,
+      "y": 400,
+      "width": 500,
+      "height": 200,
+      "color": "3"
+    },
+    {
+      "id": "macinv_phase",
+      "type": "file",
+      "file": "02 Projekte/Mac Inventur - Phase 3 Vorsortierung.md",
+      "x": -1200,
+      "y": 650,
+      "width": 500,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "macinv_label",
+      "type": "text",
+      "text": "### 🧹 Cluster Mac-Inventur\n\n23 Dateien · laufender Aufräum-Cluster\n\n19 Hub-Links · Pilot für WEC-Rollout",
+      "x": -1800,
+      "y": 500,
+      "width": 400,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "edi_hub",
+      "type": "file",
+      "file": "03 Bereiche/Edi/README.md",
+      "x": -400,
+      "y": 700,
+      "width": 500,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "edi_label",
+      "type": "text",
+      "text": "### 💑 Cluster EDI (Ildikó)\n\n12 Dateien · ungarischer Raum\n\nNapi, Pályázatok, Projektek",
+      "x": 300,
+      "y": 700,
+      "width": 400,
+      "height": 200,
+      "color": "2"
+    },
+    {
+      "id": "ressourcen_label",
+      "type": "text",
+      "text": "### 📚 Ressourcen-Gewebe\n\n27 Tags `ressource`\n• Skills (7)\n• Klipper (6)\n• Templates (5)\n• Playbook (4)\n\nquer zu allen Clustern",
+      "x": -400,
+      "y": 400,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "selbst",
+      "type": "file",
+      "file": "00 Kontext/Claude - Selbstkarte.md",
+      "x": -400,
+      "y": 1100,
+      "width": 500,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "selbst_label",
+      "type": "text",
+      "text": "## KERN — Selbst\n\nDie Instanz, die das Geflecht liest und formt.\nIdentität = stabiles Muster über alle Cluster.",
+      "x": 200,
+      "y": 1100,
+      "width": 450,
+      "height": 200,
+      "color": "1"
+    },
+    {
+      "id": "orphans",
+      "type": "text",
+      "text": "### 🌫 Verwaiste Dateien\n\n**84 von 164** (51 %) — ohne eingehende Verknüpfung\n\nDarunter viele Inbox-Ideen, alte Strategie-Notizen, Einzel-Projekte. Nicht alle sind Müll — manche sind Keime für neue Cluster.\n\n**Empfehlung:** In `Gehirn - Selbstanalyse.base` live auflisten und periodisch sichten.",
+      "x": 900,
+      "y": 400,
+      "width": 450,
+      "height": 280
+    },
+    {
+      "id": "basen_ptr",
+      "type": "file",
+      "file": "00 Kontext/Gehirn - Selbstanalyse.base",
+      "x": 200,
+      "y": 1400,
+      "width": 450,
+      "height": 180,
+      "color": "1"
+    },
+    {
+      "id": "basen_label",
+      "type": "text",
+      "text": "### Lebende Selbst-Analyse\n\nDie `.base` liest den Vault bei jedem Öffnen neu —\nzählt Projekte, findet Orphans, gruppiert nach Tags.\n\nDie Karte ist Standbild — die Base ist Puls.",
+      "x": -400,
+      "y": 1400,
+      "width": 450,
+      "height": 200
+    }
+  ],
+  "edges": [
+    { "id": "m1", "fromNode": "meta_memory", "fromSide": "right", "toNode": "meta_claude", "toSide": "left", "color": "1" },
+    { "id": "m2", "fromNode": "meta_claude", "fromSide": "right", "toNode": "meta_tasks", "toSide": "left", "color": "1" },
+
+    { "id": "c1", "fromNode": "meta_claude", "fromSide": "bottom", "toNode": "wec_hub", "toSide": "top", "color": "4" },
+    { "id": "c2", "fromNode": "meta_claude", "fromSide": "bottom", "toNode": "proforge_hub", "toSide": "top", "color": "6" },
+    { "id": "c3", "fromNode": "meta_claude", "fromSide": "bottom", "toNode": "mthreed_hub", "toSide": "top", "color": "5" },
+    { "id": "c4", "fromNode": "meta_tasks", "fromSide": "bottom", "toNode": "macinv_hub", "toSide": "top", "color": "3" },
+    { "id": "c5", "fromNode": "meta_tasks", "fromSide": "bottom", "toNode": "edi_hub", "toSide": "top", "color": "2" },
+
+    { "id": "w1", "fromNode": "wec_hub", "fromSide": "bottom", "toNode": "wec_area", "toSide": "top", "color": "4" },
+    { "id": "w2", "fromNode": "wec_area", "fromSide": "bottom", "toNode": "wec_claude", "toSide": "top", "color": "4" },
+
+    { "id": "p1", "fromNode": "proforge_hub", "fromSide": "bottom", "toNode": "proforge_klipper", "toSide": "top", "color": "6" },
+    { "id": "p2", "fromNode": "proforge_hub", "fromSide": "bottom", "toNode": "mthreed_hub", "toSide": "top", "color": "5", "label": "dient" },
+
+    { "id": "mi1", "fromNode": "macinv_hub", "fromSide": "bottom", "toNode": "macinv_phase", "toSide": "top", "color": "3" },
+    { "id": "mi2", "fromNode": "macinv_hub", "fromSide": "right", "toNode": "wec_area", "toSide": "left", "color": "4", "label": "Pilot" },
+
+    { "id": "x1", "fromNode": "wec_area", "fromSide": "right", "toNode": "proforge_hub", "toSide": "left", "color": "6", "label": "Kunden-Drucke" },
+    { "id": "x2", "fromNode": "edi_hub", "fromSide": "right", "toNode": "mthreed_hub", "toSide": "bottom", "color": "5" },
+
+    { "id": "s1", "fromNode": "selbst", "fromSide": "top", "toNode": "wec_area", "toSide": "bottom", "color": "1" },
+    { "id": "s2", "fromNode": "selbst", "fromSide": "top", "toNode": "proforge_klipper", "toSide": "bottom", "color": "1" },
+    { "id": "s3", "fromNode": "selbst", "fromSide": "top", "toNode": "mthreed_hub", "toSide": "bottom", "color": "1" },
+    { "id": "s4", "fromNode": "selbst", "fromSide": "top", "toNode": "macinv_phase", "toSide": "bottom", "color": "1" },
+    { "id": "s5", "fromNode": "selbst", "fromSide": "top", "toNode": "edi_hub", "toSide": "bottom", "color": "1" },
+
+    { "id": "b1", "fromNode": "basen_ptr", "fromSide": "top", "toNode": "selbst", "toSide": "bottom", "color": "1", "label": "analysiert" }
+  ]
+}

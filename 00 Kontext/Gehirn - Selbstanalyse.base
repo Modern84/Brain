@@ -1,0 +1,110 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - not:
+        - file.inFolder("06 Archiv")
+        - file.inFolder("07 Anhänge")
+        - file.inFolder(".trash")
+
+formulas:
+  erster_tag: 'if(file.tags.length > 0, file.tags[0], "")'
+  alter_tage: '(now() - file.ctime).days'
+  status_icon: 'if(status == "aktiv", "🟢", if(status == "geplant", "🔵", if(status == "pausiert", "🟡", if(status == "abgeschlossen", "⚪", ""))))'
+
+properties:
+  formula.erster_tag:
+    displayName: "Haupt-Tag"
+  formula.alter_tage:
+    displayName: "Alter (Tage)"
+  formula.status_icon:
+    displayName: ""
+  status:
+    displayName: "Status"
+  file.name:
+    displayName: "Name"
+  file.folder:
+    displayName: "Ordner"
+  file.mtime:
+    displayName: "Geändert"
+
+views:
+  - type: table
+    name: "Projekte nach Status"
+    filters:
+      and:
+        - file.inFolder("02 Projekte")
+    order:
+      - formula.status_icon
+      - file.name
+      - status
+      - date
+      - formula.alter_tage
+    groupBy:
+      property: status
+      direction: ASC
+
+  - type: cards
+    name: "Offene Projekte"
+    filters:
+      and:
+        - file.inFolder("02 Projekte")
+        - 'status == "aktiv"'
+    order:
+      - file.name
+      - date
+      - formula.alter_tage
+
+  - type: table
+    name: "Bereiche"
+    filters:
+      and:
+        - file.inFolder("03 Bereiche")
+    order:
+      - file.name
+      - file.folder
+      - formula.erster_tag
+      - file.mtime
+
+  - type: table
+    name: "Ressourcen nach Thema"
+    filters:
+      and:
+        - file.inFolder("04 Ressourcen")
+    order:
+      - file.name
+      - formula.erster_tag
+      - file.folder
+      - file.mtime
+    groupBy:
+      property: formula.erster_tag
+      direction: ASC
+
+  - type: table
+    name: "Inbox-Alter"
+    filters:
+      and:
+        - file.inFolder("01 Inbox")
+    order:
+      - file.name
+      - date
+      - formula.alter_tage
+      - file.mtime
+
+  - type: table
+    name: "Tag-Verteilung"
+    order:
+      - formula.erster_tag
+      - file.name
+      - file.folder
+    groupBy:
+      property: formula.erster_tag
+      direction: ASC
+
+  - type: table
+    name: "Kürzlich geändert"
+    limit: 20
+    order:
+      - file.name
+      - file.folder
+      - formula.erster_tag
+      - file.mtime

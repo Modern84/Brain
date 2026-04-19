@@ -35,6 +35,34 @@ Sebastian denkt viel bevor er schreibt und tut sich manchmal schwer mit dem Form
 - [[00 Kontext/Branding]]
 - [[02 Projekte/MThreeD.io]]
 
+## Schreibstil nach Empfänger
+
+### Reiner (WEC)
+
+**Beziehung:** Nicht nur Chef — Stiefvater, Freund, Mentor. Kennt Claude und das Brain. Gespräche können direkt und persönlich sein.
+
+**Tonalität:**
+- Sehr locker, fast wie WhatsApp das lang geworden ist
+- Emojis ja — 😄🙃🍺✅🤦‍♂️ gehören dazu
+- Selbstironie und Humor ("du kennst das ja", "wenn ich das mit drei Bier hinbekomme...")
+- Kurze Absätze, kein Textwand-Gefühl
+- Technische Details nur wenn sie den Punkt unterstützen — nicht um klug zu klingen
+- Ehrlich über Fehler und Frust — Reiner schätzt Echtheit, nicht Perfektion
+- Vergleiche die Reiner versteht: Werkstatt aufräumen, Zeichnung vs. blind konstruieren
+
+**Anrede:** "Hey Reiner" — nie "Hallo" oder "Lieber"
+**Abschluss:** "Basti" — nie "Sebastian" oder "Mit freundlichen Grüßen"
+**Duzen:** Immer
+
+**Vermeiden:**
+- Formelle Business-Sprache
+- Tabellen und Aufzählungen die wie Projektbericht aussehen
+- "Ich möchte dir vorschlagen..." → besser: "Mein Vorschlag:"
+- Übertrieben sachlich — Reiner ist Familie, kein Kunde
+
+**Gutes Beispiel:** [[02 Projekte/WEC Neustart mit Reiner/Reiner Update Mail - Drei Bier Drei Stunden]]
+**Weiteres Beispiel:** [[02 Projekte/WEC Neustart mit Reiner/Reiner Onboarding - Email Version]]
+
 ## Beispiele für guten Stil
 
 Wird mit der Zeit ergänzt. Hier können Texte abgelegt werden die den Stil gut repräsentieren.

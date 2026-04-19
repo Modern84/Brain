@@ -1,0 +1,16 @@
+.obsidian/
+.git/
+.claudian/
+07 Anhänge/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.stl
+*.gcode
+*.zip
+*.exe
+*.pkg
+*.msi
+*.iso

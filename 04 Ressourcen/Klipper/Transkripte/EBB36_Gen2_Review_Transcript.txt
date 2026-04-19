@@ -1,0 +1,483 @@
+BigTreeTech EBB36 Gen 2 Review + Setup & Flashing Guide | USB & CAN (Gen1 vs Gen2)
+Kanal: The Motion Bench
+Veröffentlicht: 01.03.2026
+Aufrufe: 1.863 | Likes: 50
+
+================================================================================
+VIDEOBESCHREIBUNG
+================================================================================
+
+⚠️ Correction (Wiring Clarification):
+
+In this video I incorrectly stated that the USB adapter board is not required when running the EBB36 Gen 2 in CAN mode. In the configuration shown here, the USB adapter board is required for proper power delivery and safe operation. Please ensure it is installed as intended.
+
+Additionally, you do not need to cut the MX3.0 connector off the included cable.
+
+The correct wiring is as follows:
+- Create a new 2-pin CAN cable from your main control board (for example, an Octopus Max EZ).
+- Connect that cable to the 2-pin CAN header on the USB adapter board.
+- Use the provided MX3.0 to XT30 cable to connect from the USB adapter board to the EBB36 Gen 2.
+
+Do not modify the included MX3.0 cable. Use it as supplied between the USB adapter and the EBB36 Gen 2.
+
+
+In this video, I take a deep dive into the BigTreeTech EBB36 Gen 2 toolhead board and compare it directly to the Gen 1 version.
+
+On screen, you'll see the EBB36 Gen 1 on the left and the Gen 2 — along with the included USB adapter board — on the right, so you'll always know exactly which hardware I'm referencing.
+
+This is a fully independent review. I purchased all of the hardware shown in this video myself at full retail price. No sponsorships. No influence. Just real-world evaluation.
+
+We'll cover:
+
+What's new in Gen 2
+- USB vs CAN communication differences
+- Built-in USB adapter vs external U2C requirement (Gen 1)
+- Jumper-based mode switching
+- Practical implications for Klipper builds
+- Hardware layout changes
+- Whether upgrading from Gen 1 makes sense
+
+One of the biggest improvements with Gen 2 is flexibility. Instead of being CAN-only like Gen 1, Gen 2 includes both the toolhead board and USB adapter in one package, allowing you to switch between USB and CAN with a simple jumper change. That simplifies wiring, lowers the barrier to entry, and gives you options depending on your printer setup.
+
+If you're building or upgrading a Klipper-based 3D printer and considering the EBB36 platform, this breakdown will help you decide which version fits your needs.
+
+Katapult & Klipper firmware flashing instructions:
+https://gist.github.com/cjhmdm/3ae6babc8a4d76b403affdd0d70977aa
+
+================================================================================
+TRANSKRIPT
+================================================================================
+
+0:00 Hello, this is Chris from The Motion Bench.
+0:02 Before we get started, a quick disclaimer.
+0:04 This video is not sponsored or influenced by anyone.
+0:07 I purchased all of the hardware you'll see in this video myself
+0:10 at full retail price.
+0:11 Everything shown here is part of my own independent evaluation.
+0:14 Today we're taking a deep dive into the BigTreeTech EBB 36 Gen 2.
+0:19 On the screen right now I have the EBB 36, Gen 1 on the left
+0:23 and on the right I have the EBB 36 Gen 2 along with the included USB adapter board.
+0:28 So as I go through the comparison, you'll know exactly which board
+0:30 I'm referring to.
+0:31 This is a brand new release, and it builds on the EBB 36 architecture
+0:35 that's already been popular in Klipper builds.
+0:37 One of the biggest differences right away is communication flexibility.
+0:41 With Gen 1, the board you see here on the left, it was CAN by default.
+0:45 If your main board didn't support CAN natively, you had to purchase
+0:48 the separate U2C USB-to-CAN adapter to communicate over USB.
+0:53 With the Gen 2 shown here on the right.
+0:55 BigTreeTech includes
+0:56 both the tool head board and the USB adapter in the same package.
+0:59 So you have everything you need, regardless of which mode you choose.
+1:03 You simply change the jumper on the board to switch between USB and CAN mode.
+1:06 Now if you plan to run CAN mode directly from a main board that already has native
+1:10 CAN support like an Octopus Max EZ, you don't need the USB adapter long term.
+1:16 However, there's something important to note.
+1:18 If you're wiring it directly for CAN, you'll need to cut the MX
+1:21 3.0 end off of the included cable and terminate those wires yourself
+1:25 to your mainboards 24 volt power ground and CAN high and low pins.
+1:29 It's not that difficult, but it's something you should be
+1:30 aware of before installation.
+1:32 Now let's talk hardware differences between Gen 1 and Gen 2.
+1:35 First the extruder motor connector on Gen 1.
+1:38 It's pointed straight up.
+1:40 On Gen 2 it's rotated 90 degrees.
+1:42 It seems minor, but it makes cable management much cleaner.
+1:46 Fan headers have also been updated.
+1:47 Gen 1 had two two pin fan headers.
+1:50 Gen 2 has the same two two pin fan headers, but it also includes
+1:54 a three pin fan header with a tachometer pin. On Gen 2,
+1:58 you can configure each fan header independently for 5 volt or 24 volt.
+2:02 There is no 12 volt option, so keep that in mind when selecting fans.
+2:05 Thermistor support has been simplified significantly.
+2:08 On Gen1, you had a dedicated two pin NTC thermistor header
+2:12 and a separate four pin header for PT100 or PT1000 sensors.
+2:17 If you wanted to use PT100 or 1000, you had to configure tiny micro switches
+2:22 with tweezers to set it correctly On Gen 2, that's streamlined into a single header
+2:26 that automatically switches between NTC or PT 1000.
+2:29 Connector size overall has been reduced on the Gen 2.
+2:32 Everything is more compact
+2:33 except for the motor connector, which remains the same size.
+2:37 The power connector style has also changed.
+2:39 Gen 1 uses an MX3.0 connector directly.
+2:43 Gen 2 uses the XT30 connector on the board itself,
+2:46 while still using an MX3.0 connector on the USB adapter.
+2:50 They also include an MX3.0 to XT30 cable in the box.
+2:54 Gen 2 also includes a breakout header
+2:56 that allows you to expand USB or CAN to additional devices.
+3:00 For example, something like the Cartographer
+3:02 Surface Scanner can be connected regardless
+3:04 of whether you're operating in USB or CAN mode.
+3:07 Just keep in mind that if you're operating in USB mode,
+3:09 the breakout header will only support USB devices.
+3:12 And conversely,
+3:13 if you are operating in CAN mode, then it will only support CAN devices.
+3:17 Now, there is a difference
+3:18 between these two boards when it comes to resonance compensation.
+3:21 On the Gen 1, you have the older, far more documented
+3:25 and widely supported ADXL345.
+3:29 Whereas on the Gen 2 you have the newer LIS2DW.
+3:34 Now let's talk
+3:35 documentation, because this is where I have some criticisms.
+3:38 The Gen 2 documentation is noticeably lacking compared to Gen 1.
+3:42 For example,
+3:43 the pinout diagram does not properly label the extruder motor MCU pins.
+3:47 It only shows A2, A1, B1, and B2 at the driver level.
+3:51 If you want the actual pin assignments
+3:52 for Klipper, you have to dig into the example configuration file.
+3:56 you're probably going to do that anyway, but if you're like me,
+3:58 where you already have a klipper config and you're just updating it
+4:02 using the pinout diagram, you might not think to go
+4:05 look into the example configuration to get the motor pins.
+4:08 It would be nice if they included those on the pinout like they do everything else.
+4:11 This can basically be stressful
+4:13 for new users who aren't sure if they're configuring things correctly.
+4:17 More importantly, the flashing and setup documentation is incomplete.
+4:21 Dare I say it's non-existent?
+4:23 If this is your first EBB board, you're very likely going to struggle.
+4:26 Unlike Gen 1, which is heavily documented, the Gen 2 leaves
+4:29 much of the flashing process up to you to figure out.
+4:31 This can lead to confusion, frustration, and potentially people
+4:34 returning the board simply because they couldn't get it configured.
+4:38 That said, this is a brand new board release and I genuinely
+4:40 hope BigTreeTech improves the documentation over time.
+4:43 The hardware itself is solid.
+4:45 The Gen 2 is built off of the same architecture as the Gen
+4:48 1 version 1.2, which utilizes the STM32G0B1
+4:54 microcontroller, as well as a TMC 2209 motor driver.
+4:57 But the documentation itself needs refinement.
+5:00 To help bridge that gap, I'll provide step by step written flashing instructions
+5:03 in the video description below.
+5:05 You'll be able to copy and paste
+5:06 the necessary commands for flashing and Katapult or klipper directly.
+5:10 Speaking of flashing, regardless of which mode you plan to use, long term,
+5:13 you'll initially need to use the USB adapter
+5:16 to flash the board using DFU utility.
+5:19 You can flash a Katapult bootloader first, which I highly recommend
+5:23 because it'll make updating in the future easier.
+5:25 Or you can flash Klipper directly without a bootloader offset.
+5:29 I personally don't recommend this, because any time you want to upgrade
+5:32 Klipper in the future,
+5:33 you're going to have to break out the USB adapter, so on and so forth.
+5:37 Katapult makes that whole process a lot easier,
+5:39 especially if you're running and can board without the USB adapter board.
+5:43 Both methods work.
+5:44 It just depends on how you want to manage firmware updates moving forward.
+5:48 Moving on if you're running CAN and adding additional CAN devices
+5:51 like I will be with a Cartographer v4 surface scanner.
+5:54 Remember your termination rules.
+5:56 If the EBB 36 is the last device in the CAN chain.
+5:59 Make sure that you enable the CAN 120R termination jumper.
+6:05 If it's not the last device, leave it disabled.
+6:08 Only the physical ends of the CAN chain should be terminated.
+6:11 Overall, once configured, the Gen 2 has been stable in my testing.
+6:15 It builds on the strengths of the Gen 1 platform, simplifies thermistor
+6:19 configuration, improves flexibility, and adds cleaner integration options.
+6:23 The hardware is strong.
+6:24 It just needs better documentation support.
+6:27 Now let's move on to flashing and testing the EBB 36 Gen 2.
+6:30 One thing I wanted to cover before I start the flashing and configuration process.
+6:34 What you see here are two different cable connectors.
+6:37 The one on the left here is the one that comes with the EBB 36 Gen 2,
+6:41 and has the XT 30 connector on the one end and the MX 3.0 connector on the other.
+6:46 If you're running an Can mode without the USB adapter board,
+6:49 you'll have to cut off the MX3.0 end and,
+6:53 pin this out directly for power, ground, and your CAN high and low yourself.
+6:59 That being said,
+7:00 one thing that I should also point out is that regardless
+7:03 if you run in USB or CAN mode and you want to test switching back
+7:07 and forth between both of them, you can go ahead and cut the end of,
+7:11 the MX3.0 and off of this and simply don't use this connector here.
+7:15 You can connect your CAN High-Low or USB data pins here.
+7:19 They're going to be the same.
+7:20 It just depends on what you set off the jumper board.
+7:22 And then you can run your power and ground off of this header here.
+7:26 So there is flexibility with this.
+7:28 Just know that for CAN bus without the USB adapter board,
+7:32 you will have to cut the cable or provide your own
+7:35 If you have an existing XT 30 cable like I have here,
+7:38 you won't need to cut the one that comes with the EBB 36.
+7:41 Gen 2.
+7:41 Now, without further ado, let's go ahead and get into flashing
+7:45 the Katapult bootloader and then Klipper firmware.
+7:48 So what we're going to do is we're going to connect all this together.
+7:51 We're going to go through the flashing process on the screen.
+7:53 And then once that's all complete, I'll connect this instead.
+7:57 And then we'll go into the Klipper configuration.
+7:59 And test everything out on the hardware side.
+8:02 All right.
+8:02 In order to flash Katapult and then Klipper, we have to
+8:07 start connecting hardware.
+8:09 I have my Octopus Max EZ board here,
+8:11 my power supply and my host machine.
+8:14 From there,
+8:15 I've got my USB adapter board connected to 24 volt power on the power supply.
+8:20 I've got USB connected and I've got the MX 3.0 to XT 30
+8:25 cable connected to the EBB 36 Gen 2 board itself.
+8:29 Okay, in order to flash Katapult, we need to press
+8:32 and hold the boot button, then press and release the reset button.
+8:35 Once you do that, you can release the boot button
+8:38 and you should see a red LED light up on the board.
+8:41 This puts it in DFU mode.
+8:43 Now if we go over to our terminal here
+8:45 and you'll see on the left side here, I've got an entire list of commands.
+8:49 I will copy and paste this into the video description below.
+8:54 But the first thing that we need to do is SSH into our host machine.
+8:59 You'll probably be using a Raspberry Pi 3 or 4.
+9:02 I'm using an Intel NUC with Linux installed and everything's set up.
+9:06 we're going to go ahead and clone Katapult.
+9:08 And then we'll CD into the Katapult directory.
+9:11 And we're going to type in make menuconfig and press enter.
+9:14 First thing we need to change is the microcontroller architecture.
+9:17 So we press enter highlight STM Electronics STM32 and press enter.
+9:22 From there we need to change the processor model.
+9:25 In our case it's the STM32G0B1.
+9:29 Press enter Clock reference eight megahertz crystal,
+9:31 which is selected by default.
+9:33 Communication interface.
+9:35 We want to change this in our case we're going to change this to CAN
+9:38 bus on PB 12 and PB 13.
+9:41 If you're using USB you'll set this to USB on PA 11 and PA 12,
+9:46 which is enabled by default actually,
+9:49 so it CAN bus on PB 12 PB 13 press enter.
+9:53 Application offset eight kilobyte offset.
+9:55 By default it will be set to 1 million CAN bus speed.
+9:59 If you did not change this when originally configuring
+10:02 CAN bus on your host and Klipper side, then leave that value alone.
+10:06 Another important thing to note here is to ensure that support bootloader
+10:11 entry on rapid double click of reset button is enabled.
+10:14 From there we can press Q to quit.
+10:16 Press Y to save.
+10:18 After saving our menu config now we need to type in make and press enter.
+10:22 This is going to build Katapult specific for our EBB 36 Gen 2.
+10:27 Once that's finished we need to get our device ID
+10:32 now by default this should be the same for everyone.
+10:35 Just type in the sudo dfu-util -l to confirm.
+10:40 And what you're looking for is this address right here.
+10:44 Again this should be the same for everyone.
+10:45 The 008 and then six additional zeros.
+10:49 This is the only thing that you need from this list of output.
+10:53 You can ignore everything else.
+10:55 From there, we're going to copy and paste our next command
+10:57 sudo dfu-util -a 0 -d ~/katapult/out/katapult.bin
+11:02 sudo dfu-util -a 0 -d ~/katapult/out/katapult.bin
+11:05 --dfuse-address 0x08000000:force:mass-erase:leave
+11:13 and then you can press enter.
+11:14 You're going to see a bunch of text here.
+11:16 The only thing that you're looking for is file download successfully.
+11:20 From there we can physically unplug the board.
+11:22 And now if you are using CAN mode, you're going to add two jumpers.
+11:27 This jumper here is to is to switch from USB to CAN mode.
+11:32 And then this jumper next to it is to enable the 120R termination
+11:36 because at the moment this is the last device in my CAN chain. And
+11:40 now what I can do is go ahead
+11:42 and hook this up directly to my Octopus MAX EZ.
+11:46 I can now get rid of this USB adapter border will no longer be needed.
+11:50 And then from there we'll go ahead and flash Klipper. Okay.
+11:53 Now we've simplified our hardware setup.
+11:55 We've got our XT 30 cable that runs to the CAN
+11:58 bus pin on our Octopus MAX EZ.
+12:01 And then we've got 24 volt power and ground
+12:04 hooked up directly to the power supply for this video.
+12:08 All right.
+12:08 Now my hardware configuration is set up for CAN bus.
+12:11 Again, if you're using USB mode and you don't have to set it up this way.
+12:15 You can keep it connected
+12:16 the way you saw it previously with the USB adapter board plugged in
+12:20 through USB with your 24 volt power and ground coming off your power supply
+12:24 and then from there to prepare us to be able to flash Klipper.
+12:27 We double tap the reset button and that will put it
+12:30 into the Katapult bootloader mode, which we're going to need later.
+12:35 From there, let's clean up our screen over here.
+12:37 And the next thing is We're going to CD into Klipper.
+12:41 We're going to type in make clean just to make sure that there's no pre
+12:44 builds there that might you know interfere or mess anything up.
+12:48 From there.
+12:49 We're going to type in make menuconfig.
+12:52 on here we're going to enable extra low level configuration options.
+12:55 Microcontroller STM32.
+12:59 Processor model STM32G0B1.
+13:01 Bootloader offset, eight kilobyte bootloader.
+13:06 Clock reference eight megahertz. crystal.
+13:09 Communication interface.
+13:10 By default, it's USB on PA11/PA12.
+13:14 If you're using USB, you can leave this value alone.
+13:18 But again, I'm using CAN bus.
+13:19 I'll change this to CAN bus on PB12/PB13.
+13:22 CAN bus speed.
+13:24 Once again this is 1 million by default.
+13:27 If you don't know what you're doing, leave this value alone.
+13:30 It's very important to ensure that all your CAN bus
+13:33 devices and configurations use the same CAN bus speed.
+13:37 Otherwise you're going to run into timing errors and all other kind of headaches.
+13:42 Once we configure that, we will press Q to quit, press Y to save.
+13:46 And now Klipper is configured to build for our EBB 36 Gen2.
+13:53 We type in make, press enter, wait a few seconds for it to compile.
+13:57 And complete.
+13:58 And we can clean up some of the mess on our screen.
+14:01 Step four we're going to Flash Klipper.
+14:03 So first and foremost we need to CD back into the Katapult
+14:07 and then into the scripts directory.
+14:10 From there we're going to use this Python tool to get our CAN bus ID.
+14:14 So it's python3 flashtool.py -i can0 -q.
+14:20 if your CAN bus interface is something other than can0, please change it here.
+14:25 It must be an active CAN bus interface on your host system.
+14:29 If you don't know how to configure that,
+14:30 that's kind of outside of the scope of this particular guide.
+14:34 But if you need help with that, you can ask me in the comments and I'll,
+14:37 you know, make a video on setting that up.
+14:40 at any rate, we're going to go ahead and press enter here.
+14:43 We're going to get our bootloader ID.
+14:44 In my case I have two of them.
+14:46 I have one for application Klipper.
+14:48 That is the ID of my Octopus MAX EZ.
+14:52 And then I have the other one here for the application Katapult,
+14:55 which is for the EBB 36 Gen 2.
+14:58 So we need this value that I've highlighted and this value only.
+15:02 From there we're going to copy this next command, paste it into our terminal.
+15:07 And then at the end where it says -u make sure there's a space.
+15:11 Highlight the UUID value here.
+15:15 Copy and paste it. So it should look like this.
+15:18 And once more, if your CAN bus interface is something other than can0,
+15:21 please update it here to whatever your interface is.
+15:24 From there we press enter and we wait for it to connect and to flash.
+15:29 Once we flash, we should see programing complete with a verification complete.
+15:34 And then we have an SHA signature here.
+15:38 And for that I mean that's that's it.
+15:40 We've got Katapult flashed we've got Klipper flashed.
+15:43 And now all we need to do is, unplug and re plug in the EBB
+15:46 36 Gen2 And now we're going to get into the Klipper configuration.
+15:50 As you can see here I've got my EBB 36 Gen 2
+15:54 that's installed on my A4T that we built in the previous video.
+15:59 And we're going to go right ahead and get into configuring Klipper.
+16:06 Once you've navigated
+16:07 to the IP address of your printer we need to go into our printer config.
+16:11 If we, head over to the BigTreeTech
+16:15 GitHub page and then go into the EBB repo,
+16:18 go into the EBB 36 Gen 2 directory and then we can pull up the sample.
+16:23 BigTreeTech EBB 36 Gen 2 version 1.0 config.
+16:27 This does give us everything that we need to configure
+16:30 our EBB 36 Gen 2 in our printer,
+16:35 And they also give you the correct pins that you need for your extruder motor.
+16:39 So you'll have these three pins here.
+16:41 The step pin direction pin, enable pin.
+16:45 And then down here under the TMC 2209 extruder section,
+16:49 you will have the Uart pin.
+16:51 So essentially we're going to copy
+16:52 and paste these values into our main Klipper config.
+16:56 As you can see I've got this already built out for my Mercury
+17:02 One.1 printer that I'm tearing down and rebuilding into the Nebula.
+17:06 Just a couple of things to note here.
+17:09 We want to take that Uuid value that we had earlier.
+17:14 And we want to add
+17:15 if you don't have already we want to add the section for mcu.
+17:18 You can call it whatever you want but I call it EBBCan
+17:22 just to remind myself that I'm running the EBB in CAN mode.
+17:26 You can just leave this as like [mcu EBB] if you want,
+17:30 and then from there we're going to paste in our CAN bus UUID.
+17:35 This is the value for the one that's installed on here.
+17:38 But for testing my earlier one was the 100b 1, etc.
+17:43 etc. number.
+17:45 If you are operating this EBB
+17:48 36 gen2 over USB,
+17:52 then you will need to configure it like this.
+17:55 With this serial and then /dev/serial/by-id,
+18:01 and you can get this value by simply typing in ls
+18:06 -l /dev/serial/by-id, you press enter.
+18:13 And as you can see here, my beacon device is listed.
+18:15 I have that hooked up just so the Klipper firmware won't fail to initialize.
+18:20 If you are using this in USB mode, and assuming you
+18:23 did everything correctly, you should see a second value here.
+18:26 You would want to copy that value and then paste it in as a serial device instead.
+18:32 So from there, I know that I've got my CAN bus
+18:35 ID for the device that's installed on this Toolhead.
+18:38 so pretty much this highlighted section is what we need to configure
+18:41 in order to get our A4T operational.
+18:45 As you can see here, I've already got the values added where they need to be.
+18:49 These are the pins that should be on the pinout diagram
+18:53 from BigTreeTech but don't exist.
+18:55 whatever you name your EBB device, your mcu device up here.
+18:58 That's what you need to put down here for these values.
+19:01 So the first one is the step pin that is going to be PB14.
+19:05 Then we have our direction pin.
+19:08 That's going to be PA8.
+19:10 Our enable pin which is PB6 And then of course
+19:15 we need to set our heater pin which is PB4 you want to set your sensor type.
+19:19 In my case, it's a PT1000.
+19:21 If you're using an NTC, you'll have to get the value from that.
+19:24 Generally speaking, I believe you'd put in here generic 3950.
+19:29 And then for the sensor pin that's going to be EBBCan:PA3
+19:35 moving on, we're going to set up our TMC 2209 extruder.
+19:38 uart pin which is EBBCan:PB3.
+19:43 Down here we have our filament switch sensor set at PD0.
+19:47 And then we have pause on runout true yada yada yada.
+19:50 Our two part cooling fans PA5 and PD3.
+19:53 And then our fan configuration multi pin.
+19:57 And then these part cooling fans here.
+19:59 Last but not least we have our hot end fan which is PD2.
+20:04 We set it to the extruder heater temp.
+20:06 Minimum temp is 50.
+20:07 So it'll kick on any time the temperature is over 50.
+20:10 And then we want to run that at full speed.
+20:13 At any rate, this is the config that we need to get our EBB 36
+20:18 Gen 2 up and running on our A4T Toolhead.
+20:21 we click Save and restart once we've got everything configured for our printer,
+20:26 and from there we now have a working tool board.
+20:30 So the first thing that we're going to want to do is test our part.
+20:32 Cooling fans.
+20:33 We can simply slide that slider to 100%.
+20:37 And as you can see I'm going to go ahead and switch to my overhead camera view.
+20:42 As you can see in my A4T, I've got one fan working here.
+20:46 Generally speaking, you don't want to touch the blades of your fans.
+20:49 I'm just showing it as working so you can see them.
+20:52 Both of these fans work so we can go ahead and turn those off.
+20:56 We have our hotend fan reporting at 0% here.
+20:59 And then we have our extruder temperature reporting at 24.4 degrees.
+21:04 So if we go ahead and set that
+21:05 to 100°C it's going to automatically turn this fan on.
+21:09 And this is our hot end
+21:10 fan that cools down the heat break and keeps filament from melting
+21:14 inside of the heat break and prevents all your plastic from melting.
+21:19 so far we've confirmed that all three of our fans work.
+21:22 And now we're going to test out the extruder.
+21:23 So I've got a little bit of white filament inside of my A4T here.
+21:28 And what I'm going to go ahead and do is set the temperature to 210 degrees
+21:32 and wait for that to heat up.
+21:33 While we're waiting for that to heat up,
+21:34 we can go back to our desktop view and we can see that our tool had run out.
+21:39 Sensor is detecting filament because we have filament installed.
+21:43 Again, refer to my previous video where I built the A4T for configuring
+21:47 and setting that all up, as well as all of the additional hardware for that build.
+21:51 At any rate, we'll go back to our overhead camera here.
+21:54 And now we are at 210 degrees thereabouts.
+21:58 So we're going to go ahead and start extruding, some filament out of here.
+22:02 Right now we have our extrusion rate.
+22:04 I'll go ahead and show you.
+22:06 We have our extrusion rate set at 100%.
+22:08 Pressure advance is 0.04.
+22:10 Obviously I'm going to need to configure this later on.
+22:13 Our smooth time is 0.04.
+22:15 The filament length that we're going to feed through here is 50mm.
+22:19 And our extrude rate is five millimeters per second.
+22:22 Once we get my printer built
+22:24 and everything like that, I will go through and tune these values
+22:27 to push this thing for absolute maximum performance that we can.
+22:31 At any rate, we go back to our overhead camera
+22:34 and we will start pushing some filament through here.
+22:38 And as you can see, our extruder motor kicks on and we are successfully
+22:42 dumping filament All over our cartographer, surface scanner board there.
+22:46 So here we go.
+22:47 We've got successful pushing of some filament.
+22:51 We can see up top of here.
+22:53 We'll watch as the extruder pulls in filament and kicks it out the bottom here.
+22:58 So we can see it coming out.
+22:59 That being said, we have successfully flashed, configured and tested our EBB 36
+23:04 Gen 2, and I must say that this is a welcome upgrade to the Gen
+23:09 1 versions, minus the discrepancies and issues with the documentation.
+23:14 if you like my content or find it helpful in any way,
+23:17 please consider commenting, liking, and subscribing.
+23:20 It will go a long way to helping my channel grow.
+23:23 Thank you for watching.
+23:24 And in my next video, I will begin building the frame for my Nebula
+23:28 3D printer.
+23:30 So stay tuned for that and see you next time!

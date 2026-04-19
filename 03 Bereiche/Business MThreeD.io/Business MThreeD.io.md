@@ -24,9 +24,14 @@ Alles rund um den Aufbau und Betrieb von MThreeD.io als Firma. Akquise, Kundenko
 - [ ] Erstes Kundenprojekt abgeschlossen
 - [ ] Stone Wolf druckfertig → volle Kapazität
 
+## Offene Klärungen
+
+- **Steuerliche Konstruktion Ildis ungarisches Gewerbe** — Wohnsitz in DE, Gewerbeanmeldung in HU. Risiken: Geschäftsleitungsbetriebsstätte in DE (§ 10 AO), KATA-Reform 2022 (nur Privatkunden), Fremdvergleich bei Innenfamilien-Rechnungen. Praktische Auswirkung: Tool-Rechnungen auf Ildi (z.B. Meshy) sind aktuell nicht sauber als MThreeD.io-Betriebsausgabe absetzbar. → Steuerberater mit DE-HU-Expertise konsultieren vor weiteren Rechnungen auf Ildis Gewerbe. Task: [[TASKS#MThreeD.io — Geschäftsaufbau]].
+
 ## Referenzen
 
 - [[02 Projekte/MThreeD.io]]
+- [[02 Projekte/Ildikó Brain Setup]] — paralleles Brain für Ildikó (Arbeitsteilung, Freiheits-Vision, Setup-Plan)
 - [[00 Kontext/Angebot]]
 - [[00 Kontext/ICP]]
 - [[00 Kontext/Branding]]

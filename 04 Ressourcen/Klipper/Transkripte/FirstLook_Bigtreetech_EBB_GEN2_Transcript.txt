@@ -1,0 +1,702 @@
+First Look Bigtreetech EBB GEN2
+Kanal: Stacking Layers
+Veröffentlicht: 05.10.2025
+Aufrufe: 12.668 | Likes: 277
+URL: https://www.youtube.com/watch?v=IqWxSF5fDMc
+
+================================================================================
+VIDEOBESCHREIBUNG
+================================================================================
+
+The Bigtreetech EBB GEN2 is almost here and I've been given permission to show it off a little ahead of its launch. Check out some of the new features and full how to guide for setting it up to use canbus with Klipper.
+
+Check out this video's sponsor PCBway and
+Get $5 towards your first order - https://pcbway.com/g/08Zx0p
+
+** Affiliate links to help the channel out **
+
+The EBB Gen2 can be found in this listing - https://tidd.ly/3Wy8d1j
+
+Bigtreetech and BIQU items - https://tidd.ly/46lz9Ht
+
+Support the channel: https://www.patreon.com/c/StackingLayers
+
+** Helpful guide **
+
+Esoterical's CANbus guide - https://canbus.esoterical.online/
+
+================================================================================
+TRANSKRIPT
+================================================================================
+
+0:00 How's it going everybody? Today I got a very special video for you because here in my hands I have the new Big Tree Tech
+0:08 EBB generation 2 board. Specifically, as you can see from the size, this is the EBB36 Gen 2. As you see there, it's the
+0:15 version one. Um, and yeah, I was lucky enough to get onto a beta program with
+0:21 this. So, we've been beta beta testing these. This is actually a second revision from the things that we've um
+0:26 changed. We found a bunch of not I wouldn't say flaws with the first version, but uh lots of improvements
+0:31 needed and I'll point out a couple of those things in the video here. But uh yeah, this is something a lot of people
+0:36 have been asking about. Where is the Gen 2? Because we've all kind of already known about it. Um they've made little hints and stuff here and there. Um
+0:43 there's even a couple little bits with um like for instance the Nebula extruder. It kind of shows basically
+0:48 that you're using a Gen Two board for uh plugging that in all the little things. And as a matter of fact, with all of my
+0:54 Nebula uh videos that I've done, I have been running this board. So, um I do
+1:01 have a lot of uh time on this board. I've been put it through a lot of different stress testing and figured out things and um yeah, so I've been given
+1:08 the go-ahhead to kind of show it off. It is not officially released yet. So, I do need to point that out. But, Big Tree
+1:13 Tech did go ahead and uh or one of the reps from them uh told me to go ahead and Yep, we can talk about it and uh let
+1:20 you know that the release should be out um from the making of this video, which today is uh what is it? Um October 5th.
+1:27 So, it should be out another within the week or so, I think. Within this coming week, um maybe two weeks from now. Um I
+1:32 don't have an official date. Um but I think they did say sometime around the 10th, but I can't, you know, guarantee
+1:38 that. It's up to them. Um, I also have no official pricing on this at all. So, I don't know anything about that. That's not anything that I deal with. Um, but I
+1:46 have done beta testing on it. So, I got lots of insight and would like to share that with you. So, what do we got here?
+1:52 As you can see, I will actually bring over the older version. So, here is the version. This is specifically the
+1:57 version 1.2. Um, so as you can see on the backs of the board right away, you
+2:03 notice that there's a lot more going on with the new one. And there really is. This thing is really packing a lot of
+2:08 cool stuff. Um, most of the stuff is not going to be things that you'll be necessarily interfacing with, but it gives you a lot of peace of mind. So,
+2:14 I'll go over that thing also. Um, on the front too, as you can see, there are
+2:19 more connectors and a very different layout and again just packed with stuff.
+2:25 It's got a lot of components. So, it is truly a big upgrade. It is a generation 2. Similarities, I'll start off with
+2:32 those because those are the simple things. Get out of the way. The main processors are the or the MCUs are the
+2:37 same. They're both the STM um 32 chips. The what was the G01 I believe is what
+2:43 they are. See if you can see which model that is there. Um so yeah, it's the um
+2:49 SMT uh sorry SM32 G0B1 version. Um so they're the same chips um
+2:56 for flashing and things like that. Um, they both also have the TMC 2209 on
+3:02 there still. So, it's not um, nothing truly upgraded when it comes to that.
+3:08 Um, but, you know, with this type of thing with an extruder, I don't see why you would need anything more than a 229
+3:14 on there. You got your silent if you want to go silent and it's a, you know, 2 amp um, oops. 2 amp capable uh driver
+3:21 on there. So, um, but yeah, so those are really the similarities. Of course, you got fans in that motor outputs and all
+3:27 that good stuff. Um, but if you notice, there's other things that are not similar. So, first off, you'll notice there's no USBC port on here. Um, and
+3:36 there is uh what was the other main difference? Oh, yeah. The uh the motor the way that the motor mount is
+3:42 positioned. So, they finally went away from making it go backwards since the motor is typically sitting here. Now,
+3:48 they have it on the side. So, I thought that was a really nice uh touch to do that because easier, quicker, cleaner
+3:54 wiring. So, yeah. Um, in this video, before I go too deep into this, I'm going to be showing you about the board,
+4:00 what are differences, what we got going on here, and then we're going to just go through a quick little setup um in in uh
+4:05 Clipper so you can see how it works. Um um I'm not going to be putting it onto my tool head or anything like that to do
+4:11 that, but I will show you the how to program it and the um how to do a quick
+4:17 um basically printer config file. simple, easy, easy peasy like I normally do. All right, so let's go over what we
+4:23 have going on here. So, what makes this board special? First things first, the
+4:28 biggest biggest change, and this is really because of the community driving um kind of a war, I will say, between
+4:36 canvas and USB. Now, if you're familiar with these type of boards, you're going to see this and you probably think,
+4:41 well, maybe it's it's just a canvas board. There's no USB ports anywhere, so it's got to be canvas. Um, and uh, nope,
+4:48 that's not what it is. This actually is a dual function board. This finally Big
+4:53 Tree Tech has managed to put both canvas and USB in in board. And it's
+4:59 selectable. So basically, you can use the one cable that plugs in top here.
+5:04 And you get to choose, are you going to be using CAN bus communication or USB communication? And it's that simple. And we have one little jumper here. It's
+5:11 this guy. I'll just pull it out. You pull it out like that. you're in USB mode, you put it back on, then you're in
+5:18 canvas mode. And it really is that simple. Of course, you will need to put different firmware onto the chip because
+5:24 you're going to have to tell it, are you communicating in canvas or uh USB mode. Um, but that's just the same same
+5:31 process of flashing firmware. There's nothing special to do with that. Um, but what's really cool, not only are you
+5:37 able to select it using the same chord, but it also allows you to output an
+5:42 additional uh canvas or USB port. So, down here we have this chip, and this is
+5:48 a USB hub chip. It's called a the FE1S
+5:54 uh chip. So, basically, it's a USB 2.0 hub, and um what's cool about it is that
+6:00 it is set up to output through this port here. So with this port you have the two center pins are your data pins. So your
+6:06 D plus and minus and then you have power 5V power. Um and so what this can do is
+6:12 supply power to things like for instance the uh a beacon or some other peripheral
+6:17 that uses USB and it's going through a hub. So it is fully you know compatible.
+6:22 It's not like it's sharing a line or thing that it is put through a hub system and is able to do it all its USB
+6:28 2.0 stuff. So it's really good with that. But if you remove this jumper here, then this port turns into the
+6:34 canvas hub, um, it it bypasses the chip. It has what's called a a MX chip or a
+6:40 multiplexor chip that this is activating off and on. Um, and that's internally. I don't know exactly, I forget which chip
+6:45 it is in here, but it's one of these that basically activates or deactivates the USB circuit and then reroutes it to
+6:52 be the um, CANBA circuit. And then this turns into your your CAN high and CAN low pins in the middle. And then it
+6:58 still stays with the the ground and power on the outside pins. And so it's a
+7:04 really universal setup which makes it very handy for you. Um, you know, if you
+7:10 want to switch, if you're not having a good time setting up canvas and you say, "Forget about it. I just want to do a USB. I feel find it easier." It's just a
+7:16 matter of taking the jumper off and you're done. You basically pull these two jumpers off cuz this one is the 120
+7:21 uh resistor for for Canvas. I personally always choose Canvas. It's a lot more robust in my opinion. Um and in tests. I
+7:29 mean, it really is. It can handle much longer length. It tolerates a lot more um interference and things like that.
+7:35 But um my personal preference, I stay with Canvas. I just like it. It's easy for me to set up as you see in my other
+7:41 videos if you follow along. I have no issue. I've never had an issue setting up Canvas. And I'm, you know, it's because I'm experienced with it also
+7:47 with work and stuff. So in my my daily job, I I deal with Canvas on the daily. So it's not a mystery to me. Um, but the
+7:53 um I know I do understand a lot of people um do have complications with it or they don't truly understand it or or
+7:58 they just don't want to deal with it. And USB is easy. It's tried and true. It works. So, they've really made it a
+8:04 really nice setup here for you to choose whichever one you want without having to buy a whole another board. So, you can switch back and forth. So, that's one of
+8:12 the main big big differences on this chip. Now, let's get into some of the little other nice little things that they've done, changes and stuff. Um,
+8:20 first off is protection. from this board to this board. This thing is a puny little weak ling. And
+8:28 I'm not saying that to to bash the board or thing that because I've been using these things and they've worked. I've
+8:34 never blown one out and um I've done a lot of stupid things with my boards in both testing and just, you know, not
+8:39 paying attention. Um but I really put these boards through a lot so they actually do hold up really well. But
+8:45 that being said, can easily be blown up with just a quick little disconnect in the wrong spot or a wrong connection
+8:50 somewhere else and um they're just no good anymore. But this one, this one is
+8:56 a power horse. Literally, no joke, I don't recommend it, of course, but no joke, you can go ahead and like reverse
+9:02 wires and and short uh short circuit things and stuff, and this board just keeps ticking. Um, it has actually been
+9:10 kind of I want to say overengineered, but for lack of a better description at the moment, it's been overengineered to
+9:15 make it to where it's close to impossible to to blow this board up by shortcircuiting and stuff like that.
+9:20 It's got protections all over the place. Um, specifics I'm not going to go in. I'm not going to point out exactly which
+9:25 component does what, but there is a lot going on with this board to um to protect you against doing things wrong.
+9:32 Um, of course, that does not mean go ahead and just throw wires at it and see if it works. always refer to the guides,
+9:38 of course. You know, it's it that that's how it works with electronics. Always, no matter what, assume that if you're
+9:43 going to connect it wrong, you have to damage the the thing as soon as you did the wrong connection. Not even with
+9:49 power. Just assume you you already destroyed it. That's the way it works with electronics. But like I said, this thing has been engineered to be as
+9:55 robust as possible. And that honestly is one of the things that have held back the um the release the earlier release
+10:02 of this thing is because we've been putting so much comments back and forth in with beta testing. Um the original
+10:07 one went through a redesign practically um with lots of different things. Um so we've really got this thing working
+10:14 really well or sorry the engineers with us beta testing. Um but the engineers have gone through and really got this
+10:19 thing just bulletproof. It's pretty amazing. Um so that's really one of the big big advantages of the new generation
+10:25 2. Um, other than that, as you can see, there's a lot more ports. So, I'll go over those. Some of the really cool things you have on this one, it was what
+10:32 it was, two fan ports, I believe. Um, your part and your, um, regular fan port. This one has three. So, we have a
+10:38 fan here, a fan here, and then we have this one, which is a three fan. So, you have the option of having a tachometer,
+10:43 so you can see the fan speed on it. Um, each one of them has their own headers of being able to select the volts. So,
+10:50 I'll flip this over so you can see the other side here. Um, they're really nicely labeled. Um and then basically
+10:55 you have the option of selecting between um VCC which is going to be your your main input input of power. So it's going
+11:02 to be like your 24 volts um or you can switch over like you see here you have a 5vt. So you can switch between 5vt or um
+11:10 24volt basically. So you get to choose different types of fans that you want to use. Uh so that's been a really nice upgrade
+11:17 that we've recommended and it's done with easy jumpers. All the jumpers of course come with it and um that makes it
+11:23 really nice to to um customize your stuff so you don't have to be stuck with running 24volt fans or anything like
+11:29 that or trying to find another 5volt pin somewhere else. So that's really good. Um I've already touched on this port
+11:34 here. So this is the multi-purpose for USB or canvas for your output. So, you
+11:40 know, connecting things like if you're going USB, you can connect your beacon um probe sensor thing or if you do
+11:47 ctographer, you can also do USB through that if you wanted to or go through the canvas if you have a set of cam mode. Um
+11:52 any other things like that. So, really easy to work with that. This side is your RGB lighting. So, you do have RGB
+11:59 lighting. Then on the bottom here, you have um this is your your um uh your
+12:05 like your BL touch and those type of um type of sensors. So, your probing sensors if you're not using like a ctographer or a beacon or some sort of
+12:12 thing like that. You have your standard BL touch stuff. You also have I2C up here. So, this is a really nice handy
+12:18 port for adding other peripherals like temperature and humidity sensors like a BME sensor or something like that. So,
+12:25 you can hook up with I2C um very easily there. Um I've actually p
+12:31 tested this one using the Panda Sense. The Panda Sense is actually not designed
+12:36 for this. So, um, there's a lot more involved for doing that. Um, it does need like 3.3 volts, for instance,
+12:41 things like that. Um, so I did have to wire it a little bit differently, but, um, yeah, so I was able to test it
+12:47 through there. The I2C works really well. Um, but it's nice because you can use other types of sensors, like I mentioned with humidity sensors or
+12:53 temperature for chamber temperatures and things like that. Um, or if you want to put like a little I2C LCD screen or
+13:00 something like that into your your print head, I guess you could do something like that, too. So, lots of options with that, but it's just a handy thing. It's
+13:06 not one of those highly required items, but it's good to have. Um, of course, you have your heater. With your heater,
+13:12 it can handle up to 120 watt um rod. So, your heating uh um element can be up to
+13:18 120 watts, which is really nice. Uh a little bit more powerful. Um and really when it, you know, with the ports,
+13:24 that's that's what you have. Uh very simple, very straightforward. Um nothing too exciting. Uh that other one, what
+13:31 was the other one we had? Oh yeah, endstop. you have an end stop port of course um for that. So, lots of good
+13:38 little ports to plug things into and uh get things going on that very straightforward. Nothing too exciting
+13:43 about that, of course. Um something about the the plug here. Obviously, you can see it's a big difference from the other one. Um and if you've seen other
+13:50 ones, you may have been noticing these ports uh popping up on a lot of them. Now, the reason why we're going to these
+13:56 type of ports now is because they're a lot more secure than these. And the
+14:01 reason why, if you notice, looking down inside, I get this centered here. Down inside, those pins in there, those four
+14:07 pins, they're all the same level. So that means when you plug it in, all pins get engaged at the exact same time. Or
+14:14 at least you would be hoping they do. Because why I say hoping if you're using USB
+14:20 and when you connect if you connect USB and power in a very strange manner
+14:25 somehow basically the the 24 volts of the main power of the board can actually
+14:31 find its way through the USB port going through ground traces and stuff like that. And that's one of the main causes
+14:38 of a lot of board blowouts is if you accidentally un undo your cord or if it comes loose while it's printing, that
+14:45 disconnect can actually dump a high amount of voltage down through your USB hub system and fry it. And obviously, if
+14:51 you have a fried USB system, your USB is not going to communicate anymore. Um, and you know, worst case scenario is
+14:57 that it just fries this board instead of the worst case scenario going through the wire and actually frying your your host computer. That's obviously wouldn't
+15:04 be a happy thing either. So, that's one of the main reasons why you'll see a lot of these type of ports now, too. And
+15:09 they're also, you know, more streamlined, uh, you know, smaller or thinner ports.
+15:14 The disadvantage, of course, is that these are much harder for making your own custom cables, unfortunately. But that's just the way it is. You know, do
+15:20 you want extra protection or what? There are ways of getting little like um
+15:26 adapter pieces that you can solder together and and make your own connections, but it's not as simple as as just, you know, crimping on some
+15:33 connectors and plugging into to the other side of that. Unfortunately, that's just the way that is. Um but that's why these are because these pins,
+15:39 you know, these are the power pins. One, they're much larger, so they can handle a lot higher current without burning up.
+15:44 Um and the data pins are recessed. So basically what happens is that as you start plugging in the power will engage
+15:52 fully before your data is which is how you want it. You you want to connect your data after. Same with the USB. Your
+15:57 your printer or your your system's turned on. You plug in your USB. That connection is already made after your
+16:03 main system is being powered or you're already connected and then you power up. That's another story, right? So um it
+16:10 that alone these connectors are already a safety feature. That's really nice. Um, but Big Tree Tech went above and
+16:17 beyond all that junk because they've also included this for USB usage. This
+16:23 is a supplemental board that comes with it. This is included with with this. They work in tandem. Um, so if you're
+16:28 going to be using USB, then you plug in your USB and then you have your output
+16:34 coming up to the board. But as you can see here, there's a lot going on here, too. So, this is not only just a a hub
+16:40 to route USB forward to the to the board, but it actually has a lot of protection built in here, too. So, you
+16:46 have your main power comes in. As you can see, it's double fused. So, it has both standard overcurren protection and
+16:54 um it has a a protection if current somehow finds its way back the wrong direction to protect your USB and your
+17:01 um host computer. And so double fusing and all that good stuff to help things stay protected and stay safe in general
+17:09 um both with uh obviously data protection and host but also so you're not burning up wires um with some sort
+17:14 of short circuit or something like that. So really high protection on that. Um but it also has its own USB um hub
+17:21 system here. So it's really nice. So what it does is it takes your USB from your host and it has a little hub system
+17:27 here. Then it goes further and connects to another one. So it's like you have a powered hub here and then connected to
+17:34 this which has its own hub for adding even more output uh through that direction there through that little
+17:40 connector. So double hubbed double protection lots and lots of protection.
+17:46 Like I've I can't stress enough, Big Tree Tech has focused so much on protecting the consumers because they
+17:53 have been paying attention and they've been, you know, listening and trying to figure out ways to help the makers. You
+18:00 know, we know there's a lot of new people coming into this into this field and they're not, you know, fully trained
+18:06 or, you know, they're really this is their introduction into electronics. This is the way that they're doing it. So, there's a lot of things that can go
+18:12 wrong and that's why Big Tech has put so much time into uh building these boards
+18:18 to make them easy for the first time users to not really blow up things because, you know, let's face it, we
+18:24 we've all messed up things at some point or another. And it's just such a crappy feeling when you do one wrong connection
+18:29 or you don't even realize you have a loose wire and you just went to go move something else and your hand hit it and it shortcircuited and blew out your
+18:35 board. I mean, I'm not saying that this is going to prevent that 100%, but it does make it a lot more robust for that. So, it's it's nice that they've done
+18:41 that. It's not it's not even needed because if you connect things correctly, you don't need all this protection. So, this is just protection from brand new
+18:48 users that don't have long-term experience and helps them so they don't blow out their boards by experimenting
+18:54 and trying to figure things out on their own. So, it's it's a really good encouragement for new makers to get on board and do this stuff. And that's
+18:59 that's why I wanted to emphasize so much about this protection and what they've done. Um, in my opinion, I I think Big Tree Tech has gone above and beyond. Um,
+19:06 I I I point it out because I don't think a lot of people really truly understand what goes into these type of things. I
+19:13 mean, I don't even fully understand because I don't design these boards. I'm not a designer at all, but I do understand the boards in general. And to
+19:21 put so much time and effort and still sell them at a pretty low price considering what time they put into these things, um, I think a lot of
+19:28 people underestimate what goes on and what they're doing to help the maker community. And I just wanted to really,
+19:34 you know, emphasize on that because it's been it's been a true honor to be able to beta test these things and they
+19:39 really are listening to us and just from, you know, my communications with with the um engineers and stuff that are
+19:45 on on the team with building these boards. They are constantly listening to
+19:51 the comments. It may not look like it. They may not be responding, but they are constantly keeping record of what's going on, what the users want. So keep
+19:56 those comments coming to all of the wherever you do it on Discord, on Facebook, um Reddit, Twitter, all those
+20:02 places. Keep pushing out the things. You know, the main thing I want to point out is just be nice and understand that they
+20:08 are listening despite if they may not be re responding. They are surprisingly a very small team doing this. I don't
+20:15 remember exactly how many people there are, but you're not in hundreds of people. They don't have like hundreds and hundreds of employees doing this
+20:22 stuff. So their their teams are extremely small. Um, but they are very
+20:27 deep in the community and they do know what they're doing. So, give them credit on that. And, uh, I guess, yeah, thanks
+20:32 for BQ for or Big Tree Tech and BQ for, uh, putting the time into these type of things. So, enough of that. How do we
+20:39 get these things connected? What does it come with? So, so first off, you get it's not even going to fit on the whole camera. Um, you get this giant cable
+20:45 here. Uh, this is the full cable that connects between these two boards. And,
+20:50 um, it comes pre-terminated. And they're going with obviously you have this one.
+20:56 Well, good center here. Um you have this one here that um is for going obviously to here. And then on the other side
+21:03 we're using this style. Um and the main reason why both originally when we started testing them we had both of
+21:09 these on both sides. The downside obviously as you can see is size difference is that um this one is not
+21:15 going to fit through most holes anywhere. I mean you're going to have to make a pretty large hole to do that. So, this one makes a little bit more streamline for fitting through.
+21:22 Unfortunately, it's still just a little bit too big to fit through like the PG7 connectors, you know, those like strain
+21:28 relief springy things. You're not going to be able to do that. Although, there are some modified versions out there on
+21:33 um on the web, some modified like STLs you can download that basically someone has gone through and split it in half so
+21:39 it can like you know go over this type of stuff so you don't have to worry about fitting things through. So, there
+21:45 is that option. So, there it's out there. There's ways of doing it. Um, but yeah, that's just one of the things. And
+21:50 of course, depending on how you want to be using this, there's always option just cutting and and doing your own connectors, too. That's up to you. Um,
+21:56 as a matter of fact, the one I'm going to be showing you, uh, with with, um, setting this up, I have already done
+22:03 that on my other cable. So, here's my one that goes in. And then, if I can get this whole thing over here. I have it
+22:09 set up to the Raspberry, sorry, the Raspberry, the Big Tech Pi, the version one with canvas setup. And so like you
+22:14 see here, I've just cut the cable for so I have power and canvas going direct there. So that's another option. Um
+22:22 so you're not you're not restricted to only using this cable. Although the advantage that you get with using this
+22:28 is that um it is a nicely setup cable. I honestly I can't remember if it's
+22:34 shielded or not. I think it might be shielded through ground. They also sent a little USB. I'm assuming it's going to
+22:41 come with it too. um because this is what you would be plugging in to here to your host computer. So, you got a little
+22:48 USBC data port or data cable. Um all of the um connectors and things that you
+22:55 would need, heat sink, um all your cable ties and uh crimps and screws and
+23:00 standoffs and all that fun stuff. So, tiny little heat sink. They they've made heat sinks both, as you can see. I don't
+23:06 know. Let's pull it out here. They have a a smaller heat sink that goes directly onto your
+23:13 processor and to goodness dropping things.
+23:19 So you got these little red ones to go on to the TMC chip because it's really down inside there, right? TMC chip and
+23:27 you have your processor chip so you can keep things very nice and and uh chilly.
+23:34 Works really well. Speaking of temperature, that was something I forgot about. The uh this thing has two
+23:40 different temp temperatures available. So you have your standard temperature sensing in built into the chip, which
+23:46 all the chips have. Also underneath, it's if I remember
+23:53 right, it's inside the board. I can't remember if it's one of these components or it's if it's directly underneath, but basically underneath the TMC chip is
+24:00 another standard NTC um style temperature sensor and that you can
+24:06 interface. So, you can actually get two different temperatures uh readings off of the board at the same time. And it's
+24:12 really nice because it tells you the relative temperature directly of your TMC uh driver. So, you can let it it can
+24:19 know if your driver itself is getting too hot compared to just the board in general. So, that's a really nice touch
+24:25 on that because, you know, if you like monitoring your stuff and you're really running these things hard in a chamber, for instance, um, with a heated chamber,
+24:32 that's a good temperature to know to make sure things aren't burning out. So, you can see both of what's going on. And, uh, speaking of temperatures, also,
+24:38 uh, the the one I've been testing during temperature stuff, I was printing ASA
+24:44 and I had, um, obviously everything enclosed, 110 um, bed. uh my chamber
+24:50 temperature was getting um well into like the 70s and so this was being
+24:56 pressed way beyond when it came down to heating and stuff. I don't have any fans or things things like that blowing and
+25:02 my specific unit I've been testing um this is the second one that I got um only has the heat sink like this I put
+25:07 that on because I didn't get one of the little ones to begin with. So, my main processor, the MCU, was not ever
+25:13 protected with a um with heat dissipation, and it got well into the
+25:19 80s, which is uh pretty it was borderline throttling temperatures, which is built in, and it never skipped
+25:26 a beat. I never have experienced an issue with that so far. So, surprisingly, it went well beyond.
+25:31 Again, these are things where we're stress testing these, so it's not recommended to actually do that. But when it came to running these things, I
+25:38 was surprised that it was able to tolerate so much um heat, at least according to what the temperature
+25:43 sensors were were reporting back. Um they're reporting back pretty high heat and it was still chugging along with no
+25:50 issues. So that was another test that we did on that I thought was really surprisingly uh good. Um again, I don't
+25:56 recommend running these things super hot. Keep them cool. Try to keep them as cool as possible because that's the way it works. But yeah, so you get the bag
+26:02 of tricks, all your little things that you need. Um, they also give you some little extra just wire just to hook
+26:09 power from your your power supply to there. And you do get a duck. That's the board. If you guys obviously, if you
+26:14 have any questions, feel free to send them to me if you want to know if I missed something or if I forgot to point
+26:20 something out or didn't explain something. Um, there's obviously going to be a lot more information provided
+26:26 when Big Tree Tech releases these things and and stuff like that. But like I
+26:32 normally do in all my videos, I am now going to show you how to get this thing programmed. I'm going to program it into
+26:38 um into canvas mode because that's what I like using. But what we're going to be
+26:43 doing is still connecting through the system because we're going to be using the USB to start the canvas setup. And
+26:52 I'm going to put on uh catapult or sorry, yeah, catapult the formerly known as CAN boot. Um, and so I'm going to
+26:58 show you how to go through all of that system to get that set up. Okay, so that's what we're going to be doing now. Before I jump into that, let's hear a
+27:03 quick word from our sponsor PCB Way that's been gracious enough to help me out and build my channel, all that. So
+27:08 give them a check out and we'll be right back. Do you need highquality 3D printing for your next project? Well,
+27:15 PCB Ways got you covered. With PCB Ways rapid prototyping service, you can bring
+27:20 your ideas to life in a huge range of materials from durable plastics to sleek metals, all with precision down to the
+27:25 tiniest detail. Whether you're making functional parts, prototypes, or just something cool for your desk, PCB Way
+27:31 offers multiple 3D printing technologies like SLA, SLS, and FDM, all at compatible prices. Simply upload your
+27:38 design, choose your options, and PCB way will handle the rest. It's fast, reliable, and shipped straight to your
+27:44 door. Turn your ideas into reality with PCB Ways 3D printing service. Check out
+27:49 the link in the description and start creating today. All righty. Welcome back. So, as you see, I got the board
+27:55 set up powered on. I'm using the converter or the adapter board to um communicate via USB. We're going to be
+28:02 starting with that. Um this is plugged in just to let's see if I can get this over here really quickly without
+28:08 dropping anything. So it's I'm just using the Pi the um Big Tree Tech Raspberry Pi. I keep saying Raspberry.
+28:13 The Big Tree Tech Pi version one is not even the Pi 2. So it's got the um the
+28:19 onboard uh canvas system, but at the moment, as you can see, this is the wires, the power for that. I'm not using
+28:25 that. I am plugged in via USB so we can get that set up. Nothing too special on
+28:30 that side of things. Let's get this back over here. Um standard 24volt power
+28:36 supply coming in here and then USB and then everything going out to the board here. So that's it. So as you can see
+28:42 it's very simple, easy to install. Um this is how you would configure it if you just use it for STR standard USB. If
+28:49 you want to use it for canvas, then you would have to provide canvas instead of USB. Um, but then everything else is the
+28:54 same. It just goes through. Um, like I said, since I'm going to be using USB, I'm pulling these jumpers off.
+29:01 Technically, it should always do that type of stuff with power off, but yeah, we're we're doing another stress test on
+29:07 the uh robustness of the system. No issues. Um, so when you're using USB,
+29:14 like I mentioned, these jumpers here, the ones that
+29:19 these two, the vertical ones, those need to be open. So that's in USB mode. If
+29:26 you have the jumper on these two, then it'll be canvas mode. So
+29:32 first things first, as we can see in the terminal here, we'll do an ls USB just
+29:38 to get things going on. Just to make sure what we have communicating or don't have
+29:43 communicating. This is the USB mode. So this is the um
+29:49 this module here. That is the adapter board. But there's no other canvas. So this this ignore this open um Moco uh
+29:57 can adapter because that is the CAN adapter on my Pi. So that is letting you know that your
+30:03 USB hub on the adapter is working. Like I said earlier, I'm going to be showing you how to install Catapult and the
+30:10 regular firmware to get Canvas working on this one. I'm not going to be using the USB, but most of the steps are going
+30:17 to be the same when you do the USB stuff. It's just using USB instead of CAN stuff. All right. If you want me to
+30:23 make a separate video on how to do the USB configuration, uh, let me know down in the comments and I will try to put a
+30:29 video together for that and show you the steps to do that. Um, but for the most part, it's going to be relatively the same.
+30:36 So, what we need to do first is make sure our system is set up for running
+30:41 canvas on the uh on the host computer. I'm going to be referencing um
+30:48 esoterical's canvas guide because that has basically become the holy bible of of canvas when it comes to clipper
+30:55 stuff. So, I'm just going to keep it uh very in line with that guide, make things easy for you guys to follow along
+31:00 with. So, if you're using the guide, which I will put down into the description so you can do that because I mean really it is the best guide to be
+31:06 using. Um, it really sets up as a copy paste system. And to make my video slightly quicker and easier, I'm going
+31:12 to be using copy paste also. So, first things first, it's it's always important to make sure that your system
+31:17 is up to date. So, if you come into your uh machine stuff, obviously this is the main cell interface or fluid should be
+31:23 the same. It's um in your machine and make sure everything's up to date because you're going to be installing
+31:29 new clipper and all that. you might as well install the newest versions onto your system. Um, but onto your your your
+31:35 board also. So, just make sure everything is up to date, including your system, your OS packages. Make sure everything is good and up to date. That
+31:40 way, there's no conflicts or anything going on with that. So, once you have that all taken care of, then you want to
+31:47 get into uh your system via SSH. I'm here just using standard command prompt.
+31:52 And if I scroll up, you can see here, where did it go? This is the command personally that I use for getting in.
+31:57 And so basically it's SSH space and then your username. If it's the CB1, um it's
+32:03 just BQ. And then I have right here CB1.local. It's because I changed the host name to C just easy CB1. I think
+32:10 originally it's like BTTC CB1 or something like that. But instead of this uh name.local, you can put the IP
+32:16 address here. So if you want to use command prompt, you don't have to install any other services. I normally like to use Putty, but I've gotten a lot
+32:23 more accustomed to just using command prompt. It's quicker, easier for me. That's how you get in. put in your password and you're in. Um, and that's
+32:30 where I did the check, all that good stuff. So, once you're in here, you want to first start and make sure that you
+32:35 have uh Python 3 uh serial um pi pi serial basically installed. Uh, paste.
+32:43 You can also right click to paste in there. So, this is the command you want to use to get things updated for that.
+32:48 Um, this is a onetime thing. This is just to make sure that things are working with your serial communication for um, Catapult. So, it's going to go
+32:56 through its thing. And as you can see, um, I was already up to the newest version, so it didn't update. But if you
+33:01 needed to, it may ask you, are you sure you want to do this? Yes or no. So, obviously, you want to do it. Say yes.
+33:07 That's good. We're we're happy there. Uh, the next thing you want to do is to
+33:13 install or to check if you already have Catapult installed. You may already have it, but this is a good thing to run um
+33:19 just to make sure that it's actually fully updated and current. Um, so this script that I'm copying here is going to
+33:27 do a test. What it's going to do is test first to look to see if you do have Catapult already, the Catapult folder.
+33:34 And it says if you do um or not if, but basically saying yes or no, you have it or not. Um, but then it's going to if
+33:40 you have it, then it's going to go into um this the catapult um directory and
+33:46 then get pull. That is to update it basically. But if you don't have it, then it's going to um get into your your
+33:54 home directory. Make sure that you're in your home directory. That's what this little squiggly, the tilda line is, and then clone the new thing. That's so
+34:00 that's basically if you've never done it before, it'll automatically set it up for you. So, with that command line in there, you
+34:07 just go ahead and hit enter, and it's going to do its thing. It'll search, make sure as it as you see it says already up to date because I am I I keep
+34:15 my things up to date pretty well. But you may get like, you know, polling or some sort of things going on. It'll show you a whole bunch of stuff happening
+34:21 here. And it's basically doing its thing, making sure everything's up to date. All right. Plain and simple. You're done with that. Next thing you
+34:26 want to do is get into your Catapult directory. And um it is as simple as uh
+34:33 just cd. Just type this in cd. And then you want to get into your catapult.
+34:40 Oops. K. You can hit tab to autocomplete if it's in there. Press enter. Now we're in
+34:47 Catapult. And in here, we want to start with making the catapult bootloadader
+34:52 for this guy. And um to do that, it's the same thing as clipper where we going to do the make menu config. So m a k
+34:59 space config.
+35:05 Hit enter. And we are in to do the make menu config. As you can see here at the top, it says catapult configuration.
+35:12 That's because we open the make menu config in catapult directory, not clipper directory. All right, that's
+35:18 important. So, because we are going to be setting up canvas,
+35:24 um we want to do canvas on this part to start with. Basically, it's easiest
+35:31 to do it that way. But if you're doing USB, then what you want to do is actually set up as a USB catapult. Um,
+35:38 catapult is not only for um for canvas. A lot of I think that's
+35:44 one of the main reasons they changed the name from CAN dump or CAN um what was it
+35:50 called CANB boot to catapult because a lot of people believe that it was only
+35:55 for CAN bus systems but it's not. Anyways, enough of that. Um so you can put your communication to USB
+36:04 but like I said we're not going to be doing that. That could be another video. Let me know if you're interested in that. We're going to keep it on the US
+36:10 or sorry the canvas interface. So with uh the catapult stuff, you do want to
+36:16 make sure that um you're setting up as a deployment application right here. Well, here I'll just go
+36:22 through all the things. So let's just start at the very top. So your microcontroller is an STM32
+36:30 controller. The type of controller as you can see here is the STM32G0B1
+36:38 on this system. Here you want to make sure that you have the deployment application because this is allowing you
+36:43 to do uh the bootloader stuff. Basically going into a bootloader and um flashing
+36:49 your system without having to go through steps of pressing reset buttons and all that good stuff. Um so you're putting a
+36:56 um an 8 kilobyte boot loader onto there. clock reference for this specific model is the 8 megahertz. So make sure that's
+37:03 that like it is important that it's the right one. Then you want to um set up your commun
+37:11 communication interface to the canvas on this one specific. Let me double check that is correct here.
+37:18 And we want to make sure that we do the uh application start offset of that. So
+37:23 it'll start after the uh the bootloader.
+37:29 All right. And of course because we're doing canvas, we want to make sure that we are using the same canvas speed or
+37:35 bit rate that is on the whole system. All must match. That is something important a lot of people miss um forget
+37:41 to do. They may be following an older guide. Like even with one of my older guides, I have a five um 500,000
+37:48 canvas speed instead of the one meg. So, it's important to make sure that everything is if you're using 500,000
+37:54 here instead on another system, another part of your system, make sure this one is also 500,000. But new recommendation
+38:00 on all canvas with Clipper, just use the uh the 1 megabytes a million canvas
+38:05 speed. Okay, keep it easy, keep it uh nice and even.
+38:10 The rest is up to you if you want to have it. I do like to have the support for uh entry on a rapid double click of
+38:16 reset because that may that means if for some reason the software um trigger is not activating to get this
+38:23 into cam boot or to um bootloader mode, then you can double click the reset
+38:29 button. It'll it'll help also to get it into there. Um also it's up to you if you want to do the enable uh LED status.
+38:36 I think it's nice to have because what that will do is flash the LED letting
+38:41 you know that it is in uh bootloader mode and you do need to set the um the
+38:47 pin that it's on. For this one specifically, it is the PA2 pin that uh
+38:52 fires that LED and that's the little little onboard LED on there to uh signal
+38:57 what's going on. Okay, so now we got that. Hit enter. And
+39:03 then you hit Q for quit. Um, and this will prompt you if if you you've changed things. I haven't changed anything, so
+39:09 it might not prompt me. Um, but when you hit Q or quit, it'll prompt to save. Um, say yes, of course. So, as you can see,
+39:16 I hit Q and it didn't. It just went out because right here, there's been no no changes to save.
+39:22 All right. Pretty simple there so far, right? Very, very easy. If you've already done a Clipper um, make menu
+39:27 config, nothing looks different for you. So, the next step is just like with the Clipper stuff, but still make sure you're in the catapult because we're
+39:33 building for catapult right now. And you just do make and enter. And that will start building. Uh, nothing to make. Oh,
+39:41 let's first do make cuz I've already built it. It's the exact same thing. So, nothing's changed. Let's do a make um
+39:48 clean. Make clean will erase all the stuff that's there. And now we can do
+39:54 another make and it should start building. There we go. So, if you've never built before or if there's been a change, then you'll see it happening
+39:59 like this. It'll start building everything out. And I'll be right back when it's done.
+40:05 Okay. So, now it's done. Now, we get into doing the flashing. This is the fun part. I think it's fun. So, like I
+40:11 mentioned on this board, we have the two things. What we need to do is put this board into bootloadader mode in order to
+40:18 flash what we just made. Um, and that's why we're hooked up USB because the bootloader mode you um you do flash it
+40:25 via USB. I know I said it for canvas, but that doesn't mean that we're using canvas to flash yet. Okay, so now we
+40:33 need to get into into the DFU mode. Like I said, make sure that jumper is off.
+40:39 And then what you want to do is the boot button is on this side. Hopefully you guys can see that in the little image
+40:45 there. Actually, here. Let me make it bigger real quick.
+40:53 Oh, here. All right. So, we have the boot button on this side, and this is the reset. So, what you want to do is
+40:58 hold in the boot button, and while you're holding that, you tap the reset,
+41:04 and then you let go the boot button, and that's it. So, now if we run lsusb,
+41:12 we should see yes. Now, we have here the STM device in
+41:18 DFU mode. Um, so that's basically showing that it is now no longer
+41:24 communicating to the main firmware, but it's communicating to the default stuff. So, we can load stuff up. But like I
+41:30 said, I'm going to be copying and pasting, but it's more or less the same code that you would use if you're going to be doing the Clipper stuff. It's just in the catapult directory. So, this is
+41:38 the pseudo DFU utility. Um, and what we're doing is basically making sure to put things in the right area. So, we're
+41:44 uh getting things set up for catapult. And then this chip here, if you notice
+41:50 the last part, this device information, you want to make sure that that is actually matching to what your DFU mode
+41:58 system is. Almost always, I actually I can't think of a time that my STM DFU
+42:03 mode has been a different number. Um it's always going to be this uh 04 83 and then the DF11.
+42:10 But that is something important to just double check just to make sure that it is matching with the DFU mode and not
+42:17 something else. Cuz if it's matching, for instance, with this or some other um chip that's on here, it's not going to
+42:23 uh flash to the right chip. Also, you want to make sure that you don't have more than one DFU being shown. You don't
+42:29 want to be flashing the wrong device. So, u just want to point that out. But everything's matching. It looks good.
+42:34 So, we go ahead and hit enter. And this is going to flash the um firmware for
+42:40 Catapult. Force me our password.
+42:46 And there you go. So everything is good. Um it does look as though there's been an error because you do get this very
+42:53 last part, error during download, get status. Um but this is not an error,
+42:58 meaning that it didn't work. As you see up the top here, we got 100% 100% and then file download successfully. The
+43:04 thing about this um error is because when when it flashes via DFU mode, it
+43:10 sends a restart or reset command just to make sure that the system resets with the new firmware. And because we're
+43:16 using buttons on these things to um be in DFU mode, it's not going to
+43:21 automatically go back to DFU mode. Now, it's back into normal mode. Um and so right here, you have the um you know,
+43:27 submitting leave request. So, it does that, which is like a basically reset or restart the system.
+43:32 And it's not back in DFU mode. So, it can't read to make sure that the status was good. That's the reason why it says
+43:38 that. So, don't worry about this last error. As long as you see success and the 100%, you're good to go. If you
+43:44 don't, then something else is going on. You're having an issue with communication or something like that. Um, that's a hard thing to figure out.
+43:50 Could be power, could be all sorts of different things. Anyways, moving on.
+43:55 So, let's just jump back over to a quick closer view here. So, as you can see, we
+44:01 have the little LED on there. It's flashing. So that's the status. This is showing that Catapult is up and running.
+44:07 So basically it goes into default like that. If it doesn't recognize any other firmware being that we used um the DFU
+44:15 mode to update here, it basically erased everything. There's the mass erase at the top here. Right there. And um
+44:23 basically what we're doing is doing a clean install. So right now only catapult is on here.
+44:29 That being said, now if we do a U LS USB,
+44:36 we should not see any DFU mode. There we go. There's no DFU mode, and we don't
+44:42 really have anything else going on. It does see the um both USB hubs still, but
+44:48 it's not in USB mode, so we can no longer communicate via USB. Um it's now
+44:53 in canvas mode. So if we do like the the standard ls um
+44:59 what is it dev serial there's no there's no uh there's no
+45:06 serial available. So we go into standard lsdev um we have
+45:12 no serial because it's in canvas mode. All right. So now we I'm going to switch over to the canvas mode uh canvas cable
+45:19 sorry and get that plugged in so we can run it in canvas. Give me a moment.
+45:25 Okay, so now I have the other cable. I know it looks identical to what I already had because that's kind of
+45:31 tech's new style of doing these things. Um, but see if I can pull this over without damaging anything.
+45:38 So, I've, as you see, there's no more USB plugged in, and I'm using over here
+45:44 the canvas cable with the CAN adapter, all that good stuff for that. So, we're doing it that route. Now power is coming
+45:51 direct from the power supply. And as you can see here, this is disconnected. Now if I can get in the screen. This is
+45:57 disconnected. But um I do honestly recommend still using this for power. Um
+46:03 and the doing extens extension to canvas into here. Um, you can have this near
+46:08 your your controller board and then just do a short wire to from canvas out to canvas in here and then send it out
+46:15 through the cable because the main reason why is because of the the fuse protection, all the other extra protections you're going to get using
+46:21 this. It is a better setup. I'm not doing it just because of the way my test wiring is already designed. Um, so yeah,
+46:28 that's that's the reason why I'm I'm leaving it like that. Uh so as you can
+46:33 see still catapult is responding that it's in catapult mode with the the slow blinking of that light there. If you did
+46:40 not set up an LED on that um first make menu config then that light won't be blinking. It's not a default thing. Uh
+46:48 so next step is we need to make sure I'm on that
+46:54 screen. So, next up, we need to make sure, of course, that we do have canvas communication working because that's
+47:01 what we should be in now. And it is the same um idea. You can use the Clipper
+47:06 version or Catapults version. Um I'm just going to use a Catapult since we're still in the Catapult folder. Um even
+47:13 though it the the thing that we copy and paste here, it's the Python 3. It goes make sure you're in Catapult directory
+47:20 scripts and so on. And this is just going to look to see if there is any canvas available, any CAN devices. So go
+47:25 ahead and hit enter. It's going to check and if everything worked out properly, you will see your CAN UYU ID. This
+47:34 number, make sure to save in a safe spot because this number is going to be used
+47:39 for later um with uh telling Clipper who
+47:45 to talk to. Okay, so that's good. As you can see here, application is Catapult. So we now need to put Clipper onto this
+47:52 board. Let's do that. Really, when it comes down to it all, it is very similar to what we just did. So,
+47:59 nothing too much to get into. But, let's make sure this is not going to be falling all over the place.
+48:07 Stay there. So, first thing we need to do is make sure to get out of Catapult. So, now we're going to be doing Clipper stuff, right? So, we do cd and then you
+48:14 can do the dot dot to go back a folder or directory and then go back forward into clipper.
+48:23 Okay. So now, as you can see here, we are in our Clipper directory instead of Catapult.
+48:29 And we want to do the same thing. Run the make menu config.
+48:37 There we go. So now we're in Clipper firmware configuration. So really, it's the same
+48:43 thing. Um there's not much you have to change. There are little uh things you want to make sure that you do, right? Of
+48:48 course. Um, if this is your first time ever getting into this, it will look something more like that where it's very minimal. Go ahead and enable the
+48:55 low-level config stuff. Make sure you're in your STM32 chip.
+49:02 Double check something here. Then you want to make sure you're of
+49:09 course in the right processor model. Again, it's the STM32 G0B1.
+49:15 We're good there. Bootloader offset. This is important. Don't leave it on no bootloadader. Leave it on the 8 kilobit
+49:22 um kilobyte bootloader because you don't want to overwrite the catapult stuff that we installed. Okay? If you put on
+49:28 zero, it's going to overwrite um it'll still work per se, but you won't be able to use the catapult stuff anymore. So,
+49:34 there's no point in installing catapult if you overwrite it anyway. So, yeah, make sure that's there. And again, the 8
+49:41 megahertz crystal communication interface because we're using canvas on this one is the same as what we put into
+49:48 the um catapult stuff. So this is uh the same thing like I said PB12 and 13 for
+49:56 this specific layout. And of course keeping the canvas be the same. Um and
+50:02 then this is something new. Um I just leave it on. This is something for uh stepping stuff. So this is firmware
+50:08 code. So just leave that on. Don't worry about that type of stuff. Nothing else we need to do. If for some reason you
+50:13 want to play around, this is kind of more advanced stuff. You can set pins to be um on or off during bootup. Um so if
+50:20 you want to have like a little I don't know, a different LED or a beep that happens. You have a little beepers thing
+50:25 or who knows? Lots of different things you can do um to do that, but leave it blank for now. That's more advanced stuff. Uh same same scenario. You hit Q.
+50:34 If you made changes, it will ask you to if you want to save or not, of course, do it. Um, probably won't ask because I
+50:39 didn't change anything. Oh, it did. I guess because I messed around some stuff. Okay. So, we want to do yes.
+50:47 And then we want to do the make uh just make basically. Again, um I'll just do
+50:53 make clean. Make clean basically erases any previous
+51:00 make stuff. Um, it's a good habit to do, but not totally required, but it's good to do, especially if you've made other
+51:06 uh Clipper firmware. Um, that way you don't accidentally flash the wrong one. You're flashing a clean build. Then the
+51:14 next uh command is simple make and that will start building the firmware. We'll
+51:19 be right back when it's done. All right, everything was successful on
+51:24 that. Now the next step is we want to make sure that clipper uh service is not
+51:29 running while you do this. Um for this specific style it's not as important but
+51:35 if you're like updating or doing some other things um it may conflict it may not allow the UYU ID to show. So you
+51:41 know if you're trying to update from somewhere else and you've already had the system integrated um Clipper can
+51:46 basically once Clipper sees the UYU ID and understands it will not show it in a query anymore. So, just to make sure
+51:53 that things are working smoothly for you, um, use this command here. It's a pseudo service clipper stop. And that
+51:59 just stops Clipper from running in the background so it doesn't Yeah. doesn't take over anywhere. Um, so we'll just
+52:07 stop that. Give it a moment and it'll be done. Want to point out if you don't know with Linux because this is Linux
+52:13 system that we're running Clipper on, of course. Um, if you don't get any message, it just goes back to your thing
+52:18 like this like it did. That's normally a good thing. It's a really weird stuff, but normally you only get messages if
+52:24 there's an error or a problem. Um, or if they do a what they call verbatims where it's showing you like like with this the
+52:31 whole building, it'll show you step by step what's happening, let you know. But normally, if you see nothing, that's a
+52:36 good thing. Anyways, next step is to double check, make sure you are still
+52:42 communicating. Um because normally when you switch over from you know setting up
+52:47 your your USB installing the canvas or sorry can uh catapult you're going to
+52:52 switch over to USB. You want to power off your system when doing that. Um so you want to make sure that it's still
+52:57 working when you power it back on. So again we're just using the same script to c to query. And as you can see we are
+53:03 still able to detect a UU ID. So we're good there. Um it's good to highlight um
+53:08 to copy that. You don't click anything. just highlight it if you're using command prompt or putty. Um because later on you can right click and it'll
+53:15 copy whatever you have or paste whatever you have highlighted. Uh so the next thing is to use catapult
+53:23 to flash the firmware and again it is a copy paste from esoterical's guide. It a
+53:29 really simple command. Um get that here. Paste it there.
+53:36 All right. So it is a Python 3. It goes into the catapult stuff using the scripts the flash tool again. Same thing
+53:42 as we did here except for instead of querying which is that Q here. It's now going to flash and then this is saying
+53:48 it's going to flash this file which is the clipper um bin and then it's the
+53:53 user or the the UYU ID because we're doing it with CAN. See this is the CAN zero. Anyway, so your UYU ID, it says
+53:59 about at the end here, your UUYU ID that needs to be removed because we're not
+54:06 obviously using a your UU ID. What we're using is the actual number here. So go
+54:11 ahead and highlight that and then like I said with command prompt for putty, when you highlight it, it automatically
+54:16 copies and you just right click wherever the cursor is will uh paste.
+54:22 There you go. So it copied and paste. Now we have the right number. You can type it out. Of course, these are just a
+54:28 copy paste so you don't make a mistake, but double check that you have all the numbers the way it is. And make sure the spaces are still in the right area.
+54:34 Let's hit enter now that we got our UU ID in there. And we should see it go through. It sends the automatic um
+54:41 restart thing. And as you can see, it's starting to write and everything's good. It verified. It actually was able to
+54:47 check. Uh this SHA is the uh is the hash code for um uh basically it compared
+54:54 what was on the chip to the number that was in this bin here and everything
+55:00 matched up and is good and it's happy. So it says everything was completed. So you're good to go. Now what we need to
+55:06 do is to make sure that it actually did install and it is running Clipper and not Catapult now as its primary
+55:12 application. So again, really easy to do again is just query the canvas one more time. I'll just push up a couple times.
+55:19 There we are. We're on our can and the Q for query. Hit enter and it'll check.
+55:25 Still sees the UID. But now if you notice it says Clipper here instead of
+55:30 like I said up here, Catapult. So that confirms that now Clipper is running on the board. So the next step is setting
+55:36 up in main cell. Um, your board is now programmed, ready to go and it is communicating via cam uh cam bus and
+55:45 everything's good. Um, but remember before we jump over that we did use um
+55:51 the clipper stop, right? Uh, wherever it went, we we stopped clipper before um
+55:57 updating. So, we want to make sure to get Clipper started back up. So, we're using the pseudo service again. Um,
+56:03 instead of start stop, we're using start. That simple. So, we wait and let it do its thing and it should be good.
+56:10 Yep. Now, it came back. No errors and we're supposed to be running. So, of course, we can obviously confirm that by
+56:16 going into um main cell or whatever you are using to communicate and and see
+56:22 that you can get in there and communicate. Everything is up and running. We're good. All right. So, now
+56:28 we have to set up this board in here to make sure that
+56:33 things are working. Now, I don't have a motor or anything like that attached to this. So, um I'm going to make it very
+56:39 basic. And also just to point out what I have done here so far. I've only set up this is this is like the basic of basic
+56:46 systems that I use just for testing and showing you guys how to set other things up. So, as you see here, I'm using my
+56:52 MCU as my Clipper host MCU. So the Pi right now is is being Clipper thinks
+57:00 that the Pi is the main MCU, not an actual controller board that you would have in your 3D printer. So that's what
+57:05 this is about. Um you don't need to copy this part. Normally when you have this uh temp clipper host as serial that's
+57:13 you'll have like MCU PI for instance or whatever you would put there, right? Or
+57:18 host is another one that you can use for the name and that would be like your
+57:23 secondary. But because I don't have an actual MCU plugged onto this is just for testing and demonstrations. I told
+57:30 Clipper, "Use my Pi as the host and it perfectly complies with that." One other
+57:36 caveat is that what I've done here, you see the printer I've I've designated as none. And basically all I've done is
+57:42 tell it that there is no kinematics to use. I'm just using it as a test rig. So
+57:48 this will allow me to use generic motor stuff, but that's beyond the scope of this I just wanted to point out why it
+57:54 looks so minimal in my printer config. Yours should have I'm assuming you're obviously already have a printer set up
+58:00 and things are working. You're adding this type of a board or upgrading to this. So, you'll have all of your other
+58:05 printer stuff. Um, that's not really anything to do with this thing. Um, the
+58:11 main part is that we're going to be adding our MCU for the EBB36,
+58:16 right? So, if we just do that and that on this one, this is what you need to do. you need to add a new MCU. Make sure
+58:24 you can name it whatever you want. Just keep it nice and easy to remember. So, EVB36 is what I have here. And then, of
+58:29 course, the canvas uh UU ID which we have received in the um in the command
+58:35 here. All right. So, you got it there. Paste that in there and it should start
+58:40 communicating. Now, I have like I said a very basic setup. So, it's not going to give me much of any type of um errors or
+58:48 anything like that. And as a matter of fact, um, uh, let's see. No, I don't have anything
+58:54 set up on here at all. So, very, very basic, uh, PI information, things like
+58:59 that. This is just kind of a proof of concept to make sure that we do have a connection. If you have actual
+59:05 kinematics, kinematics set up, you're going to need to go through and do the whole other configuration, which let's
+59:12 just save and exit here. So, right now, I just want to save and close.
+59:19 So, um you do want to make sure to have obviously the the boards um
+59:27 configuration set up and um I have one right now and of course
+59:32 once Big Tree Tech releases the um the official release of this, they're going to have this available on a GitHub or
+59:38 somewhere that you can download too. Um I don't think there's much that's going to be changed if anything. Let me just
+59:44 uh copy this. And what I'm going to do is create a new file because I do like to keep things kind of separated. When I
+59:51 have separate boards, they receive a separate config file. So, I'm just going to label this um PB
+1:00:00 gen 2 cfg.
+1:00:06 Yeah. And then we go into that. Where did it go? EVB gen 2. And I will just paste in
+1:00:14 this is the the generic um configuration for that. So as you can see here, it
+1:00:20 already even has this part here. Um I'm just going to hash that out because it's not something that I would be using
+1:00:30 as I have it in the in the primary. And then it has all the different um sensors and things that uh can be set up. Um let
+1:00:37 me hash out some stuff. make sure I don't screw stuff up with this thing because it'll start screaming at me
+1:00:42 about things not working. Um, so if I do to here to here,
+1:00:50 I'm holding alt in case you didn't know about that. Use alt, you get this X and then you can select multiple lines and
+1:00:56 so you can do a hash out of everything at once. Of course, as I say, that's not working.
+1:01:03 One more time there. Shift. There we go.
+1:01:09 Same thing for extruder. I'm not going to be using extruder. Be doing fans here.
+1:01:16 I'm pretty much hashing everything out because I'm not going to be using it at the moment. Um, then I also want to make
+1:01:22 sure to do because mine is actually here. I'll just label something different. Anyways, so
+1:01:29 all we have here, we got temperature sensor, the EVB 36.
+1:01:35 Um, this one is the temperature sensor that I was talking about that's underneath the TMC. And we also have an
+1:01:42 L. Uh, let's just get that hashed out also because I'm not going to be doing that right now.
+1:01:47 These are just things that I'm I'm doing to make so I don't get tons of errors just to show you that it's up and running. But I will want to show the the
+1:01:53 ther show so show show that it has both.
+1:01:59 So, we got that. Everything else should be good here. Touch. We're not using
+1:02:05 NeoPixels. Nothing else is connected. No temperature sensors otherwise. Okay. So,
+1:02:10 one thing I need to do is make sure I think I have 36. Actually, what I will do, let's just
+1:02:17 save this. Save and close.
+1:02:23 And then I will go back into printer config because we got to change some things. So, I'm going to take away the 36 here. And this, you want to make sure
+1:02:29 the reason why I'm doing that is because the other ones are just labeled EBB. they're not labeled with any specific numbering. So, they need to match
+1:02:36 because this is telling you telling the system that um this MCU is called EBB.
+1:02:42 And then when you use like if you have um goodness, I'll go back to the other one
+1:02:48 now to show you what I'm talking about. Sim close back to the EVB. So, this here, this is saying use the MCU that's
+1:02:54 called EBB and then set that pin. That's how you tell if you didn't know already
+1:03:00 how or which board's pin you want to use. That's why I needed to take away that. Okay. Anyways, also one thing to
+1:03:08 remember because we're using this config, right? We need to make sure to include that into the printer config. Go
+1:03:14 back here and then add a new line up here
+1:03:20 just like the main cell, but we need to do for the EVB thing. So include and then now we should be
+1:03:26 able to restart. And what it's going to do is going to load up everything and it should show us um bare minimum that this
+1:03:32 is running and that the temperature. Let's see if we get any errors. Save and restart
+1:03:37 and let it do its restart. And it should No, it's reporting an error already. What do we got? Uh did I name it wrong?
+1:03:44 Oh, there's an extra B in there. Look at that. Let's edit. Rename that
+1:03:51 EB. There we go. Rename.
+1:03:56 Try that again. Restart. No, it's still not happy. Unknown chip
+1:04:04 name. EBB. Huh. Is it because capitals? Bet you. Capitalization is very
+1:04:10 important. Let's see. We got EBB regular. Okay.
+1:04:18 Printer config. And we got lowercase. There you go.
+1:04:23 This is a Linux thing. EBB lowercase and EBB capital are two different names
+1:04:29 completely. They don't know each other. Save and restart. So, it's good that we get these type of errors. So, you can
+1:04:34 see very common errors that can be made that will cause frustration to no end. I mean, something as simple as one
+1:04:40 lowercase letter can ruin your entire configuration file. It's that simple. But now that we got the right
+1:04:45 capitalization, so it knows that name. As you can see here, it is awake and running. Everything's working. MCU. Like
+1:04:52 I said, that's just right now the Linux system. Nothing special, but your MCU will will be your MCU. And then you'll
+1:04:58 have your new EVB. And if we go over to our dashboard, we should see our
+1:05:03 temperature sensor there. And that's that. And if I put my finger over there,
+1:05:08 I don't actually that's probably I don't think I'm hotter on my finger. No, probably not.
+1:05:16 Maybe I blow on it. You can see some temperature fluctuation happening. Anyways, that was just proof of concept.
+1:05:21 So, as you can see, everything is set up and working. Now, the thing would be up to you to go ahead and go through your
+1:05:27 your configuration and make sure everything is set up for your machine. So, you have this is your your input
+1:05:32 shaping stuff, your all your extruder information. Everything is good to go. Um, very easy, very straightforward.
+1:05:40 Nothing different when it comes to that. Nothing special about how to configure stuff, obviously. Just making sure that the pins are correct to what you're
+1:05:46 doing. And that's that. So that is the new EBB uh generation 2. The EBB 36 in in
+1:05:53 particular. The EBB uh 42 is identical in what it is. The all the chips and
+1:05:59 everything. The basic difference is the the form factor. It's the bigger squareish kind of um board. So that's
+1:06:06 that. Hopefully this video was helpful for you and uh you got um what you've
+1:06:11 been looking for. If you've been wondering what is going on with the Gen 2 EVBs, now you know. They are real.
+1:06:17 They are amazingly bulletproof. Um the the torture that we or I and some of the
+1:06:23 other guys have been putting these thing things through. Some of the people some of the other ones have much higher uh um heated temperature uh heated chamber
+1:06:30 temperatures than I can achieve and they have been going non-stop. We haven't blown up any of them. So that is a
+1:06:37 really good attest to what Big Tree Tech has done with these new boards. They are very robust and um yeah, I I can say
+1:06:45 it's going to be a good board if you're looking at upgrading or you've been wanting to get it. Um it's coming out soon. It's going to be worth it, I
+1:06:51 think, because you got both. Like I said, USB uh or canvas. You can choose.
+1:06:56 You can jump back and forth if you want to. It's just a quick um quick transfer of firmware and you're ready to go. So,
+1:07:02 really easy to do. Another um big thank you to uh PCB way for sponsoring my
+1:07:08 videos and uh check them out if you have any any wants or needs for 3D printing. They got a lot of cool stuff, lots of
+1:07:14 great things and really easy really easy to deal with. Um so thank you to them. Massive thank yous of course to all of
+1:07:20 my subscribers. Thank you all that. Um keep the comments coming. I I do enjoy and I'm trying still to keep up on
+1:07:27 everything and um help out where I can. Anybody else that can give any help? If I don't answer in a good time, but you
+1:07:32 have the answer, you think you have the answer, jump on in. Let's make this thing a community. Um, I did want to
+1:07:38 point out I am on Discord for anybody that doesn't know. I do not have a
+1:07:43 stacking layers discord set up still because I don't know if I have the time to maintain something like that. But if
+1:07:49 you find me by searching out there, um, or if you're in the other communities like with Voron community or big tree tech communities and you see me posting,
+1:07:56 feel free to reach out to me. Um, I'm more than happy to help you out. And um sometimes that's a better platform to be
+1:08:01 offering help on because it's a better uh chat and private chat and stuff like that that we can do than what um YouTube
+1:08:06 offers. Um I can drop in pictures and stuff. It makes it easier. So feel free to contact me there or on Twitter. No
+1:08:12 big deal. Um and if I have the time, I will definitely gladly help you out and solve problems or get you on your way.
+1:08:19 So feel free to reach out there, too. Um, also again, um, I may have mentioned
+1:08:25 this in my previous, uh, video, but I do have a Patreon. It is only set up at the moment just as a tier for helping,
+1:08:32 donating to the channel. Um, there's no extra content, um, available at the moment. Like I said, it's I'm I'm really
+1:08:38 constrained with time and stuff, so I don't have a lot of extra time to do these things. I am working on getting a
+1:08:44 better system so I can offer more to you guys. Um, but for now, if you're interested and you want to you feel like helping out, that's always a big help.
+1:08:50 And I wanted to give a massive thank you to Steve, my first Patreon on there that that has helped me out. Um, that was a a
+1:08:56 really cool surprise. Um, and I'm very grateful for that. So, if anybody else is interested in that, that would be
+1:09:01 great. But this this is not a call to action unless you feel it is. Um, it would be cool if every single one of my
+1:09:06 subscribers jumped on and gave just a couple dollars. That would that would really help out things and make the channel grow. But yeah, I'm not going to
+1:09:12 be begging for anything like that. It's up to you. No big deal. No hard feelings if you don't care to do any of that stuff. I get it. All right. So, that's
+1:09:19 that. And uh yeah, until next time, get out there and make something.

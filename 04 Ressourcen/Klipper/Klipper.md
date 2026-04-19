@@ -16,7 +16,7 @@ MCP-Server der 100+ Klipper-Tools bereitstellt. Läuft auf dem Pi und erlaubt ex
 | Was | Wert |
 |---|---|
 | Host (Hotspot) | `172.20.10.2:8000` |
-| Host (Tailscale) | `http://100.115.207.29:8000` |
+| Host (Tailscale) | `http://100.90.34.108:8000` |
 | Status | ✅ aktiv, Moonraker verbunden |
 
 ## Links und Quellen
@@ -29,4 +29,15 @@ MCP-Server der 100+ Klipper-Tools bereitstellt. Läuft auf dem Pi und erlaubt ex
 - [[04 Ressourcen/Automatisierung/Automatisierung|Automatisierung]]
 
 ## Notizen
+
+- **Eddy Coil Drive Current kalibrieren:** `LDC_CALIBRATE_DRIVE_CURRENT CHIP=btt_eddy` (einmalig nach Verkabelung/Montagewechsel)
+
+## Setup-Notizen
+
+- [[ProForge5 CAN-Bus Setup 2026-04-04]] — vollständige Doku Hardware/Topologie/UUIDs/Verkabelung für ProForge5 CAN-Fundament
+- [[ProForge5 Config Status]]
+
+## Transkripte (YouTube-Referenzen)
+
+Externe Tutorials/Reviews als Referenz bei Setup/Debugging in `Transkripte/`.
 

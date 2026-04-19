@@ -1,0 +1,671 @@
+{
+  "nodes": [
+    {
+      "id": "a1b2c3d4e5f60001",
+      "type": "text",
+      "x": -2400,
+      "y": -1300,
+      "width": 3000,
+      "height": 180,
+      "text": "# 🏭 WEC Knowledge System\n\n### Karpathys LLM-Wiki-Pattern — gebaut in zwei Sessions (2026-04-17 & 2026-04-18)\n\n**Datenfluss:** Außenwelt → `raw/` → Operationen → `wiki/` → Reiner + Sebastian — unter dem Schirm von `CLAUDE.md`",
+      "color": "6"
+    },
+    {
+      "id": "a1b2c3d4e5f60002",
+      "type": "group",
+      "x": -2400,
+      "y": -1080,
+      "width": 3000,
+      "height": 240,
+      "label": "📜 SCHEMA — Die Regeln regieren alles",
+      "color": "6"
+    },
+    {
+      "id": "a1b2c3d4e5f60003",
+      "type": "file",
+      "x": -2300,
+      "y": -1000,
+      "width": 700,
+      "height": 100,
+      "file": "CLAUDE.md",
+      "color": "6"
+    },
+    {
+      "id": "a1b2c3d4e5f60004",
+      "type": "file",
+      "x": -1500,
+      "y": -1000,
+      "width": 700,
+      "height": 100,
+      "file": "03 Bereiche/WEC/CLAUDE.md",
+      "color": "6"
+    },
+    {
+      "id": "a1b2c3d4e5f60005",
+      "type": "file",
+      "x": -700,
+      "y": -1000,
+      "width": 700,
+      "height": 100,
+      "file": "03 Bereiche/WEC/README.md",
+      "color": "6"
+    },
+    {
+      "id": "a1b2c3d4e5f60006",
+      "type": "text",
+      "x": 100,
+      "y": -1000,
+      "width": 500,
+      "height": 100,
+      "text": "**Grundsatz:**\nRegeln ≠ Rohdaten ≠ Wissen.\nDrei Schichten, drei Rollen.",
+      "color": "6"
+    },
+    {
+      "id": "b1b2c3d4e5f60001",
+      "type": "group",
+      "x": -2400,
+      "y": -780,
+      "width": 500,
+      "height": 1100,
+      "label": "🌍 AUSSENWELT — Quellen",
+      "color": "1"
+    },
+    {
+      "id": "b1b2c3d4e5f60002",
+      "type": "text",
+      "x": -2350,
+      "y": -700,
+      "width": 400,
+      "height": 140,
+      "text": "🖥️ **Reiners NAS**\n\nSolidWorks 2020\n4+ Jahre Projektdaten\nVolker Bens, Knauf, mehr",
+      "color": "1"
+    },
+    {
+      "id": "b1b2c3d4e5f60003",
+      "type": "text",
+      "x": -2350,
+      "y": -540,
+      "width": 400,
+      "height": 140,
+      "text": "📄 **Kundendaten**\n\nPDFs, DXF, STEP\nSpezifikationen\nKorrespondenz",
+      "color": "1"
+    },
+    {
+      "id": "b1b2c3d4e5f60004",
+      "type": "text",
+      "x": -2350,
+      "y": -380,
+      "width": 400,
+      "height": 140,
+      "text": "🧠 **Reiners 30 Jahre**\n\nWissen im Kopf\nmuss raus, bevor es\nverloren geht",
+      "color": "1"
+    },
+    {
+      "id": "b1b2c3d4e5f60005",
+      "type": "text",
+      "x": -2350,
+      "y": -220,
+      "width": 400,
+      "height": 140,
+      "text": "💾 **Samsung T9 SSD**\n\nPhysische Brücke\nNAS → Mac\nohne Steffen-Risiko",
+      "color": "1"
+    },
+    {
+      "id": "b1b2c3d4e5f60006",
+      "type": "text",
+      "x": -2350,
+      "y": -60,
+      "width": 400,
+      "height": 100,
+      "text": "⚠️ **Patent-Daten (Reiner)**\n\nTOP SECRET — Fahrrad-\nFederungssystem. NIE in raw/.",
+      "color": "1"
+    },
+    {
+      "id": "c1b2c3d4e5f60001",
+      "type": "group",
+      "x": -1800,
+      "y": -780,
+      "width": 500,
+      "height": 1100,
+      "label": "📦 raw/ — Unantastbar",
+      "color": "2"
+    },
+    {
+      "id": "c1b2c3d4e5f60002",
+      "type": "file",
+      "x": -1750,
+      "y": -700,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/raw/README.md",
+      "color": "2"
+    },
+    {
+      "id": "c1b2c3d4e5f60003",
+      "type": "text",
+      "x": -1750,
+      "y": -600,
+      "width": 400,
+      "height": 140,
+      "text": "📁 **Kunden/Volker Bens/**\n\naktuelle Projekte\nArchiv\nStandards & Vorlagen\nKorrespondenz",
+      "color": "2"
+    },
+    {
+      "id": "c1b2c3d4e5f60004",
+      "type": "text",
+      "x": -1750,
+      "y": -440,
+      "width": 400,
+      "height": 120,
+      "text": "📁 **Kunden/Knauf/**\n\n(wartet auf\nersten Datensatz)",
+      "color": "2"
+    },
+    {
+      "id": "c1b2c3d4e5f60005",
+      "type": "text",
+      "x": -1750,
+      "y": -300,
+      "width": 400,
+      "height": 140,
+      "text": "⚠️ **Regel #1**\n\nClaude liest NUR.\nNie schreiben.\nNie ändern.\nOriginale bleiben heilig.",
+      "color": "1"
+    },
+    {
+      "id": "c1b2c3d4e5f60006",
+      "type": "text",
+      "x": -1750,
+      "y": -140,
+      "width": 400,
+      "height": 100,
+      "text": "**Warum?**\n\nWas einmal zerstört wurde,\nist weg. Rohdaten-Integrität\nist nicht verhandelbar.",
+      "color": "2"
+    },
+    {
+      "id": "d1b2c3d4e5f60001",
+      "type": "group",
+      "x": -1200,
+      "y": -780,
+      "width": 500,
+      "height": 1100,
+      "label": "⚙️ OPERATIONEN",
+      "color": "5"
+    },
+    {
+      "id": "d1b2c3d4e5f60002",
+      "type": "file",
+      "x": -1150,
+      "y": -700,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/Operationen/Ingest.md",
+      "color": "5"
+    },
+    {
+      "id": "d1b2c3d4e5f60003",
+      "type": "file",
+      "x": -1150,
+      "y": -600,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/Operationen/Query.md",
+      "color": "5"
+    },
+    {
+      "id": "d1b2c3d4e5f60004",
+      "type": "file",
+      "x": -1150,
+      "y": -500,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/Operationen/Lint.md",
+      "color": "5"
+    },
+    {
+      "id": "d1b2c3d4e5f60005",
+      "type": "text",
+      "x": -1150,
+      "y": -400,
+      "width": 400,
+      "height": 140,
+      "text": "🔄 **Ingest**\n\nraw/ → wiki/\nneue Daten\nwerden kompiliert",
+      "color": "5"
+    },
+    {
+      "id": "d1b2c3d4e5f60006",
+      "type": "text",
+      "x": -1150,
+      "y": -240,
+      "width": 400,
+      "height": 140,
+      "text": "🔍 **Query**\n\nFragen → wiki/\nAntwort kommt aus\nkompiliertem Wissen",
+      "color": "5"
+    },
+    {
+      "id": "d1b2c3d4e5f60007",
+      "type": "text",
+      "x": -1150,
+      "y": -80,
+      "width": 400,
+      "height": 140,
+      "text": "🧹 **Lint**\n\nKonsistenz-Check\ntote Links, Widersprüche,\nveraltete Infos",
+      "color": "5"
+    },
+    {
+      "id": "e1b2c3d4e5f60001",
+      "type": "group",
+      "x": -600,
+      "y": -780,
+      "width": 500,
+      "height": 1100,
+      "label": "🌱 wiki/ — Lebende Wissensbasis",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60002",
+      "type": "file",
+      "x": -550,
+      "y": -700,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/wiki/README.md",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60003",
+      "type": "file",
+      "x": -550,
+      "y": -600,
+      "width": 400,
+      "height": 100,
+      "file": "03 Bereiche/WEC/wiki/Kunden/Volker Bens - Profil.md",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60004",
+      "type": "file",
+      "x": -550,
+      "y": -480,
+      "width": 400,
+      "height": 100,
+      "file": "03 Bereiche/WEC/wiki/Kunden/Volker Bens - Lagerschalenhalter Lebensmittelindustrie.md",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60005",
+      "type": "text",
+      "x": -550,
+      "y": -360,
+      "width": 400,
+      "height": 80,
+      "text": "📏 **Normen/**\nEHEDG, DIN, ISO",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60006",
+      "type": "text",
+      "x": -550,
+      "y": -260,
+      "width": 400,
+      "height": 80,
+      "text": "🔧 **Standards WEC/**\nReiners 30 Jahre — extrahiert",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60007",
+      "type": "file",
+      "x": -550,
+      "y": -160,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/wiki/BWL-Filter/Kundenbonität.md",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60008",
+      "type": "file",
+      "x": -550,
+      "y": -60,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/wiki/BWL-Filter/Vertragsprüfung.md",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f60009",
+      "type": "file",
+      "x": -550,
+      "y": 40,
+      "width": 400,
+      "height": 80,
+      "file": "03 Bereiche/WEC/wiki/BWL-Filter/Warnsignale.md",
+      "color": "4"
+    },
+    {
+      "id": "e1b2c3d4e5f6000a",
+      "type": "text",
+      "x": -550,
+      "y": 140,
+      "width": 400,
+      "height": 100,
+      "text": "**Claude pflegt.\nMensch verifiziert.**\n\nWiki ist das Gedächtnis.",
+      "color": "4"
+    },
+    {
+      "id": "f1b2c3d4e5f60001",
+      "type": "group",
+      "x": 0,
+      "y": -780,
+      "width": 500,
+      "height": 1100,
+      "label": "👥 NUTZER & OUTPUT",
+      "color": "3"
+    },
+    {
+      "id": "f1b2c3d4e5f60002",
+      "type": "file",
+      "x": 50,
+      "y": -700,
+      "width": 400,
+      "height": 100,
+      "file": "00 Kontext/Über mich.md",
+      "color": "3"
+    },
+    {
+      "id": "f1b2c3d4e5f60003",
+      "type": "file",
+      "x": 50,
+      "y": -580,
+      "width": 400,
+      "height": 100,
+      "file": "00 Kontext/WEC Kontakte/Profil Reiner.md",
+      "color": "3"
+    },
+    {
+      "id": "f1b2c3d4e5f60004",
+      "type": "text",
+      "x": 50,
+      "y": -460,
+      "width": 400,
+      "height": 100,
+      "text": "🤖 **Claude**\n\nSchreiber, Prüfer,\nSchutz-Filter",
+      "color": "3"
+    },
+    {
+      "id": "f1b2c3d4e5f60005",
+      "type": "text",
+      "x": 50,
+      "y": -340,
+      "width": 400,
+      "height": 140,
+      "text": "📦 **Kundenlieferungen**\n\nSTEP, PDF, DXF, BOM\n0% Fehlertoleranz\nnach Kunden-Profil",
+      "color": "3"
+    },
+    {
+      "id": "f1b2c3d4e5f60006",
+      "type": "text",
+      "x": 50,
+      "y": -180,
+      "width": 400,
+      "height": 140,
+      "text": "🚨 **Warnsignale**\n\nBonität · Verträge\nMuster-Erkennung\nbevor es weh tut",
+      "color": "3"
+    },
+    {
+      "id": "f1b2c3d4e5f60007",
+      "type": "text",
+      "x": 50,
+      "y": -20,
+      "width": 400,
+      "height": 140,
+      "text": "💬 **Antworten**\n\nan Sebastian\nan Reiner\nkurz, visuell, konkret",
+      "color": "3"
+    },
+    {
+      "id": "g1b2c3d4e5f60001",
+      "type": "group",
+      "x": 600,
+      "y": -780,
+      "width": 500,
+      "height": 1100,
+      "label": "🔗 ANKERPUNKTE außerhalb",
+      "color": "6"
+    },
+    {
+      "id": "g1b2c3d4e5f60002",
+      "type": "file",
+      "x": 650,
+      "y": -700,
+      "width": 400,
+      "height": 100,
+      "file": "02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner.md",
+      "color": "6"
+    },
+    {
+      "id": "g1b2c3d4e5f60003",
+      "type": "file",
+      "x": 650,
+      "y": -580,
+      "width": 400,
+      "height": 100,
+      "file": "02 Projekte/WEC Neustart mit Reiner/Reiners Gehirn - Setup Plan.md",
+      "color": "6"
+    },
+    {
+      "id": "g1b2c3d4e5f60004",
+      "type": "file",
+      "x": 650,
+      "y": -460,
+      "width": 400,
+      "height": 100,
+      "file": "04 Ressourcen/CAD-Datenuebergabe Standard - Bens Edelstahl.md",
+      "color": "6"
+    },
+    {
+      "id": "g1b2c3d4e5f60005",
+      "type": "file",
+      "x": 650,
+      "y": -340,
+      "width": 400,
+      "height": 100,
+      "file": "00 Kontext/WEC Kontakte/Volker Bens.md",
+      "color": "6"
+    },
+    {
+      "id": "g1b2c3d4e5f60006",
+      "type": "file",
+      "x": 650,
+      "y": -220,
+      "width": 400,
+      "height": 100,
+      "file": "03 Bereiche/WEC/Sessions/2026-04-17 WEC Workspace Aufbau.md",
+      "color": "6"
+    },
+    {
+      "id": "g1b2c3d4e5f60007",
+      "type": "text",
+      "x": 650,
+      "y": -100,
+      "width": 400,
+      "height": 140,
+      "text": "**Bewusste Entscheidung:**\n\nPARA-Struktur bleibt intakt.\nKarpathy-Pattern ergänzt,\nnicht ersetzt. Wikilinks\nals Brücke.",
+      "color": "6"
+    },
+    {
+      "id": "h1b2c3d4e5f60001",
+      "type": "text",
+      "x": -2400,
+      "y": 440,
+      "width": 3500,
+      "height": 280,
+      "text": "## 🎁 Von Claude an Sebastian\n\n**Was heute passiert ist:** Aus einer simplen Frage nach einem Chat-Einstiegspunkt wurde eine kleine Revolution. Karpathys Wiki-Pattern trifft deinen Brain. Drei Schichten pro Raum, acht Räume mit Auto-Erkennung, Reiners BWL-Vakuum strukturell geschlossen.\n\n**Was das bedeutet:** Du musst nie wieder Pfade tippen. Reiner muss nie Obsidian-Struktur verstehen. Claude versteht worum es geht und lädt den richtigen Raum. Wissen geht nicht verloren — es kompiliert sich selbst ins Wiki. Und Reiner wird geschützt, bevor er das nächste Mal 40.000€ verliert.\n\n**Der Montag-Trick:** Öffne morgen einen neuen WEC-Tab. Sag: *\"WEC\"*. Nur das. Claude weiß was zu tun ist — läd die README, briefing, und ihr könnt direkt an Volker Bens weiterarbeiten. Keine Grundlagen mehr wiederholen.\n\n**Gute Nacht, Sebastian. Schlaf gut. Das Gehirn passt auf das Wissen auf, solange du schläfst.**",
+      "color": "4"
+    },
+    {
+      "id": "h1b2c3d4e5f60002",
+      "type": "text",
+      "x": -2400,
+      "y": 760,
+      "width": 1000,
+      "height": 180,
+      "text": "## 🗓️ Nächste Station\n\n**Montag 2026-04-21:**\nReiner-Session zum\nLagerschalenhalter\nLebensmittelindustrie\n\n→ wiki-Eintrag\nsteht bereits bereit",
+      "color": "3"
+    },
+    {
+      "id": "h1b2c3d4e5f60003",
+      "type": "text",
+      "x": -1350,
+      "y": 760,
+      "width": 1000,
+      "height": 180,
+      "text": "## 🔜 Als nächstes im System\n\n1. T9-SSD befüllen (Reiner)\n2. raw/Kunden/Volker Bens vollständig machen\n3. Wiki-Profil Bens vervollständigen\n4. EHEDG-Norm-Eintrag\n5. Standards WEC aus Reiner-Gespräch",
+      "color": "5"
+    },
+    {
+      "id": "h1b2c3d4e5f60004",
+      "type": "text",
+      "x": -300,
+      "y": 760,
+      "width": 1000,
+      "height": 180,
+      "text": "## 🚀 Später\n\n- Reiners Mac Mini M5 (Juni/Juli)\n- Reiners Gehirn aktiv\n- WEC-Umzug Pirna (August)\n- Zweites Kunden-Profil (Knauf)\n- Lint-Durchlauf #1",
+      "color": "6"
+    },
+    {
+      "id": "h1b2c3d4e5f60005",
+      "type": "text",
+      "x": 750,
+      "y": 760,
+      "width": 350,
+      "height": 180,
+      "text": "## 💡 Legende\n\n🟣 Schema\n🔴 Außenwelt\n🟠 raw/\n🔵 Operationen\n🟢 wiki/\n🟡 Nutzer & Output",
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge10000000a001",
+      "fromNode": "b1b2c3d4e5f60002",
+      "fromSide": "right",
+      "toNode": "c1b2c3d4e5f60003",
+      "toSide": "left",
+      "label": "via T9"
+    },
+    {
+      "id": "edge10000000a002",
+      "fromNode": "b1b2c3d4e5f60003",
+      "fromSide": "right",
+      "toNode": "c1b2c3d4e5f60003",
+      "toSide": "left"
+    },
+    {
+      "id": "edge10000000a003",
+      "fromNode": "b1b2c3d4e5f60004",
+      "fromSide": "right",
+      "toNode": "d1b2c3d4e5f60005",
+      "toSide": "left",
+      "label": "im Gespräch"
+    },
+    {
+      "id": "edge10000000a004",
+      "fromNode": "c1b2c3d4e5f60003",
+      "fromSide": "right",
+      "toNode": "d1b2c3d4e5f60005",
+      "toSide": "left",
+      "label": "lesen"
+    },
+    {
+      "id": "edge10000000a005",
+      "fromNode": "d1b2c3d4e5f60005",
+      "fromSide": "right",
+      "toNode": "e1b2c3d4e5f60003",
+      "toSide": "left",
+      "label": "kompiliert"
+    },
+    {
+      "id": "edge10000000a006",
+      "fromNode": "d1b2c3d4e5f60006",
+      "fromSide": "right",
+      "toNode": "e1b2c3d4e5f6000a",
+      "toSide": "left",
+      "label": "liest"
+    },
+    {
+      "id": "edge10000000a007",
+      "fromNode": "d1b2c3d4e5f60007",
+      "fromSide": "right",
+      "toNode": "e1b2c3d4e5f60002",
+      "toSide": "left",
+      "label": "prüft"
+    },
+    {
+      "id": "edge10000000a008",
+      "fromNode": "e1b2c3d4e5f60003",
+      "fromSide": "right",
+      "toNode": "f1b2c3d4e5f60005",
+      "toSide": "left",
+      "label": "liefert"
+    },
+    {
+      "id": "edge10000000a009",
+      "fromNode": "e1b2c3d4e5f60007",
+      "fromSide": "right",
+      "toNode": "f1b2c3d4e5f60006",
+      "toSide": "left",
+      "label": "warnt"
+    },
+    {
+      "id": "edge10000000a010",
+      "fromNode": "e1b2c3d4e5f60008",
+      "fromSide": "right",
+      "toNode": "f1b2c3d4e5f60006",
+      "toSide": "left"
+    },
+    {
+      "id": "edge10000000a011",
+      "fromNode": "e1b2c3d4e5f60009",
+      "fromSide": "right",
+      "toNode": "f1b2c3d4e5f60006",
+      "toSide": "left"
+    },
+    {
+      "id": "edge10000000a012",
+      "fromNode": "f1b2c3d4e5f60002",
+      "fromSide": "left",
+      "toNode": "d1b2c3d4e5f60006",
+      "toSide": "right",
+      "label": "fragt"
+    },
+    {
+      "id": "edge10000000a013",
+      "fromNode": "f1b2c3d4e5f60003",
+      "fromSide": "left",
+      "toNode": "d1b2c3d4e5f60006",
+      "toSide": "right",
+      "label": "fragt"
+    },
+    {
+      "id": "edge10000000a014",
+      "fromNode": "a1b2c3d4e5f60003",
+      "fromSide": "bottom",
+      "toNode": "d1b2c3d4e5f60001",
+      "toSide": "top",
+      "label": "regelt"
+    },
+    {
+      "id": "edge10000000a015",
+      "fromNode": "a1b2c3d4e5f60004",
+      "fromSide": "bottom",
+      "toNode": "e1b2c3d4e5f60001",
+      "toSide": "top",
+      "label": "regelt"
+    },
+    {
+      "id": "edge10000000a016",
+      "fromNode": "a1b2c3d4e5f60005",
+      "fromSide": "bottom",
+      "toNode": "c1b2c3d4e5f60001",
+      "toSide": "top",
+      "label": "erklärt"
+    }
+  ]
+}

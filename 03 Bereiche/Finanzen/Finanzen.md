@@ -23,6 +23,12 @@ Persönliche und geschäftliche Finanzen im Blick behalten. Ausgaben, Einnahmen,
 | ProForge5 Etappe 3 (4× TMC5160 Pro) | ~90 € | geplant |
 | Stone Wolf Build | offen | geplant |
 
+## Unterordner
+
+- **Bescheide/** — behördliche Bescheide (Jobcenter, Steuer, etc.) und gescannte Behörden-Dokumente. Unterordner `Scans 2026-02/` für unsortierte Scans Februar 2026 (Inhalt noch zu klären — PDFs haben keinen OCR-Layer, deshalb nicht maschinen-lesbar. → Batch-OCR via Preview oder `ocrmypdf`, dann lässt sich pro Scan entscheiden, wohin er gehört).
+- **Rechnungen/** — Rechnungen für Software, Abos, Equipment.
+- **Persönlich/** — persönliche Dokumente (medizinisch, anwaltlich), teils passwortgeschützt.
+
 ## Referenzen
 
 - [[03 Bereiche/Business MThreeD.io/Business MThreeD.io|Business MThreeD.io]]
