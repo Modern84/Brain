@@ -1,0 +1,22 @@
+{
+  "enabled_templates_hotkeys": [],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "05 Daily Notes",
+      "template": "00 Kontext/Templates/Daily Note"
+    },
+    {
+      "folder": "02 Projekte",
+      "template": "00 Kontext/Templates/Projekt"
+    }
+  ],
+  "templates_pairs": [],
+  "default_new_file_template": "",
+  "templates_folder": "00 Kontext/Templates"
+}

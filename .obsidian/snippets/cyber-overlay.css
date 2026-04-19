@@ -1,0 +1,270 @@
+/* ============================================================
+   CYBER OVERLAY — additives Snippet für Brain
+   Läuft ZUSÄTZLICH zu lrs-readability.css
+   Ein-/ausschaltbar in Obsidian → Appearance → CSS Snippets
+   KEIN Eingriff in Graph-View (keine .color-fill, .color-line!)
+   ============================================================ */
+
+/* ---- Neon-Palette ---- */
+body {
+  --cyber-cyan:    #00f5ff;
+  --cyber-magenta: #ff2ea5;
+  --cyber-green:   #39ff14;
+  --cyber-amber:   #ffb400;
+  --cyber-orange:  #e07035;  /* Bestand aus lrs-readability */
+  --cyber-bg:      #0b0e14;
+  --cyber-panel:   #111826;
+  --cyber-grid:    rgba(0, 245, 255, 0.04);
+}
+
+/* ============================================================
+   1. HINTERGRUND — subtiles Grid-Muster (Cyberpunk-Signatur)
+   ============================================================ */
+
+.theme-dark .workspace {
+  background-color: var(--cyber-bg) !important;
+  background-image:
+    linear-gradient(var(--cyber-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--cyber-grid) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Content-Bereich selbst bleibt ruhig (lesbar) */
+.theme-dark .markdown-source-view,
+.theme-dark .markdown-preview-view {
+  background-color: rgba(11, 14, 20, 0.92);
+}
+
+/* ============================================================
+   2. SIDEBAR — harte Kante + Akzent-Linie
+   ============================================================ */
+
+.theme-dark .workspace-split.mod-left-split,
+.theme-dark .workspace-split.mod-right-split {
+  background-color: var(--cyber-panel) !important;
+  border-right: 1px solid rgba(0, 245, 255, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 245, 255, 0.08);
+}
+
+/* Aktive Datei — Neon-Glow statt weicher Schatten */
+.theme-dark .nav-file-title.is-active {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 245, 255, 0.18) 0%,
+    rgba(0, 245, 255, 0.04) 100%
+  ) !important;
+  border-left: 2px solid var(--cyber-cyan) !important;
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.25);
+}
+
+/* Hover — leichte Glow-Andeutung */
+.theme-dark .nav-file-title:hover,
+.theme-dark .nav-folder-title:hover {
+  background-color: rgba(0, 245, 255, 0.06);
+  text-shadow: 0 0 8px rgba(0, 245, 255, 0.4);
+}
+
+/* ============================================================
+   3. ÜBERSCHRIFTEN — Monospace + Glow
+   ============================================================ */
+
+.theme-dark .markdown-preview-view h1,
+.theme-dark .cm-header-1 {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace !important;
+  color: var(--cyber-cyan) !important;
+  text-shadow: 0 0 14px rgba(0, 245, 255, 0.45);
+  border-bottom: 1px solid var(--cyber-cyan) !important;
+  letter-spacing: 0.03em;
+}
+
+.theme-dark .markdown-preview-view h2,
+.theme-dark .cm-header-2 {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  color: var(--cyber-magenta) !important;
+  text-shadow: 0 0 10px rgba(255, 46, 165, 0.35);
+  border-bottom: 1px solid rgba(255, 46, 165, 0.3) !important;
+}
+
+.theme-dark .markdown-preview-view h3,
+.theme-dark .cm-header-3 {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  color: var(--cyber-green) !important;
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.3);
+}
+
+/* ============================================================
+   4. TABS — Neon-Unterkante auf aktiv
+   ============================================================ */
+
+.theme-dark .workspace-tab-header.is-active {
+  border-bottom: 2px solid var(--cyber-cyan) !important;
+  box-shadow: 0 2px 12px rgba(0, 245, 255, 0.35);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 245, 255, 0.08) 0%,
+    transparent 100%
+  );
+}
+
+/* ============================================================
+   5. CODE & INLINE — Terminal-Feeling
+   ============================================================ */
+
+.theme-dark .markdown-preview-view code,
+.theme-dark .cm-inline-code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  background-color: rgba(0, 245, 255, 0.08) !important;
+  color: var(--cyber-cyan) !important;
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+.theme-dark .markdown-preview-view pre code {
+  background: rgba(11, 14, 20, 0.98) !important;
+  border: 1px solid rgba(0, 245, 255, 0.18);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.08);
+}
+
+/* ============================================================
+   6. LINKS — Cyan-Glow statt Orange (überschreibt lrs-snippet)
+   ============================================================ */
+
+.theme-dark a,
+.theme-dark .internal-link,
+.theme-dark .cm-hmd-internal-link {
+  color: var(--cyber-cyan) !important;
+  text-decoration: none;
+  transition: text-shadow 0.15s ease;
+}
+
+.theme-dark a:hover,
+.theme-dark .internal-link:hover {
+  text-shadow: 0 0 8px rgba(0, 245, 255, 0.7);
+  color: var(--cyber-cyan) !important;
+}
+
+/* Externe Links — Magenta-Unterscheidung */
+.theme-dark .external-link {
+  color: var(--cyber-magenta) !important;
+}
+
+.theme-dark .external-link:hover {
+  text-shadow: 0 0 8px rgba(255, 46, 165, 0.6);
+}
+
+/* ============================================================
+   7. TAGS — Neon-Badge
+   ============================================================ */
+
+.theme-dark .tag {
+  background: rgba(0, 245, 255, 0.1) !important;
+  border: 1px solid rgba(0, 245, 255, 0.35);
+  color: var(--cyber-cyan) !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78em;
+  padding: 1px 8px;
+  border-radius: 2px;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+}
+
+/* ============================================================
+   8. CHECKBOXES & TASKS
+   ============================================================ */
+
+.theme-dark .task-list-item-checkbox {
+  border: 1px solid var(--cyber-cyan);
+  background: transparent;
+}
+
+.theme-dark .task-list-item-checkbox:checked {
+  background: var(--cyber-green) !important;
+  border-color: var(--cyber-green) !important;
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+}
+
+/* ============================================================
+   9. FRONTMATTER — Panel-Look
+   ============================================================ */
+
+.theme-dark .metadata-container {
+  background: rgba(0, 245, 255, 0.03) !important;
+  border: 1px solid rgba(0, 245, 255, 0.2) !important;
+  border-left: 3px solid var(--cyber-cyan) !important;
+  border-radius: 2px !important;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ============================================================
+   10. BLOCKQUOTES — Magenta-Akzent
+   ============================================================ */
+
+.theme-dark .markdown-preview-view blockquote {
+  border-left: 2px solid var(--cyber-magenta) !important;
+  background: rgba(255, 46, 165, 0.04);
+  padding-left: 1em;
+  box-shadow: inset 0 0 20px rgba(255, 46, 165, 0.05);
+}
+
+/* ============================================================
+   11. STATUSBAR — HUD-Feeling
+   ============================================================ */
+
+.theme-dark .status-bar {
+  background: var(--cyber-panel) !important;
+  border-top: 1px solid rgba(0, 245, 255, 0.2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cyber-cyan);
+}
+
+/* ============================================================
+   12. CURSOR — Neon-Cyan, breiter
+   ============================================================ */
+
+.theme-dark .cm-cursor {
+  border-left-width: 2px !important;
+  border-left-color: var(--cyber-cyan) !important;
+  box-shadow: 0 0 6px rgba(0, 245, 255, 0.6);
+}
+
+/* ============================================================
+   13. SELECTION — Magenta-Neon
+   ============================================================ */
+
+.theme-dark ::selection {
+  background: rgba(255, 46, 165, 0.35) !important;
+  text-shadow: 0 0 8px rgba(255, 46, 165, 0.8);
+}
+
+/* ============================================================
+   14. SCROLLBAR — Vertikale Neon-Linie
+   ============================================================ */
+
+.theme-dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: var(--cyber-bg);
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 255, 0.25);
+  border-radius: 0;
+  border: 1px solid rgba(0, 245, 255, 0.4);
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 245, 255, 0.5);
+  box-shadow: 0 0 8px rgba(0, 245, 255, 0.4);
+}
+
+/* ============================================================
+   ENDE — kein Eingriff in Graph-View, Canvas, oder Plugins
+   ============================================================ */

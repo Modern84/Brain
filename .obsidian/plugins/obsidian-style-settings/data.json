@@ -1,1 +1,10 @@
-{}
+{
+  "anuppuccin-theme-dark@@anp-colorful-headings": true,
+  "anuppuccin-theme-dark@@anp-colorful-active-states": true,
+  "anuppuccin-theme-dark@@anp-colorful-frame": true,
+  "anuppuccin-theme-dark@@anp-colorful-folders": true,
+  "anuppuccin-theme-dark@@anp-file-icons": true,
+  "anuppuccin-theme-dark@@anp-fancy-cursor": true,
+  "anuppuccin-theme-dark@@anp-custom-vault-title": true,
+  "anuppuccin-theme-dark@@anp-status-bar-custom": true
+}

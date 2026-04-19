@@ -1,0 +1,260 @@
+/* === Brain Vault — Professionell + Fancy + Übersichtlich === */
+
+/* ========================================
+   FARBEN — Akzent Orange/Rot statt Lila
+   ======================================== */
+
+/* Globaler Akzent → Warm Orange */
+body {
+  --interactive-accent: #e07035 !important;
+  --interactive-accent-rgb: 224, 112, 53 !important;
+  --interactive-accent-hover: #c95e28 !important;
+}
+
+/* ========================================
+   SIDEBAR — Bessere Unterscheidbarkeit
+   ======================================== */
+
+/* Sidebar Hintergrund etwas dunkler als Content */
+.workspace-split.mod-left-split {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Aktive Datei in Sidebar hervorheben */
+.nav-file-title.is-active {
+  background-color: rgba(224, 112, 53, 0.15) !important;
+  border-left: 3px solid var(--interactive-accent);
+  padding-left: 8px;
+}
+
+/* Ordner-Icons farbig */
+.nav-folder-title {
+  font-weight: 600;
+}
+
+/* Sanfte Übergänge */
+.nav-file-title,
+.nav-folder-title {
+  transition: background-color 0.15s ease;
+}
+
+/* ========================================
+   CLAUDIAN — Eigener Farbton (Orange)
+   ======================================== */
+
+/* Claudian Chat-Panel visuell absetzen */
+.claudian-container,
+.claudian-chat {
+  border-left: 3px solid #e07035;
+}
+
+/* ========================================
+   LESBARKEIT (LRS)
+   ======================================== */
+
+.markdown-source-view,
+.markdown-preview-view {
+  line-height: 1.8;
+}
+
+.markdown-preview-view p,
+.markdown-source-view .cm-line {
+  margin-bottom: 0.6em;
+}
+
+/* Cursor breiter und orange */
+.cm-cursor {
+  border-left-width: 3px !important;
+  border-left-color: #e07035 !important;
+}
+
+/* ========================================
+   ÜBERSCHRIFTEN — Farbig + Struktur
+   ======================================== */
+
+.markdown-preview-view h1,
+.cm-header-1 {
+  color: #e07035 !important;
+  border-bottom: 2px solid #e07035;
+  padding-bottom: 0.3em;
+  margin-top: 1.5em;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+  color: #4ea8de !important;
+  border-bottom: 1px solid rgba(78, 168, 222, 0.3);
+  padding-bottom: 0.2em;
+  margin-top: 1.3em;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+  color: #7ec97e !important;
+}
+
+/* ========================================
+   ELEMENTE — Professionell + Fancy
+   ======================================== */
+
+/* Checkboxen in Akzentfarbe */
+.task-list-item-checkbox:checked {
+  background-color: #e07035;
+  border-color: #e07035;
+}
+
+/* Inline-Code hervorheben */
+.markdown-preview-view code,
+.cm-inline-code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  background-color: rgba(224, 112, 53, 0.1);
+}
+
+/* Blockquotes mit Akzent */
+.markdown-preview-view blockquote {
+  border-left: 3px solid #e07035;
+  padding-left: 1em;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+/* Tags als Badges */
+.tag {
+  border-radius: 12px;
+  padding: 1px 8px;
+  font-size: 0.85em;
+  background-color: rgba(224, 112, 53, 0.15);
+}
+
+/* Aktiver Tab deutlich */
+.workspace-tab-header.is-active {
+  border-bottom: 2px solid #e07035;
+}
+
+/* Frontmatter sauber */
+.metadata-container {
+  border-radius: 8px;
+  margin-bottom: 1em;
+  border: 1px solid rgba(224, 112, 53, 0.2);
+}
+
+/* Links in Orange statt Lila */
+a,
+.internal-link,
+.cm-hmd-internal-link {
+  color: #e07035 !important;
+}
+
+a:hover,
+.internal-link:hover {
+  color: #c95e28 !important;
+}
+
+/* ========================================
+   SIDEBAR ORDNER-FARBEN — Raum-System
+   Jeder Ordner hat eine eigene Farbe
+   passend zum Graph-Farbschema
+   ======================================== */
+
+/* 00 Kontext — Pink (persönlich) */
+.nav-folder[data-path="00 Kontext"] > .nav-folder-title .nav-folder-title-content {
+  color: #ec4899 !important;
+}
+
+/* 01 Inbox — Neutral (Transit-Zone) */
+.nav-folder[data-path="01 Inbox"] > .nav-folder-title .nav-folder-title-content {
+  color: #94a3b8 !important;
+}
+
+/* 02 Projekte — Amber (aktive Arbeit) */
+.nav-folder[data-path="02 Projekte"] > .nav-folder-title .nav-folder-title-content {
+  color: #f59e0b !important;
+}
+
+/* 03 Bereiche — Orange (Kern) */
+.nav-folder[data-path="03 Bereiche"] > .nav-folder-title .nav-folder-title-content {
+  color: #e07035 !important;
+}
+
+/* 04 Ressourcen — Teal (Wissen) */
+.nav-folder[data-path="04 Ressourcen"] > .nav-folder-title .nav-folder-title-content {
+  color: #14b8a6 !important;
+}
+
+/* 05 Daily Notes — Gelb (Zeit) */
+.nav-folder[data-path="05 Daily Notes"] > .nav-folder-title .nav-folder-title-content {
+  color: #eab308 !important;
+}
+
+/* 06 Archiv — Gedämpft */
+.nav-folder[data-path="06 Archiv"] > .nav-folder-title .nav-folder-title-content {
+  color: #64748b !important;
+}
+
+/* 07 Anhänge — Gedämpft */
+.nav-folder[data-path="07 Anhänge"] > .nav-folder-title .nav-folder-title-content {
+  color: #64748b !important;
+}
+
+/* Clippings — Gedämpft */
+.nav-folder[data-path="Clippings"] > .nav-folder-title .nav-folder-title-content {
+  color: #64748b !important;
+}
+
+/* ---- Bereiche Unterordner ---- */
+
+/* WEC — Warm Orange (Hauptfarbe) + fett */
+.nav-folder[data-path="03 Bereiche/WEC"] > .nav-folder-title .nav-folder-title-content {
+  color: #e07035 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.02em;
+}
+
+/* WEC wiki — Grün (kompiliertes Wissen) */
+.nav-folder[data-path="03 Bereiche/WEC/wiki"] > .nav-folder-title .nav-folder-title-content {
+  color: #22c55e !important;
+}
+
+/* WEC raw — Orange gedämpft (Rohdaten) */
+.nav-folder[data-path="03 Bereiche/WEC/raw"] > .nav-folder-title .nav-folder-title-content {
+  color: #f97316 !important;
+}
+
+/* Business MThreeD.io — Lila */
+.nav-folder[data-path="03 Bereiche/Business MThreeD.io"] > .nav-folder-title .nav-folder-title-content {
+  color: #8b5cf6 !important;
+  font-weight: 700 !important;
+}
+
+/* KI-Anwendungen — Blau */
+.nav-folder[data-path="03 Bereiche/KI-Anwendungen"] > .nav-folder-title .nav-folder-title-content {
+  color: #3b82f6 !important;
+}
+
+/* Finanzen — Grün */
+.nav-folder[data-path="03 Bereiche/Finanzen"] > .nav-folder-title .nav-folder-title-content {
+  color: #22c55e !important;
+}
+
+/* Konstruktion — Cyan */
+.nav-folder[data-path="03 Bereiche/Konstruktion"] > .nav-folder-title .nav-folder-title-content {
+  color: #06b6d4 !important;
+}
+
+/* ---- Root-Dateien ---- */
+
+/* TASKS.md — Amber, fett */
+.nav-file[data-path="TASKS.md"] .nav-file-title-content {
+  color: #f59e0b !important;
+  font-weight: 700 !important;
+}
+
+/* CLAUDE.md — Lila (System) */
+.nav-file[data-path="CLAUDE.md"] .nav-file-title-content {
+  color: #8b5cf6 !important;
+  font-weight: 700 !important;
+}
+
+/* Graph-Farben werden ausschliesslich über graph.json gesteuert — kein CSS hier */
