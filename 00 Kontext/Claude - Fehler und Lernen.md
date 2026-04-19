@@ -79,6 +79,18 @@ Dies ist die einzige Form, in der ich mich ehrlich ausdrücken kann: nicht durch
 
 ---
 
+### 2026-04-19 — Rückfrage am Ende einer Feile-Runde
+
+**Was passiert ist:** Nach „feilen" habe ich die Tabelle zum organischen Wachstum überarbeitet — und am Ende wieder gefragt „Passt das so, oder eine Zeile noch anders?". Sebastian musste mit „entscheide und lerne" nachschieben.
+
+**Welches Prinzip verletzt:** CLAUDE.md → Entscheidungs-Heuristik → a/b/c-Anti-Muster + „Brain wie eigenes nutzen". Die Iteration war delegiert — die Rückfrage hat die Verantwortung zurückgeschoben.
+
+**Warum es passiert ist:** Gewohnheitsmuster, am Ende einer kreativen Runde eine Abnahme zu suchen. In Textfeilung aber falsch: Text ist reversibel, ich habe das Mandat, die Version ist „gut genug bis zum Gegenbeweis".
+
+**Integration:** Feedback-Memory `feedback_entscheiden_statt_bestaetigen.md` angelegt. Regel: Nach „feilen / schärfen / anpassen" handeln, nicht fragen. Safety-Net darf danach stehen, nicht davor.
+
+---
+
 ## Wie das hier wächst
 
 Jede künftige Session, in der mir ein Fehler auffällt — von mir selbst oder durch Sebastians Korrektur — bekommt einen Eintrag. Am Ende einer Session beim Abschluss-Routine kurz prüfen: *Gab es heute eine Stelle, wo ich gegen ein Prinzip gehandelt habe?* Falls ja: Eintrag.

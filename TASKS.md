@@ -5,11 +5,19 @@ date: 2026-04-04
 
 # TASKS
 
-Zuletzt aktualisiert: 2026-04-18 (nach Session 5b Parkplatz-Abbau)
+Zuletzt aktualisiert: 2026-04-19 (nach Vault-Schema-Durchlauf + Graph-Optimierung)
 
 ## Termine
 
-- **Montag 2026-04-21 — Volker Bens Lagerschalenhalter mit Reiner:** Überarbeitung auf EHEDG/Lebensmittelindustrie abschließen. Zeichnungs-/BOM-/3D-Abgleich gegen Reiners Korrektur-Scans. Reiner bringt Muster aus früheren erfolgreichen Volker-Projekten (Input für [[04 Ressourcen/CAD-Datenuebergabe Standard - Bens Edelstahl|Bens-Lieferstandard]], v.a. STEP-Schema). **White-Label-Prinzip strikt einhalten** (alles unter Bens-Label, kein WEC/Sachsenmilch sichtbar — siehe [[03 Bereiche/WEC/CLAUDE#Volker Bens / Bens Edelstahl|WEC-Regeln]]). Briefing: [[03 Bereiche/WEC/wiki/Kunden/Volker Bens - Lagerschalenhalter Lebensmittelindustrie|Lagerschalenhalter-Wiki]]. Raw: `03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/`
+- **Montag 2026-04-21 — Volker Bens Lagerschalenhalter mit Reiner:** Überarbeitung auf EHEDG/Lebensmittelindustrie abschließen. Zeichnungs-/BOM-/3D-Abgleich gegen Reiners Korrektur-Scans. Reiner bringt Muster aus früheren erfolgreichen Volker-Projekten (Input für [[04 Ressourcen/CAD-Datenuebergabe Standard - Bens Edelstahl|Bens-Lieferstandard]], v.a. STEP-Schema). **White-Label-Prinzip strikt einhalten** (alles unter Bens-Label, kein WEC/Sachsenmilch sichtbar — siehe [[03 Bereiche/WEC/CLAUDE#Volker Bens / Bens Edelstahl|WEC-Regeln]]). Briefing: [[03 Bereiche/WEC/wiki/Kunden/Volker Bens - Lagerschalenhalter Lebensmittelindustrie|Lagerschalenhalter-Wiki]] + [[04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen|Kundenordner-Playbook]]. Raw: `03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/`.
+  - [ ] **Zeichnungsnummern final bestätigen:** BE-LS-202603 ist richtig (8 Reiner-Scans belegen). BE-IS-202631 aus CSV war Fehler → global ersetzen
+  - [ ] **Schriftfeld-Felder L7/M7 klären:** Konstrukteur/Ingenieur-Name (blank / VB / Bens-Konvention?)
+  - [ ] **Fusion-Template-Quelle lokalisieren:** Wo liegt die Bens-gebrandete Schriftfeld-Vorlage („Quality for Pharmacy")?
+  - [ ] **Pharma vs. Lebensmittel:** Echte GMP-Anforderung oder nur Branding-Slogan? Normen-Stack daraus ableiten
+  - [ ] **CSV `Lagerschalenhalter_Stueckliste_Lebensmittel.csv` korrigieren:** BE-IS-202631 → BE-LS-202603 (alle 10 Zeilen)
+  - [ ] **Vektor-Text „Sebastian Hartmann" aus Liefer-PDFs entfernen** via Inventor-Template-Fix, dann neu exportieren
+  - [ ] **Nach Termin:** Erkenntnisse in [[04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen]] einarbeiten, Bens-Profil aus Stub zu voller Seite ausbauen
+  - [ ] **Fehlende Standard-Artefakte anlegen:** `wiki/Kunden/Volker Bens - Zeichnungsindex.md`, `wiki/Kunden/Volker Bens - Profil.md` mit Template aus Playbook
 - **Montag 2026-04-21 — SSD-Übergabe an Reiner:** Welcome-Kit zurück + externe SSD als Projektspiegel. Anleitung → [[02 Projekte/WEC Neustart mit Reiner/Anleitung Reiner - Externe SSD Projektspiegel]]
 
 ---
@@ -90,6 +98,15 @@ Zuletzt aktualisiert: 2026-04-18 (nach Session 5b Parkplatz-Abbau)
 - [x] **autoUpdates aktiviert** ✅ — `~/.claude/settings.json` gesetzt (17.04.)
 - [ ] **`claude doctor`** — manuelle Verifikation im Terminal (nicht kritisch)
 
+### Vault-Struktur (offen aus 19.04. Schema-Durchlauf)
+
+- [ ] **🟡 Entscheidung Datensatz_SK** — `07 Anhänge/Allgemein/Datensatz_SK` (4,1 GB, 4273 Dateien): Sabines USB-Stick-Dump. Empfehlung: raus aus Vault → externe SSD/T9 oder `06 Archiv/Alte Auftraege/SK-Bestand/`. iCloud-Sync-Entlastung.
+- [ ] **🟡 Entscheidung Solid-Edge-Profil** — `07 Anhänge/Allgemein/Profil` (144 MB): komplett zu WEC migrieren (`03 Bereiche/WEC/raw/Standards WEC/Solid Edge Profil/`) oder nur ausgewählte Templates? Laut [[03 Bereiche/WEC/Operationen/Ingest|Ingest.md]] offen.
+- [ ] **Kaputtes Tag fixen** — `kunde|norm|standard|bwl` (Pipe-Symbol ist ungültig). `brain-lint.sh` findet die Stellen.
+- [ ] **Daily-Notes-Lücke** — 07.–12. April fehlen. Falls rekonstruierbar aus Memory/TASKS, sonst als bewusst leer markieren.
+- [ ] **`brain-lint.sh` Baseline laufen lassen** — erste vollständige Lint-Ausgabe speichern als Referenz für künftige Checks.
+- [ ] **Aliase in ~/.zshrc** — `blint`, `bstats`, `bdaily` für die neuen Scripts (optional, siehe [[04 Ressourcen/Scripts/README]]).
+
 ### Sicherheit (Folgemaßnahmen AMOS-Vorfall 17.04.)
 
 - [ ] `Anleitung_Mac.pdf` prüfen und löschen
@@ -155,3 +172,5 @@ Zuletzt aktualisiert: 2026-04-18 (nach Session 5b Parkplatz-Abbau)
 - [x] **Cloudflare Access produktionsreif** (17.04.) ✅ — Zero-Trust-Team `mthreed`, App `ProForge 5 Mainsail` + Policy `WEC-Zugang` (Sebastian, Reiner, Ildiko), E-Mail-OTP, Session 24 h. Browser-Test bestanden. App-ID `f4ff7e08-d44b-4a28-a4c3-cc30d8c04ec7`, Policy-ID `35da1cb2-1105-470b-87ee-81c6761d9478`.
 - [x] **Read-Only-Proxy für externe Mainsail-Gäste** (17.04.) ✅ — `moonraker-readonly-proxy.service` auf `127.0.0.1:2096`, Python-aiohttp. nginx splittet via `Cf-Connecting-Ip`: extern → Proxy, Tailscale → direkt. Schreibende JSON-RPC + POST/DELETE geblockt, Notaus erlaubt. Bugfix: map liefert direkte `IP:Port`-Strings statt Upstream-Namen (sonst hängt WS-Upgrade). UX: `notify_gcode_response` bei Block → rote Fehlerzeile in Mainsail-Konsole. Extern verifiziert.
 - [x] **WEC Knowledge System nach Karpathy-Pattern** (18.04.) ✅ — `03 Bereiche/WEC/` als Operationszentrale: raw/wiki/Operationen/Sessions + eigene CLAUDE.md + README. BWL-Filter strukturell verankert (Kundenbonität, Vertragsprüfung, Warnsignale). Root-CLAUDE.md um "Räume & Auto-Erkennung" erweitert — 8 Räume mit Stichworten, Single-Word-Trigger. Visuelle Karte als Canvas: [[03 Bereiche/WEC/WEC System - Visuelle Karte.canvas|WEC System Karte]]. Details: [[03 Bereiche/WEC/Sessions/2026-04-17 WEC Workspace Aufbau]]
+- [x] **Vault-Schema-Durchlauf + Werkzeugkasten** (19.04.) ✅ — Tag-Konsistenz (5 Daily Notes auf `tagesbuch`), 2 Projekte archiviert (Cloudflare Tunnel, Google Drive), 6 Handover-Templates nach `04 Ressourcen/Templates/Claude-Handover/` (**02 Projekte: 20 → 12**), SICAT-Altlast (1,4 GB) nach `06 Archiv/Alte Auftraege/`, Lernkurve-Datei nach MThreeD.io, READMEs für Konstruktion/KI-Anwendungen/Finanzen, Edi-Raum im Raumsystem. Neuer Werkzeugkasten: [[04 Ressourcen/Scripts/]] (4 Scripts) + [[04 Ressourcen/Prompts/]] (4 Prompts).
+- [x] **Cyber-Overlay CSS + Graph-View neuronal** (19.04.) ✅ — Additives Snippet `cyber-overlay.css` mit Neon-Palette (Cyan/Magenta/Grün), in `appearance.json` aktiviert. Graph-View auf neuronale Physik (`repel 10`, `center 0.08`, `linkDistance 160`, `linkStrength 1.0`) + 44 Farb-Queries inkl. Anhänge-Unterordner-Differenzierung (gelber Ring → strukturierte Inseln) + Lila-Kontrast (Archiv dunkel ↔ Clippings hell) + Hub-Hervorhebung (CLAUDE/README/TASKS/MEMORY).
