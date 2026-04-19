@@ -11,7 +11,7 @@ status: aktiv
 > Kunde: Bens Edelstahl GmbH → Sachsenmilch
 > Einsatz: Käsekarussell für Harzer Käse — Lagerschalenhalter für Riemenspannung
 > **Liefer-Format: IGES** (Volker-Kompatibilität, älteres CAD-System — nicht STEP)
-> **Zeichnungsnummern-Schema: `BE-IS-202631-XXX-X`** (Bens-intern)
+> **Zeichnungsnummern-Schema: `BE-LS-202603-XXX-X`** (Bens-intern, **L**ager**S**chale / Jahr 2026 Nr. 03; korrigiert 2026-04-19 aus Reiner-Scans)
 
 ## Zusammenfassung der Änderungen
 
@@ -135,7 +135,7 @@ Für alle Bauteile mit Lebensmittelkontakt oder im Reinigungsbereich:
 **Liefer-Format (Montag 21.04. mit Reiner):**
 - [ ] IGES als Liefer-Format bestätigen (Fund: historische Lieferung in `07 Anhänge/Fusion360/.../Step/` enthält ausschließlich IGES-Dateien — nicht STEP)
 - [ ] Bens-Schriftfeld-Vorlage aus `07 Anhänge/Bens_Vordruck.dwg` (70 KB, lokal) extrahieren und in Inventor-Template übernehmen
-- [ ] BE-IS-202631-XXX-Nummernsystem in Zeichnungen und BOM konsistent prüfen
+- [ ] BE-LS-202603-XXX-Nummernsystem in Zeichnungen und BOM konsistent prüfen (CSV noch auf BE-IS-202631 — Montag mit Reiner umstellen)
 
 **White-Label (vor Übergabe an Bens):**
 - [x] ~~BOM bereinigt~~ → `Lieferung/.../BOM_bereinigt.xlsx` (2026-04-18), 0 Restbefunde ✅
