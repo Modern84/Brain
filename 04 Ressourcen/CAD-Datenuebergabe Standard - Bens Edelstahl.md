@@ -212,5 +212,5 @@ Diese Regeln sind verbindlich für den Prozess, wie das Profil aus den historisc
 - [[00 Kontext/WEC Kontakte/Volker Bens]]
 - [[02 Projekte/WEC Neustart mit Reiner/Sachsenmilch Käsekarussell]]
 - [[02 Projekte/WEC Neustart mit Reiner/Mail Reiner - Lagerschalenhalter Überarbeitung]]
-- [[01 Inbox/Lagerschalenhalter - Lebensmittelindustrie Überarbeitung]]
+- [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]]
 - [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]

@@ -56,7 +56,7 @@ Entwickelt von einem Tschechen der bei Prusa 3D gearbeitet hat. Hat dort was Inn
 ## Abhängigkeiten
 
 - Startet nach [[02 Projekte/ProForge5 Build|ProForge5 Build]]
-- Drucker wird Teil des [[02 Projekte/MThreeD.io|MThreeD.io]] Maschinenparks
+- Drucker wird Teil des [[Business MThreeD.io|MThreeD.io]] Maschinenparks
 
 ## Assets
 

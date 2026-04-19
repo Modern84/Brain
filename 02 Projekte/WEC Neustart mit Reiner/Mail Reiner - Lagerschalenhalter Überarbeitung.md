@@ -78,5 +78,5 @@ Basti
 
 ## Verknüpfungen
 
-- [[01 Inbox/Lagerschalenhalter - Lebensmittelindustrie Überarbeitung]]
+- [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]]
 - [[02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner]]

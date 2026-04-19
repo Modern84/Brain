@@ -18,7 +18,7 @@ Website: [w-ec.de](https://w-ec.de/)
 
 **Reiner** ist nicht einfach nur Chef — er ist gleichzeitig Stiefvater, Freund, Kollege und Mentor. Er weiß von Claude (Claudian) und dem Brain-Vault — kein Erklärungsbedarf. Die Beziehung ist eng und vertrauensvoll. Das macht Gespräche über Ziele, Zukunft und Erwartungen direkter und ehrlicher als in einem normalen Arbeitsverhältnis — aber auch persönlicher und emotionaler.
 
-Sebastian ist angestellter Konstrukteur bei WEC und strebt gleichzeitig die Selbstständigkeit über [[02 Projekte/MThreeD.io]] an. Diese zwei Ziele schließen sich nicht aus — Reiner kennt Sebastian gut genug um das zu verstehen und zu unterstützen.
+Sebastian ist angestellter Konstrukteur bei WEC und strebt gleichzeitig die Selbstständigkeit über [[Business MThreeD.io|MThreeD.io]] an. Diese zwei Ziele schließen sich nicht aus — Reiner kennt Sebastian gut genug um das zu verstehen und zu unterstützen.
 
 ---
 

@@ -120,7 +120,7 @@ Ein paar Beispiele damit es greifbar wird:
 - **Volker Bens** (Hauptkunde, Halle Pirna, Branche) → [[00 Kontext/WEC Kontakte/Volker Bens]]
 - **Sachsenmilch-Käsekarussell** (Projekt, Hintergrund, Ideen) → [[02 Projekte/WEC Neustart mit Reiner/Sachsenmilch Käsekarussell]]
 - **Fahrrad-Federungssystem** (Reiners geheime Erfindung, Konzept) → [[02 Projekte/WEC Neustart mit Reiner/Fahrrad Federungssystem]]
-- **Lagerschalenhalter Überarbeitung** (EHEDG-Standard, Stückliste für Lebensmittelindustrie) → [[01 Inbox/Lagerschalenhalter - Lebensmittelindustrie Überarbeitung]]
+- **Lagerschalenhalter Überarbeitung** (EHEDG-Standard, Stückliste für Lebensmittelindustrie) → [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]]
 - **ProForge5-Drucker** (kompletter Aufbau mit allen Entscheidungen, Firmware-Ständen, Workarounds) → [[02 Projekte/ProForge5 Build]]
 - **Tagesbuch letzte Tage** (was wann entschieden und gemacht wurde) → [[05 Daily Notes/2026-04-16]]
 

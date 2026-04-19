@@ -30,7 +30,7 @@ Alles rund um den Aufbau und Betrieb von MThreeD.io als Firma. Akquise, Kundenko
 
 ## Referenzen
 
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[02 Projekte/Ildikó Brain Setup]] — paralleles Brain für Ildikó (Arbeitsteilung, Freiheits-Vision, Setup-Plan)
 - [[00 Kontext/Angebot]]
 - [[00 Kontext/ICP]]

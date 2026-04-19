@@ -32,7 +32,7 @@ Das Branding soll den Charakter der Arbeit widerspiegeln: präzise, hochwertig, 
 
 ## Referenzen
 
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[00 Kontext/Angebot]]
 - [[00 Kontext/Schreibstil]]
 

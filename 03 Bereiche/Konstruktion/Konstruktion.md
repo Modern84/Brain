@@ -14,7 +14,7 @@ Laufende Konstruktionsarbeit — beruflich als Angestellter und privat für MThr
 
 - [[02 Projekte/ProForge5 Build|ProForge5]] Umbau auf Industrial-Niveau
 - [[02 Projekte/Stone Wolf Build|Stone Wolf]] Aufbau (geplant)
-- Bauteilentwicklung für [[02 Projekte/MThreeD.io|MThreeD.io]] Kunden
+- Bauteilentwicklung für [[Business MThreeD.io|MThreeD.io]] Kunden
 
 ## Tools & Software
 
@@ -25,6 +25,6 @@ Laufende Konstruktionsarbeit — beruflich als Angestellter und privat für MThr
 
 - [[02 Projekte/ProForge5 Build]]
 - [[02 Projekte/Stone Wolf Build]]
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[04 Ressourcen/ostdeutschenturbolader/ostdeutschenturbolader|Ostdeutscher Turbolader]]
 

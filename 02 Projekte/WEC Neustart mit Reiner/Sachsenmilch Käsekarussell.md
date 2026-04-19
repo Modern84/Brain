@@ -26,7 +26,7 @@ Fördersystem in der Käseproduktion:
 - Zwei Versionen: **Lang** und **Kurz** (Kurzgriff)
 - Unterschied: Die 15mm Achse wird nach dem Durchbruch 90° abgewinkelt — einmal lange Version, einmal kurze Version
 - Sonst baugleich
-- Überarbeitet für Lebensmittelindustrie → [[01 Inbox/Lagerschalenhalter - Lebensmittelindustrie Überarbeitung]]
+- Überarbeitet für Lebensmittelindustrie → [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]]
 
 ### Weitere Teile
 - Es gibt noch mehr Teile die konstruiert werden müssen

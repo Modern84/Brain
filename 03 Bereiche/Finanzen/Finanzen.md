@@ -13,7 +13,7 @@ Persönliche und geschäftliche Finanzen im Blick behalten. Ausgaben, Einnahmen,
 ## Aktive Themen
 
 - Investitionen in Druckerausbau ([[02 Projekte/ProForge5 Build|ProForge5]] Etappe 2 & 3)
-- Finanzplanung für Selbstständigkeit über [[02 Projekte/MThreeD.io|MThreeD.io]]
+- Finanzplanung für Selbstständigkeit über [[Business MThreeD.io|MThreeD.io]]
 
 ## Equipment-Investitionen
 
@@ -32,6 +32,6 @@ Persönliche und geschäftliche Finanzen im Blick behalten. Ausgaben, Einnahmen,
 ## Referenzen
 
 - [[03 Bereiche/Business MThreeD.io/Business MThreeD.io|Business MThreeD.io]]
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[02 Projekte/ProForge5 Build|ProForge5 Build]]
 

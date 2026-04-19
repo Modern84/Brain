@@ -127,5 +127,5 @@ Idealerweise wird das fertige Paket **direkt an den Kunden geschickt** — per M
 ## Verknüpfungen
 
 - [[CLAUDE]] — Vault-Grundregeln (Abschnitt „Auftreten nach außen")
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]

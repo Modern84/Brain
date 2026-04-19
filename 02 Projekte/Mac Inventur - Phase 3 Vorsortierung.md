@@ -240,7 +240,7 @@ Folgende Notizen in `01 Inbox/` haben thematische Bezüge zu Phase 3 — **nicht
 |---|---|---|
 | [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]] | 1Password-Migration | Direkt — Migrationsplan |
 | [[01 Inbox/Mail - 1Password Kuendigung]] | 1Password-Migration | Mail-Entwurf zur Kündigung |
-| [[01 Inbox/Lagerschalenhalter - Lebensmittelindustrie Überarbeitung]] | Bens | Direkt — Pilotprojekt Bens |
+| [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]] | Bens | Direkt — Pilotprojekt Bens |
 | [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]] | MThreeD.io | Strategie-Kontext für Apple-Assets |
 | [[01 Inbox/Idee - Sabines Zeichnungswissen sichern]] | Sabine-relevant (später) | Für spätere Etappe — keine Dateien hier |
 | [[01 Inbox/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]] | MThreeD.io | Produkt-Strategie |

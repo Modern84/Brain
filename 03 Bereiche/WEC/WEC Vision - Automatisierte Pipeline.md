@@ -121,5 +121,5 @@ Reiner ist das **Head Brain** — 30 Jahre Konstruktionserfahrung, Branchenwisse
 
 - [[02 Projekte/WEC Neustart mit Reiner/Konzept Zwei Gehirne]]
 - [[01 Inbox/Idee - Claude SolidWorks Integration]]
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[03 Bereiche/Konstruktion/Konstruktion]]

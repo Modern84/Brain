@@ -24,7 +24,7 @@ Menschen die das Besondere suchen. Keine Massenware, keine Standardlösungen. Ku
 
 ## Wie ich ihnen helfe
 
-[[02 Projekte/MThreeD.io|MThreeD.io]] begleitet Kunden von der Planung über das Konzept bis zum fertigen Produkt. Ich bringe technisches Verständnis, Konstruktionskompetenz und Fertigungserfahrung unter einem Dach zusammen — und löse Probleme die andere nicht mal verstehen.
+[[Business MThreeD.io|MThreeD.io]] begleitet Kunden von der Planung über das Konzept bis zum fertigen Produkt. Ich bringe technisches Verständnis, Konstruktionskompetenz und Fertigungserfahrung unter einem Dach zusammen — und löse Probleme die andere nicht mal verstehen.
 
 ## Referenzen
 

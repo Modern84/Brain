@@ -25,7 +25,7 @@ Ich begleite Projekte komplett: von der ersten Skizze über die Konstruktion bis
 
 ## Referenzen
 
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[00 Kontext/ICP]]
 - [[00 Kontext/Branding]]
 

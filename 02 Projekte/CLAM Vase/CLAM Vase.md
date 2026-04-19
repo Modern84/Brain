@@ -25,7 +25,7 @@ In `assets/`:
 - [ ] Anlass / Verwendungszweck dokumentieren
 - [ ] Druckmaterial + Drucker-Profil festhalten
 - [ ] Foto vom realen Druck einfügen
-- [ ] Entscheidung: Variante für Verkauf über [[02 Projekte/MThreeD.io|MThreeD.io]]?
+- [ ] Entscheidung: Variante für Verkauf über [[Business MThreeD.io|MThreeD.io]]?
 
 ## Bereiche & Kontext
 

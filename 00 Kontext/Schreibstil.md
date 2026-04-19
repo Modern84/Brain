@@ -33,7 +33,7 @@ Sebastian denkt viel bevor er schreibt und tut sich manchmal schwer mit dem Form
 ## Referenzen
 
 - [[00 Kontext/Branding]]
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 
 ## Schreibstil nach Empfänger
 

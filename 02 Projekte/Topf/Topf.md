@@ -25,7 +25,7 @@ In `assets/`:
 - [ ] Verwendungszweck dokumentieren (Pflanzgefäß? Küche? Verkaufsobjekt?)
 - [ ] Druckmaterial + Drucker-Profil festhalten
 - [ ] Foto vom realen Druck einfügen (in `assets/`)
-- [ ] Entscheidung: bleibt in [[02 Projekte/MThreeD.io|MThreeD.io]]-Pipeline oder eigenständig?
+- [ ] Entscheidung: bleibt in [[Business MThreeD.io|MThreeD.io]]-Pipeline oder eigenständig?
 
 ## Bereiche & Kontext
 

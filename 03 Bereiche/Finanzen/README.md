@@ -37,5 +37,5 @@ date: 2026-04-19
 ## Verknüpfungen
 
 - [[02 Projekte/ProForge5 Build]] — Equipment-Investments, Etappen
-- [[02 Projekte/MThreeD.io]] — Geschäftliche Finanzplanung
+- [[Business MThreeD.io|MThreeD.io]] — Geschäftliche Finanzplanung
 - [[00 Kontext/Über mich]] — Finanzielle Ziele & Status

@@ -21,7 +21,7 @@ Das Projekt ist ein Paradebeispiel für den Ansatz von MThreeD.io: individuelle 
 ## Referenzen
 
 - [[03 Bereiche/Konstruktion/Konstruktion|Konstruktion]]
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
 - [[00 Kontext/Angebot]]
 
 ## Notizen

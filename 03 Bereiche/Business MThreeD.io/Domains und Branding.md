@@ -36,4 +36,4 @@ Cloudflare Dashboard: dash.cloudflare.com
 
 ## Verknüpfungen
 
-- [[02 Projekte/MThreeD.io]]
+- [[Business MThreeD.io|MThreeD.io]]
