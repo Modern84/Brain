@@ -1,11 +1,18 @@
 ---
 tags: [ressource, template, handover, claudecode, git, backup]
 date: 2026-04-19
+updated: 2026-04-20
 ---
 
 # Handover an Claude Code — Git-Backup initialisieren
 
-> **Zweck:** Vault gegen Datenverlust absichern. Status: 121 uncommitted changes, letzter Commit "first commit" — kein echtes Backup seit Start. **Kritisch** vor Reiner-Session Montag.
+> **Zweck:** Vault gegen Datenverlust absichern — lokale Commit-History + optionaler Remote.
+>
+> **Lessons Learned aus 2026-04-20** (eingebaut unten):
+> - Vor jedem Push auf Remote: **Blob-Größen-Scan** auf `origin/main..HEAD`. Bei Repos >1 GB Pflicht.
+> - `git push` **niemals** mit `| tail -N` im Hintergrund starten — exit code + Progress gehen verloren, HTTP-500 sieht aus wie „fertig".
+> - Bei alten Ordnern mit Binaries (06 Archiv, 07 Anhänge): konservativ adden. Erst `find -size +50M` prüfen, Binaries explizit ausschließen statt „wird schon passen".
+> - `git check-ignore` greift **nicht** bei bereits getrackten Dateien. Wenn eine Binary in Commit 1 ist, bringt `.gitignore` in Commit 2 nichts für den Push — es braucht `git filter-repo` oder `git rm --cached` + Rewrite.
 
 ---
 
@@ -105,18 +112,39 @@ Statt einem Mega-Commit lieber thematisch:
 Commit-Messages: Deutsch oder Englisch egal, aber konsistent.
 Keine Emojis im Commit-Subject (außer Sebastian will).
 
+Phase 4.5 — Pre-Push Blob-Größen-Scan (PFLICHT vor erstem Push):
+Wenn `du -sh .git/` > 1 GB oder das Repo alte Commits enthält:
+  git rev-list --objects origin/main..HEAD > /tmp/objs.txt
+  awk 'NF>=2' /tmp/objs.txt | while IFS=' ' read -r h p; do
+    s=$(git cat-file -s "$h" 2>/dev/null)
+    [ -n "$s" ] && [ "$s" -gt 50000000 ] && printf "%10d  %s\n" "$s" "$p"
+  done | sort -n
+
+GitHub-Limits: 100 MB pro Datei (hard reject), 2 GB pro Push.
+Treffer > 50 MB → Report + STOPP. Nicht pushen. Entscheidung:
+  (a) filter-repo / BFG, um Blob aus History zu entfernen (destruktiv,
+      Hashes ändern sich, Tag muss neu gesetzt werden)
+  (b) Git LFS nachrüsten
+  (c) Auf Remote verzichten, lokal als Restore-Punkt belassen
+
 Phase 5 — Remote vorbereiten (NICHT pushen):
 - Schlage 2-3 Remote-Optionen vor (GitHub Private / Gitea-Self-Host /
   lokales Bare-Repo auf externer SSD)
 - Für jede: Vor- und Nachteile, Einrichtungsschritte
-- Warte auf Sebastian-Entscheidung, pushe nichts
+- Warte auf Sebastian-Entscheidung
+
+Push-Regeln (wenn Freigabe da):
+- Push IMMER interaktiv im Vordergrund starten, nicht mit `| tail` oder `&`
+- Bei großen Pushs Progress mitschneiden: `git push --progress 2>&1 | tee /tmp/push.log`
+- Bei HTTP 500 / RPC fail / "unexpected disconnect" → Phase 4.5 nachholen
 
 Tabus:
-- Kein `git push` ohne explizite Freigabe
+- Kein `git push` ohne Phase 4.5 wenn Repo > 1 GB
 - Kein `git reset --hard`
 - Kein `git clean -fd` ohne Dry-Run vorher
-- Kein `git add -A` ohne vorherigen Blick auf `git status`
-- Kein committen von .obsidian/workspace.json (iCloud-Konflikt-Fabrik)
+- Kein `git add -A` ohne vorherigen Blick auf `git status` — **und** ohne Größen-Check der untracked-Datei-Liste (`git status --porcelain | awk '$1=="??"{print $2}' | xargs -I{} du -sh {} | sort -h | tail`)
+- Kein committen von .obsidian/workspace.json (iCloud-Konflikt-Fabrik) — falls schon getrackt, `git rm --cached` vor dem ersten neuen Commit
+- Keine `git push`-Kommandos im Hintergrund mit geschlucktem stderr (`| tail`, `&>/dev/null`, `2>&1 | head`)
 
 Report am Ende:
 - Anzahl Commits, Gesamtgröße Repo
