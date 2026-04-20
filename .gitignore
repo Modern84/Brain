@@ -24,6 +24,14 @@
 07 Anhänge/Allgemein/Profil/
 07 Anhänge/Screenshots/
 
+# Leak-Verdachtsordner (White-Label / fremde Kundendaten)
+07 Anhänge/Fusion360/
+07 Anhänge/Reiners_Gehirn/
+
+# Screenshots mit Netzwerk-/Tailscale-Topologie (nie in Repo, auch nicht privat)
+07 Anhänge/Bildschirmfoto *.png
+07 Anhänge/Screenshot *.png
+
 # Binaries vault-weit (blähen .git auf — in Liefer-Ordnern gezielt ausgenommen)
 *.step
 *.stp
