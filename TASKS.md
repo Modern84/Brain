@@ -5,7 +5,7 @@ date: 2026-04-04
 
 # TASKS
 
-Zuletzt aktualisiert: 2026-04-19 (nach Vault-Schema-Durchlauf + Graph-Optimierung)
+Zuletzt aktualisiert: 2026-04-20 (Bens-Vorbereitung + Git-Backup lokal)
 
 ## Termine
 
