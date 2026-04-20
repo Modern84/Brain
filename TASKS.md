@@ -98,6 +98,10 @@ Zuletzt aktualisiert: 2026-04-19 (nach Vault-Schema-Durchlauf + Graph-Optimierun
 - [x] **autoUpdates aktiviert** ✅ — `~/.claude/settings.json` gesetzt (17.04.)
 - [ ] **`claude doctor`** — manuelle Verifikation im Terminal (nicht kritisch)
 
+### Git-Backup (offen nach 2026-04-20)
+
+- [ ] **Remote-Push auf `origin/main` reparieren** — lokal 5 Commits + Tag `vor-bens-termin-2026-04-21` fertig, GitHub lehnt Push ab (HTTP 500) wegen Großdateien in History: 2,7 GB `P5FW_aktuell_2026-03-19.zip`, 202 MB `Proforge4_Referenzmodell_alte_Generation.STEP`, 75 MB `CLAM VASE.obj`, 52 MB `obj_1_CLAM VASE.STL.stl`, 37 MB Sicat-PDF. Pfad: `git filter-repo --invert-paths --path <…>` (oder BFG), danach `git push --force-with-lease`. Tag muss neu gesetzt werden (Hashes ändern sich). Nicht vor Reiner-Session — lokaler Restore-Punkt reicht.
+
 ### Vault-Struktur (offen aus 19.04. Schema-Durchlauf)
 
 - [ ] **🟡 Entscheidung Datensatz_SK** — `07 Anhänge/Allgemein/Datensatz_SK` (4,1 GB, 4273 Dateien): Sabines USB-Stick-Dump. Empfehlung: raus aus Vault → externe SSD/T9 oder `06 Archiv/Alte Auftraege/SK-Bestand/`. iCloud-Sync-Entlastung.
