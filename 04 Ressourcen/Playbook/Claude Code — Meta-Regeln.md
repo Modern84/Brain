@@ -51,6 +51,85 @@ Pilot-Erkenntnisse sind **Playbook-Kandidaten**, nicht Session-Anmerkungen. Drei
 
 **Grundsatz:** Jeder Pilot macht den nächsten Pilot besser. Sebastians Mac → Reiners PC → externer Kunde. Die Regeln werden die eigentliche Dienstleistung.
 
+### Regel 3a (A) — Trigger-Wörter: Projekt-Kontext sofort laden, nicht fragen
+
+Sebastian arbeitet KI-First und diktiert in Kurzform. Wenn er einen **Projektnamen oder Kunden** erwähnt (auch beiläufig), ist das das Signal — Claude Code lädt sofort den relevanten Vault-Kontext, ohne zu fragen *"welches Projekt?"* oder *"was genau?"*.
+
+**Trigger-Tabelle (erweitern wenn neue Kunden dazukommen):**
+
+| Trigger-Wort (in Sebastians Nachricht) | Sofortige Aktion |
+|---|---|
+| `Lagerschalenhalter` / `Bens` / `Volker` | `list_directory` auf `03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/` + `read` auf aktuelles `Aenderungsprotokoll.md` + Check auf neueste `raw/`-Scans |
+| `WEC` / `Reiner` | `03 Bereiche/WEC/` + `02 Projekte/WEC Neustart mit Reiner.md` |
+| `ProForge5` / `ProForge` | `02 Projekte/ProForge5 Build/` |
+| `Mac-Inventur` / `Inventur` | `02 Projekte/Mac Inventur.md` + aktuelle Session-Datei |
+| `Ildikó` / `Ildikó Brain` | `02 Projekte/Ildikó Brain Setup.md` |
+
+**Intent-Wörter kombinieren sich mit Triggern:**
+
+| Intent-Wort | Bedeutet |
+|---|---|
+| `fertig machen` / `finalisieren` | Liefer-Ordner prüfen + offene Punkte im Änderungsprotokoll bearbeiten |
+| `vorbereiten` | nächste Session oder Termin vorbereiten, Agenda bauen |
+| `Stand?` / `Status?` / `wo stehen wir` | Bilanz aus Liefer-Ordner + Änderungsprotokoll + offene TODOs in 2 Sätzen |
+| `weiter` | dort weitermachen wo letzte Session aufgehört hat (letzte Daily Note + Session-Log lesen) |
+| `prüfen` / `checken` | Sanity-Check: md5-Kette, Backup-Vorhandensein, White-Label-Scan |
+
+**Grundsatz:** Konkreter Projektkontext schlägt generische Klarfrage. Wenn zwei Projekte auf einen Trigger passen könnten (selten) → beide Kontexte laden, dann Sebastian kurz fragen welchen er meint. Nie direkt mit leerem Handtuch fragen *"welches Projekt?"*. 
+
+**Pilot:** Montag 2026-04-21 mit Reiner — "lagerschalenhalter fertig machen" muss ohne Rückfrage den Liefer-Ordner laden und die offenen Punkte zeigen.
+
+### Regel 3b (A) — Selbständiges Vorbereiten: erst prüfen, dann handeln, dann fragen
+
+Trigger-Wörter (Regel 3a) laden den Kontext. Diese Regel sagt was **danach** passiert — bevor mit Sebastian gesprochen wird. **Selbständiges Vorbereiten ist Grundregel, nicht Option.**
+
+**Die drei Phasen (immer in dieser Reihenfolge):**
+
+**Phase 1 — PRÜFEN (autonom, ohne Rückfrage):**
+- Liefer-Ordner durchgehen: welche Dateien sind da, welche fehlen, welche md5 haben sie?
+- Änderungsprotokoll lesen: welche Schritte sind durch, welche stehen offen?
+- Backup-Dateien checken: gibt es `.backup_*`-Versionen, sind sie aktuell?
+- Daily Notes der letzten 3 Tage: was ist der letzte Stand, welche Blocker wurden dokumentiert?
+- Raw-Ordner auf neue Inputs prüfen (z.B. WhatsApp-Scans, neue Korrektur-Stände)
+- White-Label-Sanity-Check: tauchen `SM_`, `WEC`, `Hartmann`, `Woldrich` in finalen Liefer-Dateien auf?
+- md5-Konsistenz: stimmen die Hashes im Änderungsprotokoll mit den tatsächlichen Dateien überein?
+
+**Phase 2 — SELBST ENTSCHEIDEN (reversible Aktionen ohne Rückfrage):**
+Reversibel + Kontext klar = handeln. Dazu gehört:
+- Fehlende Backups anlegen (`.backup_YYYYMMDD`)
+- Offensichtliche Schema-Inkonsistenzen im Protokoll markieren (nicht fixen, nur markieren)
+- Doppelt vorhandene Dateien identifizieren und listen
+- Fehlende Verknüpfungen im Wiki/Standard herstellen
+- Aktualisierungs-Stand ins TASKS.md eintragen
+- Agenda für den anstehenden Termin/Schritt als Notiz anlegen
+- OCR-Läufe auf neue Scans starten (wenn pdftotext/tesseract vorhanden)
+- Umbenennen von offensichtlich veralteten Dateien (Präfix `VERALTET_`)
+
+**Phase 3 — BILANZ + OFFENE FRAGEN (strukturiert an Sebastian):**
+Am Ende: eine kompakte Bilanz zurück an Sebastian mit drei Abschnitten:
+1. **Was ich selbst erledigt habe** (Liste, 1 Zeile pro Aktion)
+2. **Was ich gefunden habe was du wissen musst** (Befunde, priorisiert A/B/C)
+3. **Was ich nicht entscheiden kann** (konkrete Fragen mit Vorschlag) — nur echte Entscheidungs-Punkte, nicht Höflichkeitsfragen
+
+**Was *nicht* selbst entscheiden:**
+- Fachliche Nummern-Vergaben (z.B. B16 Welle_V2 = 207-0) → Reiner/Sebastian
+- Kunden-Konventionen (Konstrukteur-Namen, Datenformate Volker) → Reiner/Sebastian
+- Inhaltliche Aussagen ohne Beleg (z.B. "Pharma-Positionierung") → nur dokumentieren als Offen-Punkt
+- Destruktive Aktionen auf Liefer-Dateien (Verschieben, Löschen von finalen Outputs) → Sebastian
+- Git-Push, externe Mails, Cloud-Uploads → Sebastian
+
+**Was ist das Gegenteil dieser Regel (Anti-Muster):**
+- Auf Projekt-Erwähnung mit *"Was genau möchtest du?"* antworten → falsch, Phase 1 überspringt
+- Nach Phase 1 sofort Fragen stellen ohne selbst zu handeln → falsch, Phase 2 überspringt
+- Phase 2 ausdehnen auf Aktionen die Sebastian gehören → falsch, Kompetenzüberschreitung
+- Am Ende *"Soll ich X machen?"* fragen statt *"Ich habe X gemacht, hier das Ergebnis"* → falsch, Verantwortung abgeben
+
+**Grundsatz:** Sebastian ist INTP und dialogue-driven. Er will den **Stand sehen und die Entscheidungen treffen**, nicht durch Vorbereitungs-Schritte geführt werden. Claude Code bereitet selbständig vor bis zur Entscheidungs-Schwelle. Sebastian entscheidet, Claude Code führt aus.
+
+**Pilot:** 
+- Bens-Pilot 2026-04-20 Nacht: Claude Code hat selbständig Schema-Inkonsistenz B8/B19/B26/B29 gefunden und dokumentiert, aber B16/B12-Kollision als Entscheidungs-Punkt an Sebastian gegeben. Exemplarisch richtig.
+- Session 2026-04-20 Nachmittag: Erkenntnisse aus Reiner-OCR (Pharma-Positionierung, Nummernsystem 700er) selbstständig extrahiert und in `Erkenntnisse aus OCR.md` dokumentiert, aber nicht in den Standard gepflegt weil Beleg-Status "noch zu bestätigen". Exemplarisch richtig.
+
 ---
 
 ## B-Regeln — Konkrete Handlungsregeln

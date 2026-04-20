@@ -1,0 +1,28 @@
+STÜCKLISTE — Zusammenbau Lagerschalenhalter (Lebensmittelindustrie);;;;;;;;
+WOLDRICH ENGINEERING + CONSULTING;;;;;;;;
+Konstrukteur: Hartmann | Ingenieur: Woldrich;;;;;;;;
+Projekt: AM_Lagerschale | Datum: 15.04.2026;;;;;;;;
+Norm: EHEDG / DIN EN 1672-2 | Oberflächen: Ra ≤ 0,8 µm | Radien: min. R6;;;;;;;;
+;;;;;;;;
+Pos;Bauteilnummer;Bauteil;Beschreibung;Menge;Material;Norm/Artikelnr.;Art;Link Lieferant
+1;BE-IS-202631-000-0;Lagerschale_Baugruppe;Hauptbaugruppe;1;—;—;Zusammenbau;—
+2;BE-IS-202631-100;Lagerhülse;Blech 10mm;2;1.4404 (316L);Ra ≤ 0,8 µm;Einzelteil;—
+3;BE-IS-202631-201-0;Lagerseite;Rundstahl;1;1.4404 (316L);Ra ≤ 0,8 µm;Einzelteil;—
+4;BE-IS-202631-302-0;Steg_Lagerschalenhalter;Blech 5mm;1;1.4404 (316L);Ra ≤ 0,8 µm;Einzelteil;—
+5;BE-IS-202631-700-0;Pendelkugellager Edelstahl;SS2202-2RS 15x35x14mm abgedichtet;1;Edelstahl komplett;SS2202-2RS;Kaufteil;https://www.kugellager-shop.net/ss2202-2rs-edelstahl-pendelkugellager.html
+6;BE-IS-202631-203-0;Scheibe t=1;Blech 1mm;1;1.4404 (316L);Ra ≤ 0,8 µm;Einzelteil;—
+7;BE-IS-202631-704-0;Klemmring;geschlitzt, Bohrung 15mm, mit Schraube A4-80;1;1.4404 (316L);Mädler 62399115 (1.4305) — 1.4404 als Sonderteil;Kaufteil;https://www.maedler.de/Article/62399115
+7.1;BE-IS-202631-205-0;Scheibe t=3;Blech 3mm;1;1.4404 (316L);Ra ≤ 0,8 µm;Einzelteil;—
+8;BE-IS-202631-204;Welle;Rundstahl;1;1.4404 (316L);Ra ≤ 0,8 µm;Einzelteil;—
+9;—;Sechskantschraube Hygienic Design;niedriger Kopf M8x40 poliert;2;1.4404 poliert (Ra < 0,8 µm);Würth Art. 5099730840;Normteil;https://eshop.wuerth.de/Sechskantschraube-niedriger-Kopf-im-Hygienic-Design-SHR-6KT-NIEDG-HYG-14404-POL-SW13-M8X40/5099730840.sku/de/DE/EUR/
+10;—;Sicherungsmutter DIN 985 M8;Edelstahl A4-80;3;Edelstahl A4-80;DIN 985 / ISO 10511;Normteil;https://eshop.wuerth.de/Produktkategorien/DIN-985-Edelstahl-A4-80-Gleitmo-615/14013512122827.cyid/1401.cgid/de/DE/EUR/
+;;;;;;;;
+HINWEISE:;;;;;;;;
+- Alle Einzelteile: Oberfläche Ra ≤ 0,8 µm (EHEDG);;;;;;;;
+- Alle Übergänge/Radien: min. R6;;;;;;;;
+- Schweißnähte bündig verschliffen;;;;;;;;
+- Lager Pos 5: Komplett Edelstahl (SS2202-2RS), kein Nachfetten nötig;;;;;;;;
+- Klemmring Pos 7: Mädler liefert 1.4305 — für 1.4404 Sonderanfrage oder Eigenfertigung;;;;;;;;
+- Kein direkter Lebensmittelkontakt — Maschinenumfeld;;;;;;;;
+- Manuelle Reinigung (kein CIP);;;;;;;;
+- Normen: EHEDG, DIN EN 1672-2, EC 1935/2004;;;;;;;;
