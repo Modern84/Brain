@@ -1,0 +1,1870 @@
+STEP in Solid Edge konvertieren
+Datum: Donnerstag,Februar 29,2024 07:17
+Quelldatei: P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.00.00.00.000_VAQRS120.stp
+Autor: H.Rochner
+Organisation: Unbekannt
+Ausgangssystem: Autodesk Inventor 2023
+
+Hardware:
+Prozessor: AMD Ryzen 7 5700G with Radeon Graphics         
+Betriebssystem: Windows 10 Professional
+Installierter Speicher: 31.79 GB
+
+Software-Informationen
+Parasolid-Version: 33.0.247
+PSBodyShop-Version: 33.0.93
+Step-Adapterversion: 9.0.98
+Solid Edge-Version: 221.00.09.002 x64
+
+Step-Importoptionen
+Facettierte Körper importieren: Ein
+Prüfkörper importieren: Aus
+Kurven importieren: Ein
+DoNotSave importieren: Ein
+Mehrere Körper als Einzelteildatei importieren: Ein
+Flächenvernähung importieren: Ein
+Boolesche Körper importieren: Ein
+Basisformelement erstellen: Ein
+Geometrie vereinfachen: Ein
+Druckkurven importieren: Ein
+Führung importieren: C:
+Flächenvernähung importieren: Ein
+Flächen importieren: Ein
+Ausgabepfad importieren: P:\ETC-KEMA\03_2024_DOKU Sicat\Modell
+Aktivieren des standardmäßigen Ausgabepfads importieren: Ein
+PMI importieren: Aus
+Als interne Komponenten importieren: Aus
+Pfad importieren: 
+
+Übersetzen in Parasolid-Datentypen...
++Baugruppe 1 beginnen
++SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.00.00.00.000_VAQRS120.asm wurde erstellt
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.003_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.003_2.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.004.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.005.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.006.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.007.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.008.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.008_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.008_2.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.009.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.011.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.012.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.013.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.01.00.014.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 94
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 94
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.00.00.004.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.01.00.00.005.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\55101671.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101451.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\33101539.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101299.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M4 x 20 - A2 bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M10 - A2 bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 195 x 5 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - G 1_4 A - A2 bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 195 x 5 - NBR 70.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 134 x 4 - NBR 70.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4026 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 87
+|--+Baugruppen: 1
+|--+Volumenkörper: 86
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.001_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.002_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.003_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.004.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 44
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 44
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.01.00.000.asm wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 0
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 0
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.004.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.004.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 134 x 4 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 134 x 4 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.003.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\33101539.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101451.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - G 1_4 A - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 195 x 5 - NBR 70.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 138 x 4 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.004.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101299.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.003.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\33101539.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101451.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - G 1_4 A - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 195 x 5 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 138 x 4 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.004.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101299.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - A - 3 x 3 x 25 - A4.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - A - 3 x 3 x 25 - A4.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 93
+|--+Baugruppen: 1
+|--+Volumenkörper: 92
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.03.00.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.03.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.03.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.03.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.03.00.00.004.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.03.00.00.006.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\10100936.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\10100936.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\10100936.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11101609.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\39100158.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\39101670.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8735 - 12 x 45 - A - St.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8735 - 12 x 45 - A - St.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - G 1_2 A - St verz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A21 x 26 - Cu.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8735 - 12 x 45 - A - St.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8735 - 12 x 45 - A - St.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 236 x 5,3 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - AS - 120 x 150 x 12 - NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M6 x 16 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - AS - 140 x 170 x 12 - NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 472 - 160 x 4 - St bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - A - 125 x 160 x 12 - NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M20 x 75 - 8.8 verz.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 81
+|--+Baugruppen: 0
+|--+Volumenkörper: 81
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.06.00.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.06.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.06.00.00.001.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.06.00.00.001.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M30 x 55 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M30 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M30 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M30 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M30 x 100 - 8.8 verz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M30 - 8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M30 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M30 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M30 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M30 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M30 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M30 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 30 - St verz.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 77
+|--+Baugruppen: 0
+|--+Volumenkörper: 77
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.01.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.01.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.01.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.01.00.004.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 55 - A2 bl - LH.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 39 x 4 - NBR 70.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 39 x 4 - NBR 70.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 96 x 3 - NBR 70.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4028 - M6 x 12 - A2 bl.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 17
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 17
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.00.000.asm wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.01.000_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.01.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.01.003.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.01.003.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.02.01.002.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 31
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 31
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 2,5 m6 x 18 - A1.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 2,5 m6 x 18 - A1.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 4
+|  |--+Baugruppen: 1
+|  |--+Volumenkörper: 3
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 100 x 3 - St bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 30 x 2,5 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\41100884.par wurde erstellt
+|--+Gesamtzahl der Teile: 25
+|--+Baugruppen: 2
+|--+Volumenkörper: 23
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.00.000.asm wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.03.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.03.000_1.par wurde erstellt
+|  |  |  |--+Baugruppe 5 beginnen
+|  |  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.01.000 .asm wurde erstellt
+|  |  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.01.000 _1.par wurde erstellt
+|  |  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.01.001 .par wurde erstellt
+|  |  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.01.002 .par wurde erstellt
+|  |  |  |--+Gesamtzahl der Teile: 8
+|  |  |  |--+Baugruppen: 0
+|  |  |  |--+Volumenkörper: 8
+|  |  |  |--+Flächenkörper: 0
+|  |  |  |--+Baugruppe 5 beenden
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.001 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.002 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.003 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.004.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.006 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.007 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.008.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.009.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.010 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.011.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.012.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.013 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.014 .par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.014 _1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.015.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 105
+|  |  |--+Baugruppen: 1
+|  |  |--+Volumenkörper: 104
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.01.000_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.01.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.01.002.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.01.003.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.01.01.004.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 16
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 16
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.000_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.002.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.003.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.004.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.004_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.01.01.005.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 28
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 28
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |--+Gesamtzahl der Teile: 3
+|  |--+Baugruppen: 3
+|  |--+Volumenkörper: 0
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.03.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.02.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.03.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.03.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.03.00.004.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.03.00.005.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.03.00.005.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100944.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100944.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 50 x 2 - St bl.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M5 x 10 - A2 bl.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 20 - A2 bl.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 72 x 1,5 - NBR 70.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 85 x 2,5 - NBR 70.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 31
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 31
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.003.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.003.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.004.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.005.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.00.00.006.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.00.00.007.par wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.02.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.02.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.02.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.02.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.01.02.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.05.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.05.00.005.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.05.00.006.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.03.00.015.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 39
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 39
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.11.00.00.006.par wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.11.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.11.01.00.001.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\10100936.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\10100936.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\10100936.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 472 - 140 x 4 - St bl.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 217 x 5 - NBR 70.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - A - 110 x 140 x 12 - NBR.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 11
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 11
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.011 .par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.011 .par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.012.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.012.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.014.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.015.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.03.00.00.016.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.00.00.017 .par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.01.04.00.001.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\39100158.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\39100413.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16100939.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16100939.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\33100348.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\33100348.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8734 - 12 x 55 - A - St.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  12 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  12 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 195 x 5 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 134 x 4 - NBR 70.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 55 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 55 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 71412 - AM10 x 1 kegelig kurz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A16 x 20 - Cu.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A16 x 20 - Cu.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A12 x 15 - Cu.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A12 x 15 - Cu.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M10 x 40 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M10 x 40 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 71412 - AM10 x 1 kegelig kurz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A16 x 20 - Cu.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A16 x 20 - Cu.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - M16 x 1,5 -  A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - M16 x 1,5 -  A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - M16 x 1,5 -  A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - M16 x 1,5 -  A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M16 - 8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M5 x  12 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M5 x  12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M5 x  12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M5 x  12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 5 - St verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 5 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 5 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 5 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 5 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 5 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M5 x 12 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M5 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M5 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M5 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M5 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M5 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 12 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 70 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 70 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 45 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A12 x 15 - Cu.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A12 x 15 - Cu.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 16 m6 x 65 - A1.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 16 m6 x 65 - A1.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 16 m6 x 65 - A1.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 16 m6 x 65 - A1.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 16 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 60 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 60 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 60 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 60 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 40 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M20 x 50 - 8.8 verz.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 236
+|--+Baugruppen: 4
+|--+Volumenkörper: 232
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.001_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.02.01.00.004 .par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.02.01.00.004 _1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.003_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.01.00.002.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 42
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 42
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.001.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.002.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.003.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.12.00.00.004.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100958.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32101299.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7603 - A14 x 18 - Cu.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 908 - G 1_4 A - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 195 x 5 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\33101539.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - C15E verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M8 - C15E verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 138 x 4 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 134 x 4 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.02.00.00.003.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - A - 3 x 3 x 25 - A4.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - A - 3 x 3 x 25 - A4.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8102 - M16 x 70 - 8.8 - verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4161 - M16 - St verz.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 62
+|--+Baugruppen: 1
+|--+Volumenkörper: 61
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.13.00.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.03.00.00.001 .par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100898.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.03.00.00.002 .par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.03.00.00.003 .par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100898.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.13.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.03.00.00.005 .par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100895.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100897.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100896.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 100 x 5 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 125 x 3 - NBR 70.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 125 x 3 - NBR 70.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - AS - 100 x 120 x 12 - NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - B 14 x 9 x 28 - C45.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 6 m6 x 24 - Stahl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 6 m6 x 24 - Stahl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 100 x 3 - St bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 100 x 3 - St bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 153 x 4,5 - NBR 70.par wurde erstellt
+|--+Gesamtzahl der Teile: 113
+|--+Baugruppen: 0
+|--+Volumenkörper: 113
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.00.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.00.00.004.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.00.00.005.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.04.00.00.010 .par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.04.00.00.011 .par wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.00.000_1.par wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.01.000_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.01.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.01.002.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 6
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 6
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.00.004.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.00.005.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.14.01.00.006.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 19
+|  |--+Baugruppen: 1
+|  |--+Volumenkörper: 18
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\32100892.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100910.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11100912.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16100894.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 472 - 85 x 3 - St bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6912 - M4 x 10 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6912 - M4 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 40 x 2,5 - 1.4122 bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - AS - 45 x 75 x 8 - NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 45 x 1,75 - St bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 80 x 2 - NBR 70.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 80 x 2 - NBR 70.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 60 x 2 - St bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 471 - 60 x 2 - St bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 95 x 3 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - C - 12 x 8 x 32 - A4.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - C - 12 x 8 x 32 - A4.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 3760 - AS - 45 x 62 x 7 - NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M8 x  20 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M8 x  20 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M8 x  20 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M8 x  20 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - A - 10 x 8 x 28 - A4.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 36 x 3 - 70 NBR.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  20 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  20 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 10642 - M6 x  20 - A2 bl.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 116
+|--+Baugruppen: 1
+|--+Volumenkörper: 115
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.16.00.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.16.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.16.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 7984 - M20 x 55 - 8.8 verz.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 63
+|--+Baugruppen: 0
+|--+Volumenkörper: 63
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.01.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.01.00.002.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.07.01.00.003.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.01.00.004.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 71 x 3 - NBR 70.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 100 x 2 - NBR 70.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 39 x 4 - NBR 70.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 39 x 4 - NBR 70.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 55 - A2 bl - LH.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4028 - M8 x 12 - A2 bl.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4028 - M8 x 12 - A2 bl.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 17
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 17
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.003.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.004.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.17.02.00.004.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 11
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 11
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.17.04.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.17.04.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.17.04.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.07.01.00.002.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 6
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 6
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2904.17.00.00.004.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2900.07.00.00.004 .par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\41100884.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 43 x 3 - NBR 70.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 2338 - 5 h8 x 14 - A1.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 25 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 25 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 25 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 25 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 6885 - A - 25 x 14 x 250 - St.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 3601 - 30 x 3 - NBR 70.par wurde erstellt
+|--+Gesamtzahl der Teile: 26
+|--+Baugruppen: 3
+|--+Volumenkörper: 23
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.00.000.asm wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.000_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.009.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.009.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.009.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.005.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.005.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.006.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.006.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.006.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.006.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.007_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.007.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.007_1.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.008.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.005.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.002.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.003.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.003.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.004.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.004.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.005.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.010.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.010.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.010.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.010.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.010.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.010.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.011.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.011.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.011.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.012.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.012.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.012.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.012.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.012.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.013.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.014.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.015.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.015_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_2.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_3.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_4.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_5.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_6.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_7.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_8.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.017_9.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_2.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_3.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_4.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_5.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_6.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_7.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_8.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_9.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_10.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.01.018_11.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 581
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 581
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.01.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 20 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - St verz.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 27
+|  |--+Baugruppen: 1
+|  |--+Volumenkörper: 26
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.02.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.02.00.000_1.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2603.21.03.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2603.21.03.00.002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.02.00.001.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 10
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 10
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.001.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.001.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.002.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.002.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.004.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.005.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.005.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.006.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.007.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.008.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.010.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.011.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.012.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.015.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.016.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.016.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.017.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.017.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.018.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.018.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.019.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.20.00.00.019.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\22101643.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\22101643.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101174.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 6 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 35 - A2 bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\11101642.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\22101644.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\22101644.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\22101644.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\22101644.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 35 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 80 - 8.8 verz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M10 - 8 verz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 40 - 8.8 verz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 30 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 35 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M16 x 35 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 55 - 8.8 verz.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\17100551.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\17100551.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\17101003.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 55 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M16 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 10 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7380-1 - M5 x 16 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101664.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 30 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\17101003.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M24 x 1,5 x 100 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 8673 - M24 x 1,5 - 8 verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\DIN 580 - M20 - C15E verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M10 - 8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 80 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 35 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 35 - A2 bl.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 450
+|--+Baugruppen: 2
+|--+Volumenkörper: 448
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.01.00.000.asm wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\50100427.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\50100349.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100665.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100002.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\16101653.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101632.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100002.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101633.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101633.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100959.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101635.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101636.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101637.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101637.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\40101647.par wurde erstellt
+|  |--+Gesamtzahl der Teile: 193
+|  |--+Baugruppen: 0
+|  |--+Volumenkörper: 43
+|  |--+Flächenkörper: 150
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.03.00.000.asm wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.03.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2903.24.03.01.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.03.01.002.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.03.01.003.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 6
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 6
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.03.00.001.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 40 - 8.8 verz.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M10 - 8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M10 x 40 - 8.8 verz.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M10 - 8 verz.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 8
+|  |--+Baugruppen: 1
+|  |--+Volumenkörper: 7
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.00.00.002.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.24.00.00.003.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101675.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101640.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101635.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101640.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101635.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101674.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101636.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101636.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\31101075.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101635.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101640.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101636.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101699.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\31101065.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\31101672.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 10 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - St verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - St verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 8 - St verz.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 16 - 8.8 verz.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 16 - 8.8 verz.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M8 x 16 - 8.8 verz.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 316
+|--+Baugruppen: 2
+|--+Volumenkörper: 71
+|--+Flächenkörper: 243
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.000.asm wurde erstellt
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.00.000.asm wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2610.29.05.00.000.asm wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100002.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100003.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100004.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100568.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\50100484.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\34100002.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100005.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100002.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100003.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100004.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100568.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\50100484.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\34100002.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100005.par wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 29
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 23
+|  |  |--+Flächenkörper: 6
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.00.001.par wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.02.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.02.000_1.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2700.29.01.02.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2700.29.01.02.002.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 20
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 20
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.02.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101690.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101689.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100658.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.001.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 15
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 15
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.04.000.asm wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101690.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101689.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100658.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101355.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.03.001.par wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 9
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 9
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.05.000.asm wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101690.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101689.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100658.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.002.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.05.001.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101489.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100658.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 16
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 16
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101682.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101684.par wurde erstellt
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101685.par wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101489.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101682.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101685.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101489.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 24
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 18
+|  |  |--+Flächenkörper: 6
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101665.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101330.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101330.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wurde erstellt
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 63
+|  |--+Baugruppen: 6
+|  |--+Volumenkörper: 57
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+Baugruppe 3 beginnen
+|  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.02.00.000.asm wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2610.29.05.00.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.02.00.001.par wurde erstellt
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.01.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.02.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.02.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.06.000.asm wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101690.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101689.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100658.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wird wiederholt verwendet
+|  |  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101691.par wurde erstellt
+|  |  |--+Gesamtzahl der Teile: 8
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 8
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.06.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.07.000.asm wurde erstellt
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101690.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101689.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37101491.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36100658.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.00.00.001.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101691.par wird wiederholt verwendet
+|  |  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101320.par wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 8
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 8
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Baugruppe 4 beginnen
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.29.01.07.000.asm wird wiederholt verwendet
+|  |  |--+Gesamtzahl der Teile: 0
+|  |  |--+Baugruppen: 0
+|  |  |--+Volumenkörper: 0
+|  |  |--+Flächenkörper: 0
+|  |  |--+Baugruppe 4 beenden
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\37100744.par wurde erstellt
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101329.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101330.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\36101330.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M6 x 16 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 6 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4032 - M8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7093-1 - 8 - A2 bl.par wird wiederholt verwendet
+|  |  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 20 - A2 bl.par wird wiederholt verwendet
+|  |--+Gesamtzahl der Teile: 52
+|  |--+Baugruppen: 2
+|  |--+Volumenkörper: 50
+|  |--+Flächenkörper: 0
+|  |--+Baugruppe 3 beenden
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 8 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M8 x 18 - A2 bl.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 20
+|--+Baugruppen: 2
+|--+Volumenkörper: 18
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.31.01.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2706.31.00.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.31.01.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\17100654.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\17100654.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 7
+|--+Baugruppen: 0
+|--+Volumenkörper: 7
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.31.00.00.001.par wurde erstellt
+|--+Baugruppe 2 beginnen
+|--+SE Assembly-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.37.01.00.000.asm wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53100117.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53100118.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.37.01.00.001.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53100261.par wurde erstellt
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7089 - 10 - A2 bl.par wird wiederholt verwendet
+|  |--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - A2 bl.par wurde erstellt
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|  |--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M10 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Gesamtzahl der Teile: 42
+|--+Baugruppen: 0
+|--+Volumenkörper: 42
+|--+Flächenkörper: 0
+|--+Baugruppe 2 beenden
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\50100504.par wurde erstellt
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\50100504.par wird wiederholt verwendet
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\UCP simplifié.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53101628.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53101630.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53101631.par wurde erstellt
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53101630.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53101631.par wird wiederholt verwendet
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\38100743.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wurde erstellt
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 7092 - 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4762 - M12 x 30 - A2 bl.par wird wiederholt verwendet
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\24100836.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\53101225.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\P2906.00.00.00.001.par wurde erstellt
+|--+SE Part-Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M6 x 12 - A2 bl.par wurde erstellt
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M6 x 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M6 x 12 - A2 bl.par wird wiederholt verwendet
+|--+Datei P:\ETC-KEMA\03_2024_DOKU Sicat\Modell\ISO 4017 - M6 x 12 - A2 bl.par wird wiederholt verwendet
++Gesamtzahl der Teile: 226
++Baugruppen: 16
++Volumenkörper: 210
++Flächenkörper: 0
++Baugruppe 1 beenden
+Konvertierungsvorgang ist abgeschlossen
+Zur Übersetzung und Nachbearbeitung erforderte Gesamtzeit:00 : 03 : 16

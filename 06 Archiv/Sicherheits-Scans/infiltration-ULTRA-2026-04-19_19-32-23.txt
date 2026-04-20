@@ -1,0 +1,782 @@
+ULTRA Forensik-Sweep: 2026-04-19_19-32-23
+Host: MacBook-Pro-von-SH.local — macOS 26.4.1 (25E253)
+Baseline: 2026-04-14
+Root-Modus: true
+Sudo verfügbar: nein
+Report: /Users/sh/infiltration-ULTRA-2026-04-19_19-32-23.txt
+────────────────────────────────────────
+
+╔════ 01 System-Identität ════╗
+  [INFO] Hardware:       Model Name: MacBook Pro |       Model Identifier: MacBookPro18,2 |       Serial Number (system): HK376H6H96 | 
+  [INFO] Hardware-UUID: 5270F3AF-52DA-585C-A43A-124341F1883B
+  [INFO] Boot-ROM: 
+  [INFO] Letzter Boot: system boot 19 Apr. 17:46
+  [INFO] Uptime:  1:46
+
+╔════ 02 Benutzer & Admin-Rechte ════╗
+  [INFO] User mit UID >= 500:
+    sh (UID 501)
+  [INFO] Admin-Gruppe: root sh _mbsetupuser
+  [INFO] Wheel-Gruppe: root
+  [WARN] Homes neu/geändert in 30 Tagen: /Users/sh
+
+╔════ 03 Login-Historie + Fehlschläge ════╗
+  [INFO] last -30:
+    sh         ttys002                         So. 19 Apr. 19:32   still logged in
+    sh         ttys000                         So. 19 Apr. 19:32   still logged in
+    sh         ttys003                         So. 19 Apr. 18:40 - 18:40  (00:00)
+    sh         ttys002                         So. 19 Apr. 18:40 - 18:40  (00:00)
+    sh         ttys001                         So. 19 Apr. 18:38   still logged in
+    sh         ttys002                         So. 19 Apr. 18:23 - 18:23  (00:00)
+    sh         ttys001                         So. 19 Apr. 18:23 - 18:23  (00:00)
+    sh         ttys001                         So. 19 Apr. 18:17 - 18:17  (00:00)
+    sh         ttys000                         So. 19 Apr. 18:04 - 18:04  (00:00)
+    sh         ttys000                         So. 19 Apr. 17:47 - 17:47  (00:00)
+    sh         console                         So. 19 Apr. 17:47   still logged in
+    reboot time                                So. 19 Apr. 17:46
+    shutdown time                              So. 19 Apr. 17:45
+    
+    wtmp begins So. 19 Apr. 2026 15:56:28 CEST
+  [INFO] Failed-Login Events (letzte 7 Tage):
+    Timestamp                       Thread     Type        Activity             PID    TTL  
+    2026-04-13 06:42:05.736736+0200 0x209e73   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWScreenLock startUnlock:] |      _numFailedAuthAttempts = 0
+    2026-04-13 07:28:38.979604+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] | enter. INCORRECT password
+    2026-04-13 07:28:38.979764+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] |      setEnabled:YES
+    2026-04-13 07:28:38.979816+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] |      Set _windowControllerActionInProgress = NO
+    2026-04-13 07:28:47.458244+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] | enter. INCORRECT password
+    2026-04-13 07:28:47.459144+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] |      setEnabled:YES
+    2026-04-13 07:28:47.459535+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] |      Set _windowControllerActionInProgress = NO
+    2026-04-13 07:28:47.942723+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] | enter. INCORRECT password
+    2026-04-13 07:28:47.943030+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] |      setEnabled:YES
+    2026-04-13 07:28:47.943117+0200 0x17b335   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[LWDefaultScreenLockUI authFailWithMessage:] |      Set _windowControllerActionInProgress = NO
+    2026-04-13 08:17:53.857956+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate UIKitSystem (51014), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.862043+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate com.apple.PressAndHold (50989), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.862094+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate Messages (52349), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.863051+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate QuickLookUIService (Finder) (50969), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.863837+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate open (51071), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.864050+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate SiriNCService (51412), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.865625+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate SimulatorTrampoline (51949), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.865668+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate studentd (54182), calling exit block to indicate the app quit
+    2026-04-13 08:17:53.866879+0200 0x21c842   Default     0x0                  50896  5    loginwindow: [com.apple.loginwindow.logging:Standard] -[SessionLogoutManager quitAllPrivateProcesses]_block_invoke |      Failed to terminate 3DxVirtualNumpad (51232), calling exit block to indicate the app quit
+
+╔════ 04 Top-15 CPU + Top-15 RAM ════╗
+  [INFO] CPU:
+    USER               PID  %CPU %MEM COMMAND
+    sh                2394  64,8  0,3 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd
+    sh                 613  20,9  0,1 /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+    sh                1270   6,0  1,6 /Applications/Claude.app/Contents/Frameworks/Claude Helper (Renderer).app/Contents/MacOS/Claude Helper (Renderer) --type=renderer --user-data-dir=/Users/sh/Library/Application Support/Claude --standard-schemes=operon-artifact,cowork-artifact,cowork-file,app --secure-schemes=operon-artifact,cowork-artifact,cowork-file,app,sentry-ipc --bypasscsp-schemes=operon-artifact,sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=operon-artifact,cowork-artifact,cowork-file,app,sentry-ipc --service-worker-schemes=app --streaming-schemes=operon-artifact,cowork-file --app-path=/Applications/Claude.app/Contents/Resources/app.asar --enable-sandbox --lang=de-DE --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1776613581501398 --launch-time-ticks=57151387 --shared-files --field-trial-handle=1718379636,r,11737174488779530687,9350402776919423058,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1935764596,r,4761817623083721540,10081574136454077710,4 --trace-process-track-uuid=3190708992871164437 --desktop-features={"nativeQuickEntry":{"status":"supported"},"quickEntryDictation":{"status":"supported"},"customQuickEntryDictationShortcut":{"status":"supported"},"plushRaccoon":{"status":"unavailable"},"quietPenguin":{"status":"unavailable"},"chillingSlothFeat":{"status":"supported"},"chillingSlothEnterprise":{"status":"supported"},"chillingSlothLocal":{"status":"supported"},"yukonSilver":{"status":"supported"},"yukonSilverGems":{"status":"supported"},"yukonSilverGemsCache":{"status":"supported"},"wakeScheduler":{"status":"unavailable"},"operon":{"status":"unavailable"},"desktopTopBar":{"status":"supported"},"ccdPlugins":{"status":"supported"},"floatingAtoll":{"status":"supported"},"computerUse":{"status":"supported"},"coworkKappa":{"status":"unavailable"}} --desktop-enterprise-config={"forceLoginOrgUUIDs":null,"disableEssentialTelemetry":false,"disableNonessentialTelemetry":false} --desktop-telemetry-config={"deploymentMode":"1p","appVersion":"1.3109.0","cookielessOrigin":false} --seatbelt-client=80
+    _windowserver      404   3,8  0,5 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+    sh                 796   2,4  0,2 /System/Applications/Utilities/Activity Monitor.app/Contents/MacOS/Activity Monitor
+    sh                4261   1,0  0,1 /System/Library/ExtensionKit/Extensions/VPN.appex/Contents/MacOS/VPN -LaunchArguments eyJzZXJ2aWNlTmFtZSI6ImNvbS5hcHBsZS5OZXR3b3JrRXh0ZW5zaW9uU2V0dGluZ3NVSS5ORVNldHRpbmdzVUlFeHRlbnNpb24iLCJlbmhhbmNlZFNlY3VyaXR5IjpmYWxzZSwidHlwZSI6Mn0=
+    sh                1036   1,0  0,3 /Applications/Setapp/CleanMyMac.app/Contents/MacOS/CleanMyMac_5_Setapp
+    sh                7445   0,8  0,6 /Applications/WhatsApp.app/Contents/MacOS/WhatsApp
+    sh                 624   0,6  0,0 /usr/libexec/trustd --agent
+    root               808   0,5  0,0 /usr/libexec/sysmond
+    sh                7548   0,4  0,0 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdworker_shared -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+    sh                1209   0,3  0,1 Contents/Library/LaunchAgents/MoonlockHelper_Setapp.app/Contents/MacOS/MoonlockHelper_Setapp
+    sh                 819   0,1  0,8 /Applications/Claude.app/Contents/MacOS/Claude
+    sh                2528   0,1  0,2 /System/Library/Frameworks/CoreSpotlight.framework/spotlightknowledged -x
+    sh                 663   0,1  0,1 /System/Library/PrivateFrameworks/iCloudDriveCore.framework/Versions/A/Support/bird
+  [INFO] RAM:
+    USER               PID  %CPU %MEM COMMAND
+    root               525   0,0  1,6 /Library/SystemExtensions/FBCEF80D-DBC4-456C-AD30-C1D7075E066A/com.macpaw.moonlock.engine.systemextension/Contents/MacOS/com.macpaw.moonlock.engine
+    sh                1270   6,0  1,6 /Applications/Claude.app/Contents/Frameworks/Claude Helper (Renderer).app/Contents/MacOS/Claude Helper (Renderer) --type=renderer --user-data-dir=/Users/sh/Library/Application Support/Claude --standard-schemes=operon-artifact,cowork-artifact,cowork-file,app --secure-schemes=operon-artifact,cowork-artifact,cowork-file,app,sentry-ipc --bypasscsp-schemes=operon-artifact,sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=operon-artifact,cowork-artifact,cowork-file,app,sentry-ipc --service-worker-schemes=app --streaming-schemes=operon-artifact,cowork-file --app-path=/Applications/Claude.app/Contents/Resources/app.asar --enable-sandbox --lang=de-DE --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1776613581501398 --launch-time-ticks=57151387 --shared-files --field-trial-handle=1718379636,r,11737174488779530687,9350402776919423058,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=1935764596,r,4761817623083721540,10081574136454077710,4 --trace-process-track-uuid=3190708992871164437 --desktop-features={"nativeQuickEntry":{"status":"supported"},"quickEntryDictation":{"status":"supported"},"customQuickEntryDictationShortcut":{"status":"supported"},"plushRaccoon":{"status":"unavailable"},"quietPenguin":{"status":"unavailable"},"chillingSlothFeat":{"status":"supported"},"chillingSlothEnterprise":{"status":"supported"},"chillingSlothLocal":{"status":"supported"},"yukonSilver":{"status":"supported"},"yukonSilverGems":{"status":"supported"},"yukonSilverGemsCache":{"status":"supported"},"wakeScheduler":{"status":"unavailable"},"operon":{"status":"unavailable"},"desktopTopBar":{"status":"supported"},"ccdPlugins":{"status":"supported"},"floatingAtoll":{"status":"supported"},"computerUse":{"status":"supported"},"coworkKappa":{"status":"unavailable"}} --desktop-enterprise-config={"forceLoginOrgUUIDs":null,"disableEssentialTelemetry":false,"disableNonessentialTelemetry":false} --desktop-telemetry-config={"deploymentMode":"1p","appVersion":"1.3109.0","cookielessOrigin":false} --seatbelt-client=80
+    root               900   0,0  1,1 /System/Library/PrivateFrameworks/AppleNeuralEngine.framework/XPCServices/ANECompilerService.xpc/Contents/MacOS/ANECompilerService
+    sh                 645   0,0  0,9 /System/Library/Frameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent
+    sh                 819   0,1  0,8 /Applications/Claude.app/Contents/MacOS/Claude
+    sh                5907   0,0  0,7 claude   
+    sh                7445   0,8  0,6 /Applications/WhatsApp.app/Contents/MacOS/WhatsApp
+    sh                2353   0,0  0,6 /System/Library/PrivateFrameworks/SiriTTSService.framework/sirittsd
+    sh                 637   0,1  0,5 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+    _windowserver      404   3,8  0,5 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+    sh                5208   0,0  0,5 /System/Applications/Messages.app/Contents/MacOS/Messages
+    sh                1818   0,0  0,5 /System/Applications/System Settings.app/Contents/MacOS/System Settings
+    sh                3887   0,0  0,4 /Applications/Obsidian.app/Contents/Frameworks/Obsidian Helper (GPU).app/Contents/MacOS/Obsidian Helper (GPU) --type=gpu-process --user-data-dir=/Users/sh/Library/Application Support/obsidian --gpu-preferences=SAAAAAAAAAAgAAAEAAAAAAAAAAAAAGAAAwAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=1718379636,r,2331452696797472215,7749086810597429559,262144 --enable-features=PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma,SharedArrayBuffer --disable-features=LocalNetworkAccessChecks,MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708988185955192 --log-level=3 --seatbelt-client=29
+    sh                 778   0,0  0,4 /System/Library/Frameworks/Contacts.framework/Support/contactsd
+    sh                 673   0,0  0,4 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/corespotlightd
+
+╔════ 05 Prozesse an ungewöhnlichen Pfaden ════╗
+  [FAIL] Prozesse aus temporären/ungewöhnlichen Pfaden:
+    /bin/zsh -c source /Users/sh/.claude/shell-snapshots/snapshot-zsh-1776619208002-dxqahp.sh 2>/dev/null || true && setopt NO_EXTENDED_GLOB 2>/dev/null || true && eval 'grep -r -l "infiltration\|ULTRA" "/Users/sh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/02 Projekte/" "/Users/sh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/01 Inbox/" "/Users/sh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/05 Daily Notes/" 2>/dev/null | head -20' < /dev/null && pwd -P >| /tmp/claude-57e3-cwd
+
+╔════ 06 Daemon-Prozesse ohne Apple-Signatur ════╗
+  [INFO] Binaries ohne Apple/Developer-ID-Signatur im Prozessbaum:
+    /Applications/3Dconnexion/3DxNLServer/3DxNLServer.app/Contents/MacOS/3DxNLServer
+    /Applications/3DconnexionHelper.app/Contents/MacOS/3DconnexionHelper
+    /Applications/Claude.app/Contents/MacOS/Claude
+    /Applications/DDPM/DDPM.app/Contents/MacOS/DDPM
+    /Applications/Essayist.app/Contents/PlugIns/ReferenceManagerWidgetsExtension.appex/Contents/MacOS/ReferenceManagerWidgetsExtension
+    /Applications/Obsidian.app/Contents/MacOS/Obsidian
+    /Applications/Setapp/CleanMyMac.app/Contents/MacOS/CleanMyMac_5_Setapp
+    /Applications/Setapp/CleanMyMac.app/Contents/PlugIns/CleanMyMac_5_Setapp_FinderSyncExtension.appex/Contents/MacOS/CleanMyMac_5_Setapp_FinderSyncExtension
+    /Applications/Tailscale.app/Contents/MacOS/Tailscale
+    /Applications/WhatsApp.app/Contents/MacOS/WhatsApp
+    /Applications/WhatsApp.app/Contents/PlugIns/ServiceExtension.appex/Contents/MacOS/ServiceExtension
+    /bin/zsh
+    /Library/Apple/System/Library/CoreServices/XProtect.app/Contents/XPCServices/XProtectPluginService.xpc/Contents/MacOS/XProtectPluginService
+    /Library/Apple/System/Library/PrivateFrameworks/DeviceInterface.framework/Support/deviceinterfaced
+    /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/XPCServices/MDRemoteServiceSupport.xpc/Contents/MacOS/MDRemoteServiceSupport
+    /Library/PreferencePanes/3Dconnexion.prefPane/Contents/Resources/3DxRadialMenu.app/Contents/MacOS/3DxRadialMenu
+    /Library/PreferencePanes/3Dconnexion.prefPane/Contents/Resources/3DxVirtualNumpad.app/Contents/MacOS/3DxVirtualNumpad
+    /Library/PrivilegedHelperTools/com.crystalidea.macsfancontrol.smcwrite
+    /Library/SystemExtensions/0230E865-46B3-40C8-91E6-B57CBC1DC5DD/com.3dconnexion.driver.dext/com.3dconnexion.driver
+    /Library/SystemExtensions/51B115DD-9B14-4819-A0D9-FF23D8F2178E/io.tailscale.ipn.macsys.network-extension.systemextension/Contents/MacOS/io.tailscale.ipn.macsys.network-extension
+
+╔════ 07 Aktive Netzwerk-Verbindungen ════╗
+  [INFO] ESTABLISHED:
+    Claude 1085 10.4.15.42:50781->160.79.104.10:443
+    Claude 1085 10.4.15.42:50929->18.97.36.52:443
+    Claude 1085 10.4.15.42:51133->160.79.104.10:443
+    Claude 819 10.4.15.42:50788->160.79.104.10:443
+    io.tailsc 911 127.0.0.1:49165->127.0.0.1:49170
+    io.tailsc 911 172.20.10.6:50726->185.40.234.113:443
+    io.tailsc 911 172.20.10.6:50727->192.200.0.106:443
+    io.tailsc 911 172.20.10.6:50790->199.165.136.100:443
+    rapportd 610 [fe80:1c::835:7a7a:88b9:4359]:49228->[fe80:1c::101a:a19a:586f:af0a]:49574
+    remoted 350 [fe80:1b::709b:a7ff:fe32:edb5]:50684->[fe80:1b::709b:a7ff:fe32:ed4a]:58783
+    Tailscale 818 127.0.0.1:49170->127.0.0.1:49165
+  [INFO] LISTENER:
+    3DxNLServ 1136 127.51.68.120:8181
+    3DxNLServ 1136 127.51.68.120:8182
+    ControlCe 634 *:5000
+    ControlCe 634 *:7000
+    io.tailsc 911 *:38263
+    io.tailsc 911 *:59450
+    io.tailsc 911 127.0.0.1:49165
+    launchd 1 [::1]:8021
+    launchd 1 *:22
+    launchd 1 127.0.0.1:8021
+    rapportd 610 *:49228
+    remoted 350 [fe80:1b::709b:a7ff:fe32:edb5]:50685
+    remoted 350 [fe80:1b::709b:a7ff:fe32:edb5]:50686
+    SetappAge 762 127.0.0.1:2432
+    symptomsd 430 *:60907
+  [INFO] UDP Listener:
+    COMMAND    PID           USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+    launchd      1           root   39u  IPv4 0x4d55d64821ea5a82      0t0  UDP *:138
+    launchd      1           root   40u  IPv4 0x3d741ae540d95fe1      0t0  UDP *:137
+    configd    343           root   30u  IPv4 0x64a29b27e268cb42      0t0  UDP *:68
+    nesession  380           root   24u  IPv4 0x2e65ef2cae4453be      0t0  UDP *:*
+    nesession  380           root   26u  IPv4 0x3d77d8f89bf1139e      0t0  UDP *:*
+    mDNSRespo  417 _mdnsresponder    6u  IPv4 0xd45eead92bab9379      0t0  UDP *:5353
+    mDNSRespo  417 _mdnsresponder    7u  IPv6 0xad01a0839c03ac28      0t0  UDP *:5353
+    airportd   429           root    3u  IPv4 0xabf062d252445e9d      0t0  UDP *:*
+    airportd   429           root    9u  IPv6 0x8169ba2e174c5b3c      0t0  UDP *:*
+    airportd   429           root   11u  IPv4 0x42fe2597788c4251      0t0  UDP *:*
+    airportd   429           root   13u  IPv4 0xda6718f83beb9381      0t0  UDP *:*
+    airportd   429           root   14u  IPv4 0x6a68d21fc8fc819a      0t0  UDP *:*
+    airportd   429           root   17u  IPv4 0x115a72e85fd569a8      0t0  UDP *:*
+    airportd   429           root   18u  IPv4 0x1cb201374cbeba38      0t0  UDP *:*
+    airportd   429           root   19u  IPv4 0x9e402bc1636f3498      0t0  UDP *:*
+    airportd   429           root   20u  IPv4 0x5643aa089a40835d      0t0  UDP *:*
+    airportd   429           root   23u  IPv4 0xaf59314a2cb9cc47      0t0  UDP *:*
+    airportd   429           root   25u  IPv4 0x80c40051e052e417      0t0  UDP *:*
+    wifip2pd   605           root    4u  IPv4  0xb3c9aecf1b23f9a      0t0  UDP *:*
+    wifip2pd   605           root    6u  IPv4 0xfc23cda53f8429c2      0t0  UDP *:*
+    wifip2pd   605           root    9u  IPv4 0x5df9e39529ffb8aa      0t0  UDP *:*
+    rapportd   610             sh   19u  IPv6 0x985cb6518cebbf96      0t0  UDP *:3722
+    identitys  630             sh    9u  IPv4 0x94b4e81e2a44a1aa      0t0  UDP *:*
+    identitys  630             sh   18u  IPv4 0x41cad73a86e43cd7      0t0  UDP *:*
+    identitys  630             sh   23u  IPv4 0x4e383718bbf35c0f      0t0  UDP *:*
+    identitys  630             sh   52u  IPv4 0xf6a5259a243bf649      0t0  UDP *:*
+    identitys  630             sh   56u  IPv4 0x8303058b6224b0ca      0t0  UDP *:*
+    sharingd   633             sh    4u  IPv4 0x996090920f90b318      0t0  UDP *:*
+    replicato  707             sh    8u  IPv6  0x509bb581867b4dc      0t0  UDP *:61636
+
+╔════ 08 Routing, ARP, Interfaces ════╗
+  [INFO] Default-Route:
+    default            link#22            UCSg               ipsec0       
+    default            link#23            UCSIg               utun4       
+    default            172.20.10.1        UGScIg                en8       
+  [INFO] ARP-Cache (Hinweis auf MITM wenn Gateway-MAC wechselt):
+    ip.local (169.254.17.243) at b6:55:75:52:86:18 on en8 [ethernet]
+    ip.local (169.254.225.177) at b6:55:75:52:86:e7 on en11 [ethernet]
+    ? (172.20.10.1) at b6:55:75:a8:8f:64 on en8 ifscope [ethernet]
+    ? (172.20.10.6) at b6:55:75:8a:eb:31 on en8 ifscope permanent [ethernet]
+    ? (172.20.10.15) at ff:ff:ff:ff:ff:ff on en8 ifscope [ethernet]
+    mdns.mcast.net (224.0.0.251) at 1:0:5e:0:0:fb on en8 ifscope permanent [ethernet]
+    ? (239.255.255.250) at 1:0:5e:7f:ff:fa on en8 ifscope permanent [ethernet]
+  [INFO] Interfaces:
+    lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
+    	inet 127.0.0.1 netmask 0xff000000
+    	inet 127.51.68.120 netmask 0xff000000
+    gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
+    stf0: flags=0<> mtu 1280
+    anpi2: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    anpi1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    anpi0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    en4: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    en5: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    en6: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    en1: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+    en2: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+    en3: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+    bridge0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    ap1: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500
+    en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    awdl0: flags=8822<BROADCAST,SMART,SIMPLEX,MULTICAST> mtu 1500
+    utun0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+    llw0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    utun1: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+    utun2: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000
+    utun3: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1000
+    utun4: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1280
+    	inet 100.101.76.90 --> 100.101.76.90 netmask 0xffffffff
+    utun5: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+    utun6: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1380
+    en8: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500 constrained
+    	inet 172.20.10.6 netmask 0xfffffff0 broadcast 172.20.10.15
+    en10: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    en11: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+    	inet 169.254.206.129 netmask 0xffff0000 broadcast 169.254.255.255
+    ipsec0: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1280
+    	inet 10.4.15.42 --> 10.4.15.42 netmask 0xff000000
+
+╔════ 09 Promiscuous-Mode Check ════╗
+  [FAIL] Interface im PROMISCUOUS-Mode: en1: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+en2: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+en3: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
+
+╔════ 10 DNS-Konfiguration ════╗
+  [INFO] Resolver:
+      nameserver[0] : 10.1.0.2
+      nameserver[0] : 100.100.100.100
+      nameserver[0] : fe80::b455:75ff:fea8:8f64%en8
+      nameserver[1] : 10.1.0.3
+      nameserver[1] : 172.20.10.1
+      nameserver[1] : fd7a:115c:a1e0::53
+  [INFO] Alle configured DNS via networksetup:
+    [iPhone]
+    iPhone is not a recognized network service.
+    ** Error: The parameters were not valid.
+    [USB]
+    USB is not a recognized network service.
+    ** Error: The parameters were not valid.
+    [USB]
+    USB is not a recognized network service.
+    ** Error: The parameters were not valid.
+    [AX88179B]
+    There aren't any DNS Servers set on AX88179B.
+    [Wi-Fi]
+    macbook-pro-von-sh.tailf1d344.ts.net
+    [USB]
+    USB is not a recognized network service.
+    ** Error: The parameters were not valid.
+    [10/100/1000]
+    10/100/1000 is not a recognized network service.
+    ** Error: The parameters were not valid.
+    [LAN]
+    LAN is not a recognized network service.
+    ** Error: The parameters were not valid.
+    [Tailscale]
+    There aren't any DNS Servers set on Tailscale.
+
+╔════ 11 Hosts-Datei ════╗
+  [OK]   /etc/hosts Standard
+
+╔════ 12 Bekannte WLAN-Netze ════╗
+
+╔════ 13 Recent Outbound DNS (last 1h) ════╗
+    com.apple.net
+    mask.icloud.com
+    tailf1d344.ts.net
+
+╔════ 14 Launch-Agents (User) ════╗
+  [INFO] com.google.GoogleUpdater.wake.plist → Label=com.google.GoogleUpdater.wake
+    Program: (    "/Users/sh/Library/Application Support/Google/GoogleUpdater/Current/GoogleUpdater.app/Contents/MacOS/GoogleUpdater",    "--wake-all",    "--enable-logging",    "--vmodule=*/components/update_clie
+  [INFO] com.setapp.DesktopClient.SetappAgent.plist → Label=com.setapp.DesktopClient.SetappAgent
+    Program: (    "/Users/sh/Library/Application Support/Setapp/LaunchAgents/Setapp.app/Contents/MacOS/SetappAgent",    "-xpcServer")
+  [INFO] com.setapp.DesktopClient.SetappAssistant.plist → Label=com.setapp.DesktopClient.SetappAssistant
+    Program: (    "/Users/sh/Library/Application Support/Setapp/LaunchAgents/SetappAssistant.app/Contents/MacOS/SetappAssistant",    "-xpcServer")
+  [INFO] com.setapp.DesktopClient.SetappLauncher.plist → Label=com.setapp.DesktopClient.SetappLauncher
+    Program: (    "/Users/sh/Library/Application Support/Setapp/LaunchAgents/SetappLauncher.app/Contents/MacOS/SetappLauncher",    "-xpcServer")
+  [INFO] com.setapp.DesktopClient.SetappUpdater.plist → Label=com.setapp.DesktopClient.SetappUpdater
+    Program: (    "/Users/sh/Library/Application Support/Setapp/LaunchAgents/SetappUpdater.app/Contents/MacOS/SetappUpdater",    "-xpcServer")
+
+╔════ 15 Launch-Agents/Daemons (System) ════╗
+  [INFO] /Library/LaunchAgents:
+    drwxr-xr-x   3 root  wheel    96 19 Apr. 16:37 .
+    drwxr-xr-x  70 root  wheel  2240 13 Apr. 08:23 ..
+    -rw-r--r--   1 root  wheel   492 18 Feb. 12:00 com.3dconnexion.helper.plist
+  [INFO] /Library/LaunchDaemons:
+    drwxr-xr-x   5 root  wheel   160 19 Apr. 16:37 .
+    drwxr-xr-x  70 root  wheel  2240 13 Apr. 08:23 ..
+    -rw-r--r--   1 root  wheel   488 13 Okt.  2025 com.3dconnexion.nlserverIPalias.plist
+    -rw-r--r--   1 root  wheel   647 24 März 12:06 com.crystalidea.macsfancontrol.smcwrite.plist
+    -rw-r--r--   1 root  wheel   596  3 März 08:14 com.macpaw.CleanMyMac-setapp.Agent.plist
+
+╔════ 16 Launch-Änderungen letzte 30 Tage ════╗
+  [WARN] Geänderte Launch-Dateien:
+    /Library/LaunchDaemons/com.crystalidea.macsfancontrol.smcwrite.plist
+    /Users/sh/Library/LaunchAgents/com.setapp.DesktopClient.SetappLauncher.plist
+    /Users/sh/Library/LaunchAgents/com.setapp.DesktopClient.SetappAgent.plist
+    /Users/sh/Library/LaunchAgents/com.setapp.DesktopClient.SetappUpdater.plist
+    /Users/sh/Library/LaunchAgents/com.setapp.DesktopClient.SetappAssistant.plist
+
+╔════ 17 LaunchDaemons: RunAtLoad + KeepAlive (Persistenz-Mix) ════╗
+  [INFO] com.3dconnexion.helper.plist: RunAtLoad=1 KeepAlive=0
+  [INFO] com.setapp.DesktopClient.SetappLauncher.plist: RunAtLoad=1 KeepAlive={
+    Crashed = 1;
+    SuccessfulExit = 0;
+}
+
+╔════ 18 Login-Items (GUI) ════╗
+  [INFO] Login-Items: DDPM, Aktivitätsanzeige, Obsidian, Terminal, Tailscale, Claude
+
+╔════ 19 Legacy Login-Hooks (defaults) ════╗
+  [OK]   Keine Login-Hooks
+
+╔════ 20 Legacy StartupItems ════╗
+  [OK]   Keine Legacy-StartupItems
+
+╔════ 21 cron + at ════╗
+  [INFO] User-Cron:
+    (leer)
+  [INFO] System-Cron /etc/crontab:
+  [INFO] keine
+  [INFO] Cron.d:
+    — leer —
+  [INFO] Periodic:
+    — leer —
+  [INFO] at-Queue:
+    — leer —
+
+╔════ 22 Rc-Scripts ════╗
+  [WARN] /etc/rc.common existiert und ist nicht leer (1560 bytes):
+    ##
+    # Common setup for startup scripts.
+    ##
+    # Copyright 1998-2002 Apple Computer, Inc.
+    ##
+    
+    #######################
+    # Configure the shell #
+    #######################
+    
+    ##
+    # Be strict
+    ##
+    #set -e
+    set -u
+    
+    ##
+    # Set command search path
+    ##
+    PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec:/System/Library/CoreServices; export PATH
+    
+    ##
+    # Set the terminal mode
+    ##
+    #if [ -x /usr/bin/tset ] && [ -f /usr/share/misc/termcap ]; then
+    #    TERM=$(tset - -Q); export TERM
+    #fi
+    
+    ####################
+    # Useful functions #
+    ####################
+    
+    ##
+    # Determine if the network is up by looking for any non-loopback
+    # internet network interfaces.
+    ##
+    CheckForNetwork()
+    {
+        local test
+    
+        if [ -z "${NETWORKUP:=}" ]; then
+    	test=$(ifconfig -a inet 2>/dev/null | sed -n -e '/127.0.0.1/d' -e '/0.0.0.0/d' -e '/inet/p' | wc -l)
+    	if [ "${test}" -gt 0 ]; then
+    	    NETWORKUP="-YES-"
+    	else
+    	    NETWORKUP="-NO-"
+    	fi
+        fi
+    }
+    
+    alias ConsoleMessage=echo
+    
+    ##
+    # Process management
+    ##
+    GetPID ()
+    {
+        local program="$1"
+        local pidfile="${PIDFILE:=/var/run/${program}.pid}"
+        local     pid=""
+    
+        if [ -f "${pidfile}" ]; then
+    	pid=$(head -1 "${pidfile}")
+    	if ! kill -0 "${pid}" 2> /dev/null; then
+    	    echo "Bad pid file $pidfile; deleting."
+    	    pid=""
+    	    rm -f "${pidfile}"
+    	fi
+        fi
+    
+        if [ -n "${pid}" ]; then
+    	echo "${pid}"
+    	return 0
+        else
+    	return 1
+        fi
+    }
+    
+    ##
+    # Generic action handler
+    ##
+    RunService ()
+    {
+        case $1 in 
+          start  ) StartService   ;;
+          stop   ) StopService    ;;
+          restart) RestartService ;;
+          *      ) echo "$0: unknown argument: $1";;
+        esac
+    }
+
+╔════ 23 ScriptingAdditions ════╗
+  [INFO] /Library/ScriptingAdditions:
+    total 0
+    drwxr-xr-x   2 root  wheel    64  6 Apr. 10:10 .
+    drwxr-xr-x  70 root  wheel  2240 13 Apr. 08:23 ..
+  [INFO] ~/Library/ScriptingAdditions:
+    — leer —
+
+╔════ 24 Mail-Bundles (Mail-Plugin-Persistenz) ════╗
+  [INFO] /Library/Mail/Bundles:
+    — leer —
+  [INFO] ~/Library/Mail/Bundles:
+    — leer —
+
+╔════ 25 Spotlight- + QuickLook-Plugins ════╗
+  [WARN] /Users/sh/Library/Spotlight enthält Plugins:
+    total 0
+    drwxr-xr-x    3 sh  staff    96 10 Nov. 00:40 .
+    drwx------@ 108 sh  staff  3456 18 Apr. 11:44 ..
+    drwxr-xr-x    3 sh  staff    96 10 Nov. 00:40 ExtensionsCache
+
+╔════ 26 Authorization-Plugins + PAM ════╗
+  [INFO] /Library/Security/SecurityAgentPlugins:
+    total 0
+    drwxr-xr-x  2 root  wheel   64  6 Apr. 10:10 .
+    drwxr-xr-x  4 root  wheel  128  6 Apr. 10:10 ..
+  [INFO] PAM-Module (/etc/pam.d):
+    total 200
+    drwxr-xr-x  27 root  wheel   864  6 Apr. 10:10 .
+    drwxr-xr-x  80 root  wheel  2560 19 Apr. 17:45 ..
+    -rw-r--r--   1 root  wheel   279  6 Apr. 10:10 authorization
+    -rw-r--r--   1 root  wheel   113  6 Apr. 10:10 authorization_aks
+    -rw-r--r--   1 root  wheel   146  6 Apr. 10:10 authorization_ctk
+    -rw-r--r--   1 root  wheel   166  6 Apr. 10:10 authorization_la
+    -rw-r--r--   1 root  wheel   183  6 Apr. 10:10 authorization_lacont
+    -rw-r--r--   1 root  wheel   181  6 Apr. 10:10 checkpw
+    -rw-r--r--   1 root  wheel   200  6 Apr. 10:10 chkpasswd
+    -r--r--r--   1 root  wheel   203  6 Apr. 10:10 cups
+    -rw-r--r--   1 root  wheel   512  6 Apr. 10:10 login
+    -rw-r--r--   1 root  wheel   152  6 Apr. 10:10 login.term
+    -r--r--r--   1 root  wheel   191  6 Apr. 10:10 other
+    -rw-r--r--   1 root  wheel   197  6 Apr. 10:10 passwd
+    -rw-r--r--   1 root  wheel   408  6 Apr. 10:10 screensaver
+    -rw-r--r--   1 root  wheel   312  6 Apr. 10:10 screensaver_aks
+    -rw-r--r--   1 root  wheel   342  6 Apr. 10:10 screensaver_ctk
+    -rw-r--r--   1 root  wheel   365  6 Apr. 10:10 screensaver_la
+    -rw-r--r--   1 root  wheel   279  6 Apr. 10:10 screensaver_new
+    -rw-r--r--   1 root  wheel   113  6 Apr. 10:10 screensaver_new_aks
+    -rw-r--r--   1 root  wheel   146  6 Apr. 10:10 screensaver_new_ctk
+    -rw-r--r--   1 root  wheel   166  6 Apr. 10:10 screensaver_new_la
+    -rw-r--r--   1 root  wheel   140  6 Apr. 10:10 smbd
+    -r--r--r--   1 root  wheel   527  6 Apr. 10:10 sshd
+    -rw-r--r--   1 root  wheel   356  6 Apr. 10:10 su
+    -r--r--r--   1 root  wheel   283  6 Apr. 10:10 sudo
+    -r--r--r--   1 root  wheel   179  6 Apr. 10:10 sudo_local.template
+  [INFO] Geänderte PAM-Module in 30 Tagen:
+    /etc/pam.d/screensaver_new_la
+    /etc/pam.d/chkpasswd
+    /etc/pam.d/authorization_lacont
+    /etc/pam.d/sshd
+    /etc/pam.d/login.term
+    /etc/pam.d/screensaver
+    /etc/pam.d/other
+    /etc/pam.d/checkpw
+    /etc/pam.d/screensaver_new_ctk
+    /etc/pam.d/screensaver_new
+    /etc/pam.d/su
+    /etc/pam.d/authorization_ctk
+    /etc/pam.d/screensaver_aks
+    /etc/pam.d/authorization_aks
+    /etc/pam.d/sudo
+    /etc/pam.d/screensaver_la
+    /etc/pam.d/authorization
+    /etc/pam.d/screensaver_new_aks
+    /etc/pam.d/authorization_la
+    /etc/pam.d/login
+    /etc/pam.d/cups
+    /etc/pam.d/smbd
+    /etc/pam.d/passwd
+    /etc/pam.d/sudo_local.template
+    /etc/pam.d/screensaver_ctk
+
+╔════ 27 System-Extensions ════╗
+  [INFO] systemextensionsctl list:
+    3 extension(s)
+    --- com.apple.system_extension.network_extension (Go to 'System Settings > General > Login Items & Extensions > Network Extensions' to modify these system extension(s))
+    enabled	active	teamID	bundleID (version)	name	[state]
+    *	*	W5364U7YZB	io.tailscale.ipn.macsys.network-extension (1.96.5/101.96.5)	Tailscale Network Extension	[activated enabled]
+    --- com.apple.system_extension.endpoint_security (Go to 'System Settings > General > Login Items & Extensions > Endpoint Security Extensions' to modify these system extension(s))
+    enabled	active	teamID	bundleID (version)	name	[state]
+    *	*	S8EX82NJP6	com.macpaw.moonlock.engine (2.11.1/2604011516)	Moonlock Protection	[activated enabled]
+    --- com.apple.system_extension.driver_extension (Go to 'System Settings > General > Login Items & Extensions > Driver Extensions' to modify these system extension(s))
+    enabled	active	teamID	bundleID (version)	name	[state]
+    *	*	9D93Y2RD6L	com.3dconnexion.driver (1.4.608/1.4.608)	com.3dconnexion.driver	[activated enabled]
+
+╔════ 28 Kernel-Extensions (Drittanbieter) ════╗
+  [OK]   Keine Drittanbieter-kexts
+
+╔════ 29 SIP + Gatekeeper + XProtect ════╗
+  [OK]   SIP aktiv
+  [OK]   Gatekeeper aktiv
+  [INFO] XProtect Version: 5338
+  [INFO] Gatekeeper-Denials letzte 7 Tage:
+    — leer —
+
+╔════ 30 Mach-O in ungewöhnlichen Pfaden ════╗
+  [INFO] Executables in /tmp /var/tmp ~/Library/Caches (nur Top-20):
+  [WARN] Executables/Libraries an ungewöhnlichen Orten:
+    /Users/sh/Library/Caches/com.apple.cache_delete/CacheDeletePurgeHistory.txt
+
+╔════ 31 Unsignierte Binaries im PATH ════╗
+  [INFO] Unsignierte Binaries im PATH (oft harmlos: brew/python/node):
+    /Users/sh/.nvm/versions/node/v24.15.0/bin/claude
+    /Users/sh/.nvm/versions/node/v24.15.0/bin/corepack
+    /Users/sh/.nvm/versions/node/v24.15.0/bin/npm
+    /Users/sh/.nvm/versions/node/v24.15.0/bin/npx
+    /opt/homebrew/bin/autopoint
+    /opt/homebrew/bin/bisect-create
+    /opt/homebrew/bin/brew
+    /opt/homebrew/bin/c_rehash
+    /opt/homebrew/bin/cairo-trace
+    /opt/homebrew/bin/check_arm_indent.sh
+    /opt/homebrew/bin/clean-diff
+    /opt/homebrew/bin/compare-cvelists.sh
+    /opt/homebrew/bin/dvd2concat
+    /opt/homebrew/bin/dvipdf
+    /opt/homebrew/bin/eps2eps
+
+╔════ 32 Sudo-Konfiguration ════╗
+  [INFO] sudo -l (was darf current user):
+    Matching Defaults entries for root on MacBook-Pro-von-SH:
+        env_reset, env_keep+=BLOCKSIZE, env_keep+="COLORFGBG COLORTERM", env_keep+=__CF_USER_TEXT_ENCODING, env_keep+="CHARSET LANG LANGUAGE LC_ALL LC_COLLATE LC_CTYPE", env_keep+="LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME", env_keep+="LINES COLUMNS", env_keep+=LSCOLORS, env_keep+=SSH_AUTH_SOCK, env_keep+=TZ, env_keep+="DISPLAY XAUTHORIZATION XAUTHORITY", env_keep+="EDITOR VISUAL", env_keep+="HOME MAIL", lecture_file=/etc/sudo_lecture, !log_allowed
+    
+    User root may run the following commands on MacBook-Pro-von-SH:
+        (ALL) ALL
+        (ALL) ALL
+  [INFO] /etc/sudoers.d/ Inhalt:
+    total 0
+    drwxr-xr-x   2 root  wheel    64  6 Apr. 10:10 .
+    drwxr-xr-x  80 root  wheel  2560 19 Apr. 17:45 ..
+  [INFO] Geänderte sudoers-Einträge letzte 30 Tage:
+    /etc/sudoers
+
+╔════ 33 TCC-Permissions (User) ════╗
+  [INFO] User-TCC.db nicht lesbar
+
+╔════ 34 TCC-Permissions (System — braucht Full Disk Access für Terminal) ════╗
+  [WARN] System-TCC.db nicht lesbar. Terminal in Systemeinstellungen → Datenschutz → Full Disk Access eintragen.
+
+╔════ 35 Setuid/Setgid außerhalb System-Pfade ════╗
+  [WARN] SUID/SGID-Binaries an ungewöhnlichen Pfaden:
+    /Library/Application Support/Google/GoogleUpdater/147.0.7703.0/GoogleUpdater.app/Contents/Helpers/launcher
+
+╔════ 36 iCloud-Account ════╗
+  [INFO] MobileMeAccounts:
+    — leer —
+
+╔════ 37 Keychains ════╗
+  [INFO] Aktive Keychains:
+        "/Users/sh/Library/Keychains/login.keychain-db"
+        "/Library/Keychains/System.keychain"
+  [INFO] Default-Keychain:
+        "/Users/sh/Library/Keychains/login.keychain-db"
+
+╔════ 38 SSH-Konfig ════╗
+  [INFO] ~/.ssh:
+    total 48
+    drwx------@ 10 sh  staff   320 13 Apr. 09:58 .
+    drwxr-x---+ 57 sh  staff  1824 19 Apr. 19:32 ..
+    drwx------@  3 sh  staff    96 12 März 21:56 1Password
+    drwx------   3 sh  staff    96  6 Apr. 07:54 agent
+    -rw-------   1 sh  staff    97 28 März 15:56 authorized_keys
+    -rw-------@  1 sh  staff    89  7 Dez. 17:42 config
+    -rw-------   1 sh  staff   419 28 März 15:19 id_ed25519
+    -rw-r--r--   1 sh  staff   109 28 März 15:19 id_ed25519.pub
+    -rw-------   1 sh  staff  2205 13 Apr. 09:58 known_hosts
+    -rw-------@  1 sh  staff  2053  6 Apr. 06:24 known_hosts.old
+  [WARN] authorized_keys: 1 Einträge — jeden einzeln verifizieren:
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBaV4Vt1v59l8aDcp7t3ftUvPPaDbtZXmcGGcywQOJRZ m3d@raspberrypi
+  [INFO] SSH Known-Hosts Count:       12
+
+╔════ 39 Shell-RC-Dateien auf Injection ════╗
+  [OK]   /Users/sh/.zshrc sauber
+  [OK]   /Users/sh/.zprofile sauber
+
+╔════ 40 Shell-Functions die System-Kommandos überschreiben ════╗
+
+╔════ 41 History — verdächtige Befehlsmuster ════╗
+  [WARN] /Users/sh/.zsh_history Muster-Treffer:
+    curl -fsSL https://claude.ai/install.sh | bash
+    curl -fsSL https://claude.ai/install.sh | bash
+    curl -fsSL https://tailscale.com/install.sh | sh\
+
+╔════ 42 DYLD-Umgebungsvariablen (Injection-Vektor) ════╗
+  [OK]   Keine DYLD_* Environment-Variablen
+
+╔════ 43 USB-Geräte (aktuell) ════╗
+    — leer —
+
+╔════ 44 Bluetooth-Geräte ════╗
+              Address: BC:D0:74:05:7A:ED
+              State: On
+    --
+                  Address: 24:C4:06:6A:1E:4A
+                  Vendor ID: 0x0ECB
+    --
+                  Address: B4:55:75:28:41:83
+                  RSSI: -47
+
+╔════ 45 iPhone/iPad-Pairing-Records (Lockdown) ════╗
+  [INFO] Pairing-Records: 0
+
+╔════ 46 Chrome-Extensions (mit Namen) ════╗
+  [INFO] cnjifjpddelmedmihgijeibhnjfabmlf — Obsidian Web Clipper
+       "permissions": [ "activeTab", "clipboardWrite", "commands", "contextMenus", "sidePanel", "storage", "scripting", "declarativeNetRequest" ],
+  [INFO] cofdbpoegempjloogbagkncekinflcnj — change-language
+       "permissions": [ "activeTab", "storage", "contextMenus", "tabs", "scripting", "declarativeNetRequest", "identity", "tts", "alarms", "webRequest", "cookies", "sidePanel" ],
+  [INFO] fcoeoabgfenejglbffodgkkbkcdhcgfn — Claude
+       "permissions": [ "sidePanel", "storage", "activeTab", "scripting", "debugger", "tabGroups", "tabs", "alarms", "notifications", "webNavigation", "declarativeNetRequestWithHostAccess", "offscreen", "
+  [INFO] lopnbnfpjmgpbppclhclehhgafnifija — __MSG_ext_name__
+       "permissions": [ "storage", "sidePanel", "contextMenus", "declarativeNetRequest", "scripting" ],
+  [INFO] lpcaedmchfhocbbapmcbpinfpgnhiddi — __MSG_appName__
+       "permissions": [ "activeTab", "identity", "identity.email", "contextMenus", "tabs", "unlimitedStorage", "scripting" ],
+  [INFO] mpdjakileikddgilaegaijhmfhendcji — __MSG_name__
+       "permissions": [ "storage", "activeTab", "background" ],
+  [INFO] nmmhkkegccagdldgiimedpiccmgmieda — __MSG_APP_NAME__
+       "permissions": [ "identity", "webview", "https://www.google.com/", "https://www.googleapis.com/*", "https://payments.google.com/payments/v4/js/integrator.js", "https://sandbox.google.com/payments/v
+  [INFO] odpbmohjoagkjaekafpmcabjlckbngom — __MSG_appName__
+       "permissions": [ "contextMenus", "scripting", "storage", "unlimitedStorage" ],
+  [INFO] pejdijmoenmkgeppbflobdenhhabjlaj — __MSG_extName__
+       "permissions": [ "privacy", "declarativeContent", "nativeMessaging", "webNavigation", "storage", "contextMenus", "scripting" ],
+
+╔════ 47 Safari-Extensions ════╗
+    — leer —
+    — leer —
+
+╔════ 48 Kürzlich heruntergeladene Files mit Quarantäne-Flag ════╗
+  [INFO] Quarantäne-XAttr Downloads letzte 14 Tage:
+    /Users/sh/Downloads/.DS_Store
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (8).jpeg
+    /Users/sh/Downloads/documentation-master/documentation/asciidoc/computers/.DS_Store
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (2).jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (4).jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26.jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (6).jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (1).jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (3).jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (7).jpeg
+    /Users/sh/Downloads/WhatsApp Image 2026-04-17 at 15.14.26 (5).jpeg
+    /Users/sh/Desktop/.DS_Store
+
+╔════ 49 Datei-Änderungen seit Baseline (2026-04-14) ════╗
+  [INFO] Neue Dotfiles im Home seit 2026-04-14:
+    /Users/sh/.DS_Store
+    /Users/sh/.zshrc
+    /Users/sh/.nvm/.npmrc
+    /Users/sh/.nvm/.gitmodules
+    /Users/sh/.nvm/.editorconfig
+    /Users/sh/.nvm/.dockerignore
+    /Users/sh/.nvm/.gitignore
+    /Users/sh/.nvm/.gitattributes
+    /Users/sh/.nvm/.mailmap
+    /Users/sh/.nvm/.travis.yml
+    /Users/sh/.claude/.mcp.json
+    /Users/sh/.claude/backups/.claude.json.backup.1776619347887
+    /Users/sh/.claude/backups/.claude.json.backup.1776619425538
+    /Users/sh/.claude/backups/.claude.json.backup.1776617492755
+    /Users/sh/.claude/backups/.claude.json.backup.1776618983580
+    /Users/sh/.claude/backups/.claude.json.backup.1776619168323
+    /Users/sh/.zsh_history
+    /Users/sh/Desktop/.DS_Store
+    /Users/sh/Library/Preferences/.GlobalPreferences.plist
+    /Users/sh/.zcompdump
+    /Users/sh/Mac-Inventur/05_Projekt_Material/.DS_Store
+    /Users/sh/Mac-Inventur/03_iPhone_Fotos_Videos/.DS_Store
+    /Users/sh/Mac-Inventur/_Kollisionen/.DS_Store
+    /Users/sh/Mac-Inventur/02_Installer/.DS_Store
+    /Users/sh/Mac-Inventur/01_Muell/.DS_Store
+    /Users/sh/.anydesk/.anydesk.trace
+    /Users/sh/.anydesk/incoming/.DS_Store
+    /Users/sh/.claude.json
+    /Users/sh/Downloads/.DS_Store
+    /Users/sh/.zshDDPMenv
+
+╔════ 50 Sicherheits-Events (letzte 24h) ════╗
+  [INFO] Security-Daemon Events (Auth):
+    2026-04-18 19:38:43.624140+0200 0x1005     Default     0x18dac9             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.625941+0200 0x1005     Default     0x18dacf             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.628227+0200 0x1005     Default     0x18dc15             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.630414+0200 0x1005     Default     0x18dc1b             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.633033+0200 0x1005     Default     0x18dc41             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.636073+0200 0x1005     Default     0x18dc47             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.640075+0200 0x1005     Default     0x18dc4d             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.642888+0200 0x1005     Default     0x18dc73             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.644428+0200 0x1005     Default     0x18dc79             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:43.646544+0200 0x1005     Default     0x18dc7f             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:45.662523+0200 0x1005     Default     0x18dc85             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:45.667922+0200 0x1005     Default     0x18dc8b             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:45.671045+0200 0x1005     Default     0x18e0e1             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:45.673213+0200 0x1005     Default     0x18e0e7             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+    2026-04-18 19:38:45.674718+0200 0x1005     Default     0x18e0ed             375    0    apsd: (Security) [com.apple.securityd:SecCritical] Failed to talk to secd after 4 attempts.
+  [INFO] launchd-Errors:
+    2026-04-18 19:38:43.443355+0200 0x4f61b    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.PowerManagement.control, flags = 0x9, requestor = locationd[381], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.457993+0200 0x4f61b    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.timed.xpc, requestor = findmybeaconing[504], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.460367+0200 0x4ff0e    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.timed.xpc, requestor = findmybeaconing[504], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.604176+0200 0x4ff0e    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd, requestor = searchpartyd[564], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.604272+0200 0x4ff0e    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd, requestor = locationd[381], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.606304+0200 0x4f61b    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd.system, flags = 0x8, requestor = searchpartyd[564], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.606767+0200 0x4f61b    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd.system, flags = 0x8, requestor = locationd[381], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.608179+0200 0x4f61b    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd, requestor = locationd[381], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.608288+0200 0x4f61b    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd, requestor = searchpartyd[564], error = 159: Sandbox restriction
+    2026-04-18 19:38:43.608906+0200 0x4ff0e    Default     0x0                  1      0    launchd: [system:] denied lookup: name = com.apple.tccd.system, flags = 0x8, requestor = locationd[381], error = 159: Sandbox restriction
+  [INFO] Kamera-Events letzte 24h:
+    2026-04-19 15:56:17.765243+0200 0x1d3b     Default     0x0                  505    0    appleh13camerad: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:17.765883+0200 0x3a74     Default     0x0                  505    0    appleh13camerad: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:17.768747+0200 0x56ce6    Default     0x0                  664    0    ContinuityCaptureAgent: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:17.769065+0200 0x56ce6    Default     0x0                  664    0    ContinuityCaptureAgent: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:17.775779+0200 0x56821    Default     0x0                  664    0    ContinuityCaptureAgent: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:19.225911+0200 0x56821    Default     0x0                  664    0    ContinuityCaptureAgent: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:19.408860+0200 0x3a74     Default     0x0                  505    0    appleh13camerad: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:19.409050+0200 0x1d3b     Default     0x0                  505    0    appleh13camerad: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:3351:-[CMIOExtensionProvider _clientQueue_removePendingStartStreamCountForClient:streamID:] <private>{public}, <private>: no pending stream starts
+    2026-04-19 15:56:25.261420+0200 0x56ef8    Default     0x0                  403    0    com.apple.cmio.registerassistantservice: [com.apple.cmio:] RegisterAssistantService.m:1662:-[RegisterAssistantServer startWithCompletionHandler:]_block_invoke launching user extensions for 501 : <private>
+    2026-04-19 15:56:25.795639+0200 0x5729f    Default     0x0                  20885  0    ContinuityCaptureAgent: (CoreMediaIO) [com.apple.cmio:] CMIOExtensionProvider.m:1835:+[CMIOExtensionProvider startServiceWithProvider:] 0x102c9d930 (<private>), autoreleased global provider 0x102c9d930 (its retain count is 4)
+  [INFO] Mikrofon-Events letzte 24h:
+    Timestamp                       Thread     Type        Activity             PID    TTL  
+    2026-04-19 15:56:11.748513+0200 0x566a8    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6003","name":"systemsoundserve(665)"}, "details":{"deviceUIDs":[],"implicit_category":"MediaPlayback","input_running":false,"output_running":true} }
+    2026-04-19 15:56:12.370099+0200 0x56583    Default     0x0                  749    0    corespeechd: (AudioToolbox) [com.apple.coreaudio:aqme]            AQMEIO_HAL.cpp:2663  aqmeio@0x8dace0018: set input stream usage to 1 on device 118, err = 0
+    2026-04-19 15:56:12.372118+0200 0x5698d    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6001","name":"corespeechd(749)"}, "details":{"deviceUIDs":[],"implicit_category":"Record","input_running":true,"output_running":false} }
+    2026-04-19 15:56:12.451683+0200 0x5698e    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6003","name":"systemsoundserve(665)"}, "details":{"deviceUIDs":[],"implicit_category":"","input_running":false,"output_running":false} }
+    2026-04-19 15:56:12.957438+0200 0x5698e    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6003","name":"systemsoundserve(665)"}, "details":{"deviceUIDs":[],"implicit_category":"MediaPlayback","input_running":false,"output_running":true} }
+    2026-04-19 15:56:13.532247+0200 0x566aa    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6003","name":"systemsoundserve(665)"}, "details":{"deviceUIDs":[],"implicit_category":"","input_running":false,"output_running":false} }
+    2026-04-19 15:56:14.625773+0200 0x566aa    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6001","name":"corespeechd(749)"}, "details":{"deviceUIDs":[],"implicit_category":"","input_running":false,"output_running":false} }
+    2026-04-19 15:56:14.626153+0200 0x566b5    Default     0x0                  749    0    corespeechd: (AudioToolbox) [com.apple.coreaudio:aqme]            AQMEIO_HAL.cpp:2663  aqmeio@0x8dace0018: set input stream usage to 0 on device 118, err = 0
+    2026-04-19 15:56:16.484356+0200 0x566aa    Default     0x0                  502    0    audiomxd: (AudioSessionServer) [com.apple.coreaudio:as_server] AVAudioSessionXPCServer.mm:2171  { "action":"update_running_state", "session":{"ID":"0x1f6001","name":"corespeechd(749)"}, "details":{"deviceUIDs":[],"implicit_category":"","input_running":false,"output_running":false} }
+
+╔════ EXECUTIVE SUMMARY ════╗
+
+Laufzeit:         131s
+Root/Sudo:        true / no
+
+Befunde:
+  MAL  (Malware-Muster):           0
+  FAIL (Kompromittierungs-Hinweis): 2
+  WARN (prüfen):                    9
+
+Report: /Users/sh/infiltration-ULTRA-2026-04-19_19-32-23.txt
