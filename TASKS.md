@@ -5,11 +5,11 @@ date: 2026-04-04
 
 # TASKS
 
-Zuletzt aktualisiert: 2026-04-20 (Bens-Vorbereitung + Git-Backup lokal)
+Zuletzt aktualisiert: 2026-04-21 (Reiner-Session Tag — Volker Bens Lagerschalenhalter)
 
 ## Termine
 
-- **Montag 2026-04-21 — Volker Bens Lagerschalenhalter mit Reiner:** Überarbeitung auf EHEDG/Lebensmittelindustrie abschließen. Zeichnungs-/BOM-/3D-Abgleich gegen Reiners Korrektur-Scans. Reiner bringt Muster aus früheren erfolgreichen Volker-Projekten (Input für [[04 Ressourcen/CAD-Datenuebergabe Standard - Bens Edelstahl|Bens-Lieferstandard]], v.a. STEP-Schema). **White-Label-Prinzip strikt einhalten** (alles unter Bens-Label, kein WEC/Sachsenmilch sichtbar — siehe [[03 Bereiche/WEC/CLAUDE#Volker Bens / Bens Edelstahl|WEC-Regeln]]). Briefing: [[03 Bereiche/WEC/wiki/Kunden/Volker Bens - Lagerschalenhalter Lebensmittelindustrie|Lagerschalenhalter-Wiki]] + [[04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen|Kundenordner-Playbook]]. Raw: `03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/`.
+- **HEUTE 2026-04-21 — Volker Bens Lagerschalenhalter mit Reiner:** Überarbeitung auf EHEDG/Lebensmittelindustrie abschließen. Zeichnungs-/BOM-/3D-Abgleich gegen Reiners Korrektur-Scans. Reiner bringt Muster aus früheren erfolgreichen Volker-Projekten (Input für [[04 Ressourcen/CAD-Datenuebergabe Standard - Bens Edelstahl|Bens-Lieferstandard]], v.a. STEP-Schema). **White-Label-Prinzip strikt einhalten** (alles unter Bens-Label, kein WEC/Sachsenmilch sichtbar — siehe [[03 Bereiche/WEC/CLAUDE#Volker Bens / Bens Edelstahl|WEC-Regeln]]). Briefing: [[03 Bereiche/WEC/wiki/Kunden/Volker Bens - Lagerschalenhalter Lebensmittelindustrie|Lagerschalenhalter-Wiki]] + [[04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen|Kundenordner-Playbook]]. Raw: `03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/`.
   - [ ] **Zeichnungsnummern final bestätigen:** BE-LS-202603 ist richtig (8 Reiner-Scans belegen). BE-IS-202631 aus CSV war Fehler → global ersetzen
   - [ ] **Schriftfeld-Felder L7/M7 klären:** Konstrukteur/Ingenieur-Name (blank / VB / Bens-Konvention?)
   - [ ] **Fusion-Template-Quelle lokalisieren:** Wo liegt die Bens-gebrandete Schriftfeld-Vorlage („Quality for Pharmacy")?
@@ -18,7 +18,7 @@ Zuletzt aktualisiert: 2026-04-20 (Bens-Vorbereitung + Git-Backup lokal)
   - [ ] **Vektor-Text „Sebastian Hartmann" aus Liefer-PDFs entfernen** via Inventor-Template-Fix, dann neu exportieren
   - [ ] **Nach Termin:** Erkenntnisse in [[04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen]] einarbeiten, Bens-Profil aus Stub zu voller Seite ausbauen
   - [ ] **Fehlende Standard-Artefakte anlegen:** `wiki/Kunden/Volker Bens - Zeichnungsindex.md`, `wiki/Kunden/Volker Bens - Profil.md` mit Template aus Playbook
-- **Montag 2026-04-21 — SSD-Übergabe an Reiner:** Welcome-Kit zurück + externe SSD als Projektspiegel. Anleitung → [[02 Projekte/WEC Neustart mit Reiner/Anleitung Reiner - Externe SSD Projektspiegel]]
+- **HEUTE 2026-04-21 — SSD-Übergabe an Reiner:** Welcome-Kit zurück + externe SSD als Projektspiegel. Anleitung → [[02 Projekte/WEC Neustart mit Reiner/Anleitung Reiner - Externe SSD Projektspiegel]]
 
 ---
 
