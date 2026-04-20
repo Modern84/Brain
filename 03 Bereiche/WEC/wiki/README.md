@@ -26,9 +26,9 @@ date: 2026-04-17
 Kopfdaten:
 ```yaml
 ---
-tags: [wiki, wec, kunde|norm|standard|bwl]
+tags: [wiki, wec, <kategorie>]   # kategorie: kunde ODER norm ODER standard ODER bwl — genau eines
 date: YYYY-MM-DD
-status: kompiliert | in-arbeit | verifiziert
+status: kompiliert   # oder: in-arbeit / verifiziert
 quellen: [raw/Kunden/.../datei1.pdf, raw/.../datei2.step]
 ---
 ```

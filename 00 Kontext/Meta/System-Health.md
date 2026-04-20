@@ -28,7 +28,7 @@ status: baseline
 ### Qualität
 
 - **Tag-Konsistenz**: ✅ alle Daily Notes auf `tagesbuch`
-- **Kaputte Tags**: ❌ `kunde|norm|standard|bwl` (Pipe ungültig) noch offen
+- **Kaputte Tags**: ✅ gefixt 2026-04-20 — war kein echter Tag im Einsatz, nur irreführender Pipe-Platzhalter im Wiki-README-Template. Umgestellt auf `<kategorie>`-Platzhalter mit Kommentar.
 - **Kopfdaten-Abdeckung**: ⚠️ 3 Referenz-Projekte migriert, Rest lazy
 - **Broken Wikilinks**: nicht gemessen — Baseline durch `brain-lint.sh` offen
 - **Orphans**: viele (ersichtlich aus Graph) — akzeptiert weil Attachments

@@ -121,7 +121,7 @@ Zuletzt aktualisiert: 2026-04-20 (Bens-Vorbereitung + Git-Backup lokal)
 
 - [ ] **🟡 Entscheidung Datensatz_SK** — `07 Anhänge/Allgemein/Datensatz_SK` (4,1 GB, 4273 Dateien): Sabines USB-Stick-Dump. Empfehlung: raus aus Vault → externe SSD/T9 oder `06 Archiv/Alte Auftraege/SK-Bestand/`. iCloud-Sync-Entlastung.
 - [ ] **🟡 Entscheidung Solid-Edge-Profil** — `07 Anhänge/Allgemein/Profil` (144 MB): komplett zu WEC migrieren (`03 Bereiche/WEC/raw/Standards WEC/Solid Edge Profil/`) oder nur ausgewählte Templates? Laut [[03 Bereiche/WEC/Operationen/Ingest|Ingest.md]] offen.
-- [ ] **Kaputtes Tag fixen** — `kunde|norm|standard|bwl` (Pipe-Symbol ist ungültig). `brain-lint.sh` findet die Stellen.
+- [x] **Kaputtes Tag fixen** ✅ (2026-04-20) — war kein echter Tag im Einsatz, nur irreführender Pipe-Platzhalter im Wiki-README-Template (`[wiki, wec, kunde|norm|standard|bwl]`). Auf `<kategorie>`-Platzhalter mit Kommentar umgestellt.
 - [ ] **Daily-Notes-Lücke** — 07.–12. April fehlen. Falls rekonstruierbar aus Memory/TASKS, sonst als bewusst leer markieren.
 - [ ] **`brain-lint.sh` Baseline laufen lassen** — erste vollständige Lint-Ausgabe speichern als Referenz für künftige Checks.
 - [ ] **Aliase in ~/.zshrc** — `blint`, `bstats`, `bdaily` für die neuen Scripts (optional, siehe [[04 Ressourcen/Scripts/README]]).
