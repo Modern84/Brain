@@ -13,9 +13,11 @@
 .obsidian/graph.json
 .obsidian/cache/
 
-# Claude / Claudian Session-State
+# Claude / Claudian Session-State (enthalten Klartext-Conversation-Logs)
 .claude/sessions/
 .claude/settings.local.json
+.claudian/
+
 
 # Riesige Binär-Dumps — bewusst außerhalb Git (SSD-/Archiv-Umzug geplant)
 07 Anhänge/Allgemein/Datensatz_SK/
