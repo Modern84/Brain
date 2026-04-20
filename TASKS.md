@@ -98,24 +98,9 @@ Zuletzt aktualisiert: 2026-04-21 (Reiner-Session Tag — Volker Bens Lagerschale
 - [x] **autoUpdates aktiviert** ✅ — `~/.claude/settings.json` gesetzt (17.04.)
 - [ ] **`claude doctor`** — manuelle Verifikation im Terminal (nicht kritisch)
 
-### Git-Backup (offen nach 2026-04-20)
+### Git-Backup
 
-- [ ] **Remote-Push auf `origin/main` reparieren** — lokal Commits + Tag `vor-bens-termin-2026-04-21` fertig, GitHub lehnt Push ab (HTTP 500) wegen Großdateien in History + White-Label-/Topologie-Leaks in alten Commits. Pfad: `git filter-repo --invert-paths --path-glob '<…>'` (oder BFG), danach `git push --force-with-lease`. Tag muss neu gesetzt werden (Hashes ändern sich). Nicht vor Reiner-Session — lokaler Restore-Punkt reicht.
-
-  **filter-repo Pfade (alle aus History entfernen):**
-  - `02 Projekte/ProForge5 Build/firmware/P5FW_aktuell_2026-03-19.zip` (2,7 GB)
-  - `02 Projekte/ProForge5 Build/assets/Proforge4_Referenzmodell_alte_Generation.STEP` (202 MB)
-  - `02 Projekte/CLAM Vase/assets/CLAM VASE.obj` (75 MB) + `obj_1_CLAM VASE.STL.stl` (52 MB) + `CLAM+VASE.3mf`
-  - `02 Projekte/Topf/assets/Topf.obj` (27 MB) + `Topf.step`
-  - `06 Archiv/Alte Auftraege/03_2024_DOKU Sicat/5_Dokumentation/01_FMEA_Risikobeurteilung/02_Zeichnungen_3D-Model/P2906.00.00.00.000_VAQRS120.pdf` (37 MB)
-  - `06 Archiv/Alte Auftraege/03_2024_DOKU Sicat/Modell/31101672.par` + `Modell_Stand 08-03-24/31101672.par` (je 15 MB)
-  - `06 Archiv/Alte Auftraege/03_2024_DOKU Sicat/5_Dokumentation/02_Betriebsanleitung/Arbeitsstand Heiko_DE_P2906_EXQRS120_VPQR120_6110_BA.docx` (10 MB)
-  - **Leak-Pfade (White-Label / fremde Kundendaten):**
-    - `07 Anhänge/Fusion360/**` (10 PDFs mit Vektor-Text Hartmann/Woldrich)
-    - `07 Anhänge/Reiners_Gehirn/**` (fremde Kundendaten → eigenes Repo)
-    - `07 Anhänge/Bildschirmfoto 2026-04-14 um 18.03.52.png` (Tailscale-Topologie, Geräte-IPs, E-Mail, IPv6)
-    - `.claudian/**` (Klartext-Conversation-Logs)
-  - **Danach:** Push testen, neuer Tag `vor-bens-termin-2026-04-21` auf aktuellem Stand, Reiners_Gehirn als separates Repo aufsetzen.
+- [x] **Remote-Push auf `origin/main` repariert** ✅ (2026-04-21) — `git filter-repo --strip-blobs-bigger-than 10M` entfernte alle Großdateien aus History (Firmware-Zip 2,7 GB, Proforge4-STEP 202 MB, CLAM-Vase-OBJ/STL/3MF, Topf-OBJ/STEP, Sicat-PDF/PAR/DOCX). `.git` 3,6 GB → 273 MB, Force-Push durch (Initial-Commit-Divergenz überschrieben). Backup `.git.backup_20260420_174612` parallel zum Vault. Leak-Pfade (Fusion360, Reiners_Gehirn, Topologie-Screenshot, .claudian) waren bereits per `.gitignore` nicht im Tracked-Set — kein Filter-Eintrag nötig. Tag `vor-bens-termin-2026-04-21` muss neu gesetzt werden (SHAs geändert) — offen wenn gebraucht.
 
 ### Vault-Struktur (offen aus 19.04. Schema-Durchlauf)
 
