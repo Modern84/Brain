@@ -1,0 +1,34 @@
+Lagerschalenhalter Lebensmittelindustrie
+Bens Edelstahl GmbH
+Stand: 2026-04-21
+
+Inhalt dieses Ordners
+---------------------
+3D/
+  Lagerhalter_Zusammenbau.stp        Hauptbaugruppe (STEP AP203/214)
+  Zusammenbau_Lagerschalehalter.iges Hauptbaugruppe (IGES)
+  Schweißgruppe_Halter.iges          Schweißbaugruppe
+  Einzelteile/                       sechs Einzelteile als IGES
+
+Stueckliste/
+  BOM_bereinigt.xlsx   Stückliste (Excel)
+  BOM_bereinigt.csv    Stückliste (CSV, UTF-8, Trennzeichen Semikolon)
+
+Zeichnungen (PDF)
+-----------------
+Die Zeichnungs-PDFs werden separat nachgeliefert. Sie durchlaufen aktuell
+einen Template-Durchgang, damit Schriftfeld und Metadaten dem Bens-
+Corporate-Design entsprechen.
+
+Zeichnungsnummern-Schema
+------------------------
+BE-LS-202603-XXX-Y
+  BE    Bens Edelstahl
+  LS    Lagerschalenhalter
+  202603 Projekt-/Datumsbezug
+  XXX   fortlaufende Teilenummer
+  Y     Revisionsstand
+
+Kontakt
+-------
+Bens Edelstahl GmbH
