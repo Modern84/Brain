@@ -253,6 +253,31 @@ Alle 10 PDFs aus dem Fusion360-Paket (`07 Anhänge/Fusion360/…/PDF/`) enthalte
 
 **Konsequenz:** PDF-Teil der Lieferung ist **nicht abgesandt-fertig**, bis Sebastian oder Reiner den Fusion-Neuexport macht. Stückliste + 3D-Daten können jederzeit raus.
 
+## Teil 5 — Werkstoff-Syntax-Fix + LIESMICH komplettiert (2026-04-21)
+
+Sachlicher Norm-Verstoß in der BOM entdeckt und selbst korrigiert (eindeutiger Tippfehler, keine inhaltliche Entscheidung):
+
+### Werkstoff-Nummer DIN EN 10027-2
+
+| | Alt | Neu | Betroffene Zellen |
+|---|---|---|---|
+| Syntax | `1.44.04` (keine gültige Werkstoff-Nummer) | `1.4404` (X2CrNiMo17-12-2, AISI 316L) | 12 Zellen |
+
+Fix in allen vier Spiegeln durchgezogen: `BOM_bereinigt.xlsx` + `BOM_bereinigt.csv` im Session-Ordner **und** im `_An_Volker/Stueckliste/`-Liefer-Paket. Backup vor Fix: `BOM_bereinigt.xlsx.backup_20260421_werkstofffix`.
+
+Verify: `grep -c "1.44.04"` in allen vier Dateien = 0.
+
+### LIESMICH.txt vervollständigt
+
+War abgeschnitten nach „Bens Edelstahl GmbH" (Zeile 34, kein Kontakt). Neu: ergänzt um Werkstoff-Angabe (1.4404), BOM-Hinweise (B16-Nummernkonflikt transparent gemacht, B11/B12-Duplikat als Absicht erklärt), Hinweis auf direkten Projektkontakt bei Rückfragen. White-Label-sauber, keine WEC-Adresse.
+
+### Offene BOM-Punkte (für Reiner-Entscheidung, nicht selbst korrigiert)
+
+- **B16 Welle_V2 `BE-LS-202603-203`**: Suffix `-0` fehlt, kollidiert mit B5 Scheibe_t=1 `-203-0`. Vorschlag `207-0`. Im LIESMICH transparent als „Abstimmung läuft" ausgewiesen.
+- **B11 + B12 identisch** (beide `BE-LS-202603-1-0 Schweißgruppe_Halter`, je Menge 2): vermutlich Absicht (4 Schweißgruppen gesamt), aber Nummern-Schema bricht das dreistellige `XXX-Y`-Muster. Im LIESMICH als „wird mit PDF-Nachlieferung auf `001-0` vereinheitlicht" dokumentiert.
+
+---
+
 ## Verknüpfungen
 
 - [[04 Ressourcen/Playbook/Sessions/2026-04-18 Tool-Setup Sebastian-Mac|Tool-Setup-Session (gleicher Tag)]] — Erstfund des White-Label-Verstoßes

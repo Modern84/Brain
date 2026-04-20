@@ -5,14 +5,14 @@ Stand: 2026-04-21
 Inhalt dieses Ordners
 ---------------------
 3D/
-  Lagerhalter_Zusammenbau.stp        Hauptbaugruppe (STEP AP203/214)
+  Lagerhalter_Zusammenbau.stp        Hauptbaugruppe (STEP, AP203)
   Zusammenbau_Lagerschalehalter.iges Hauptbaugruppe (IGES)
-  Schweißgruppe_Halter.iges          Schweißbaugruppe
+  Schweissgruppe_Halter.iges         Schweissbaugruppe
   Einzelteile/                       sechs Einzelteile als IGES
 
 Stueckliste/
-  BOM_bereinigt.xlsx   Stückliste (Excel)
-  BOM_bereinigt.csv    Stückliste (CSV, UTF-8, Trennzeichen Semikolon)
+  BOM_bereinigt.xlsx   Stueckliste (Excel)
+  BOM_bereinigt.csv    Stueckliste (CSV, UTF-8, Trennzeichen Semikolon)
 
 Zeichnungen (PDF)
 -----------------
@@ -23,12 +23,25 @@ Corporate-Design entsprechen.
 Zeichnungsnummern-Schema
 ------------------------
 BE-LS-202603-XXX-Y
-  BE    Bens Edelstahl
-  LS    Lagerschalenhalter
+  BE     Bens Edelstahl
+  LS     Lagerschalenhalter
   202603 Projekt-/Datumsbezug
-  XXX   fortlaufende Teilenummer
-  Y     Revisionsstand
+  XXX    fortlaufende Teilenummer
+  Y      Revisionsstand
 
-Kontakt
--------
-Bens Edelstahl GmbH
+Werkstoffe
+----------
+Edelstahl 1.4404 (X2CrNiMo17-12-2, AISI 316L) fuer alle Einzelteile aus
+Blech und Rundstahl. Kauf- und Normteile nach Maedler- bzw. DIN-Angabe
+in der Stueckliste.
+
+Hinweise zur BOM
+----------------
+- Position 7 (Welle_V2, BE-LS-202603-203): Nummernkonflikt mit Position 5
+  (Scheibe_t=1, BE-LS-202603-203-0). Abstimmung laeuft, finale Nummer folgt
+  mit den Zeichnungs-PDFs.
+- Positionen 11 und 12 sind beide "Schweissgruppe_Halter" (BE-LS-202603-1-0),
+  je Menge 2 = 4 Schweissgruppen insgesamt. Teilenummern-Schema wird mit
+  PDF-Nachlieferung auf dreistellig (001-0) vereinheitlicht.
+
+Bei Rueckfragen bitte direkt an den bekannten Projektkontakt.
