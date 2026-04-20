@@ -1,5 +1,5 @@
 ---
-tags: [daily-note]
+tags: [tagesbuch]
 date: <% tp.date.now("YYYY-MM-DD") %>
 ---
 

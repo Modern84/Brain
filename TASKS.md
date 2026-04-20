@@ -122,8 +122,9 @@ Zuletzt aktualisiert: 2026-04-20 (Bens-Vorbereitung + Git-Backup lokal)
 - [ ] **🟡 Entscheidung Datensatz_SK** — `07 Anhänge/Allgemein/Datensatz_SK` (4,1 GB, 4273 Dateien): Sabines USB-Stick-Dump. Empfehlung: raus aus Vault → externe SSD/T9 oder `06 Archiv/Alte Auftraege/SK-Bestand/`. iCloud-Sync-Entlastung.
 - [ ] **🟡 Entscheidung Solid-Edge-Profil** — `07 Anhänge/Allgemein/Profil` (144 MB): komplett zu WEC migrieren (`03 Bereiche/WEC/raw/Standards WEC/Solid Edge Profil/`) oder nur ausgewählte Templates? Laut [[03 Bereiche/WEC/Operationen/Ingest|Ingest.md]] offen.
 - [x] **Kaputtes Tag fixen** ✅ (2026-04-20) — war kein echter Tag im Einsatz, nur irreführender Pipe-Platzhalter im Wiki-README-Template (`[wiki, wec, kunde|norm|standard|bwl]`). Auf `<kategorie>`-Platzhalter mit Kommentar umgestellt.
-- [ ] **Daily-Notes-Lücke** — 07.–12. April fehlen. Falls rekonstruierbar aus Memory/TASKS, sonst als bewusst leer markieren.
-- [ ] **`brain-lint.sh` Baseline laufen lassen** — erste vollständige Lint-Ausgabe speichern als Referenz für künftige Checks.
+- [x] **Daily-Notes-Lücke** ✅ (2026-04-20) — 07.–12. April als bewusst leer markiert via Sammel-Notiz [[05 Daily Notes/2026-04-07_bis_12_keine-eintraege]]. Keine Commits in dem Fenster, Vault-Setup-Phase.
+- [x] **`brain-lint.sh` Baseline** ✅ (2026-04-20) — ausgeführt. Befunde: 20 Dateien ohne Kopfdaten (hauptsächlich `03 Bereiche/Edi/` = ungarisch, Ildikó-Bereich), 1 Tag-Fehler (Template `daily-note` → `tagesbuch` gefixt), 20 broken Wikilinks (Stichprobe) — davon die meisten absichtliche Skills-Roadmap-Stubs, 2 echte im Playbook „Montag-Vorbereitung — Bens Zeichnungsabgleich" (`Zeichnungsnummern-Abgleich`, `White-Label Bereinigung`) die durch das finale `Aenderungsprotokoll.md` ersetzt wurden.
+- [ ] **Playbook „Montag-Vorbereitung — Bens Zeichnungsabgleich" nachziehen** — tote Links auf nie-erstellte Geschwister-Dateien durch Verweise auf das tatsächlich erzeugte [[03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/2026-04-21 Montag-Session/Aenderungsprotokoll|Aenderungsprotokoll]] ersetzen. Nach Reiner-Session, wenn das Playbook retrospektiv aktualisiert wird.
 - [ ] **Aliase in ~/.zshrc** — `blint`, `bstats`, `bdaily` für die neuen Scripts (optional, siehe [[04 Ressourcen/Scripts/README]]).
 
 ### Sicherheit (Folgemaßnahmen AMOS-Vorfall 17.04.)
