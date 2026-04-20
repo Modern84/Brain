@@ -1,8 +1,18 @@
 ---
-tags: [lieferung, bens, bom, pdf, white-label]
+tags: [lieferung, bens, bom, pdf, white-label, intern]
 date: 2026-04-18
 status: teilweise-bereinigt
 letzte-aenderung: 2026-04-20
+vertraulichkeit: intern-wec-reiner
+nicht-weitergeben: volker-bens
+---
+
+# 🔴 INTERN — NICHT AN VOLKER WEITERGEBEN
+
+> **Vertraulichkeitsstufe:** Arbeitsdokument für Reiner ↔ Sebastian. Dokumentiert die interne White-Label-Bereinigung mit konkreten Fundstellen (Hartmann/Woldrich/Sachsenmilch) aus den Ursprungsdateien. Volker darf weder Inhalt noch Existenz dieses Protokolls kennen — würde die White-Label-Position untergraben.
+>
+> **Liefer-Ordner-Kontext:** Der Oberordner `2026-04-21 Montag-Session/` ist Reiner-Arbeitsmaterial, kein Volker-Lieferordner. Volker bekommt ausschließlich `3D/`, bereinigte PDFs und `BOM_bereinigt.csv` — dieses Protokoll bleibt intern.
+
 ---
 
 # Änderungsprotokoll — Bens Lagerschalenhalter White-Label-Bereinigung
