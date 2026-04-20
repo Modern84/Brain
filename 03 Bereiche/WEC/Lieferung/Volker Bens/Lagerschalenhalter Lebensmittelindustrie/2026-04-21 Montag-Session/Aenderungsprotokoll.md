@@ -183,6 +183,66 @@ Schema-Soll laut Reiner-Scans und restlicher BOM: `BE-LS-202603-<Sachnummer>-<Va
 
 **Frage an Reiner:** Welche Sachnummer soll Welle_V2 (B16) bekommen? Vorschlag bei Gleichstand: nächste freie, z.B. `207-0`.
 
+## Teil 4 — 3D-Daten + CSV-Stückliste ergänzt (2026-04-20)
+
+Ziel: Volker-Liefer-Paket so weit wie möglich fertigstellen (STP + PDFs + Stückliste). Realitäts-Check: alle 10 Fusion-PDFs haben Vektor-Text-Leaks (`hartmann|w-ec|woldrich|sachsenmilch|SM_`) — nicht ohne Fusion-Neuexport lieferbar. 3D-Daten und CSV-Stückliste sind dagegen sauber und wurden ergänzt.
+
+### 3D-Daten (White-Label-Check bestanden)
+
+| Format | Herkunft | Author/Organization |
+|---|---|---|
+| STP (`Lagerhalter.stp` → Zusammenbau) | raw/ | `author=('')`, `organization=('')`, Generator `ST-Developer` |
+| IGES (Zusammenbau + Einzelteile) | `07 Anhänge/Fusion360/…/Step/` | `author='unknown'`, `organization='unknown'` |
+
+Regex-Scan `hartmann|w-ec|woldrich|sachsenmilch|SM_|AM_` gegen alle 10 IGES + STP: **0 Treffer**.
+
+**Kopier-Aktionen (Original bleibt unangetastet):**
+
+```
+3D/
+├── Lagerhalter_Zusammenbau.stp          (Zusammenbau, STP AP214)
+├── Zusammenbau_Lagerschalehalter.iges   (Zusammenbau, IGES — Lieferstandard laut CAD-Doku)
+├── Schweißgruppe_Halter.iges
+└── Einzelteile/
+    ├── Lagerhalter.iges
+    ├── Lagerschale.iges
+    ├── Scheibe_t=1.iges
+    ├── Scheibe_t=5.iges
+    ├── Welle_V1.iges
+    └── Welle_V2.iges
+```
+
+**Hinweis Format-Auswahl:** CAD-Standard 2026-04-17 benennt IGES als historisches Bens-Lieferformat (`.iges`-Endung, aus Fusion-Export). Der vorhandene STP-Export ist nur für den Zusammenbau verfügbar. Beides mitgeliefert, Reiner-Entscheidung Montag welches Format final an Volker geht.
+
+### Stückliste als CSV
+
+CSV-Export aus `BOM_bereinigt.xlsx` (bereits white-label-bereinigt durch Teil 1).
+
+| | Datei | md5 | Bemerkung |
+|---|---|---|---|
+| Quelle | `BOM_bereinigt.xlsx` | `d770bfb3123325a7de27ae20cab1349d` | |
+| Export | `BOM_bereinigt.csv` | `3e68bc66a2a7a6f340403b1c87e6a0b7` | Trennzeichen `;`, UTF-8, Leak-Scan 0 Treffer |
+
+### Blocker — PDFs nicht lieferbar ohne Fusion-Neuexport
+
+Alle 10 PDFs aus dem Fusion360-Paket (`07 Anhänge/Fusion360/…/PDF/`) enthalten im Vektor-Text des Schriftfelds den Konstrukteur-Eintrag `Sebastian Hartmann` bzw. Prüfer-Eintrag `Woldrich`. Direkter String-Replace im Content-Stream ist nicht sicher (siehe Teil 2) — Risiko Geometrie-Beschädigung.
+
+| PDF | Hits (hartmann/w-ec/woldrich/sachsenmilch/SM_) |
+|---|---|
+| Zusammenbau_Lagerschalehalter Zeichnung.pdf | 3 |
+| Zusammenbau_Lagerschalehalter Zeichnung lang.pdf | 3 |
+| Schweißgruppe_Halter Zeichnung (~recovered).pdf | 1 |
+| Lagerhalter Zeichnung (~recovered).pdf | 1 |
+| Lagerschale Zeichnung.pdf | 1 |
+| Scheibe_t=1 Zeichnung.pdf | 1 |
+| Scheibe_t=3 Zeichnung.pdf | 1 |
+| Welle_V1 Zeichnung.pdf / Welle_V1 Zeichnung (~recovered).pdf | 1 / 1 |
+| Welle_V2 Zeichnung.pdf | 1 |
+
+**Einzige saubere Lösung:** Fusion-Template-Schriftfeld auf Bens-Konvention umstellen (L7/M7-Entscheidung Montag) und alle 10 PDFs neu exportieren. Kann Claude Code **nicht** — Fusion-360-Zugriff nötig. Die zwei bereits im Liefer-Ordner befindlichen PDFs (`Grundplatte Zeichnung.pdf`, `Zwischenplatte Zeichnung.pdf`) sind vom gleichen Blocker betroffen — Metadaten bereinigt, Vektor-Text im Schriftfeld bleibt bis Fusion-Export.
+
+**Konsequenz:** PDF-Teil der Lieferung ist **nicht abgesandt-fertig**, bis Sebastian oder Reiner den Fusion-Neuexport macht. Stückliste + 3D-Daten können jederzeit raus.
+
 ## Verknüpfungen
 
 - [[04 Ressourcen/Playbook/Sessions/2026-04-18 Tool-Setup Sebastian-Mac|Tool-Setup-Session (gleicher Tag)]] — Erstfund des White-Label-Verstoßes
