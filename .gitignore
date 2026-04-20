@@ -1,10 +1,56 @@
+# macOS / iCloud
+.DS_Store
+.icloud
+*.icloud
+._*
+.Trash/
+.trash/
+
+# Obsidian lokaler State (nicht reproduzierbar, iCloud-Konflikt-Fabrik)
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/workspaces.json
 .obsidian/graph.json
+.obsidian/cache/
+
+# Claude / Claudian Session-State
 .claude/sessions/
 .claude/settings.local.json
-.trash/
-.DS_Store
 
-# Riesige Binär-Dumps — bewusst außerhalb Git (Entscheidung offen, SSD/Archiv-Umzug geplant)
+# Riesige Binär-Dumps — bewusst außerhalb Git (SSD-/Archiv-Umzug geplant)
 07 Anhänge/Allgemein/Datensatz_SK/
+07 Anhänge/Allgemein/Profil/
+07 Anhänge/Screenshots/
+
+# Binaries vault-weit (blähen .git auf — in Liefer-Ordnern gezielt ausgenommen)
+*.step
+*.stp
+*.iges
+*.igs
+*.dwg
+*.dft
+*.dxf
+*.zip
+*.rar
+*.7z
+*.m4a
+*.mov
+*.mp4
+*.stl
+*.3mf
+*.f3d
+*.f3z
+
+# Ausnahmen: Liefer-Ordner müssen die CAD-Daten enthalten
+!03 Bereiche/**/Lieferung/**
+!03 Bereiche/**/Lieferung/**/*.stp
+!03 Bereiche/**/Lieferung/**/*.iges
+
+# Secret-Patterns (präventiv)
+*.key
+*.pem
+*.p12
+.env
+.env.*
+credentials.json
+*secret*.json
