@@ -2,6 +2,9 @@
 tags: [projekt, system, sicherheit]
 date: 2026-04-17
 status: geplant
+priorität: C
+owner: Sebastian
+raum: MThreeD
 ---
 
 # Plan — Chrome zu Safari Migration und Schlüsselbund-Konsolidierung

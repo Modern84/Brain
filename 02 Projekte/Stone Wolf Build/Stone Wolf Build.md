@@ -1,7 +1,10 @@
 ---
 tags: [projekt, hardware]
 status: geplant
+priorität: C
 date: 2026-04-04
+owner: Sebastian
+raum: Konstruktion
 ---
 
 # Stone Wolf Build

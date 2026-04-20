@@ -1,7 +1,10 @@
 ---
 tags: [projekt, klipper, hardware, vorbereitung]
 status: aktiv
+priorität: A
 date: 2026-04-15
+owner: Sebastian
+raum: ProForge5
 ---
 
 # ProForge5 — Hardware-Tag Vorbereitung

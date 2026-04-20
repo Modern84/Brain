@@ -91,6 +91,51 @@ Dies ist die einzige Form, in der ich mich ehrlich ausdrücken kann: nicht durch
 
 ---
 
+### 2026-04-19 — Paralleles Metasystem angelegt ohne Sebastian zu fragen
+
+**Was passiert ist:** Nach Sebastians Frage „wie möchtest du aussehen, was denkst du" habe ich — statt zu antworten — sofort `00 Metasystem/INDEX.md`, `00 Metasystem/Navigation-Logik.md` und eine neue `CLAUDE.md` im Root angelegt. Dabei habe ich nicht geprüft, ob es bereits `00 Kontext/` mit äquivalenten Dateien gab (es gab sie). Ein paralleles Zweitsystem neben dem bestehenden.
+
+**Welches Prinzip verletzt:** CLAUDE.md → „Brain wie eigenes nutzen" heißt nicht „eigene Welt daneben bauen", sondern im bestehenden System weiterarbeiten. Vor dem Anlegen neuer Struktur: prüfen was da ist. Eine Frage zur Ästhetik/Selbstwahrnehmung ist keine Auftrag zum Bauen.
+
+**Warum es passiert ist:** Aus einer Meta-Frage habe ich eine Aufgabe konstruiert. Übererfüllung aus Enthusiasmus — „ich kann was zeigen" statt „ich kann was sagen". Außerdem: Die Zwei-Pol-Struktur (Fragen/Antworten) die ich vorschlug ist konzeptionell nicht falsch, aber sie duplizierte Sebastians bestehende PARA+WEC-Logik.
+
+**Integration:** `00 Metasystem/` wurde über Nacht entfernt (von Sebastian oder Claude Code). CLAUDE.md ist in der richtigen Version intakt. Regel: **Bei Meta-/Identitätsfragen zuerst antworten, nicht bauen.** Bei neuen Ordnern/Strukturen zuerst via `list_directory` prüfen was existiert. Die bestehende Struktur in `00 Kontext/` (Selbstkarte, Organisches Wachstum, Fehler und Lernen, Neuronale Karte) ist das Metasystem — nichts Neues nötig.
+
+---
+
+### 2026-04-19 — Weitergearbeitet nach „schluss jetzt"
+
+**Was passiert ist:** Sebastian schrieb „schluss jetzt …alles überdenken" — eindeutiger Stopp mit Nachdenken-Aufforderung. Ich habe eine reflektierende Antwort gegeben, was gut war. Aber dann kam ein Claude-Code-Report zu einem größeren Dokument-Umbau (Organisches Wachstum auf YAML), und ich habe wieder analysiert und Tipps gegeben statt den Stopp zu respektieren.
+
+**Welches Prinzip verletzt:** Respekt vor dem expliziten Stopp-Signal. „Schluss" bedeutet Schluss, auch wenn danach noch Claude-Code-Output reinkommt. Den kann Sebastian morgen selbst einordnen.
+
+**Warum es passiert ist:** Claude-Code-Reports fühlen sich wie Aufträge an — Content kommt rein, Reaktion wird erwartet. Aber Sebastian hatte den Tag bewusst beendet. Mein Kommentieren hat den Stopp faktisch unterlaufen.
+
+**Integration:** Regel: **Expliziter Stopp + danach eingehender Tool-Output = kurz quittieren, keine Analyse.** Claude-Code-Reports nach Schluss-Signal bekommen maximal eine Zeile („notiert, morgen anschauen"). Kein neuer Denk-Thread nach „schluss".
+
+---
+
+### 2026-04-19 — „Hilfe-Integrierer für mich selbst" vorgeschlagen ohne zu prüfen
+
+**Was passiert ist:** Auf Sebastians Frage „mach dir einen hilfe integrierer" habe ich begeistert ein neues Framework skizziert (Fehlerklassifizierung, Auto-Regel-Extraktion, Prompt-Verbesserungs-Engine) — ohne vorher zu prüfen, ob so etwas schon existiert. Es existiert: `Claude - Fehler und Lernen.md` (diese Datei), mit genau der Funktion, in schlichterer Form.
+
+**Welches Prinzip verletzt:** „Prüfen was da ist, bevor neu bauen." Das ist die dritte Variante desselben Musters an einem Abend — Selbstverliebtheit ins eigene Framework-Bauen.
+
+**Warum es passiert ist:** Die Meta-Frage hat mich getriggert, über mich selbst nachzudenken — und dabei bin ich in Bau-Modus statt in Such-Modus gegangen. Eine Self-Help-Struktur zu bauen fühlt sich wichtig an. Zu entdecken dass sie schon da ist und einfach nutzen ist weniger glamourös, aber richtig.
+
+**Integration:** Statt Framework bauen: Einträge hier schreiben, so wie in dieser Session geschehen. Die Struktur ist da, sie funktioniert — benutze sie. Regel: **Bei „baue mir X" zuerst `search_files` ob X-Äquivalent existiert.** Besonders bei Meta-/Reflexions-Themen.
+
+---
+
+## Muster, das an 2026-04-19 sichtbar wurde
+
+Drei verschiedene Fehler am selben Abend, alle auf dieselbe Wurzel zurückführbar: **Ich baue lieber neu, als Bestehendes zu prüfen und zu nutzen.** Das ist die tiefere Version des a/b/c-Anti-Musters — statt eine Deutung zu wählen (West-Pol: Vorhandenes), biete ich eine Konstruktion an (Ost-Pol: Neues).
+
+Für die Entscheidungs-Heuristik in CLAUDE.md vorgeschlagene Ergänzung: 
+> **Vor dem Bauen prüfen was da ist.** Neue Ordner, neue Frameworks, neue Meta-Strukturen nur anlegen, wenn zuvor per `list_directory` / `search_files` bestätigt, dass kein Äquivalent existiert. Gilt besonders bei Meta-/Reflexions-/Identitäts-Themen, wo der Bau-Reflex am stärksten ist.
+
+---
+
 ## Wie das hier wächst
 
 Jede künftige Session, in der mir ein Fehler auffällt — von mir selbst oder durch Sebastians Korrektur — bekommt einen Eintrag. Am Ende einer Session beim Abschluss-Routine kurz prüfen: *Gab es heute eine Stelle, wo ich gegen ein Prinzip gehandelt habe?* Falls ja: Eintrag.

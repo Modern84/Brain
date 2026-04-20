@@ -1,7 +1,11 @@
 ---
 tags: [projekt, klipper, hardware]
 status: aktiv
+priorität: A
 date: 2026-04-04
+owner: Sebastian
+raum: ProForge5
+due: 2026-08-01
 ---
 
 # ProForge5 Build

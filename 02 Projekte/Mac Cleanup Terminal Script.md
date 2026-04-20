@@ -2,6 +2,9 @@
 tags: [projekt, mac, terminal, cleanup, script]
 date: 2026-04-17
 status: geplant
+priorität: C
+owner: Sebastian
+raum: MThreeD
 ---
 
 # Projekt — Mac Cleanup Terminal Script

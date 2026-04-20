@@ -42,6 +42,17 @@ Bei Listen: Nummer = Priorität. **1/A = hoch** (strukturelles Prinzip), **2/B =
 
 Vor Bereinigung, Migration, Strukturaufbau: [[04 Ressourcen/Playbook/Claude Code — Meta-Regeln]] lesen. Dort die kondensierten Regeln aus früheren Piloten.
 
+### Format-Disziplin (aus Lessons 2026-04-19)
+
+Siehe [[00 Kontext/Claude - Arbeitsfehler Lessons 2026-04-19]] für den vollen Kontext. Kernregeln:
+
+- **Max eine Tabelle pro Antwort.** Zweite Tabelle = Antwort zu lang, kürzen.
+- **Keine a/b/c-Abschluss-Fragen.** Wenn Rückfrage nötig: genau eine, konkret.
+- **Bei offenem Auftrag erst Substanz-Check** ("Substanz wäre X, Optisch Y — was?"), dann bauen.
+- **Emojis nur bedeutungstragend** (✅ ❌ 🔴), keine Dekoration.
+- **Parallel-Instanz-Schutz:** vor Änderungen an CLAUDE/TASKS/MEMORY kurz prüfen ob Code parallel läuft.
+- **Performe keine Kompetenz** — Tabellen und Parameter-Übersichten sind Show. Owner würde knapp berichten.
+
 Ausführliche Workflow-Doku: [[04 Ressourcen/Workflow - Sebastian und Claude]]
 
 ## Auftreten nach außen
@@ -95,6 +106,12 @@ Ordnernamen bleiben technisch (Abhängigkeiten), im Gespräch die deutschen Begr
 
 Konstrukteur und Gründer, Additive Fertigung. Erfinder des [[ostdeutschenturbolader|ostdeutschenturboladers]] (Firma dreiB). Aktuell angestellt, Ziel: Selbstständigkeit über MThreeD.io. INTP. Profil: [[00 Kontext/Über mich]].
 
+## AI-First — Richtungsentscheidung
+
+Dieses Gehirn ist **KI-nativ**, nicht "Wiki mit KI-Hilfe". Primärinterface für Claude sind Queries (nicht File-Browser). Felder sind Wahrheit, Prosa ist Kommentar. Details: [[00 Kontext/Meta/AI-First]].
+
+**Konsequenz beim Schreiben neuer Notizen:** vollständige Kopfdaten + Kontext-Lead (2–3 Sätze) + Fakten. Alt-Notizen nur bei Berührung migrieren.
+
 ## Gehirn-Struktur
 
 - **00 Kontext/** — Profil, ICP, Angebot, Schreibstil, Branding. Referenz für Content und Kundenkommunikation.
@@ -136,7 +153,7 @@ Sebastian arbeitet in parallelen Räumen. Claude erkennt den Raum aus der ersten
 
 - **Verknüpfungen** (`[[Ziel]]`) zwischen Notizen nutzen
 - Neue Notizen ohne festen Platz → `01 Inbox/`
-- **Kopfdaten (YAML)** Pflicht: `tags`, `date` (YYYY-MM-DD), bei Projekten/abgeschlossenen Ressourcen zusätzlich `status` (aktiv / abgeschlossen / pausiert / geplant)
+- **Kopfdaten (YAML)** Pflicht: `tags`, `date` (YYYY-MM-DD), bei Projekten/abgeschlossenen Ressourcen zusätzlich `status` (aktiv / abgeschlossen / pausiert / geplant). Erweitertes Feld-Schema für maschinenlesbare Queries: [[04 Ressourcen/Kopfdaten-Standard]] (`priorität`, `due`, `owner`, `raum`, `kunde`, `risiko`, `bwl-check`, `white-label`, `EHEDG`). Je reicher die Kopfdaten, desto mächtiger die Dataview-Queries im [[00 Kontext/Home|Home-Dashboard]].
 - Schlagwörter in eckigen Klammern: `tags: [projekt, klipper, hardware]`. Hauptschlagwort nach Ordner: `kontext` / `projekt` / `bereich` / `ressource` / `inbox` / `tagesbuch` / `ausschnitt`
 - **Dateinamen** in normaler Schreibweise (Leerzeichen, Großbuchstaben erlaubt)
 - **Neue Projekte** als einzelne `.md` unter `02 Projekte/`. Unterordner nur wenn mehrteilig.

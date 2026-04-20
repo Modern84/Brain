@@ -2,6 +2,9 @@
 tags: [projekt, mac-inventur, analyse]
 date: 2026-04-18
 status: aktiv
+priorität: B
+owner: Sebastian
+raum: MThreeD
 ---
 
 # Mac Inventur — Rest-Dateien Tiefenanalyse

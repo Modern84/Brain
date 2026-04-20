@@ -14,7 +14,7 @@ Zuletzt aktualisiert: 2026-04-19 (nach Vault-Schema-Durchlauf + Graph-Optimierun
   - [ ] **Schriftfeld-Felder L7/M7 klären:** Konstrukteur/Ingenieur-Name (blank / VB / Bens-Konvention?)
   - [ ] **Fusion-Template-Quelle lokalisieren:** Wo liegt die Bens-gebrandete Schriftfeld-Vorlage („Quality for Pharmacy")?
   - [ ] **Pharma vs. Lebensmittel:** Echte GMP-Anforderung oder nur Branding-Slogan? Normen-Stack daraus ableiten
-  - [ ] **CSV `Lagerschalenhalter_Stueckliste_Lebensmittel.csv` korrigieren:** BE-IS-202631 → BE-LS-202603 (alle 10 Zeilen)
+  - [x] **Zeichnungsnummern in BOM konsistent** ✅ (2026-04-20) — BE-IS-202631 war bereits seit 18.04. weg. 4 fehlende `-0`-Suffixe nachgezogen (B8/B19/B26/B29 in `BOM_bereinigt.xlsx`). Offen für Reiner: B16 Welle_V2 / B12 Scheibe_t=1 Konflikt um `203`.
   - [ ] **Vektor-Text „Sebastian Hartmann" aus Liefer-PDFs entfernen** via Inventor-Template-Fix, dann neu exportieren
   - [ ] **Nach Termin:** Erkenntnisse in [[04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen]] einarbeiten, Bens-Profil aus Stub zu voller Seite ausbauen
   - [ ] **Fehlende Standard-Artefakte anlegen:** `wiki/Kunden/Volker Bens - Zeichnungsindex.md`, `wiki/Kunden/Volker Bens - Profil.md` mit Template aus Playbook
@@ -139,7 +139,7 @@ Zuletzt aktualisiert: 2026-04-19 (nach Vault-Schema-Durchlauf + Graph-Optimierun
 ## Someday / Vielleicht
 
 - [[02 Projekte/Ildikó Brain Setup]] — paralleles Vault + Claude-Integration für Ildikó. Kontext, Vision, Setup-Plan bereits dokumentiert, Umsetzung wenn Zeit passt.
-- Obsidian-MCP einrichten
+- Obsidian-MCP einrichten → hochgestuft auf [[02 Projekte/Obsidian-MCP Einrichtung]], priorität: A, due 2026-05-17
 - Kanban-Erweiterung in Obsidian
 - QuickAdd-Erweiterung
 

@@ -2,6 +2,17 @@
 tags: [wiki, wec, kunde, bens, konstruktion, lagerschalenhalter]
 date: 2026-04-15
 status: aktiv
+priorität: A
+kunde: "Volker Bens"
+projekt: "Lagerschalenhalter Lebensmittelindustrie"
+endkunde: "Sachsenmilch"
+white-label: true
+EHEDG: ja
+risiko: mittel
+bwl-check: bestanden
+owner: gemeinsam
+raum: WEC
+due: 2026-04-21
 ---
 
 # Lagerschalenhalter — Überarbeitung Lebensmittelindustrie

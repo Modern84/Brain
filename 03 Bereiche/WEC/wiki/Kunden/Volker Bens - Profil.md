@@ -2,6 +2,17 @@
 tags: [wiki, wec, kunde, bens]
 date: 2026-04-17
 status: in-arbeit
+priorität: A
+kunde: "Volker Bens"
+firma: "Bens Edelstahl GmbH"
+endkunden: ["Sachsenmilch"]
+white-label: true
+EHEDG: ja
+risiko: niedrig
+bwl-check: bestanden
+zahler: guter-zahler
+owner: gemeinsam
+raum: WEC
 quellen: []
 ---
 

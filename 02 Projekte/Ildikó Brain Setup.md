@@ -2,7 +2,10 @@
 tags: [projekt, ildikó, brain, mthreed.io]
 aliases: [Ildikó Brain Setup, Ildikó Kormos Brain Setup]
 status: geplant
+priorität: C
 date: 2026-04-18
+owner: Sebastian
+raum: MThreeD
 ---
 
 # Ildikó Brain Setup

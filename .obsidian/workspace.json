@@ -4,17 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "5e3ea4ab08646cfe",
+        "id": "c6904338a20373a3",
         "type": "tabs",
         "children": [
           {
-            "id": "c8236c08b0897e06",
+            "id": "99ed79dc8e517223",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          },
+          {
+            "id": "aff0ebe7e1af76f0",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Graph-Ansicht"
+            }
+          },
+          {
+            "id": "c76339d7d0259323",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Bereiche/Edi/Jogi_és_admin/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -37,7 +61,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Dateiexplorer"
@@ -49,11 +73,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#projekt",
                 "matchingCase": true,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -70,7 +94,8 @@
               "title": "Lesezeichen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -157,20 +182,36 @@
               "icon": "lucide-list",
               "title": "Gliederung"
             }
+          },
+          {
+            "id": "a5575e7342f03653",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "c1ea5c9114cc89c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {},
+              "icon": "lucide-info",
+              "title": "Dateieigenschaften"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 370.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "markdown-importer:Markdown Importprogramm öffnen": false,
-      "zk-prefixer:Neue eindeutige Notiz erstellen": false,
-      "audio-recorder:Audioaufzeichnung starten/stoppen": false,
-      "workspaces:Workspace-Layouts verwalten": false,
       "switcher:Schnellauswahl öffnen": false,
       "graph:Graph-Ansicht öffnen": false,
       "canvas:Neuen Canvas erstellen": false,
@@ -178,47 +219,64 @@
       "templates:Vorlage einfügen": false,
       "command-palette:Befehlspalette öffnen": false,
       "bases:Neue Base erstellen": false,
-      "obsidian42-brat:BRAT": false
+      "obsidian42-brat:BRAT": false,
+      "claudian:Open Claudian": false,
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "c8236c08b0897e06",
+  "active": "99ed79dc8e517223",
   "lastOpenFiles": [
-    "02 Projekte/MThreeD.io.md",
-    "02 Projekte/ProForge5 Build.md",
-    "optimization-log.md",
-    "04 Ressourcen/Klipper/ProForge5 Config Status.md",
-    "Clippings/Mainsail.md",
-    "01 Inbox/202604042129.md",
-    "Clippings",
-    "05 Daily Notes/2026-04-04.md",
-    "04 Ressourcen/ostdeutschenturbolader/ostdeutschenturbolader.md",
-    "04 Ressourcen/ostdeutschenturbolader",
+    "07 Anhänge/VERALTET_2026-04-15_Lagerschalenhalter_Stueckliste_BE-IS-falsch.numbers",
+    "07 Anhänge/VERALTET_2026-04-15_Lagerschalenhalter_Stueckliste_BE-IS-falsch.csv",
+    "03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/2026-04-21 Montag-Session/BOM_bereinigt.xlsx.backup_20260420",
+    "04 Ressourcen/Scripts/kcod.sh",
+    "04 Ressourcen/Templates/Claude-Handover/Direkt-Start.md",
+    "05 Daily Notes/2026-04-20.md",
+    "03 Bereiche/Edi/Jogi_és_admin/README.md",
+    "02 Projekte/Obsidian-MCP Einrichtung.md",
+    "00 Kontext/Meta/AI-First.md",
+    "04 Ressourcen/Scripts/meta-check.sh",
+    "00 Kontext/Meta/Retrospektive-Template.md",
+    "00 Kontext/Meta/System-Health.md",
+    "00 Kontext/Meta/README.md",
+    "00 Kontext/Meta/Claude - Selbstkarte.md",
+    "00 Kontext/Meta/Claude - Selbstkarte.canvas",
+    "00 Kontext/Meta/Claude - Arbeitsfehler Lessons 2026-04-19.md",
+    "00 Kontext/Meta",
+    "00 Kontext/Claude - Arbeitsfehler Lessons 2026-04-19.md",
+    "04 Ressourcen/Templates/Claude-Handover/Git-Backup-Setup.md",
+    "04 Ressourcen/Templates/Claude-Handover/Kopfdaten-Migration.md",
+    "04 Ressourcen/Kopfdaten-Standard.md",
+    "00 Kontext/Home.md",
+    "04 Ressourcen/Playbook/WEC Kundenordner - Muster und Ableitungen.md",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Erkenntnisse aus OCR.md",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/README.md",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/ocr/Reiner-Scan-c6c078f1-180846.txt",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/ocr/Reiner-Scan-c67c6a66-156886.txt",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/ocr/Reiner-Scan-97e7f638-148183.txt",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/ocr/Reiner-Scan-73cec1cd-177647.txt",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/ocr/Reiner-Scan-627ef79c-147072.txt",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-54335b71-127621.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-627ef79c-147072.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-97e7f638-148183.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-c67c6a66-156886.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-3ff85e64-170336.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-487aabea-175879.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-73cec1cd-177647.jpg",
+    "03 Bereiche/WEC/raw/Kunden/Volker Bens/aktuelle Projekte/Lagerschalenhalter Lebensmittelindustrie/2026-04-19 Reiner Korrekturen/Reiner-Scan-c6c078f1-180846.jpg",
+    "00 Kontext/Gehirn - Organisches Wachstum.md",
+    "04 Ressourcen/Obsidian/Graph-View Setup.md",
+    "07 Anhänge/Screenshots/Bildschirmfoto 2026-04-19 um 22.00.06.png",
+    "00 Kontext/Claude - Selbstkarte.canvas",
+    "00 Kontext/Claude - Selbstkarte.md",
+    "07 Anhänge/Screenshots/Bildschirmfoto 2026-04-19 um 20.46.02.png",
+    "03 Bereiche/Konstruktion/README.md",
+    "03 Bereiche/Business MThreeD.io/Lernkurve – mTreeD Workshop Stack.md",
+    "04 Ressourcen/Mac-Inventur/Mac Inventur - iPhone Fotos Index.md",
+    "04 Ressourcen/Templates/Claude-Handover/Mac Inventur - Session Starter.md",
+    "03 Bereiche/WEC/WEC System - Visuelle Karte.canvas",
     "Unbenannt.canvas",
-    "01 Inbox/202604042127.md",
-    "01 Inbox/202604041848.md",
-    "01 Inbox/202604041847.md",
-    "01 Inbox/202604041846.md",
-    "01 Inbox/Unbenannt.base",
-    "Unbenannt",
-    "01 Inbox/Unbenannt.md",
-    "CLAUDE.md",
-    "TASKS.md",
-    "01 Inbox/Brain Dump.md",
-    "02 Projekte/Stone Wolf Build.md",
-    "00 Kontext/Branding.md",
-    "00 Kontext/Angebot.md",
-    "04 Ressourcen/Klipper/Klipper.md",
-    "00 Kontext/Über mich.md",
-    "00 Kontext/Schreibstil.md",
-    "00 Kontext/ICP.md",
-    "04 Ressourcen/Automatisierung/Automatisierung.md",
-    "03 Bereiche/Finanzen/Finanzen.md",
-    "03 Bereiche/KI-Anwendungen/KI-Anwendungen.md",
-    "07 Anhänge",
-    "06 Archiv",
-    "05 Daily Notes",
-    "04 Ressourcen/Klipper",
-    "04 Ressourcen/Automatisierung",
-    "04 Ressourcen"
+    "Unbenannt 1.canvas"
   ]
 }

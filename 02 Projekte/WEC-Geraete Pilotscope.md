@@ -1,7 +1,10 @@
 ---
 tags: [projekt, inventur, wec, pilot]
 status: aktiv
+priorität: B
 date: 2026-04-18
+owner: gemeinsam
+raum: WEC
 ---
 
 # WEC-Geräte — Pilotscope und Nutzerprofile

@@ -5,18 +5,327 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [],
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"00 Kontext\"",
+      "color": {
+        "a": 1,
+        "rgb": 15712667
+      }
+    },
+    {
+      "query": "path:\"01 Inbox\"",
+      "color": {
+        "a": 1,
+        "rgb": 9737364
+      }
+    },
+    {
+      "query": "path:\"02 Projekte\"",
+      "color": {
+        "a": 1,
+        "rgb": 16102666
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/WEC/wiki\"",
+      "color": {
+        "a": 1,
+        "rgb": 2280037
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/WEC/raw\"",
+      "color": {
+        "a": 1,
+        "rgb": 16349977
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/WEC/Operationen\"",
+      "color": {
+        "a": 1,
+        "rgb": 16755558
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/WEC/Sessions\"",
+      "color": {
+        "a": 1,
+        "rgb": 16613980
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/WEC/Lieferung\"",
+      "color": {
+        "a": 1,
+        "rgb": 13395456
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/WEC\"",
+      "color": {
+        "a": 1,
+        "rgb": 14708789
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/Business MThreeD.io\"",
+      "color": {
+        "a": 1,
+        "rgb": 9152447
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/KI-Anwendungen\"",
+      "color": {
+        "a": 1,
+        "rgb": 3914751
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/Finanzen\"",
+      "color": {
+        "a": 1,
+        "rgb": 2280037
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/Konstruktion\"",
+      "color": {
+        "a": 1,
+        "rgb": 447988
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche/Edi\"",
+      "color": {
+        "a": 1,
+        "rgb": 15493812
+      }
+    },
+    {
+      "query": "path:\"03 Bereiche\"",
+      "color": {
+        "a": 1,
+        "rgb": 39423
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen/Klipper\"",
+      "color": {
+        "a": 1,
+        "rgb": 3511728
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen/Obsidian\"",
+      "color": {
+        "a": 1,
+        "rgb": 6336896
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen/Scripts\"",
+      "color": {
+        "a": 1,
+        "rgb": 4491929
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen/Prompts\"",
+      "color": {
+        "a": 1,
+        "rgb": 4491929
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen/Templates\"",
+      "color": {
+        "a": 1,
+        "rgb": 1933006
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen/Playbook\"",
+      "color": {
+        "a": 1,
+        "rgb": 2200424
+      }
+    },
+    {
+      "query": "path:\"04 Ressourcen\"",
+      "color": {
+        "a": 1,
+        "rgb": 1360564
+      }
+    },
+    {
+      "query": "path:\"05 Daily Notes\"",
+      "color": {
+        "a": 1,
+        "rgb": 15387392
+      }
+    },
+    {
+      "query": "path:\"06 Archiv\"",
+      "color": {
+        "a": 1,
+        "rgb": 2955580
+      }
+    },
+    {
+      "query": "path:\"Clippings\"",
+      "color": {
+        "a": 1,
+        "rgb": 12616444
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge/Allgemein/Datensatz_SK\"",
+      "color": {
+        "a": 1,
+        "rgb": 5910402
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge/Allgemein/Profil\"",
+      "color": {
+        "a": 1,
+        "rgb": 11036045
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge/Screenshots\"",
+      "color": {
+        "a": 1,
+        "rgb": 8890567
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge/2026-01_Schwenkteilsicherung\"",
+      "color": {
+        "a": 1,
+        "rgb": 8890490
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge/Fusion360\"",
+      "color": {
+        "a": 1,
+        "rgb": 11193070
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge/Reiners_Gehirn\"",
+      "color": {
+        "a": 1,
+        "rgb": 14708789
+      }
+    },
+    {
+      "query": "path:\"07 Anhänge\"",
+      "color": {
+        "a": 1,
+        "rgb": 12101242
+      }
+    },
+    {
+      "query": "tag:#wec",
+      "color": {
+        "a": 1,
+        "rgb": 14708789
+      }
+    },
+    {
+      "query": "tag:#projekt",
+      "color": {
+        "a": 1,
+        "rgb": 16102666
+      }
+    },
+    {
+      "query": "tag:#bereich",
+      "color": {
+        "a": 1,
+        "rgb": 39423
+      }
+    },
+    {
+      "query": "tag:#ressource",
+      "color": {
+        "a": 1,
+        "rgb": 1360564
+      }
+    },
+    {
+      "query": "tag:#tagesbuch",
+      "color": {
+        "a": 1,
+        "rgb": 15387392
+      }
+    },
+    {
+      "query": "tag:#kontext",
+      "color": {
+        "a": 1,
+        "rgb": 15712667
+      }
+    },
+    {
+      "query": "tag:#prompt",
+      "color": {
+        "a": 1,
+        "rgb": 4491929
+      }
+    },
+    {
+      "query": "tag:#scripts",
+      "color": {
+        "a": 1,
+        "rgb": 4491929
+      }
+    },
+    {
+      "query": "file:CLAUDE",
+      "color": {
+        "a": 1,
+        "rgb": 9152447
+      }
+    },
+    {
+      "query": "file:README",
+      "color": {
+        "a": 1,
+        "rgb": 15493812
+      }
+    },
+    {
+      "query": "file:TASKS",
+      "color": {
+        "a": 1,
+        "rgb": 16102666
+      }
+    },
+    {
+      "query": "file:MEMORY",
+      "color": {
+        "a": 1,
+        "rgb": 12616444
+      }
+    }
+  ],
   "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": 3,
+  "nodeSizeMultiplier": 5,
+  "lineSizeMultiplier": 1.6223253976094,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "centerStrength": 0.0980934505581349,
+  "repelStrength": 20,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 2.4325519145005834,
+  "linkDistance": 30,
+  "scale": 0.00791407840684688,
   "close": false
 }

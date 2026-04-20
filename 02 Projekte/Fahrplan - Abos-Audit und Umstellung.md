@@ -2,6 +2,9 @@
 tags: [projekt, abos, system, fahrplan]
 date: 2026-04-17
 status: aktiv
+priorität: B
+owner: Sebastian
+raum: Finanzen
 ---
 
 # Fahrplan — Abos-Audit und Umstellung

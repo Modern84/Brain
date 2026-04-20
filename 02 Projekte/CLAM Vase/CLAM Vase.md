@@ -1,7 +1,10 @@
 ---
 tags: [projekt, 3d, eigenes-design]
 status: aktiv
+priorität: C
 date: 2026-04-18
+owner: Sebastian
+raum: MThreeD
 ---
 
 # CLAM Vase

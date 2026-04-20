@@ -1,7 +1,10 @@
 ---
 tags: [projekt, mthreed, dach-projekt]
 status: aktiv
+priorität: A
 date: 2026-04-04
+owner: Sebastian
+raum: MThreeD
 ---
 
 # MThreeD.io — Dach-Projekt

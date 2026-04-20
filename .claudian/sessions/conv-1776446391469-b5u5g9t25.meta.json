@@ -4,8 +4,8 @@
   "title": "Open Session",
   "titleGenerationStatus": "success",
   "createdAt": 1776446391470,
-  "updatedAt": 1776630564155,
-  "lastResponseAt": 1776630564155,
+  "updatedAt": 1776673437657,
+  "lastResponseAt": 1776673437657,
   "sessionId": "87e36247-a72e-4b2f-99d9-c6b0ac55a029",
   "providerState": {
     "providerSessionId": "87e36247-a72e-4b2f-99d9-c6b0ac55a029",
@@ -205,12 +205,12 @@
   "currentNote": "02 Projekte/Mac Cleanup Terminal Script.md",
   "usage": {
     "model": "opus[1m]",
-    "inputTokens": 1,
-    "cacheCreationInputTokens": 5763,
-    "cacheReadInputTokens": 151620,
+    "inputTokens": 6,
+    "cacheCreationInputTokens": 551,
+    "cacheReadInputTokens": 299047,
     "contextWindow": 1000000,
-    "contextTokens": 157384,
-    "percentage": 16,
+    "contextTokens": 299604,
+    "percentage": 30,
     "contextWindowIsAuthoritative": true
   }
 }

@@ -2,6 +2,9 @@
 tags: [projekt, claude, abo, apple, umstellung]
 date: 2026-04-17
 status: aktiv
+priorität: B
+owner: Sebastian
+raum: KI
 ---
 
 # Claude Umstellung — Apple zu Anthropic direkt

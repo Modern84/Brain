@@ -1,7 +1,11 @@
 ---
 tags: [projekt, inventur, mac, pilot]
 status: aktiv
+priorität: A
 date: 2026-04-18
+owner: Sebastian
+raum: MThreeD
+due: 2026-08-01
 ---
 
 # Mac Inventur

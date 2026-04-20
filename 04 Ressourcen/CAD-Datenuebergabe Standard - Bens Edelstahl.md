@@ -29,7 +29,7 @@ Sobald Reiner die historischen Lieferungen bereitstellt (per SSD, USB-Stick oder
 ## Kundenprofil Volker Bens — abzuleitende Parameter
 
 ### 1. 3D-Daten
-- **STEP-Schema:** **IGES** (nicht STEP!) — aus Fusion360-Projektpaket 07 Anhänge/Fusion360/ bestätigt (2026-04-18). Alle 3D-Exports sind `.iges`-Dateien. Volkers altes CAD-System liest IGES zuverlässig. STEP AP214 (`Lagerhalter.stp` in raw/) ist eine parallele Exploration, kein finales Liefer-Format.
+- **3D-Format:** **IGES** (nicht STEP!) — aus Fusion360-Projektpaket 07 Anhänge/Fusion360/ bestätigt (2026-04-18). Alle 3D-Exports sind `.iges`-Dateien. Volkers altes CAD-System liest IGES zuverlässig. STEP AP214 (`Lagerhalter.stp` in raw/) ist eine parallele Exploration, kein finales Liefer-Format.
 - **Dateistruktur (aus Fusion360-Paket abgeleitet):**
   - Zusammenbau: `Zusammenbau_[Bauteilname].iges`
   - Einzelteile: eigener Unterordner, je eine `.iges` pro Bauteil
@@ -130,6 +130,15 @@ Aus historischen Lieferungen ableiten welche Normen Volker in seinem Dokumentati
 - Zwei Unterschiede: Typ-Kürzel (`IS` vs `LS`) + Projektnummer (`202631` vs `202603`)
 - Reiner bringt Montag Korrektur-Scans mit den richtigen Nummern — das ist die Kern-Aufgabe des Termins.
 
+**700er-Block = Kaufteile/Normteil-Referenz** (Beleg: `BOM_bereinigt.xlsx` 2026-04-20, Liefer-Ordner Montag-Session):
+
+| Nummer | Bauteil | Hersteller / Norm |
+|---|---|---|
+| `BE-LS-202603-700-0` | Pendelkugellager (Lager) | SKF 2202 E-2RS1TN9 / Mädler Art. 64773026 |
+| `BE-LS-202603-704-0` | Klemmring | Edelstahl 1.4305, Mädler Art. 62399115 |
+
+**Ableitung:** Nummernbereich 700–799 ist reserviert für **Kaufteile mit Hersteller-Referenz** (nicht selbst gefertigt). Einzelteile eigene Fertigung = 100–299 (belegt durch 200/201/202/203/204/205/206). Zusammenbauten = 000/001 (belegt durch 000-0 Hauptbaugruppe, 1-0 Schweißgruppe). Normteile (DIN-Schrauben, -Muttern) haben **keine** BE-Nummer, nur DIN-Referenz.
+
 **Hierarchie-Beispiel (CSV, Stand 15.04.2026):**
 ```
 BE-IS-202631-000-0   Lagerschale_Baugruppe (Hauptbaugruppe)
@@ -203,6 +212,7 @@ Diese Regeln sind verbindlich für den Prozess, wie das Profil aus den historisc
 |---|---|---|
 | 2026-04-17 | Template angelegt, 10 Profil-Sektionen mit Platzhaltern, Arbeitsregeln formuliert | Session mit Mo |
 | 2026-04-17 | Pre-Delivery Kontext-Check ergänzt (Toleranzen, Passungen, Kantenbearbeitung, Nachbearbeitung, Prüfdokumente). Vision der halbautomatischen Lieferung dokumentiert (3D-Modell → Kontext-Check → Ableitung → Erzeugung → Freigabe → direkte Lieferung) | Session mit Mo |
+| 2026-04-20 | Feldname „STEP-Schema" → „3D-Format" korrigiert (Widerspruch mit IGES-Inhalt). 700er-Kaufteile-Systematik ergänzt, belegt aus `BOM_bereinigt.xlsx`. | Claude Code |
 
 ---
 

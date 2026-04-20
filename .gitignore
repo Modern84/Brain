@@ -5,3 +5,6 @@
 .claude/settings.local.json
 .trash/
 .DS_Store
+
+# Riesige Binär-Dumps — bewusst außerhalb Git (Entscheidung offen, SSD/Archiv-Umzug geplant)
+07 Anhänge/Allgemein/Datensatz_SK/

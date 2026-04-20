@@ -1,7 +1,11 @@
 ---
 tags: [projekt, arbeit, wec]
 status: aktiv
+priorität: A
 date: 2026-04-14
+owner: gemeinsam
+raum: WEC
+due: 2026-04-21
 ---
 
 # WEC — Neustart mit Reiner

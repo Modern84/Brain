@@ -2,6 +2,9 @@
 tags: [projekt, system, aufraeumen, abos, struktur]
 date: 2026-04-17
 status: aktiv
+priorität: B
+owner: Sebastian
+raum: MThreeD
 ---
 
 # System-Aufräumen — Digitales Zuhause

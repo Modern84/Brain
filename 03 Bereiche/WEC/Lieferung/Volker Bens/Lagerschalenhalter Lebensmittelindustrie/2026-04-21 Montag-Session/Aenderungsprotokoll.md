@@ -2,6 +2,7 @@
 tags: [lieferung, bens, bom, pdf, white-label]
 date: 2026-04-18
 status: teilweise-bereinigt
+letzte-aenderung: 2026-04-20
 ---
 
 # Änderungsprotokoll — Bens Lagerschalenhalter White-Label-Bereinigung
@@ -158,6 +159,29 @@ Damit künftige BOM-Exports nicht erneut bereinigt werden müssen, sollte das In
 4. **Excel-Datei-Properties** (sehr wichtig, oft übersehen) — Inventor schreibt den eingeloggten User-Account in die Excel-Core-Properties `creator` und `lastModifiedBy`. Das ist in Excel-UI nicht sichtbar, aber für jeden lesbar, der die `.xlsx` entpackt oder „Datei → Eigenschaften" öffnet.
 5. **PDF-Schriftfeld** (Inventor/Fusion-Drawing-Template) — Konstrukteur-iProperty per Default auf Bens-Konvention setzen, damit beim Export der Vektor-Text bereits korrekt ist. Verhindert die jetzt offene PDF-Vektor-Text-Lücke.
 6. **PDF-Dateinamen** — keine `SM_`/`SM `-Marker im Dateinamen, keine `_SM_`-Endungen. Bens-Code als Dateinamen-Präfix verwenden.
+
+## Teil 3 — Schema-Konsistenz Zeichnungsnummern (2026-04-20)
+
+Die Task „CSV-Umstellung BE-IS-202631 → BE-LS-202603" war bereits durch die White-Label-Bereinigung vom 2026-04-18 erledigt (keine `BE-IS-`-Treffer mehr in BOM_bereinigt.xlsx oder den beiden Raw-Exports). **Bei Nachprüfung am 2026-04-20 wurden aber Schema-Inkonsistenzen im `BE-LS-202603-XXX-X`-Muster gefunden.**
+
+### Befund
+
+Schema-Soll laut Reiner-Scans und restlicher BOM: `BE-LS-202603-<Sachnummer>-<Variante>`, Variante `-0` für Einzelteil-Stamm.
+
+| Zelle | Vor | Nach | Grund |
+|---|---|---|---|
+| B8 (Lagerhalter) | `BE-LS-202603-200` | `BE-LS-202603-200-0` | Suffix `-0` fehlte, Rest der Einzelteile durchgängig mit `-0` |
+| B19 (Welle_V1) | `BE-LS-202603-204` | `BE-LS-202603-204-0` | dto. |
+| B26, B29 (Lagerhalter in Schweißgruppe) | `BE-LS-202603-200` | `BE-LS-202603-200-0` | Konsistenz mit B8 |
+
+**Quelle vor Änderung md5:** `47043e9c48107f1568e04cb3ab514509` (gesichert als `BOM_bereinigt.xlsx.backup_20260420`)
+**Nach Änderung md5:** `d770bfb3123325a7de27ae20cab1349d`
+
+### Konflikt für Reiner (nicht selbst aufgelöst)
+
+**B16 `BE-LS-202603-203` = Welle_V2** kollidiert mit **B12 `BE-LS-202603-203-0` = Scheibe_t=1**. Beide Basen `203`, unterschiedliche Bauteile. Ein reines Anhängen von `-0` an B16 würde die Dublette `BE-LS-202603-203-0` erzeugen (zwei verschiedene Teile unter derselben Nummer). Muss fachlich geklärt werden — z.B. neue Sachnummer für Welle_V2. Raten wäre falsch, deshalb unberührt gelassen.
+
+**Frage an Reiner:** Welche Sachnummer soll Welle_V2 (B16) bekommen? Vorschlag bei Gleichstand: nächste freie, z.B. `207-0`.
 
 ## Verknüpfungen
 

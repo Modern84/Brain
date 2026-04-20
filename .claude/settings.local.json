@@ -29,7 +29,17 @@
       "Bash(tailscale status:*)",
       "Bash(/Applications/Tailscale.app/Contents/MacOS/Tailscale status:*)",
       "WebFetch(domain:api.github.com)",
-      "Bash(ssh -v -o ConnectTimeout=10 -o StrictHostKeyChecking=no m3d@172.20.10.15)"
+      "Bash(ssh -v -o ConnectTimeout=10 -o StrictHostKeyChecking=no m3d@172.20.10.15)",
+      "Bash(ping -c 1 mainsailOS.local)",
+      "Bash(ping -c 1 klipper.local)",
+      "Bash(ping -c 1 raspberrypi.local)",
+      "Bash(ssh pi@192.168.1.1 \"hostname -I\")",
+      "Bash(ping -c 1 192.168.1.1)",
+      "Bash(ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=no m3d@172.20.10.15 \"echo verbunden && hostname\")",
+      "Bash(ssh -o BatchMode=yes -o ConnectTimeout=10 -o StrictHostKeyChecking=no m3d@172.20.10.2 \"echo OK && hostname\")",
+      "Bash(ssh-keygen -R 172.20.10.2)",
+      "Bash(ssh -i ~/.ssh/id_ed25519 -o ConnectTimeout=10 -o StrictHostKeyChecking=no m3d@172.20.10.2 \"echo VERBUNDEN && hostname\")",
+      "Bash(expect -c ':*)"
     ]
   }
 }

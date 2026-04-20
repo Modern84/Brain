@@ -2,6 +2,9 @@
 tags: [projekt, mac-inventur, vorsortierung]
 date: 2026-04-18
 status: aktiv
+priorität: A
+owner: Sebastian
+raum: MThreeD
 ---
 
 # Mac Inventur — Phase 3 Vorsortierung
