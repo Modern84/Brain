@@ -56,7 +56,7 @@ raum: Finanzen
 
 ## Etappe 3 — 1Password kündigen
 
-**Vorbedingung:** Passwörter müssen erst in Apple Schlüsselbund migriert sein — sonst verlierst du Logins. Siehe [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]] Schritt 1-4.
+**Vorbedingung:** Passwörter müssen erst in Apple Schlüsselbund migriert sein — sonst verlierst du Logins. Siehe [[02 Projekte/Plan - Chrome zu Safari Migration und Schluesselbund]] Schritt 1-4.
 
 1. Nach erfolgreicher Passwort-Migration: 1password.com → Login → Billing → Cancel Subscription
 2. Grund: "Switching to Apple Keychain" o.ä.
@@ -105,5 +105,5 @@ Oder am Mac: Systemeinstellungen → Apple-ID → Medien & Käufe → **Abonneme
 ## Verknüpfungen
 
 - [[02 Projekte/System-Aufraeumen - Digitales Zuhause]]
-- [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]]
+- [[02 Projekte/Plan - Chrome zu Safari Migration und Schluesselbund]]
 - [[TASKS]]

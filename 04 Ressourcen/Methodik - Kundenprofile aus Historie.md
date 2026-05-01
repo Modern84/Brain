@@ -128,4 +128,4 @@ Idealerweise wird das fertige Paket **direkt an den Kunden geschickt** — per M
 
 - [[CLAUDE]] — Vault-Grundregeln (Abschnitt „Auftreten nach außen")
 - [[Business MThreeD.io|MThreeD.io]]
-- [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]
+- [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]

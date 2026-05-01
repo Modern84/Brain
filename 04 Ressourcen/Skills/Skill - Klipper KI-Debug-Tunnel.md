@@ -31,13 +31,13 @@ date: 2026-04-18
 
 **Business-Seite:**
 
-- Landing-Page auf mthreed.io (Entwurf: [[01 Inbox/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]])
+- Landing-Page auf mthreed.io (Entwurf: [[03 Bereiche/Business MThreeD.io/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]])
 - Preismodell: pro Debug-Session oder Abo
 - Kundenakquise über Klipper/Voron-Community (Discord, Reddit, Discourse)
 
 ## Stand der Beherrschung
 
-**konzept** — Strategische Richtung am 2026-04-17 geklärt ([[01 Inbox/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]). Landing-Page-Entwurf existiert. Technisch noch nichts umgesetzt.
+**konzept** — Strategische Richtung am 2026-04-17 geklärt ([[03 Bereiche/Business MThreeD.io/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]). Landing-Page-Entwurf existiert. Technisch noch nichts umgesetzt.
 
 **Nächste Meilensteine:**
 - [[Skill - Cloudflare Tunnel]] erst beherrschen
@@ -53,8 +53,8 @@ date: 2026-04-18
 
 ## Referenzen
 
-- [[01 Inbox/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]
-- [[01 Inbox/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]]
+- [[03 Bereiche/Business MThreeD.io/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]
+- [[03 Bereiche/Business MThreeD.io/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]]
 - [[03 Bereiche/Business MThreeD.io/Business MThreeD.io]]
 - [[04 Ressourcen/Klipper/Klipper]]
 - [[02 Projekte/ProForge5 Build]] — Sebastians eigener Drucker als Test-Plattform

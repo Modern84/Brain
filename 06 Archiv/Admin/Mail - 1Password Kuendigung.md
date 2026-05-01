@@ -1,16 +1,11 @@
 ---
-tags: [eingang, mail, kuendigung, 1password]
+tags: [archiv, admin, 1password, mail]
 date: 2026-04-17
-status: in Bearbeitung
+status: abgeschlossen
 ---
 
 # Mail — 1Password Kündigung
 
-**An:** support@1password.com  
-**Betreff:** Cancellation Request – 1Password Subscription  
-**Von:** modern3b@icloud.com  
-**Gesendet:** 17.04.2026  
-**Ticket-ID:** 574458  
-**Status:** ⏳ Anfrage eingegangen — Bestätigung ausstehend (1-2 Werktage)
+Kündigungsmail an 1Password abgesendet. Migration zu Apple Schlüsselbund abgeschlossen (soweit möglich).
 
-Wenn Bestätigungs-Mail eintrifft: In Apple Mail → Ordner "Actioned" ablegen.
+Offene Punkte der Migration: [[03 Bereiche/Finanzen/Persönlich/1Password Migration - Offene Punkte]]

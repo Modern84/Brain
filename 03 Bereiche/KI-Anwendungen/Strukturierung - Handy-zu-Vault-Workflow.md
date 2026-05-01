@@ -88,7 +88,7 @@ Schicht 2 kommt wahrscheinlich am Wochenende, Schicht 3 nach der Reiner-SSD-Sach
 
 ## Was dazu gehört, aber nicht heute
 
-- Die bestehende Notiz `01 Inbox/Idee - Audio-Workflow für Sebastian und Reiner.md` durchlesen und mit dieser Strukturierung abgleichen (Doppelarbeit vermeiden)
+- Die bestehende Notiz `02 Projekte/WEC Neustart mit Reiner/Idee - Audio-Workflow für Sebastian und Reiner.md` durchlesen und mit dieser Strukturierung abgleichen (Doppelarbeit vermeiden)
 - Handy-Claude-zu-Vault-Kette auch mit Mac-Claude vergleichen (wo überschneidet sich, wo ist jeder für was zuständig)
 - Klare Regel: Was gehört in Obsidian-Inbox direkt, was geht erst durch Claude?
 

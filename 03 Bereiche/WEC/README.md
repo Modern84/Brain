@@ -53,6 +53,8 @@ Geschäftsfelder: Lebensmittel/Pharma (Bens), Bau/Gips (Knauf), Anlagenbau, F&E 
 | Kundenprofile (Claude-gepflegt) | `wiki/Kunden/` |
 | Reiners 30-Jahre-Wissen extrahiert | `wiki/Standards WEC/` |
 | Schutz vor Insolvenz/Ausnutzung | `wiki/BWL-Filter/` |
+| Liefer-Playbook (8 Phasen, Pilot Bens) | [[04 Ressourcen/Playbook/Fusion-zu-Liefer-Pipeline]] |
+| Zeichnungs-Generator-Vision (geparkt) | [[02 Projekte/WEC/Idee - Zeichnungs-Generator aus Konstruktion]] |
 
 ---
 
@@ -79,3 +81,4 @@ Geschäftsfelder: Lebensmittel/Pharma (Bens), Bau/Gips (Knauf), Anlagenbau, F&E 
 - [[03 Bereiche/WEC/CLAUDE]] — WEC-spezifische Ergänzungen
 - [[02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner]]
 - [[02 Projekte/WEC Neustart mit Reiner/Reiners Gehirn - Setup Plan]]
+- [[04 Ressourcen/Playbook/Fusion-zu-Liefer-Pipeline]]

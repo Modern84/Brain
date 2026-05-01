@@ -138,6 +138,6 @@ Nicht jetzt kaufen, nicht jetzt wechseln. **Erst ausprobieren.** Ein Mac Mini al
 
 - [[00 Kontext/WEC Kontakte/Profil Reiner]]
 - [[00 Kontext/Wo ist alles gespeichert - Überblick für Reiner]]
-- [[01 Inbox/Idee - Audio-Workflow für Sebastian und Reiner]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Audio-Workflow für Sebastian und Reiner]]
 - [[02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner]]
 - [[03 Bereiche/Konstruktion/Konstruktion]]

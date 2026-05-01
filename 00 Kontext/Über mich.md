@@ -21,8 +21,8 @@ Sebastian, Konstrukteur und Gründer im Bereich Additive Fertigung. Ich habe den
 ## Fachgebiete
 
 - **3D-Druck / Additive Fertigung**: Erfahrung mit Formlabs Form 3B (SLA/Resin, Tough 1500), jetzt ProForge5 (FDM, Multi-Material, Hochtemperatur). Ziel: PEEK, PPS, PPF-CF drucken.
-- **Konstruktion**: Von der Idee zum 3D-Modell. Stärke: Schnell aus Gedanken Produkte erschaffen. Schwäche: Zeichnungsableitung, BOM, Normdetails noch in Arbeit.
-- **CAD**: Fusion 360 (Cloud-Lizenz). Kein SolidWorks. Will Bens-Zeichnungsvorlagen in Fusion nachbauen.
+- **Konstruktion**: Von der Idee zum 3D-Modell. Stärke: Schnell aus Gedanken Produkte erschaffen. Schwäche: Zeichnungsableitung in Fusion nie auf Firmen-Niveau gelernt — Schriftfeld, Bemaßung, Oberflächen, Normen sind Lücke. Solid Edge ist fremd, keine direkte Lese-/Schreib-Brücke zu Reiners 30-Jahre-Korpus → KI-Pipeline ist die Brücke zwischen Reiner-Welt (Solid Edge) und Sebastian-Welt (Fusion).
+- **CAD**: Über Fusion 360 konstruieren gelernt (Cloud-Lizenz). Mag Fusion wegen moderner Logik. Solid Edge nie gelernt — das ist Reiners Welt. Bens-Zeichnungsvorlagen werden in Fusion nachgebaut (WEC-Layout); Bens-Lieferungen laufen parallel direkt aus Solid Edge bei Reiner.
 - **KI-Anwendungen**: Zweites Gehirn, Claude-Integration, Automatisierung → [[03 Bereiche/KI-Anwendungen/KI-Anwendungen|KI-Anwendungen]]
 
 ## 3D-Druck Erfahrung
@@ -56,7 +56,7 @@ Das ist kein Defekt. Das ist wie ich funktioniere.
 
 ## Privat
 
-- **Ildi** — Freundin, Ungarin. Unterstützt den ganzen Weg: ProForge5, 3D-Druck, Selbstständigkeit. Wurde überzeugt als Sebastian ihr gezeigt hat was 3D-Druck kann (Testdrucke vor Weihnachten mit Rise 3D E2 von Volker). 10 Jahre älter als Sebastian. Extrovertiert, aber kompatibel mit seinem INTP — ergänzt ihn. Schätzt Freiheit. Mag seine offene, ehrliche Art. Gemeinsame ungarische Firma gegründet (steuerliche Vorteile, Ausbau geplant).
+- **Ildi** — Freundin, Ungarin. Unterstützt den ganzen Weg: ProForge5, 3D-Druck, Selbstständigkeit. Wurde überzeugt als Sebastian ihr gezeigt hat was 3D-Druck kann (Testdrucke vor Weihnachten mit Rise 3D E2 von Volker). 10 Jahre älter als Sebastian. Extrovertiert, aber kompatibel mit seinem INTP — ergänzt ihn. Schätzt Freiheit. Mag seine offene, ehrliche Art. Gemeinsame ungarische Firma gegründet (steuerliche Vorteile, Ausbau geplant). Aktuell Fernbeziehung — sie lebt in Ungarn. Hat einen Hund: **Frieda**.
 - Eigene Wohnung (Arbeitsamt-finanziert bis ~Juli 2026, muss renoviert und abgegeben werden)
 - Keine Miete bei Ildi
 

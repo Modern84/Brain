@@ -241,14 +241,14 @@ Folgende Notizen in `01 Inbox/` haben thematische Bezüge zu Phase 3 — **nicht
 
 | Notiz | Passt zu Session | Bezug |
 |---|---|---|
-| [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]] | 1Password-Migration | Direkt — Migrationsplan |
-| [[01 Inbox/Mail - 1Password Kuendigung]] | 1Password-Migration | Mail-Entwurf zur Kündigung |
+| [[02 Projekte/Plan - Chrome zu Safari Migration und Schluesselbund]] | 1Password-Migration | Direkt — Migrationsplan |
+| [[06 Archiv/Admin/Mail - 1Password Kuendigung]] | 1Password-Migration | Mail-Entwurf zur Kündigung |
 | [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]] | Bens | Direkt — Pilotprojekt Bens |
-| [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]] | MThreeD.io | Strategie-Kontext für Apple-Assets |
-| [[01 Inbox/Idee - Sabines Zeichnungswissen sichern]] | Sabine-relevant (später) | Für spätere Etappe — keine Dateien hier |
-| [[01 Inbox/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]] | MThreeD.io | Produkt-Strategie |
-| [[01 Inbox/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]] | MThreeD.io | Landing-Page zur Strategie |
-| [[01 Inbox/Idee - ProForge5 als Live-Service-Plattform]] | ProForge5 | Strategie-Idee |
+| [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]] | MThreeD.io | Strategie-Kontext für Apple-Assets |
+| [[02 Projekte/WEC Neustart mit Reiner/Sabines Zeichnungswissen + Digitales Reißbrett]] | Sabine-relevant (später) | Für spätere Etappe — keine Dateien hier |
+| [[03 Bereiche/Business MThreeD.io/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]] | MThreeD.io | Produkt-Strategie |
+| [[03 Bereiche/Business MThreeD.io/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]] | MThreeD.io | Landing-Page zur Strategie |
+| [[03 Bereiche/Business MThreeD.io/Idee - ProForge5 als Live-Service-Plattform]] | ProForge5 | Strategie-Idee |
 
 ## Ziel-Zuordnung Session 2 (ProForge5) — 22 Dateien
 

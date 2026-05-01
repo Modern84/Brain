@@ -1,0 +1,349 @@
+# Mac Deep Scan — 2026-04-24 10:28
+
+## Hardware
+```
+      Model Name: MacBook Pro
+      Model Identifier: MacBookPro18,2
+      Chip: Apple M1 Max
+      Total Number of Cores: 10 (8 Performance and 2 Efficiency)
+      Memory: 64 GB
+      Serial Number (system): HK376H6H96
+```
+
+## Grafik
+```
+      Chipset Model: Apple M1 Max
+      Type: GPU
+      Vendor: Apple (0x106b)
+      Metal Support: Metal 4
+          Display Type: Built-in Liquid Retina XDR Display
+          Resolution: 3456 x 2234 Retina
+          Connection Type: Internal
+```
+
+## Betriebssystem
+```
+ProductName:		macOS
+ProductVersion:		26.4.1
+BuildVersion:		25E253
+Uptime: 10:28  up 4 days, 13:58, 3 users, load averages: 4,84 3,84 3,69
+```
+
+## Speicherplatz (Disk)
+```
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s3s1   926Gi    12Gi   675Gi     2%    458k  4,3G    0%   /
+/dev/disk3s1     926Gi   224Gi   675Gi    25%    1,7M  7,1G    0%   /System/Volumes/Data
+```
+
+## RAM-Nutzung
+```
+Load Avg: 4.84, 3.84, 3.69 
+CPU usage: 21.28% user, 13.52% sys, 65.18% idle 
+PhysMem: 24G used (2888M wired, 3421M compressor), 39G unused.
+```
+
+## Sicherheit
+```
+FileVault is On.
+
+Gatekeeper (App-Signatur-Check):
+assessments enabled
+
+SIP (System Integrity Protection):
+System Integrity Protection status: enabled.
+
+Firewall:
+Firewall is blocking all non-essential incoming connections. (State = 2)
+```
+
+## Top 20 größte Apps (/Applications)
+```
+6,3G	/Applications/Final Cut Pro Creator Studio.app
+5,0G	/Applications/Xcode.app
+3,7G	/Applications/iMovie.app
+3,1G	/Applications/Motion Creator Studio.app
+2,4G	/Applications/Microsoft Outlook.app
+2,3G	/Applications/Microsoft Word.app
+2,1G	/Applications/Microsoft Excel.app
+1,8G	/Applications/Microsoft PowerPoint.app
+1,3G	/Applications/Google Chrome.app
+1,1G	/Applications/BambuSuite.app
+828M	/Applications/Blender.app
+775M	/Applications/Visual Studio Code - Insiders.app
+774M	/Applications/Visual Studio Code.app
+700M	/Applications/Pixelmator Pro Creator Studio.app
+676M	/Applications/Photomator.app
+674M	/Applications/Claude.app
+638M	/Applications/Keynote Creator Studio.app
+599M	/Applications/Pages Creator Studio.app
+558M	/Applications/Keynote.app
+530M	/Applications/Termius.app
+```
+
+## Top 15 größte Ordner im Home
+```
+ 52G	/Users/sh/Library
+5,7G	/Users/sh/Mac-Inventur
+4,6G	/Users/sh/Music
+3,4G	/Users/sh/2022-07-01-raspios-bullseye-i386 (1).iso
+1,4G	/Users/sh/Pictures
+1,2G	/Users/sh/2025-11-24-raspios-bookworm-arm64.img.xz
+896M	/Users/sh/Downloads
+667M	/Users/sh/Desktop
+569M	/Users/sh/Vasen
+367M	/Users/sh/Applications
+ 51M	/Users/sh/Korb.3mf
+4,6M	/Users/sh/Brain
+3,8M	/Users/sh/Raise3D_E2_IDEX_E2CF_Profiles.orcaprofile.3mf
+844K	/Users/sh/Ohne Titel.jpeg
+424K	/Users/sh/Documents
+```
+
+## Top 15 größte versteckte Ordner im Home
+```
+1,9G	/Users/sh/.ollama
+1,8G	/Users/sh/.vscode
+711M	/Users/sh/.claude
+663M	/Users/sh/.hermes
+534M	/Users/sh/.cache
+508M	/Users/sh/.local
+284M	/Users/sh/.nvm
+203M	/Users/sh/.npm
+172M	/Users/sh/.vscode-insiders
+4,4M	/Users/sh/.gemini
+3,6M	/Users/sh/.thumbnails
+2,7M	/Users/sh/.zsh_sessions
+2,1M	/Users/sh/.anydesk
+ 52K	/Users/sh/.zcompdump
+ 40K	/Users/sh/.zsh_history
+```
+
+## Downloads-Ordner (Top 10 größte)
+```
+418M	/Users/sh/Downloads/GitHub Desktop.app
+143M	/Users/sh/Downloads/OrcaSlicer-2.3.0.1-rc3
+112M	/Users/sh/Downloads/Sublime Text.app
+ 88M	/Users/sh/Downloads/crossmanager_2026
+ 83M	/Users/sh/Downloads/igus big area 3D printer (export 23-04-14)
+ 24M	/Users/sh/Downloads/download
+ 15M	/Users/sh/Downloads/LaunchPad
+3,2M	/Users/sh/Downloads/WG_ Datenlieferung_ 1. Aufmaß 19.03. 10_0 Uhr  doppelt_ 3-255-26 Edelstalbaugruppe
+2,0M	/Users/sh/Downloads/Install Linear 2.app
+1,8M	/Users/sh/Downloads/download 2
+```
+
+## Homebrew Pakete
+```
+=== Formeln (CLI-Tools) ===
+aom
+ca-certificates
+cairo
+cffi
+cryptography
+dav1d
+ffmpeg
+fontconfig
+freetype
+fribidi
+gettext
+ghostscript
+giflib
+git-filter-repo
+glib
+gmp
+gnupg
+gnutls
+gpgme
+gpgmepp
+graphite2
+harfbuzz
+icu4c@78
+img2pdf
+jbig2dec
+jbig2enc
+jpeg-turbo
+lame
+leptonica
+libarchive
+libassuan
+libavif
+libb2
+libdatrie
+libde265
+libevent
+libgcrypt
+libgpg-error
+libheif
+libidn
+libidn2
+libimagequant
+libksba
+libnghttp2
+libpng
+libraqm
+libtasn1
+libthai
+libtiff
+libunistring
+libusb
+libvmaf
+libvpx
+libx11
+libxau
+libxcb
+libxdmcp
+libxext
+libxrender
+little-cms2
+lz4
+lzo
+mlx
+mlx-c
+mpdecimal
+nettle
+npth
+nspr
+nss
+ocrmypdf
+ollama
+openjpeg
+openssl@3
+opus
+p11-kit
+pango
+pcre2
+pillow
+pinentry
+pixman
+pngquant
+poppler
+pybind11
+pycparser
+pydantic
+python@3.14
+qpdf
+readline
+ripgrep
+sdl2
+sqlite
+svt-av1
+tesseract
+tesseract-lang
+unbound
+unpaper
+webp
+x264
+x265
+xorgproto
+xz
+zstd
+
+=== Casks (GUI-Apps) ===
+```
+
+## Top 15 Prozesse (CPU-Last)
+```
+_windowserver 44,3%  0,2%   /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer
+sh     36,0%  1,0%   /Applications/Obsidian.app/Contents/Frameworks/Obsidian
+sh     34,0%  0,8%   /Applications/Google
+USER   %CPU%  %MEM%  COMMAND
+_coreaudiod 8,5%   0,1%   /usr/sbin/coreaudiod
+sh     7,6%   0,9%   claude
+sh     6,7%   0,5%   /System/Applications/Music.app/Contents/MacOS/Music
+sh     5,5%   0,1%   /System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd
+sh     3,5%   1,7%   /Applications/Claude.app/Contents/Frameworks/Claude
+sh     3,5%   0,3%   /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+sh     3,5%   0,0%   /usr/libexec/spotlightknowledged.updater
+_locationd 2,8%   0,0%   /usr/libexec/locationd
+sh     2,3%   0,2%   /System/Applications/Utilities/Activity
+sh     2,2%   0,1%   /Applications/Google
+sh     1,3%   0,0%   /System/Library/Frameworks/AudioToolbox.framework/XPCServices/AUHostingServiceXPC_arrow.xpc/Contents/MacOS/AUHostingServiceXPC_arrow
+sh     0,9%   0,1%   /System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd
+```
+
+## Top 15 Prozesse (RAM-Last)
+```
+USER   %CPU%  %MEM%  COMMAND
+sh     3,6%   1,7%   /Applications/Claude.app/Contents/Frameworks/Claude
+sh     0,0%   1,6%   /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+sh     0,0%   1,0%   /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+sh     0,2%   1,0%   /System/Library/Frameworks/Virtualization.framework/Versions/A/XPCServices/com.apple.Virtualization.VirtualMachine.xpc/Contents/MacOS/com.apple.Virtualization.VirtualMachine
+sh     47,3%  1,0%   /Applications/Obsidian.app/Contents/Frameworks/Obsidian
+sh     0,0%   0,9%   /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+sh     6,1%   0,9%   claude
+sh     34,1%  0,8%   /Applications/Google
+sh     5,0%   0,5%   /System/Applications/Music.app/Contents/MacOS/Music
+sh     0,1%   0,5%   /Applications/Claude.app/Contents/MacOS/Claude
+sh     0,0%   0,4%   /System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent
+sh     0,1%   0,3%   /Applications/Google
+sh     3,4%   0,3%   /System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+sh     0,0%   0,2%   /Applications/Claude.app/Contents/Frameworks/Claude
+sh     0,0%   0,2%   /System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/MacOS/Safari
+```
+
+## Startup-Items (Login-Agents)
+```
+=== User LaunchAgents ===
+com.google.GoogleUpdater.wake.plist
+homebrew.mxcl.ollama.plist
+
+=== Global LaunchAgents ===
+com.3dconnexion.helper.plist
+
+=== LaunchDaemons ===
+com.3dconnexion.nlserverIPalias.plist
+com.crystalidea.macsfancontrol.smcwrite.plist
+```
+
+## Netzwerk
+```
+=== Aktive Netzwerk-Services ===
+An asterisk (*) denotes that a network service is disabled.
+iPhone USB USB
+AX88179B
+Wi-Fi
+USB 10/100/1000 LAN
+Tailscale
+
+=== Aktuelles Netzwerk ===
+You are not associated with an AirPort network.
+
+=== Tailscale Status ===
+100.101.76.90    macbook-pro-von-sh           modern3b@  macOS    -                           
+100.77.218.86    iphone181                    modern3b@  iOS      -                           
+100.101.251.100  lenovo-tab-m10-plus-3rd-gen  modern3b@  android  offline, last seen 17d ago  
+100.90.34.108    mthreed-io                   modern3b@  linux    offline, last seen 6d ago   
+```
+
+## Zuletzt geöffnete Apps (letzte 7 Tage)
+```
+/Applications/Tailscale 2.app
+/Applications/Claude.app
+/Applications/Obsidian Web Clipper.app
+/Applications/Microsoft Word.app
+/Applications/Microsoft Excel.app
+/Applications/WhatsApp.app
+/Applications/Microsoft Outlook.app
+/Applications/Microsoft PowerPoint.app
+```
+
+## Apps seit 90+ Tagen nicht geöffnet
+```
+/Applications/SliCR-3D.app
+/Applications/CyberBrick.app
+/Applications/Original Prusa Drivers/PrusaSlicer.app
+/Applications/RMAAnalyzer.app
+/Applications/Magnet.app
+/Applications/Utilities/Feedback Assistant.app
+/Applications/Blender.app
+/Applications/Apple Configurator.app
+/Applications/DA260DSP.app
+/Applications/BambuSuite.app
+/Applications/Messenger.app
+/Applications/BambuStudio.app
+/Applications/JBL Compact Connect.app
+```
+
+---
+Scan fertig. Output: /Users/sh/Brain/04 Ressourcen/Scripts/mac-scan-output.md

@@ -1,0 +1,355 @@
+# ─────────────────────────────────────────────────────────────────────
+# mapping_lagerschalenhalter_v3.yaml
+#
+# Version 3 nach Reiner-Feedback vom 21.04.2026 abends:
+#   1. Zeichnungsnummern müssen mit den Stücklisten übereinstimmen
+#      → alle Stücklisten-Altnummern auch patchen, nicht nur Schriftfeld
+#   2. Welle V1/V2 existieren "jeweils als Einzelteil und als Baugruppe,
+#      kurze und lange Variante" → Welle_V1.pdf ist eine BAUGRUPPE
+#      (Welle + Scheibe), Welle_V2.pdf ist ein EINZELTEIL
+#
+# Kernänderungen gegenüber mapping_lagerschalenhalter.yaml:
+#   - Welle_V1.pdf bekommt Ziel -152-0 (Baugruppe V1), nicht -111-0
+#   - Welle_V2.pdf bleibt -211-0 (Einzelteil V2)
+#   - Zusammenbau V2 referenziert Welle via -252-0 (V2-Baugruppe, Zeichnung
+#     existiert noch nicht → Fusion-TODO), nicht -211-0
+#   - Globale Altnummern-Patches für ALLE Stücklisten-Vorkommen
+#   - Register-Einträge geändert:
+#       -111-0 = Einzelteil Welle V1 (fehlt, Fusion-TODO)
+#       -152-0 = Baugruppe Welle V1 (= aktuelle Welle_V1.pdf)
+#       -252-0 = Baugruppe Welle V2 (fehlt, Fusion-TODO)
+#
+# Nach diesem Lauf können 8 PDFs mit konsistenten Nummern an Volker raus.
+# Drei Zeichnungen fehlen weiterhin (Einzelteil V1, Baugruppe V2,
+# Schweißgruppe V2) — werden bei Fusion-Re-Export nachgezogen.
+# ─────────────────────────────────────────────────────────────────────
+
+project:
+  name: "Lagerschalenhalter Lebensmittelindustrie"
+  customer: "Volker Bens (Bens Edelstahl GmbH)"
+  scheme: "BE-LS-202603-XYZ-R (X=Scope, Y=Ebene, Z=lfd, R=Rev)"
+  number_register: "../_Register/Volker-Bens-Nummernregister.md"
+  delivery_date: "2026-04-21"
+  source_pdfs: "2026-04-21 Montag-Session/_An_Volker/PDF/"
+  version: "v3 — Stücklisten-Konsistenz + Einzelteil/Baugruppe-Split"
+
+
+# ─────────────────────────────────────────────────────────────────────
+# GLOBAL RULES — Alt→Neu-Nummern die in vielen PDFs (Stücklisten)
+# vorkommen. mode: all ersetzt alle Vorkommen, ohne Kontext-Prüfung.
+#
+# Reihenfolge WICHTIG: längere Varianten (mit -0 Suffix) zuerst, damit
+# nicht "-200" versehentlich den -0-Suffix von "-200-0" wegschneidet.
+# ─────────────────────────────────────────────────────────────────────
+
+global_rules:
+
+  # ─── Nummern-Patches in Stücklisten (Reiners Auftrag 1) ─────────────
+
+  # Lagerhalter: -200 → -012
+  - kind: drawing_number
+    find: "BE-LS-202603-200-0"
+    replace: "BE-LS-202603-012-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-200"
+    replace: "BE-LS-202603-012"
+    mode: all
+    required: false
+
+  # Lagerschale: -201 → -013
+  - kind: drawing_number
+    find: "BE-LS-202603-201-0"
+    replace: "BE-LS-202603-013-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-201"
+    replace: "BE-LS-202603-013"
+    mode: all
+    required: false
+
+  # Steg: -202 → -014
+  - kind: drawing_number
+    find: "BE-LS-202603-202-0"
+    replace: "BE-LS-202603-014-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-202"
+    replace: "BE-LS-202603-014"
+    mode: all
+    required: false
+
+  # Scheibe t=1 (NUR mit -0 Suffix! ohne -0 ist es Welle V2 alt, per-file)
+  - kind: drawing_number
+    find: "BE-LS-202603-203-0"
+    replace: "BE-LS-202603-011-0"
+    mode: all
+    required: false
+
+  # Welle V1: -204 → -111 (Einzelteil)
+  # ACHTUNG: Wird NUR in Welle_V1.pdf gematcht via per-file Regel mit
+  # Ziel -152-0 (Baugruppe). Hier global NICHT patchen, weil die
+  # per-file Regel eine andere Zielnummer hat.
+  # Die globale Variante würde die eigentliche Schriftfeld-Nummer 
+  # überschreiben, bevor die per-file Regel feuert.
+  # → daher hier nicht.
+
+  # Scheibe Welle V1 (-112): -205 → -112
+  - kind: drawing_number
+    find: "BE-LS-202603-205-0"
+    replace: "BE-LS-202603-112-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-205"
+    replace: "BE-LS-202603-112"
+    mode: all
+    required: false
+
+  # Welle V2: -207 → -252 (IM ZUSAMMENBAU-KONTEXT = Baugruppe referenziert)
+  # ACHTUNG: Diese Regel unterscheidet nicht zwischen "Einzelteil-Ref"
+  # und "Baugruppen-Ref". Im V2-Zusammenbau ist -207-0 als Referenz auf
+  # die V2-Welle-Baugruppe zu verstehen (Reiner-Logik: in Zusammenbau
+  # kommt Baugruppe, nicht Einzelteil).
+  - kind: drawing_number
+    find: "BE-LS-202603-207-0"
+    replace: "BE-LS-202603-252-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-207"
+    replace: "BE-LS-202603-252"
+    mode: all
+    required: false
+
+  # Lager SKF: -700 → -701
+  - kind: drawing_number
+    find: "BE-LS-202603-700-0"
+    replace: "BE-LS-202603-701-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-700"
+    replace: "BE-LS-202603-701"
+    mode: all
+    required: false
+
+  # Klemmring: -704 → -702
+  - kind: drawing_number
+    find: "BE-LS-202603-704-0"
+    replace: "BE-LS-202603-702-0"
+    mode: all
+    required: false
+  - kind: drawing_number
+    find: "BE-LS-202603-704"
+    replace: "BE-LS-202603-702"
+    mode: all
+    required: false
+
+
+  # ─── White-Label und Tippfehler (wie Mapping v1) ────────────────────
+
+  - kind: white_label
+    find: "SM_Lagerschale"
+    replace: "Lagerschalenhalter"
+    mode: all
+    required: false
+
+  - kind: white_label
+    find: "AM_Lagerschale"
+    replace: "Lagerschalenhalter"
+    mode: all
+    required: false
+
+  - kind: material
+    find: "1.44.04"
+    replace: "1.4404"
+    mode: all
+    required: false
+
+  - kind: white_label
+    find: " (~recovered)"
+    replace: ""
+    mode: all
+    required: false
+
+
+# ─────────────────────────────────────────────────────────────────────
+# PER-FILE RULES — Schriftfeld-Transformations und Kontext-Mehrdeutigkeiten
+#
+# Erinnerung: per-file Regeln laufen VOR globalen. Dadurch kann das
+# Schriftfeld einer Datei individuell adressiert werden, bevor die
+# globalen Regeln alles gleichförmig patchen.
+# ─────────────────────────────────────────────────────────────────────
+
+files:
+
+  # ─── Gemeinsame Einzelteile (X=0, Y=1) ───────────────────────────────
+
+  "Scheibe_t=1 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-011-0_Scheibe_t1"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-203-0"
+        replace: "BE-LS-202603-011-0"
+        context_after: "Scheibe_t=1"
+        required: true
+
+  "Lagerhalter Zeichnung.pdf":
+    new_basename: "BE-LS-202603-012-0_Lagerhalter"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-200"
+        replace: "BE-LS-202603-012-0"
+        context_after: "Lagerhalter\n----"
+        required: true
+
+  "Lagerschale Zeichnung.pdf":
+    new_basename: "BE-LS-202603-013-0_Lagerschale"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-201-0"
+        replace: "BE-LS-202603-013-0"
+        context_after: "Lagerschale"
+        required: true
+
+
+  # ─── Variante V1 BAUGRUPPE (X=1, Y=5) ────────────────────────────────
+  #
+  # ACHTUNG: Re-Interpretation nach Reiner-Feedback 21.04. abends.
+  # Die aktuelle "Welle_V1 Zeichnung.pdf" ist eine Baugruppe aus
+  # Welle + Scheibe (Stückliste zeigt 2 Teile). Zielnummer daher
+  # -152-0 (Baugruppe V1), nicht -111-0 (Einzelteil).
+  # Einzelteil Welle V1 (-111-0) existiert nicht als Zeichnung → 
+  # Fusion-TODO.
+
+  "Welle_V1 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-152-0_Baugruppe_Welle_V1"
+    rules:
+      - kind: drawing_number
+        # Schriftfeld trägt -204 (ohne Suffix). Kontext: "Welle_V1"
+        # folgt danach. Ziel ist nun -152-0 (Baugruppe).
+        find: "BE-LS-202603-204"
+        replace: "BE-LS-202603-152-0"
+        context_after: "Welle_V1"
+        required: true
+      # Stücklisten-Referenz -206 (recovered Welle V1) → Einzelteil-Welle-V1
+      # -206 ohne -0 Suffix; context: direkt nach steht nix Wichtiges;
+      # Regel als mode: unique damit keine Doppel-Matches mit Welle_V2.pdf
+      # (wo -206 auch auftaucht aber andere Bedeutung).
+      # Die Scheibe in der Stückliste (-205) wird durch Globale gepatcht.
+      - kind: drawing_number
+        find: "BE-LS-202603-206"
+        replace: "BE-LS-202603-111"
+        context_after: "-0\nWelle_V1"
+        required: false
+
+  "Scheibe_t=3 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-112-0_Scheibe_Welle_V1"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-205-0"
+        replace: "BE-LS-202603-112-0"
+        context_after: "Scheibe_t=3"
+        required: true
+
+
+  # ─── Variante V1 Schweißgruppe Halter (X=1, Y=5) ─────────────────────
+
+  "Schweißgruppe_Halter Zeichnung.pdf":
+    new_basename: "BE-LS-202603-151-0_Schweissgruppe_Halter_V1"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-1-0"
+        replace: "BE-LS-202603-151-0"
+        context_after: "Schweißgruppe_Halter"
+        required: true
+
+
+  # ─── Variante V2 EINZELTEIL (X=2, Y=1) ───────────────────────────────
+  #
+  # Welle_V2.pdf ist ein Einzelteil (Stückliste hat nur sich selbst).
+  # Zielnummer -211-0 bleibt. Stücklisten-Selbstreferenz -206 wird
+  # auf -211 gepatcht (per-file, weil Kontext Welle_V2).
+
+  "Welle_V2 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-211-0_Welle_V2"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-206-0"
+        replace: "BE-LS-202603-211-0"
+        context_after: "Welle_V2"
+        required: true
+      # Stücklisten-Selbstreferenz ohne Suffix
+      - kind: drawing_number
+        find: "BE-LS-202603-206"
+        replace: "BE-LS-202603-211"
+        context_before: "Welle_V2"
+        required: false
+
+
+  # ─── Variante V2 Zusammenbau (X=2, Y=9) ──────────────────────────────
+  #
+  # Stücklisten-Referenzen im Zusammenbau zeigen auf BAUGRUPPEN, nicht
+  # auf Einzelteile. Daher:
+  #   - -207-0 und -203 (Welle V2) → -252-0 (Baugruppe V2, via global/per-file)
+  #   - -1-0 und -001-0 (Schweißgruppe-Platzhalter) → -251-0 (V2-Schweißgruppe)
+
+  "Zusammenbau_Lagerschalehalter Zeichnung.pdf":
+    new_basename: "BE-LS-202603-291-0_Zusammenbau_V2"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-000-0"
+        replace: "BE-LS-202603-291-0"
+        context_before: "SM_Lagerschale"
+        context_after: "Zusammenbau_Lagerschalehalter"
+        required: true
+
+      # Stücklisten-Mehrdeutigkeit: -203 ohne Suffix
+      # Bedeutung im Zusammenbau: Welle V2 (= Baugruppe V2 im BOM-Kontext)
+      # context_after: "Welle_V2" (der Bauteilname steht hinter der Nr)
+      - kind: drawing_number
+        find: "BE-LS-202603-203"
+        replace: "BE-LS-202603-252"
+        context_after: "Welle_V2"
+        required: false
+
+      # -1-0 → V2-Schweißgruppe (nicht V1, weil im V2-Zusammenbau)
+      - kind: drawing_number
+        find: "BE-LS-202603-1-0"
+        replace: "BE-LS-202603-251-0"
+        context_after: "Schweißgruppe"
+        required: false
+
+      # -001-0 → ebenfalls V2-Schweißgruppe (Fusion-Platzhalter)
+      - kind: drawing_number
+        find: "BE-LS-202603-001-0"
+        replace: "BE-LS-202603-251-0"
+        required: false
+
+
+# ─────────────────────────────────────────────────────────────────────
+# STATUS NACH DIESEM LAUF
+#
+# In Lieferung enthalten (8 PDFs, Nummern konsistent):
+#   -011-0 Scheibe t=1
+#   -012-0 Lagerhalter
+#   -013-0 Lagerschale
+#   -112-0 Scheibe Welle V1
+#   -151-0 Schweißgruppe Halter V1
+#   -152-0 Baugruppe Welle V1  (= vormals Welle_V1.pdf)
+#   -211-0 Einzelteil Welle V2 (= Welle_V2.pdf)
+#   -291-0 Zusammenbau V2
+#
+# Verweise in Zusammenbau-Stückliste auf zukünftige Zeichnungen:
+#   -251-0 Schweißgruppe V2    (Fusion-TODO)
+#   -252-0 Baugruppe Welle V2  (Fusion-TODO)
+#
+# Fehlen zusätzlich:
+#   -111-0 Einzelteil Welle V1 (Fusion-TODO)
+#   -014-0 Steg (falls eigene Zeichnung nötig — Reiner kann das klären)
+#   -191-0 Zusammenbau V1 (Fusion-TODO, wie bisher)
+# ─────────────────────────────────────────────────────────────────────

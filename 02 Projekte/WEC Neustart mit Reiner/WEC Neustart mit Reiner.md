@@ -174,6 +174,48 @@ Sebastian ist angestellter Konstrukteur bei WEC und strebt gleichzeitig die Selb
 *(Weitere Sprüche und Prinzipien hier sammeln — das ist der Kern von WEC.)*
 *(TODO: Wenn Reiner sein eigenes Gehirn hat, Claude soll im Gespräch gezielt nach weiteren Leitsätzen fragen — Reiner hat da noch mehr drauf.)*
 
+## Update 2026-05-01 — Strategie scharf formuliert
+
+### Sebastians Diktat-Aussagen (O-Ton, gekürzt)
+
+**Zur Daten-Realität:**
+„Die 6 Rechner stehen in Sebnitz. NAS-Netzwerk vorhanden, nehmen wir mit nach Pirna. ~8 TB, kann sogar mehr sein — 30 Jahre, früher am Reißbrett neben dem Computer. Muss nicht alles gesichert werden. Wir wollen rauslesen, nicht archivieren."
+
+**Zur Rollen-Realität:**
+„Reiner ist anti-Computer. Hat zu Hause keinen, sieht das als nötiges Übel. Ich kann ihn nicht nach Dateipfaden fragen — das wird Stress. Ich mache alles im Hintergrund. Reiner wirft rein, ich strukturiere."
+
+**Zur Konstruktions-Realität:**
+„Ich habe über Fusion gelernt zu konstruieren. Solid Edge ist Reiners Welt, fremd für mich. Zeichnungsableitung in Fusion habe ich nie auf Firmen-Niveau gelernt. Schriftfeld, Bemaßung, Oberflächen, Normen — meine Lücke."
+
+**Zur Output-Strategie:**
+„Reiner skizziert auf digitalem Blatt — Maße, Spezialanpassungen, kleine Notizen. Claude liest aus, ich konstruiere STEP. Liefere STEP+DXF+was-nötig-ist. Hauptsache ich muss keine Zeichnung machen — kostet dreifach Zeit weil ich es nicht firm kann."
+
+**Zur Kunden-Strategie:**
+„Volker ist priorisierter Kunde, legt Wert auf Qualität, durchdachte Sache. Reiner hat 30 Jahre konstruiert — gute Sachen. Möchte auslesen um zu kompensieren was wir beide nicht können."
+
+### Kern-These (von Claude rausgeschält)
+
+> Sebastian und Reiner allein können Volker-Qualität nur halten, wenn Reiners 30-Jahre-Konstruktions-Korpus per KI als Norm-/Qualitäts-Referenz nutzbar gemacht wird.
+
+### Strategische Prinzipien
+
+1. **Output-First-Lieferung:** STEP+DXF+Stückliste+Notizen-PDF statt 2D-Zeichnung. Fertiger macht Abwicklung selbst (siehe Tomasz-Lieferpipeline). Ausnahmen nur wo Kunde Zeichnung zwingend verlangt — dann perspektivisch KI-generiert.
+
+2. **Limitierung als Strategie:** Nicht alle Möglichkeiten abdecken, sondern definiertes Niveau erreichen. „Lass das limitieren auf das was notwendig ist." Pareto über Vollständigkeit.
+
+3. **Korpus statt Software:** Solid Edge wird nicht erlernt — die Outputs (STEP/DXF/PDF/Stücklisten/Zeichnungen) sind wertvoller als die Source-Dateien. Daraus lernen wie es sein soll, nicht wie es gemacht wurde.
+
+4. **Reiner abholen, nicht onboarden:** reMarkable Paper Pro für Skizzen (bestätigt 2026-05-01, Recherche in [[02 Projekte/WEC/Recherche/Digitales Zeichenbrett für Reiner]]), Sebastian übernimmt alles digitale.
+
+5. **KI als Qualitäts-Brücke:** Schließt die Lücke zwischen Sebastian (Fusion, keine Firmen-Niveau-Zeichnungsableitung) und Reiner-Welt (Solid Edge, 30 Jahre Norm-Wissen).
+
+### Verknüpfungen zur Update-Sektion
+
+- [[Strategie - Korpus-Auslesen und KI-Pipeline]]
+- [[02 Projekte/WEC/Recherche/Digitales Zeichenbrett für Reiner]]
+- [[02 Projekte/Lokale LLMs - Roadmap]] (verworfen 2026-04-24, Re-Eval Mac Studio Ultra)
+- [[Sabines Zeichnungswissen + Digitales Reißbrett]]
+
 ## Notizen & Erkenntnisse
 
 *(Hier nach Gesprächen mit Reiner eintragen)*

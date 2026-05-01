@@ -10,15 +10,15 @@ Zusammenfassung was in der printer.cfg steht, was funktioniert und was noch fehl
 
 Vollständiges Projekt: [[02 Projekte/ProForge5 Build]]
 
-Zuletzt aktualisiert: 2026-04-17 (Audit + Korrektur)
+Zuletzt aktualisiert: 2026-04-26 (Stage 07.4 Tool-Positionen komplett, Macro-Konflikt _PRE_SELECT_CHECK identifiziert)
 
 ---
 
 ## Was läuft ✅
 
-- Klipper (MCU Octopus Pro via USB `/dev/ttyACM1`) — Firmware v0.13.0-623
+- Klipper (MCU Octopus Pro via USB `/dev/ttyACM1`) — Firmware v0.13.0-593 (Versions-Mismatch zum Host v623, funktional)
 - EBB36 Gen2 via CAN (`canbus_uuid: 71c47e0b85cf`) — Firmware v0.13.0-623-dirty ⚠️
-- 5× SO3 Boards (PH1–PH5) als eigene MCUs — Firmware v0.13.0-623 (OHNE WANT_BUTTONS)
+- 5× SO3 Boards (PH1–PH5) als eigene MCUs — Firmware v0.13.0-623 mit `WANT_BUTTONS+WANT_TMCUART+WANT_NEOPIXEL` ✅ (geflasht 2026-04-26, Pi-Reboot-Persistenz bestätigt)
 - **Alle 7 MCUs** starten mit Klipper (Octopus + EBB36 + so3_0 bis so3_4)
 - Moonraker + Mainsail
 - Tailscale permanent: `http://100.90.34.108`
@@ -33,31 +33,47 @@ Zuletzt aktualisiert: 2026-04-17 (Audit + Korrektur)
 - CAN-Bus Auto-Start via systemd ✅ (Service mit 5s Delay)
 - WLAN Auto-Reconnect Timer ✅ (60s Interval)
 - Eddy Coil kalibriert ✅ (i2c3_PA7_PA6, ~100 Punkte, SAVE_CONFIG-Block vorhanden)
+- **SO3 Toolheads aktive Features**: gcode_button (t0..4_dock_sensor), filament_switch_sensor (SO3Sensor_0..4), neopixel (SO3RGB_0..4), tmc2209 extruder (uart_pin so3_x:PB5)
 
 ## Was nicht geht / Workaround aktiv ⚠️
 
-- **SO3 Boards WANT_BUTTONS fehlt** — Firmware ohne `WANT_BUTTONS=y` geflasht. Config-Workaround aktiv: `gcode_button`, `filament_switch_sensor`, `tachometer` in `so3_0-4.cfg` deaktiviert. Muss rückgängig gemacht werden nach erneutem Flash (5× Boot+Reset).
+- **SO3 Lüfter-Tachometer**: 3 Zeilen pro `so3_*.cfg` per `#DISABLED#` deaktiviert (`tachometer_pin`, `tachometer_ppr`, `tachometer_poll_interval`). Grund: `WANT_PULSE_COUNTER` nicht in Build-Config (hätte 5. Reflash-Marathon erfordert). Folge: Hotend-Lüfter-RPM wird nicht in Mainsail angezeigt. Heater-Sicherheit unberührt (Thermistor-Cutoff aktiv). Akzeptierter Trade-off.
 - **EBB36 Firmware "-dirty"** — funktioniert, ist aber nicht clean. Clean flash über DFU-Verfahren nötig.
+- **Octopus Pro Versions-Mismatch** — läuft v0.13.0-593, Host v0.13.0-623. Funktional kein Problem aktuell. Sauberer wäre Octopus-Reflash auf v623.
 
 ---
 
 ## Was noch fehlt
 
-### 1. SO3 Boards nochmal flashen ⚠️
+### 1. ~~SO3 Boards nochmal flashen~~ ✅ erledigt 2026-04-26
 
-Neue Firmware mit `WANT_BUTTONS=y` (17.1KB) liegt als `.config.so3_buttons` auf dem Pi. Muss 5× per Boot+Reset geflasht werden. **NICHT `flash_usb.py` verwenden — crasht den Pi!**
+Geflasht mit v4-Bin (`STM32_FLASH_START_0000=y` + `WANT_BUTTONS=y` + `WANT_TMCUART=y` + `WANT_NEOPIXEL=y` + `USB_SERIAL_NUMBER="PHx"`). Bins liegen unter `~/klipper/out_so3_v4/klipper_PHx.bin`. Pi-Reboot-Test bestanden. Workaround in `so3_*.cfg` reduziert auf 3 Zeilen (nur tachometer).
 
-Nach dem Flash: Workaround in `so3_0-4.cfg` rückgängig machen (gcode_button, filament_switch_sensor, tachometer wieder aktivieren).
+### 2. Stage 07.4 Tool-Positionen ✅ erledigt 2026-04-26
 
-### 2. EBB36 clean flashen
+Alle 10 select_*-Werte + alle 10 dock_*-Werte gemessen und in variables.cfg gespeichert. Servo-Winkel DOCK=52° / SELECT=125° in macros.cfg. active_tools=5 gesetzt. Trockentest der SELECT_PHx-Macros offen — blockiert durch Macro-Konflikt (siehe 3).
 
-DFU-Verfahren: USB/CAN Jumper ab → Boot+Reset → `dfu-util` → Jumper wieder drauf.
+### 3. Macro-Fix `_PRE_SELECT_CHECK` 🔥 (nächster Schritt)
 
-### 3. Input Shaping kalibrieren
+`carriage_tool_sensor` (Pin ^PG11 Octopus) ist Endstop am Wagen, löst aus wenn Wagen am Dock anfährt. Macro `_PRE_SELECT_CHECK` (macros.cfg L633) interpretiert PRESSED aber als "Tool hängt am Wagen" → jeder SELECT-Versuch endet in `Vorauswahlprüfung fehlgeschlagen`. Patch-Plan: siehe [[05 Daily Notes/2026-04-26]] "Macro-Fix-Plan für nächste Session".
 
-ADXL345 am EBB36. Erst nach funktionierendem Eddy/Homing Z.
+### 4. Tool-Offset-Probe einmessen
 
-### 4. USB-Webcam + Crowsnest
+Die "kleine Kugel" (Probe) anschließen, alle 5 Düsen gegen die Kugel fahren, Tool-Offsets in `variables.cfg` schreiben. Stage 09 in MakerTech-Doku. Braucht funktionierende SELECT_PHx-Macros → erst nach Macro-Fix.
+
+### 5. EBB36 clean flashen
+
+DFU-Verfahren: USB/CAN Jumper ab → Boot+Reset → `dfu-util` → Jumper wieder drauf. Entfernt `-dirty`-Tag aus Firmware-Version.
+
+### 6. Octopus auf v0.13.0-623 bringen
+
+Aktuell v593 — funktional, aber Versions-Mismatch zum Host. Software-DFU-Methode bekannt (`flash_usb.py` → `dfu-util -s 0x8020000:leave`).
+
+### 7. Input Shaping kalibrieren
+
+ADXL345 am EBB36. Erst nach Tool-Offset und Bed Mesh.
+
+### 8. USB-Webcam + Crowsnest
 
 Noch nicht angeschlossen.
 
@@ -72,7 +88,7 @@ Noch nicht angeschlossen.
 | `eddy.cfg` | Eddy Coil via I2C am EBB36 | Angepasst (Original nutzt USB-MCU) |
 | `mainsail.cfg` | Mainsail-Standard | Standard |
 | `variables.cfg` | Toolchanger-Positionen | Auto-generiert |
-| `so3_0-4.cfg` | 5× Smart Orbiter Toolhead MCUs | ⚠️ Workaround aktiv |
+| `so3_0-4.cfg` | 5× Smart Orbiter Toolhead MCUs | ✅ v4-Firmware aktiv, Workaround minimal (nur tachometer) |
 
 ---
 
@@ -106,5 +122,10 @@ Noch nicht angeschlossen.
 
 1. ~~STEPPER_BUZZ alle Achsen~~ ✅
 2. ~~Homing X → Y~~ ✅
-3. SO3 Boards flashen (WANT_BUTTONS=y)
-4. Input Shaping (ADXL345 am EBB36)
+3. ~~SO3 Boards flashen (WANT_BUTTONS=y)~~ ✅ (2026-04-26 mit BUTTONS+TMCUART+NEOPIXEL)
+4. ~~Stage 07.1 Servo kalibrieren~~ ✅ (DOCK=52°, SELECT=125°)
+5. ~~Stage 07.4 Tool-Positionen~~ ✅ (alle 10 select_ + 10 dock_ Werte)
+6. **Macro-Fix `_PRE_SELECT_CHECK`** 🔥 als nächstes
+7. SELECT_PHx / _DOCK_PHx Trockentest
+8. Tool-Offset-Probe einmessen
+9. Input Shaping (ADXL345 am EBB36)

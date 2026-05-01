@@ -131,7 +131,7 @@ Das ist nur ein Ausschnitt. Insgesamt liegen aktuell weit über 50 strukturierte
 Damit niemand willkürlich entscheidet wie mit dem Gehirn gearbeitet wird, liegen die Regeln selbst im Gehirn:
 
 - **CLAUDE.md** — die zentrale Regel-Datei. Definiert Beratungsstandard, Arbeitsweise, wie Claude mit Sebastian und Reiner umgeht, LRS-Regel, Außenauftritts-Direktive.
-- **Plan zur Modularisierung** — aktuell im Eingang, wartet auf Sebastians und Reiners gemeinsames Go → [[01 Inbox/Plan - CLAUDE.md Modularisierung]]
+- **Plan zur Modularisierung** — aktuell im Eingang, wartet auf Sebastians und Reiners gemeinsames Go → [[03 Bereiche/KI-Anwendungen/Plan - CLAUDE.md Modularisierung]]
 - **Workflow-Dokument** — wie Sebastian und Claude im Alltag zusammenarbeiten → [[04 Ressourcen/Workflow - Sebastian und Claude]]
 
 **Wichtig für Reiner:** Die Regel wie Claude mit Reiner umgeht steht explizit im Profil Reiner unter "Wie Sebastian mit Reiner zusammenarbeitet — Grundhaltung". Kernaussage: **Sebastian macht das für Reiner, nicht über Reiner hinweg. Reiner wird abgeholt, nicht überrumpelt. Gegenfragen statt Anweisungen. Reiners Tempo respektieren.**
@@ -154,7 +154,7 @@ Das Gehirn selbst ist nur so sicher wie das Gerät auf dem es liegt. Deshalb ist
 - **Kundendaten und Verträge** sind auf einem Apple-Gerät besser geschützt
 - **Ingenieurbüro-Arbeit** hat oft vertrauliche Teile — Apple respektiert diese Grundposition
 
-Das ist einer der Gründe warum die Apple-Strategie (→ [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]) nicht nur Komfort ist. Es ist auch Schutz für genau die Dinge die Reiner und Sebastian nie wieder verlieren wollen.
+Das ist einer der Gründe warum die Apple-Strategie (→ [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]) nicht nur Komfort ist. Es ist auch Schutz für genau die Dinge die Reiner und Sebastian nie wieder verlieren wollen.
 
 ## Wenn Reiner Zweifel hat
 
@@ -175,8 +175,10 @@ Legitime Fragen die Reiner stellen könnte, mit ehrlicher Antwort:
 ## Verknüpfungen
 
 - [[CLAUDE]] — zentrale Regel-Datei des Gehirns
+- [[00 Kontext/Claude Code - Brain Context]] — technischer Handover für Claude Code
+- [[03 Bereiche/WEC/README]] — WEC-Übersicht (was Reiner betrifft)
 - [[00 Kontext/WEC Kontakte/Profil Reiner]] — Reiners Profil inklusive Arbeitsweise-Regeln
 - [[02 Projekte/WEC Neustart mit Reiner/Konzept Zwei Gehirne]] — warum Sebastian und Reiner getrennte, aber gleich strukturierte Gehirne haben
 - [[02 Projekte/WEC Neustart mit Reiner/Reiners Gehirn - Setup Plan]] — wie Reiners Gehirn aufgebaut wurde
 - [[04 Ressourcen/Workflow - Sebastian und Claude]] — wie die tägliche Zusammenarbeit funktioniert
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]] — warum Apple auch aus Datenschutz-Sicht strategisch ist
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]] — warum Apple auch aus Datenschutz-Sicht strategisch ist

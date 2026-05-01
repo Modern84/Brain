@@ -10,7 +10,7 @@ Bash-Scripts zur Pflege und Automatisierung des Gehirns. Alle aus dem Vault-Root
 ## Einmalig aktivieren
 
 ```bash
-cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Brain
+cd /Users/sh/Brain
 chmod +x "04 Ressourcen/Scripts"/*.sh
 ```
 

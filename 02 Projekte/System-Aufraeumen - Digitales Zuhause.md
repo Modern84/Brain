@@ -49,7 +49,7 @@ Sebastian hat mindestens 5 Absender-Identitäten in Apple Mail: `modern3b@icloud
 
 ### C — Passwort-Konsolidierung (1-2 h)
 
-1Password → Apple Schlüsselbund migrieren. Chrome-Passwörter → Apple Schlüsselbund migrieren. Duplikate entfernen. 1Password kündigen. Chrome-Password-Sync deaktivieren. Detailplan liegt schon hier: [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]]
+1Password → Apple Schlüsselbund migrieren. Chrome-Passwörter → Apple Schlüsselbund migrieren. Duplikate entfernen. 1Password kündigen. Chrome-Password-Sync deaktivieren. Detailplan liegt schon hier: [[02 Projekte/Plan - Chrome zu Safari Migration und Schluesselbund]]
 
 ### D — E-Mail aufräumen (2-3 h, aufgeteilt)
 
@@ -90,6 +90,6 @@ Desktop (gestern gemacht ✅), Downloads, Documents, Pictures, Screenshots-Archi
 ## Verknüpfungen
 
 - [[TASKS]]
-- [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]]
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[02 Projekte/Plan - Chrome zu Safari Migration und Schluesselbund]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]
 - [[04 Ressourcen/E-Mail Accounts und Serverdaten]]

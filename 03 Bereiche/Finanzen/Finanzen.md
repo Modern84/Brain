@@ -31,6 +31,7 @@ Persönliche und geschäftliche Finanzen im Blick behalten. Ausgaben, Einnahmen,
 
 ## Referenzen
 
+- [[03 Bereiche/Finanzen/Jahresindex 2026]] — Alle Investitionen, Abos, Steuer-Events 2026
 - [[03 Bereiche/Business MThreeD.io/Business MThreeD.io|Business MThreeD.io]]
 - [[Business MThreeD.io|MThreeD.io]]
 - [[02 Projekte/ProForge5 Build|ProForge5 Build]]

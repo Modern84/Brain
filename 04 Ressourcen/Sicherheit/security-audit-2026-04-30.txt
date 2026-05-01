@@ -1,0 +1,372 @@
+=== Mac-Sicherheits-Audit Stufe 1 ===
+Datum: 2026-04-30T17:10:50+02:00
+User: sh  Host: M3D.local
+
+════════════════════════════════════════
+PHASE 1 — Persistence
+════════════════════════════════════════
+--- A1: User LaunchAgents ---
+total 8
+drwxr-xr-x@   3 sh  staff    96 30 Apr. 16:50 .
+drwx------@ 109 sh  staff  3488 30 Apr. 15:48 ..
+-rw-r--r--@   1 sh  staff   869 19 März 22:45 com.google.GoogleUpdater.wake.plist.disabled_20260430_165012
+
+--- A2: System LaunchAgents ---
+total 8
+drwxr-xr-x   3 root  wheel    96 30 Apr. 16:53 .
+drwxr-xr-x  70 root  wheel  2240 13 Apr. 08:23 ..
+-rw-r--r--   1 root  wheel   492 18 Feb. 12:00 com.3dconnexion.helper.plist.disabled_20260430_165149
+
+--- A3: System LaunchDaemons ---
+total 16
+drwxr-xr-x   4 root  wheel   128 30 Apr. 16:53 .
+drwxr-xr-x  70 root  wheel  2240 13 Apr. 08:23 ..
+-rw-r--r--   1 root  wheel   488 13 Okt.  2025 com.3dconnexion.nlserverIPalias.plist.disabled_20260430_165149
+-rw-r--r--   1 root  wheel   647 24 März 12:06 com.crystalidea.macsfancontrol.smcwrite.plist
+
+--- A4: Cron User ---
+(kein User-Crontab)
+
+--- A4: Cron System ---
+(leer)
+
+--- A5: Login-Hooks ---
+2026-04-30 17:10:50.469 defaults[9422:122559] 
+The domain/default pair of (com.apple.loginwindow, LoginHook) does not exist
+2026-04-30 17:10:50.489 defaults[9425:122567] 
+The domain/default pair of (com.apple.loginwindow, LogoutHook) does not exist
+
+--- A6: Periodic ---
+(keine .local-Skripte)
+
+--- A7: emond ---
+(emond inaktiv)
+(emond inaktiv)
+
+════════════════════════════════════════
+PHASE 2 — Code-Signaturen
+════════════════════════════════════════
+--- B1: Apps mit invalider Signatur ---
+✗ /Applications/Blender.app
+  /Applications/Blender.app: a sealed resource is missing or invalid
+✗ /Applications/JBL Compact Connect.app
+  /Applications/JBL Compact Connect.app: resource envelope is obsolete (custom omit rules)
+
+--- B2: Apps ohne TeamIdentifier ---
+? /Applications/Safari.app
+  
+? /Applications/SliCR-3D.app
+  
+
+════════════════════════════════════════
+PHASE 3 — Browser-Erweiterungen
+════════════════════════════════════════
+--- C1: Chrome Extensions ---
+  cnjifjpddelmedmihgijeibhnjfabmlf — Obsidian Web Clipper
+  cofdbpoegempjloogbagkncekinflcnj — __MSG_appName__
+  fcoeoabgfenejglbffodgkkbkcdhcgfn — Claude
+  lopnbnfpjmgpbppclhclehhgafnifija — __MSG_ext_name__
+  lpcaedmchfhocbbapmcbpinfpgnhiddi — __MSG_appName__
+  mpdjakileikddgilaegaijhmfhendcji — __MSG_name__
+  nmmhkkegccagdldgiimedpiccmgmieda — __MSG_APP_NAME__
+  odpbmohjoagkjaekafpmcabjlckbngom — __MSG_appName__
+  pejdijmoenmkgeppbflobdenhhabjlaj — __MSG_extName__
+
+--- C2: Safari Extensions ---
+(keine direkt)
+(keine im Container)
+
+--- C3: Firefox Extensions ---
+/Users/sh/Library/Application Support/Firefox/Profiles/qaY6aS37.Profil 1/extensions/:
+total 16
+drwxr-xr-x@  4 sh  staff   128  7 Dez. 14:19 .
+drwx------@ 53 sh  staff  1696  7 Dez. 16:55 ..
+-rw-r--r--@  1 sh  staff  8029  7 Dez. 14:19 {7a301b7b-c3e2-40bf-a06b-6d517bbf138b}.xpi
+drwxr-xr-x@  3 sh  staff    96  7 Dez. 14:19 staged
+
+/Users/sh/Library/Application Support/Firefox/Profiles/v6apn7x1.default-release/extensions/:
+total 3688
+drwxr-xr-x@  5 sh  staff      160  7 Dez. 09:09 .
+drwx------@ 62 sh  staff     1984 25 März 08:07 ..
+-rw-r--r--@  1 sh  staff    69733  7 Dez. 09:09 firefoxdav@icloud.com.xpi
+-rw-r--r--@  1 sh  staff  1500856  6 Dez. 13:01 newtab@mozilla.org.xpi
+-rw-r--r--@  1 sh  staff   308485  6 Dez. 12:50 password-manager-firefox-extension@apple.com.xpi
+
+════════════════════════════════════════
+PHASE 4 — Netzwerk + DNS
+════════════════════════════════════════
+--- D1: TCP-Listener (vollständig) ---
+COMMAND    PID      USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+launchd      1      root    7u  IPv6  0x930d7b50fcbf1d7      0t0  TCP *:22 (LISTEN)
+launchd      1      root    8u  IPv4 0x14a06f6f8a1942e9      0t0  TCP *:22 (LISTEN)
+launchd      1      root   19u  IPv6  0x930d7b50fcbf1d7      0t0  TCP *:22 (LISTEN)
+launchd      1      root   20u  IPv4 0x14a06f6f8a1942e9      0t0  TCP *:22 (LISTEN)
+launchd      1      root   34u  IPv6 0xf7cd8b9e322a46fa      0t0  TCP [::1]:8021 (LISTEN)
+launchd      1      root   36u  IPv4 0xb4a0916a99e55d72      0t0  TCP 127.0.0.1:8021 (LISTEN)
+launchd      1      root   37u  IPv6 0xf7cd8b9e322a46fa      0t0  TCP [::1]:8021 (LISTEN)
+launchd      1      root   38u  IPv4 0xb4a0916a99e55d72      0t0  TCP 127.0.0.1:8021 (LISTEN)
+remoted    376      root    5u  IPv6 0x15b1f24e73233b2a      0t0  TCP [fe80:19::709b:a7ff:fe32:edb5]:49529 (LISTEN)
+remoted    376      root    6u  IPv6 0x4f299173d32b5fe5      0t0  TCP [fe80:19::709b:a7ff:fe32:edb5]:49530 (LISTEN)
+symptomsd  475 _networkd   20u  IPv6 0xb04aa209266eaba8      0t0  TCP *:63757 (LISTEN)
+ControlCe  648        sh    9u  IPv4 0x11ef70aad5623dda      0t0  TCP *:7000 (LISTEN)
+ControlCe  648        sh   10u  IPv6 0xdd3f48172a546311      0t0  TCP *:7000 (LISTEN)
+ControlCe  648        sh   11u  IPv4 0x63838c00b2fb8e74      0t0  TCP *:5000 (LISTEN)
+ControlCe  648        sh   12u  IPv6 0x65d827791a41c5fd      0t0  TCP *:5000 (LISTEN)
+rapportd   669        sh    9u  IPv4 0x3cb8693f5c15c210      0t0  TCP *:49152 (LISTEN)
+rapportd   669        sh   11u  IPv6 0xef2678aa7c2f9907      0t0  TCP *:49152 (LISTEN)
+io.tailsc  901      root   15u  IPv4 0x321a4c2532e509f5      0t0  TCP 127.0.0.1:49161 (LISTEN)
+io.tailsc  901      root   87u  IPv4 0xb20b792d832a595c      0t0  TCP *:59450 (LISTEN)
+io.tailsc  901      root   88u  IPv6 0xe1d7d555bf7bc43a      0t0  TCP *:38263 (LISTEN)
+3DxNLServ 1010        sh   19u  IPv4 0xb1252d88e15bceed      0t0  TCP 127.51.68.120:8182 (LISTEN)
+3DxNLServ 1010        sh   20u  IPv4 0x29abc413cca65b9e      0t0  TCP 127.51.68.120:8181 (LISTEN)
+
+--- D2: TCP Established (Top 50) ---
+COMMAND    PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+remoted    376 root    4u  IPv6 0xde5433efc9b496ad      0t0  TCP [fe80:19::709b:a7ff:fe32:edb5]:49513->[fe80:19::709b:a7ff:fe32:ed4a]:58783 (ESTABLISHED)
+identitys  688   sh   37u  IPv6 0x507b1f18abdabafd      0t0  TCP [fe80:1b::f9fe:5e1f:96fb:6162]:1024->[fe80:1b::1a0b:2833:956:1166]:1024 (ESTABLISHED)
+identitys  688   sh   47u  IPv6 0x6b4cf5ea102fdbfc      0t0  TCP [fe80:1b::f9fe:5e1f:96fb:6162]:1026->[fe80:1b::1a0b:2833:956:1166]:1025 (ESTABLISHED)
+identitys  688   sh   48u  IPv6 0x6b4cf5ea102fdbfc      0t0  TCP [fe80:1b::f9fe:5e1f:96fb:6162]:1026->[fe80:1b::1a0b:2833:956:1166]:1025 (ESTABLISHED)
+Tailscale  835   sh   16u  IPv4 0x9d7e7e0b1a6c6583      0t0  TCP 127.0.0.1:49164->127.0.0.1:49161 (ESTABLISHED)
+io.tailsc  901 root   22u  IPv6  0x944bdd81a0f477f      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49680->[2a00:dd80:20::8f]:443 (ESTABLISHED)
+io.tailsc  901 root   23u  IPv4 0x256269ffbe19fb60      0t0  TCP 127.0.0.1:49161->127.0.0.1:49164 (ESTABLISHED)
+io.tailsc  901 root   27u  IPv6 0x7a6aab5720fcbdac      0t0  TCP [2a00:20:5:ff78:90d6:f37b:22fb:ca0a]:49169->[2606:b740:1:20::102]:443 (ESTABLISHED)
+io.tailsc  901 root   29u  IPv6 0x50a21cc07fb7a1bf      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49533->[2606:b740:49::106]:80 (ESTABLISHED)
+remotepai 2271   sh   11u  IPv6 0xc91960dea2af8d1e      0t0  TCP [fe80:19::709b:a7ff:fe32:edb5]:49531->[fe80:19::709b:a7ff:fe32:ed4a]:62425 (ESTABLISHED)
+Claude    2582   sh   42u  IPv6 0x2f3c2b071fd2ca49      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49934->[2607:6bc0::10]:443 (ESTABLISHED)
+Claude    2587   sh   23u  IPv6 0xca5f6854f8a5ccf7      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49641->[2600:1901:0:179c::]:443 (ESTABLISHED)
+Claude    2587   sh   29u  IPv6   0xfeb591009e64ac      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49549->[2607:6bc0::10]:443 (ESTABLISHED)
+Claude    2587   sh   30u  IPv6 0x91b956fed325fc44      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49932->[2607:6bc0::10]:443 (ESTABLISHED)
+Claude    2587   sh   34u  IPv4 0x81b2cc32a120ae49      0t0  TCP 172.20.10.4:49408->18.97.36.60:443 (ESTABLISHED)
+Safari    3125   sh   98u  IPv6 0x7d6ea9d711ca249a      0t0  TCP [fe80:19::709b:a7ff:fe32:edb5]:49534->[fe80:19::709b:a7ff:fe32:ed4a]:62422 (ESTABLISHED)
+Safari    3125   sh   99u  IPv6 0x7d6ea9d711ca249a      0t0  TCP [fe80:19::709b:a7ff:fe32:edb5]:49534->[fe80:19::709b:a7ff:fe32:ed4a]:62422 (ESTABLISHED)
+Notes     3670   sh   19u  IPv6 0x86655cd6cf221f2f      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49842->[2a00:1450:400c:c00::6c]:993 (ESTABLISHED)
+Notes     3670   sh   26u  IPv4 0x9e91ca8e9b181096      0t0  TCP 172.20.10.6:49539->188.94.250.245:143 (ESTABLISHED)
+Notes     3670   sh   38u  IPv4 0x9e91ca8e9b181096      0t0  TCP 172.20.10.6:49539->188.94.250.245:143 (ESTABLISHED)
+Notes     3670   sh   39u  IPv6 0x86655cd6cf221f2f      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49842->[2a00:1450:400c:c00::6c]:993 (ESTABLISHED)
+Google    5308   sh   30u  IPv6 0x94975177c61a27fc      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49923->[2606:4700::6812:432]:443 (ESTABLISHED)
+Google    5308   sh   31u  IPv6 0x3411896c1b7689df      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49922->[2606:4700::6810:5049]:443 (ESTABLISHED)
+Google    5308   sh   32u  IPv6 0xdf9bba322d9cf771      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49924->[2606:4700::6812:239]:443 (ESTABLISHED)
+Google    5308   sh   35u  IPv6 0xbba45b3d22d55b9a      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49925->[2606:4700::6810:5049]:443 (ESTABLISHED)
+Google    5308   sh   45u  IPv6 0xca047ecdfeb3ec21      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49766->[2607:6bc0::10]:443 (ESTABLISHED)
+Google    5308   sh   53u  IPv6 0x3bcbe69168089554      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49770->[2a00:1450:4001:c21::bc]:5228 (ESTABLISHED)
+node      7685   sh   21u  IPv6 0x3e4f98a33466cce5      0t0  TCP [2a00:20:5:ff78:3490:d860:f516:5841]:49884->[2607:6bc0::10]:443 (ESTABLISHED)
+
+--- D3: DNS-Resolver ---
+  nameserver[0] : 100.100.100.100
+  nameserver[0] : fe80::b455:75ff:fea8:8f64%en0
+  nameserver[0] : fe80::b455:75ff:fea8:8f64%en8
+  nameserver[1] : 172.20.10.1
+  nameserver[1] : fd7a:115c:a1e0::53
+#
+# macOS Notice
+#
+# This file is not consulted for DNS hostname resolution, address
+# resolution, or the DNS query routing mechanism used by most
+# processes on this system.
+#
+# To view the DNS configuration used by this system, use:
+#   scutil --dns
+#
+# SEE ALSO
+#   dns-sd(1), scutil(8)
+#
+# This file is automatically generated.
+#
+search tailf1d344.ts.net
+nameserver 100.100.100.100
+nameserver fd7a:115c:a1e0::53
+
+--- D4: /etc/hosts ---
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+════════════════════════════════════════
+PHASE 5 — sudoers + Shell-Init
+════════════════════════════════════════
+--- E1: sudoers (echte Einträge) ---
+Defaults	env_reset
+Defaults	env_keep += "BLOCKSIZE"
+Defaults	env_keep += "COLORFGBG COLORTERM"
+Defaults	env_keep += "__CF_USER_TEXT_ENCODING"
+Defaults	env_keep += "CHARSET LANG LANGUAGE LC_ALL LC_COLLATE LC_CTYPE"
+Defaults	env_keep += "LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME"
+Defaults	env_keep += "LINES COLUMNS"
+Defaults	env_keep += "LSCOLORS"
+Defaults	env_keep += "SSH_AUTH_SOCK"
+Defaults	env_keep += "TZ"
+Defaults	env_keep += "DISPLAY XAUTHORIZATION XAUTHORITY"
+Defaults	env_keep += "EDITOR VISUAL"
+Defaults	env_keep += "HOME MAIL"
+Defaults	lecture_file = "/etc/sudo_lecture"
+Defaults	!log_allowed
+root		ALL = (ALL) ALL
+%admin		ALL = (ALL) ALL
+
+--- E1b: /etc/sudoers.d/ ---
+total 0
+drwxr-xr-x   2 root  wheel    64  6 Apr. 10:10 .
+drwxr-xr-x  80 root  wheel  2560 30 Apr. 15:55 ..
+
+--- E2: Shell-Init Dateien ---
+→ /Users/sh/.zshrc (11 Zeilen)
+→ /Users/sh/.zprofile (2 Zeilen)
+
+--- E2b: Verdächtige Patterns in Shell-Init ---
+/Users/sh/.zprofile:2:eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+✓ keine Treffer
+
+════════════════════════════════════════
+PHASE 6 — CLI-Tools
+════════════════════════════════════════
+--- F1: brew --formula ---
+aom
+ca-certificates
+cairo
+cffi
+cryptography
+dav1d
+ffmpeg
+fontconfig
+freetype
+fribidi
+gettext
+ghostscript
+giflib
+git-filter-repo
+glib
+gmp
+gnupg
+gnutls
+gpgme
+gpgmepp
+graphite2
+harfbuzz
+icu4c@78
+img2pdf
+jbig2dec
+jbig2enc
+jpeg-turbo
+lame
+leptonica
+libarchive
+libassuan
+libavif
+libb2
+libdatrie
+libde265
+libevent
+libgcrypt
+libgpg-error
+libheif
+libidn
+libidn2
+libimagequant
+libksba
+libnghttp2
+libpng
+libraqm
+libtasn1
+libthai
+libtiff
+libunistring
+libusb
+libvmaf
+libvpx
+libx11
+libxau
+libxcb
+libxdmcp
+libxext
+libxrender
+little-cms2
+lz4
+lzo
+mpdecimal
+nettle
+npth
+nspr
+nss
+ocrmypdf
+openjpeg
+openssl@3
+opus
+p11-kit
+pango
+pcre2
+pillow
+pinentry
+pixman
+pngquant
+poppler
+pybind11
+pycparser
+pydantic
+python@3.14
+qpdf
+readline
+ripgrep
+sdl2
+sqlite
+svt-av1
+tesseract
+tesseract-lang
+unbound
+unpaper
+webp
+x264
+x265
+xorgproto
+xz
+zstd
+
+--- F2: brew --cask ---
+
+--- F3: npm globale Pakete ---
+/Users/sh/.nvm/versions/node/v24.15.0/lib
+├── @anthropic-ai/claude-code@2.1.112
+├── corepack@0.34.6
+├── npm@11.12.1
+└── obsidian-headless@0.0.8
+
+
+--- F4: pip globale Pakete ---
+Package                Version
+---------------------- --------
+annotated-types        0.7.0
+antlr4-python3-runtime 4.13.2
+cffi                   2.0.0
+charset-normalizer     3.4.7
+cryptography           46.0.7
+Deprecated             1.3.1
+et_xmlfile             2.0.0
+ezdxf                  1.4.3
+fonttools              4.62.1
+lxml                   6.1.0
+numpy                  2.4.4
+openpyxl               3.1.5
+packaging              26.1
+pdfminer.six           20251230
+pdfplumber             0.11.9
+pikepdf                10.5.1
+pillow                 12.2.0
+pip                    26.0.1
+pybind11               3.0.3
+pycparser              3.0
+pydantic               2.13.1
+pydantic_core          2.46.1
+PyMuPDF                1.27.2.2
+pyparsing              3.3.2
+pypdf                  6.10.2
+pypdfium2              5.7.0
+steputils              0.1
+typing_extensions      4.15.0
+typing-inspection      0.4.2
+wheel                  0.46.3
+wrapt                  2.1.2

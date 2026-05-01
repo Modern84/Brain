@@ -44,5 +44,5 @@ Diese Entscheidung in ruhiger Session machen — nicht mitten im Aufräum-Marath
 
 ## Verknüpfungen
 
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]
 - [[02 Projekte/System-Aufraeumen - Digitales Zuhause]]

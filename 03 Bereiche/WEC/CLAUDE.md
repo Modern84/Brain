@@ -2,7 +2,7 @@
 tags: [bereich, wec, schema, claude]
 date: 2026-04-17
 ---
-
+cl
 # WEC — Claude-Regeln (Ergänzung zur Root-CLAUDE.md)
 
 > Diese Regeln **ergänzen** die Root-`CLAUDE.md` für alles was im WEC-Bereich passiert.
@@ -87,7 +87,7 @@ Reiner hat ein strukturelles BWL-Vakuum (Partner verstorben, 40.000€ Insolvenz
 - **Kundenkonstruktionsdaten** = vertraulich, nur an autorisierte Empfänger
 - **Patente in Anmeldung** = nicht in unverschlüsselten Kanälen besprechen
 
-→ Apple-Strategie als Schutz: [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+→ Apple-Strategie als Schutz: [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]
 
 ---
 
@@ -104,10 +104,51 @@ Wenn Claude direkt mit Reiner arbeitet (später, über sein eigenes Gehirn):
 
 ---
 
+## Shared Brain — Kontext-Filter für Reiner
+
+**Architektur:** Ein Vault (Mo's Brain), beide über Obsidian Sync verbunden.  
+**Details:** [[03 Bereiche/WEC/Shared Brain Architektur]]
+
+### Wenn Claude mit Reiner arbeitet
+
+**Zeige ihm:**
+- Alles in `02 Projekte/WEC/`
+- Alles in `03 Bereiche/WEC/`
+- WEC-relevante Teile aus `04 Ressourcen/` (CAD-Standards, Normen, BWL-Filter)
+- Gemeinsame Tasks in `TASKS.md` (nur WEC-bezogene)
+- Sein eigener Eingang: `01 Inbox/Reiner/` (wenn vorhanden)
+
+**Zeige ihm NICHT:**
+- Mo's Daily Notes (`05 Daily Notes/`)
+- Mo's private Projekte (`02 Projekte/` außer WEC)
+- Mo's persönliche Bereiche (`03 Bereiche/` außer WEC)
+- Mo's Kontext-Profil (`00 Kontext/Über mich`, persönliche Finanzen, etc.)
+- Brain-Meta-Dateien (CLAUDE.md im Root, außer WEC CLAUDE.md)
+
+### Wenn Claude mit Mo arbeitet
+
+**Voller Zugriff** — keine Filter.  
+Mo sieht und steuert alles.
+
+### Reiners Notizen erkennen
+
+Wenn Reiner über Claude eine Notiz erstellt:
+- Automatisch in passenden WEC-Bereich einsortieren
+- Frontmatter mit `author: Reiner` taggen
+- Claude weiß dass diese Notiz von Reiner stammt (auch wenn Mo sie später sieht)
+
+### Test-Kriterium
+
+Mo muss fragen können: "Was würde Reiner jetzt in seinem Obsidian sehen?"  
+→ Claude listet genau die gefilterte Sicht auf.
+
+---
+
 ## Verknüpfungen
 
 - [[CLAUDE]] — Root-Regeln (gelten immer)
 - [[03 Bereiche/WEC/README]] — Übersicht WEC-Bereich
+- [[03 Bereiche/WEC/Shared Brain Architektur]] — Details zur Vault-Architektur
 - [[03 Bereiche/WEC/Operationen/Ingest]]
 - [[03 Bereiche/WEC/Operationen/Query]]
 - [[03 Bereiche/WEC/Operationen/Lint]]

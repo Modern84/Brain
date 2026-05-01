@@ -106,7 +106,7 @@ Hauptkunde von WEC. Bens Edelstahl GmbH, Pirna. Branche: Pharma- und Lebensmitte
 
 - [ ] Erste Wiki-Kompilation aus T9-Daten
 - [ ] EHEDG-Norm-Eintrag erstellen
-- [ ] Volkers spezifisches Schriftfeld als Vorlage extrahieren
+- [ ] Volkers spezifisches Schriftfeld als Vorlage extrahieren — **Solid-Edge-Templates lokalisiert (2026-05-01)** in `07 Anhänge/Allgemein/Profil/SEST4/Templates/WEC/`. Strategie-Entscheidung Mo 2026-05-01: **Fusion 360 + Solid Edge parallel** — Bens-Lieferungen aus Solid Edge (Template existiert dort), eigene Konstruktion in Fusion 360.
 - [ ] Mietvertrag-Vorprüfung wenn er kommt
 
 ---

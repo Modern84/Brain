@@ -1,0 +1,29 @@
+Bauteilname;Zusammenbau_Lagerschalehalter;;;;;;;;;;;;
+Arbeitsstückliste;von 16. April 2026 um 10:24:16 UTC;;;;;;;;;;;;
+Exportiert von;;;;;;;;;;;;;
+Exportiert um;10:24 16.04.2026;;;;;;;;;;;;
+;;;;;;;;;;;;;
+;Bauteilnummer;Bauteilname;Beschreibung;Artikelnummer;Menge;Material;Hersteller;Hersteller-Teilenummer;Anmerkung 1;Maßeinheit;Konstrukteur;Ingenieur;Projekt
+;BE-LS-202603-000-0;Zusammenbau_Lagerschalehalter;Lagerhalter_Baugruppe;;1;;;;Zusammenbau;;;;AM_Lagerschale
+1;BE-LS-202603-200-0;Lagerhalter;Blech 10;;2;Edelstahl 1.4404;;;Einzelteil;;;;
+2;BE-LS-202603-201-0;Lagerschale;Rundstahl;;2;Edelstahl 1.4404;;;Einzelteil;;;;
+3;BE-LS-202603-202-0;Steg_Lagerschalenhalter;Blech 5;;2;Edelstahl 1.4404;;;Einzelteil;;;;
+4;BE-LS-202603-700-0;Lager_64773026;SKF Pendelkugellager 2202 E-2RS1TN9 zweireihig Innen-Ø 15mm Außen-Ø 35mm Breite 14mm abgedichtet;;2;Stahl - Edelstahl;https://www.maedler.de/Article/64773026?srsltid=AfmBOorKQsDJ7HUROx3jeE-XAnAnkoQiBLcB1mZqyA-mw8_CnpEf8aPP;Artikelnr.: 64773026;Kaufteil;;;;
+5;BE-LS-202603-203-0;Scheibe_t=1;Blech 1;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+6;BE-LS-202603-704-0;Klemmring_62399115;Geschlitzter Klemmring Edelstahl 1.4305 Bohrung 15mm mit Schraube DIN 912 A2-70;;1;;https://www.maedler.de/Article/62399115?srsltid=AfmBOorenNESFImeznZC7d0nGx6fsygnd9tvazehqgyiZRhWI1WQP_sX;Artikelnr.: 62399115;Kaufteil;;;;
+6.1;62399115_1;62399115_1;62399115_1;;1;Stahl - Edelstahl;;;;;;;
+6.2;62399115_2;62399115_2;62399115_2;;1;Stahl - Edelstahl;;;;;;;
+7;BE-LS-202603-207-0;Welle_V2;Rundstahl;;2;;;;V2;;;;
+7.1;BE-LS-202603-205-0;Scheibe_t=3;Blech 3;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+7.2;BE-LS-202603-204-0;Welle_V1;Runstahl;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+8;BE-LS-202603-204-0;Welle_V1;Rundstahl;;1;;;;V1;;;;
+8.1;BE-LS-202603-204-0;Welle_V1;Runstahl;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+8.2;BE-LS-202603-205-0;Scheibe_t=3;Blech 3;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+9;DIN EN ISO 4762 - M8 x 40 Edelstahl A4 Einfach;Innensechskantschraube DIN EN ISO 4762 - M8 x 40 Edelstahl A4 Einfach;Innensechskantschraube DIN EN ISO 4762 - M8 x 40;;2;Edelstahl A4, Einfach;;;;;;;
+10;DIN 986 - M8 x 1.25 Stahl 6 Einfach;Hutmutter DIN 986 - M8 Stahl 6 Einfach;Sicherungsmutter DIN 985 M8;;3;Stahl 6, Einfach;;;;;;;
+11;BE-LS-202603-1-0;Schweißgruppe_Halter;;;2;;;;;;;;
+11.1;BE-LS-202603-201-0;Lagerschale;Rundstahl;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+11.2;BE-LS-202603-200-0;Lagerhalter;Blech 10;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+12;BE-LS-202603-1-0;Schweißgruppe_Halter;;;2;;;;;;;;
+12.1;BE-LS-202603-201-0;Lagerschale;Rundstahl;;1;Edelstahl 1.4404;;;Einzelteil;;;;
+12.2;BE-LS-202603-200-0;Lagerhalter;Blech 10;;1;Edelstahl 1.4404;;;Einzelteil;;;;

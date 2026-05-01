@@ -137,8 +137,8 @@ spi_software_miso_pin: ebb:PB2
 
 - U2C ersetzt Octopus Pro USB-to-CAN Bridge
 - 24V über Schraubklemmen (V+/V-) ins U2C → wird über seitliche Molex Microfit 3.0 an EBB36 weitergeleitet
-- **Achtung:** Pin-Belegung U2C-Molex ≠ Breakout-Board-Molex. Mitgeliefertes MX3.0-to-XT30 Kabel (2200mm) ist für Breakout-Board gecrimpt, NICHT für U2C
-- **Problem gelöst:** Molex-Stecker hatte keinen Arretierungshaken mehr → saß 180° verdreht → kein Strom. Nach Korrektur: grüne LED, 24V liegt an
+- **Pin-Belegung U2C-Molex und Breakout-Board-Molex sind GESPIEGELT** (180°-Symmetrie). Das mitgelieferte Original-MX3.0-Kabel passt elektrisch in beide, im U2C jedoch um 180° gedreht eingesteckt. Mechanische Verpolungs-Kodierung am Stecker greift nicht zwingend — Verifikation über grüne LED am EBB36 (Strom liegt an) und `canbus_query` (CAN funktioniert). Beim ProForge5 lief 2026-04-04 zunächst kein Strom, weil Arretierungshaken abgebrochen war und Stecker falsch herum saß. Nach 180°-Drehung: Betrieb seit 2026-04-04 stabil mit Originalkabel.
+- **Zusätzlich verfügbar (Stand 2026-04-30):** Zweites Kabel mit MX3.0 EBB-seitig + offenen Litzen U2C-seitig — erlaubt freie Pin-Zuordnung, z.B. Split 24V/CAN aus unterschiedlichen Quellen.
 - Stecker mit Markierung sichern oder Molex-Gehäuse ersetzen
 
 ---

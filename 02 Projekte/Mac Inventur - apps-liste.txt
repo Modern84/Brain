@@ -1,0 +1,70 @@
+3d Scanner App.app
+3Dconnexion
+3DconnexionHelper.app
+3DconnexionUninstaller.app
+Apple Configurator.app
+AusweisApp.app
+BambuStudio.app
+BambuSuite.app
+Blender.app
+Claude.app
+Compressor Creator Studio.app
+CR-3D Calibration cube.3mf
+CyberBrick.app
+DA260DSP.app
+DDPM
+Discord.app
+djay Pro.app
+EAGLE-9.6.2
+Essayist.app
+Final Cut Pro Creator Studio.app
+GitHub Desktop.app
+Google Chrome.app
+Google Docs.app
+Google Sheets.app
+Google Slides.app
+iMovie.app
+JBL Compact Connect.app
+Keynote Creator Studio.app
+Keynote.app
+LINE.app
+log_iotc.txt
+Magnet.app
+Messenger.app
+Microsoft Excel.app
+Microsoft Outlook.app
+Microsoft PowerPoint.app
+Microsoft Word.app
+Motion Creator Studio.app
+NODE.app
+Noir.app
+Numbers Creator Studio.app
+Obsidian Web Clipper.app
+Obsidian.app
+OrcaSlicer
+OrcaSlicer.app
+Original Prusa Drivers
+Pages Creator Studio.app
+Pages.app
+Photomator.app
+Pixelmator Pro Creator Studio.app
+Prime Video.app
+QReate.app
+RaiseCloud.app
+Raspberry Pi Imager 2.app
+Raspberry Pi Imager.app
+RMAAnalyzer.app
+Safari.app
+Setapp
+Setapp.app
+SliCR-3D.app
+Tailscale 2.app
+Tailscale.app
+Termius.app
+TestFlight.app
+UlyssesMac.app
+Utilities
+Visual Studio Code - Insiders.app
+Visual Studio Code.app
+WhatsApp.app
+Xcode.app

@@ -1,0 +1,26 @@
+{
+    "bed_custom_model": "/Users/sh/Downloads/Orca-Slicer-Profiles-main/Makertech/ProForge 5_bed.stl",
+    "bed_custom_texture": "/Users/sh/Downloads/Orca-Slicer-Profiles-main/Makertech/ProForge 5_bed.svg",
+    "from": "User",
+    "inherits": "ProForge 5",
+    "name": "ProForge 5 mThreeD",
+    "print_host": "172.20.10.2",
+    "printer_extruder_id": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+    ],
+    "printer_extruder_variant": [
+        "Direct Drive Standard",
+        "Direct Drive Standard",
+        "Direct Drive Standard",
+        "Direct Drive Standard",
+        "Direct Drive Standard"
+    ],
+    "printer_settings_id": "ProForge 5 mThreeD",
+    "version": "2.3.2.60",
+    "machine_start_gcode": "M83\nM140 S{first_layer_bed_temperature[initial_tool]} ; Bett vorheizen\nM104 S{first_layer_temperature[initial_tool]} T{initial_tool} ; Hotend vorheizen\nG28 ; Homing X Y Z\nBED_MESH_PROFILE LOAD=default ; gespeichertes Mesh laden\nM190 S{first_layer_bed_temperature[initial_tool]} ; warten bis Bett warm\nM109 S{first_layer_temperature[initial_tool]} T{initial_tool} ; warten bis Hotend warm\n{if initial_tool == 0}SELECT_PH1{endif}\n{if initial_tool == 1}SELECT_PH2{endif}\n{if initial_tool == 2}SELECT_PH3{endif}\n{if initial_tool == 3}SELECT_PH4{endif}\n{if initial_tool == 4}SELECT_PH5{endif}\nG92 E0 ; Extruder-Position resetten\nG1 Z5 F600 ; Z anheben",
+    "change_filament_gcode": "M118 MULTI-TOOL BLOCKIERT - Servo-EMI Hardware-Mitigation noch nicht abgeschlossen\nM117 Multi-Tool nicht erlaubt\nM112 ; Notaus - verhindert Druck-Start"
+}

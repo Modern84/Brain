@@ -77,4 +77,4 @@ Bis Ende August 2026 — ca. 4 Monate.
 ## Verknüpfungen
 
 - [[02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner]]
-- [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]
+- [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]

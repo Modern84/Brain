@@ -184,9 +184,9 @@ CAN speed: 1000000
 
 ### Mitgeliefertes MX3.0-to-XT30 Kabel (2200mm)
 - Dieses Kabel ist für **Breakout-Board → EBB36** gecrimpt
-- Kann NICHT 1:1 für **U2C → EBB36** verwendet werden — die Pin-Belegung der Molex-Seite passt nicht zum U2C-Molex
-- Community-Konsens: "The BTT stuff is not the same on both sides" (VoronTools Guide)
-- Verpolung kann die EBB36 sofort zerstören
+- Pin-Belegung U2C-Molex und Breakout-Board-Molex sind **gespiegelt** (180°-Symmetrie) — das Originalkabel passt elektrisch in beide, im U2C jedoch um 180° gedreht eingesteckt
+- Community-Konsens "The BTT stuff is not the same on both sides" (VoronTools Guide) gilt — aber elektrisch lösbar durch 180°-Drehung, nicht zwingend Eigen-Crimp nötig
+- Verpolung kann die EBB36 sofort zerstören → vor erstem Power-Up Polarität verifizieren (Multimeter oder schrittweises Vorgehen mit grüner LED als Indikator)
 
 ### Molex-Stecker ohne Arretierungshaken
 - **Problem gefunden (ProForge5):** Arretierungshaken am MX3.0-Stecker war abgebrochen
@@ -200,6 +200,8 @@ CAN speed: 1000000
 3. 24V + GND mindestens 20 AWG
 4. **Immer mit Multimeter prüfen** — welcher Pin am U2C-Molex 24V führt, welcher GND, dann Kabel entsprechend crimpen
 5. Alternativ: CAN über DuPont-Pins am EBB36, 24V separat über XT30
+
+**Praxis ProForge5 (2026-04-04 bis heute):** nicht selbst gecrimpt. Original-MX3.0-Kabel funktioniert im U2C-Molex bei 180°-Drehung — gespiegelte Pin-Belegung ist elektrisch kompatibel, mechanische Kodierung greift nicht zwingend. Eigen-Crimp wäre Alternative falls mechanische Verpolungs-Sicherheit gewünscht. Beim ProForge5 zusätzlich vorhanden: Kabel mit MX3.0 EBB-seitig + offenen Litzen U2C-seitig — erlaubt freie Pin-Zuordnung (Split 24V/CAN aus unterschiedlichen Quellen, oder Anschluss an einen Mainboard-CAN-Header statt U2C).
 
 ---
 

@@ -4,9 +4,14 @@ status: in-aufbau
 date: 2026-04-17
 ---
 
+← zurueck zum [[03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/_INDEX|Projekt-Landing-Pad]]
+
+
 # CAD-Datenübergabe Standard — Bens Edelstahl GmbH
 
-**Zweck:** Verbindliches Lieferformat für alle CAD-Datenübergaben an Volker Bens.
+**Zweck:** Verbindliches Lieferformat für alle CAD-Datenübergaben **an Volker Bens** (extern).
+
+> ⚠️ **Nicht zu verwechseln mit** [[CAD-Uebergabe an Claude]] — dort steht, welche Formate Mo/Reiner an Claude (intern) weitergibt, damit Claude Zeichnungen oder Analysen erstellen kann. Liefer-Format an Volker = IGES; Übergabe an Claude = STEP + DXF.
 
 **Methode:** Das Profil wird **nicht** durch Nachfragen bei Volker erstellt, sondern durch **Analyse der historischen Liefer-Datensätze** (30 Jahre Zusammenarbeit Reiner ↔ Volker). Was über Jahrzehnte funktioniert hat, ist der Standard.
 
@@ -213,6 +218,7 @@ Diese Regeln sind verbindlich für den Prozess, wie das Profil aus den historisc
 | 2026-04-17 | Template angelegt, 10 Profil-Sektionen mit Platzhaltern, Arbeitsregeln formuliert | Session mit Mo |
 | 2026-04-17 | Pre-Delivery Kontext-Check ergänzt (Toleranzen, Passungen, Kantenbearbeitung, Nachbearbeitung, Prüfdokumente). Vision der halbautomatischen Lieferung dokumentiert (3D-Modell → Kontext-Check → Ableitung → Erzeugung → Freigabe → direkte Lieferung) | Session mit Mo |
 | 2026-04-20 | Feldname „STEP-Schema" → „3D-Format" korrigiert (Widerspruch mit IGES-Inhalt). 700er-Kaufteile-Systematik ergänzt, belegt aus `BOM_bereinigt.xlsx`. | Claude Code |
+| 2026-04-21 | Bens-Lieferung Lagerschalenhalter: vier offene Punkte entschieden — Welle_V2 Nummer `-203` → `-207-0`, Schriftfeld Hartmann/Woldrich bleibt (Fusion-Default), 3D IGES primär + STEP AP203 zusätzlich, Kontext Lebensmittel/EHEDG (Sachsenmilch Käsekarussell, kein Pharma/GMP). BOM-Struktur-Bereinigung: Welle_V1 auf `-204-0` konsolidiert, `~recovered`-Flags entfernt, Schweißgruppen-Dublette Pos 12/12.1/12.2 gestrichen (Onshape-Export-Artefakt, Mengenlogik bereits in Pos 11 × 2 abgebildet), Schweißgruppe auf dreistelliges Schema `BE-LS-202603-001-0`. Offen für Fusion: STEP-Einzelteile + Schweißgruppe, PDF-Re-Export aller 12 Zeichnungsblätter. | Session mit Mo |
 
 ---
 
@@ -223,4 +229,4 @@ Diese Regeln sind verbindlich für den Prozess, wie das Profil aus den historisc
 - [[02 Projekte/WEC Neustart mit Reiner/Sachsenmilch Käsekarussell]]
 - [[02 Projekte/WEC Neustart mit Reiner/Mail Reiner - Lagerschalenhalter Überarbeitung]]
 - [[Volker Bens - Lagerschalenhalter Lebensmittelindustrie]]
-- [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]
+- [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]

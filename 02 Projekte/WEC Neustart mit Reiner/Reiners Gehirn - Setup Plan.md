@@ -172,7 +172,7 @@ Statt in die bestehende WEC-IT einzugreifen, **paralleles System** aufbauen:
 - 122 g, portabel
 
 **Ablauf:**
-1. Reiner kauft die SSD (Bezugsquelle steht in [[01 Inbox/Notiz Reiner - Externe SSD statt Remote Desktop]])
+1. Reiner kauft die SSD (Bezugsquelle steht in [[02 Projekte/WEC Neustart mit Reiner/Notiz Reiner - Externe SSD statt Remote Desktop]])
 2. Reiner kopiert die relevanten NAS-Ordner auf die SSD — nur kopieren, nicht verschieben! Originale bleiben auf dem NAS.
 3. Reiner übergibt Sebastian die SSD.
 4. Sebastian übernimmt Reiners Daten auf seinen Mac (01_WEC-Projekte).
@@ -183,7 +183,7 @@ Statt in die bestehende WEC-IT einzugreifen, **paralleles System** aufbauen:
 
 **Welcome-Kit-Prinzip:** Die SSD macht eine Runde und erledigt zwei Aufgaben in einem Durchgang. Reiner bekommt nicht nur seine alten Daten zurück, sondern ein **vorbereitetes System**. Psychologisch wichtig: hier ist was Neues, und es ist bereit für dich, nicht "bau es dir selbst auf".
 
-**Anleitung für Reiner:** [[01 Inbox/Anleitung Reiner - Externe SSD Projektspiegel]] (Schritt-für-Schritt inkl. Ordnerstruktur WEC-Projekte)
+**Anleitung für Reiner:** [[02 Projekte/WEC Neustart mit Reiner/Anleitung Reiner - Externe SSD Projektspiegel]] (Schritt-für-Schritt inkl. Ordnerstruktur WEC-Projekte)
 
 **Strategische Einordnung:** Die T9 ist die **physische Umsetzung** der Entkopplungsstrategie. Sie löst drei Probleme gleichzeitig:
 1. Datentransfer ohne Netzwerk-Anpassungen bei WEC-IT

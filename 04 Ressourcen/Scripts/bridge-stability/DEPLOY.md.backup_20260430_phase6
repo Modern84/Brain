@@ -1,0 +1,86 @@
+---
+tags: [ressource, scripts, klipper, monitoring, proforge5]
+date: 2026-04-30
+status: aktiv
+---
+
+# Bridge-Stability-Monitor — Deployment
+
+Skripte sind **lokal vorbereitet**, weil Pi via Tailscale (100.90.34.108) und Hotspot (172.20.10.2) am 30.04. ~Briefing-Zeit nicht erreichbar war. Deploy startet, sobald SSH wieder klappt.
+
+## Dateien
+
+- `livediag_bridge_stability.sh` — Snapshot-Skript (1 Aufruf = 1 TSV-Zeile)
+- `bridge_stability_summary.sh` — Auswertung
+- `bridge-stability-monitor.service` — systemd-User-Service (oneshot)
+- `bridge-stability-monitor.timer` — systemd-User-Timer (60s)
+
+## Variante A — systemd-User (bevorzugt)
+
+Voraussetzung: `loginctl enable-linger m3d` einmalig (sonst stoppt Timer beim Logout).
+
+```bash
+# 1. Dateien vom Mac auf den Pi kopieren
+scp "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/04 Ressourcen/Scripts/bridge-stability/"{livediag_bridge_stability.sh,bridge_stability_summary.sh} m3d@100.90.34.108:~/
+
+# 2. Auf Pi: ausführbar machen
+ssh m3d@100.90.34.108 'chmod +x ~/livediag_bridge_stability.sh ~/bridge_stability_summary.sh'
+
+# 3. systemd-User-Units installieren
+ssh m3d@100.90.34.108 'mkdir -p ~/.config/systemd/user'
+scp "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/04 Ressourcen/Scripts/bridge-stability/"bridge-stability-monitor.{service,timer} m3d@100.90.34.108:~/.config/systemd/user/
+
+# 4. Linger einmalig aktivieren (nur falls noch nicht)
+ssh m3d@100.90.34.108 'sudo loginctl enable-linger m3d'
+
+# 5. Timer aktivieren
+ssh m3d@100.90.34.108 'systemctl --user daemon-reload && systemctl --user enable --now bridge-stability-monitor.timer'
+
+# 6. Verifikation
+ssh m3d@100.90.34.108 'systemctl --user list-timers | grep bridge'
+ssh m3d@100.90.34.108 '~/livediag_bridge_stability.sh && tail -2 ~/printer_data/logs/bridge_stability.log'
+```
+
+## Variante B — tmux-Loop (Fallback wenn Linger blockt)
+
+```bash
+ssh m3d@100.90.34.108 'tmux new -ds bridgestab "while true; do ~/livediag_bridge_stability.sh; sleep 60; done"'
+# Status:
+ssh m3d@100.90.34.108 'tmux ls; tail -2 ~/printer_data/logs/bridge_stability.log'
+# Stop:
+ssh m3d@100.90.34.108 'tmux kill-session -t bridgestab'
+```
+
+**Wahl:** Variante A ist robust gegen Reboot (mit Linger). Variante B nur wenn Linger Probleme macht — übersteht keinen Reboot.
+
+## Auswertung
+
+```bash
+ssh m3d@100.90.34.108 '~/bridge_stability_summary.sh'
+```
+
+## Rollback
+
+```bash
+# Variante A
+ssh m3d@100.90.34.108 'systemctl --user disable --now bridge-stability-monitor.timer'
+
+# Variante B
+ssh m3d@100.90.34.108 'tmux kill-session -t bridgestab'
+
+# Skripte bleiben liegen, Log unter ~/printer_data/logs/bridge_stability.log
+```
+
+## Bekannte Schwächen
+
+- `dmesg`-Counter benötigt evtl. `sudo`. Das Skript fängt Lese-Fehler ab und schreibt 0/0/0 — keine harte Abhängigkeit. Falls genauere Werte gewünscht: `sudo setcap cap_syslog+ep $(which dmesg)` einmalig auf dem Pi.
+- `gs-usb-watchdog.log` Pfad geprüft (`/var/log/gs-usb-watchdog.log`). Falls Logger an anderen Pfad schreibt: WD_LOG-Variable im Skript anpassen.
+- Moonraker-API erwartet `127.0.0.1:7125` (Pi-lokal). Skript läuft auf dem Pi → keine Tailscale-Latenz.
+
+## Erste Snapshot-Verifikation (nach Deploy)
+
+```bash
+ssh m3d@100.90.34.108 '~/livediag_bridge_stability.sh; tail -1 ~/printer_data/logs/bridge_stability.log'
+```
+
+Erwartung: 18 Tab-Felder, can0_state=ERROR-ACTIVE oder UP, can1 ebenso, klipper=active, mcus_ready=7, mcus_total=7, throttled=0x0.

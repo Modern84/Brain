@@ -44,4 +44,4 @@ E-Mail hinzufügen: [E-Mail des Gastes]
 ## Verknüpfungen
 
 - [[02 Projekte/Cloudflare Tunnel Setup — ProForge 5]]
-- [[01 Inbox/Idee - ProForge5 als Live-Service-Plattform]]
+- [[03 Bereiche/Business MThreeD.io/Idee - ProForge5 als Live-Service-Plattform]]

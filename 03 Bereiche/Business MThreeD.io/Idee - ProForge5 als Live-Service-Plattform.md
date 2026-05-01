@@ -74,4 +74,4 @@ Der ProForge5 ist jetzt über `drucker.mthreed.io` von überall der Welt erreich
 - [[02 Projekte/ProForge5 Build]]
 - [[02 Projekte/Cloudflare Tunnel Setup — ProForge 5]]
 - [[03 Bereiche/Business MThreeD.io/Business MThreeD.io]]
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]

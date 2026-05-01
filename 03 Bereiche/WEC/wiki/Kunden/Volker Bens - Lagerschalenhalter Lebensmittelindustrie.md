@@ -15,6 +15,9 @@ raum: WEC
 due: 2026-04-21
 ---
 
+← zurueck zum [[03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/_INDEX|Projekt-Landing-Pad]]
+
+
 # Lagerschalenhalter — Überarbeitung Lebensmittelindustrie
 
 > Basis: Zusammenbau_Lagerschalehalter_10_24_16042026.xlsx (Inventor-Export) + Lagerschalenhalter_Stueckliste_Lebensmittel.csv (veredelte Version mit BE-IS-Nummernsystem)
@@ -145,13 +148,14 @@ Für alle Bauteile mit Lebensmittelkontakt oder im Reinigungsbereich:
 
 **Liefer-Format (Montag 21.04. mit Reiner):**
 - [ ] IGES als Liefer-Format bestätigen (Fund: historische Lieferung in `07 Anhänge/Fusion360/.../Step/` enthält ausschließlich IGES-Dateien — nicht STEP)
-- [ ] Bens-Schriftfeld-Vorlage aus `07 Anhänge/Bens_Vordruck.dwg` (70 KB, lokal) extrahieren und in Inventor-Template übernehmen
+- [ ] Bens-Schriftfeld-Vorlage **lokalisiert (2026-05-01)**: `07 Anhänge/Allgemein/Profil/SEST4/Templates/WEC/` — `BENS Edelstahl.dwg` (BG, 72 KB, 2019) + `BENS Edelstahl - ET.dwg` (ET, 54 KB) + zugehörige `.dft`-Solid-Edge-Drafts. **Es ist ein Solid-Edge-Template, das aktuelle Liefer-Pipeline läuft jedoch über Fusion 360** (PDF-Metadaten: „Fusion Drawings 25.1"). **Strategie-Entscheidung Mo 2026-05-01: Fusion 360 + Solid Edge parallel** — Fusion 360 für eigene Konstruktion, Solid Edge für Bens-Lieferungen (Template existiert dort). Konsequenz: Bens-Zeichnungen in Solid Edge erzeugen, nicht in Fusion 360 mit nachgebautem Template.
 - [ ] BE-LS-202603-XXX-Nummernsystem in Zeichnungen und BOM konsistent prüfen (CSV noch auf BE-IS-202631 — Montag mit Reiner umstellen)
 
 **White-Label (vor Übergabe an Bens):**
 - [x] ~~BOM bereinigt~~ → `Lieferung/.../BOM_bereinigt.xlsx` (2026-04-18), 0 Restbefunde ✅
-- [ ] PDF-Bereinigung (läuft): `Grundplatte Zeichnung.pdf` + `Zwischenplatte Zeichnung.pdf` (Schriftfeld-Text + Metadaten)
-- [ ] Konstrukteur/Ingenieur-Felder L7/M7 → Reiner-Entscheidung (leer / VB / Bens-intern?)
+- [ ] **PDF-Bereinigung — Wurzel-Problem identifiziert (2026-05-01):** Vektortext „Sebastian Hartmann" in *allen* 5 geprüften Liefer-PDFs (`Grundplatte-SM`, `Zwichenplatte-SM`, `Lagerhalter`, `Lagerschale`, `Zusammenbau V2` — V2 zusätzlich „Woldrich"). Erzeuger laut PDF-Metadaten: **Fusion 360** („Fusion Drawings 25.1"). Mit Strategie „Bens in Solid Edge" entfällt das Problem strukturell — Solid-Edge-Template hat Bens-Schriftfeld ohne User-Login. Übergangsweise (laufende Lieferung): einmalige PDF-Bereinigung der 5 Files.
+- [ ] Konstrukteur/Ingenieur-Felder L7/M7 → Reiner-Entscheidung (leer / VB / Bens-intern?). Direkt im Solid-Edge-Template (`BENS Edelstahl - ET.dft` / `BENS Edelstahl-ET- BG.dft`) festlegen.
+- [ ] **Pharma-/Lebensmittel-Slogan:** „Quality for Pharmacy" wurde in Brain-Notizen als Bens-Slogan angenommen — **2026-05-01 widerlegt**: weder im Bens-Logo (`Bens Logo.jpg` zeigt nur „BENS EDELSTAHL") noch in den 4 Bens-Templates (strings-Scan: kein „pharma/quality/GMP/hygien/food/lebensmittel"). Slogan ist Phantom. Reiner-Bestätigung holen, dann alle Brain-Verweise streichen.
 - [ ] Historische Einzelteil-PDFs in `07 Anhänge/Fusion360/.../PDF/` gegen White-Label prüfen
 
 ---

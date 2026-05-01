@@ -57,4 +57,4 @@ Letzter Stand: 2026-04-17
 
 - [[02 Projekte/System-Aufraeumen - Digitales Zuhause]]
 - [[02 Projekte/Claude Umstellung - Apple zu Anthropic direkt]]
-- [[01 Inbox/Plan - Chrome zu Safari Migration und Schluesselbund]]
+- [[02 Projekte/Plan - Chrome zu Safari Migration und Schluesselbund]]

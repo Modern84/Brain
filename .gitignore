@@ -18,6 +18,9 @@
 .claude/settings.local.json
 .claudian/
 
+# Obsidian Copilot Plugin: enthält API-Keys im Klartext — NIE committen
+.obsidian/plugins/copilot/data.json
+
 
 # Riesige Binär-Dumps — bewusst außerhalb Git (SSD-/Archiv-Umzug geplant)
 07 Anhänge/Allgemein/Datensatz_SK/
@@ -55,6 +58,9 @@
 !03 Bereiche/**/Lieferung/**
 !03 Bereiche/**/Lieferung/**/*.stp
 !03 Bereiche/**/Lieferung/**/*.iges
+
+# Einzelne Dateien >100 MB (GitHub-Limit) — manuell ausgeschlossen
+03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/2026-04-21 Montag-Session/_An_Volker/3D/Einzelteile/Layout Heustadl_2.stp
 
 # Secret-Patterns (präventiv)
 *.key

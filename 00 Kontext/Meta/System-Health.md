@@ -1,7 +1,7 @@
 ---
 tags: [kontext, meta, system-health]
-date: 2026-04-19
-status: baseline
+date: 2026-04-27
+status: aktiv
 ---
 
 # System-Health — Gehirn-Zustand
@@ -10,28 +10,42 @@ status: baseline
 
 ---
 
-## Baseline 2026-04-19 (nach Schema-Durchlauf)
+## Snapshot 2026-04-27 (Tiefenanalyse + Aufräum-Session)
 
 ### Volumen
 
-| Bereich | Dateien (.md) |
-|---|---|
-| 00 Kontext | 17 + Meta/ |
-| 01 Inbox | 4 |
-| 02 Projekte | 12 (nach Cleanup) |
-| 03 Bereiche | 43 |
-| 04 Ressourcen | ~40 (mit Scripts + Prompts + Templates) |
-| 05 Daily Notes | 10 |
-| 06 Archiv | 7 (inkl. 2 neue Archivierungen) |
-| Clippings | 1 |
+| Bereich | Dateien (.md) | Trend |
+|---|---|---|
+| 00 Kontext | ~31 | stabil |
+| 01 Inbox | **1** (nur Brain Dump Template) | ✅ von 6 bereinigt |
+| 02 Projekte | ~47 | stabil |
+| 03 Bereiche | ~64 | stabil |
+| 04 Ressourcen | ~63 | +2 (Build Journal, Jahresindex) |
+| 05 Daily Notes | 16 | wächst täglich |
+| 06 Archiv | ~8 | +2 (Session-Notiz, U2C-Detour) |
+| 07 Anhänge | ~11 | stabil |
+| Gesamt | **~263** | |
 
 ### Qualität
 
-- **Tag-Konsistenz**: ✅ alle Daily Notes auf `tagesbuch`
-- **Kaputte Tags**: ✅ gefixt 2026-04-20 — war kein echter Tag im Einsatz, nur irreführender Pipe-Platzhalter im Wiki-README-Template. Umgestellt auf `<kategorie>`-Platzhalter mit Kommentar.
-- **Kopfdaten-Abdeckung**: ⚠️ 3 Referenz-Projekte migriert, Rest lazy
-- **Broken Wikilinks**: nicht gemessen — Baseline durch `brain-lint.sh` offen
-- **Orphans**: viele (ersichtlich aus Graph) — akzeptiert weil Attachments
+| Metrik | Wert | Status |
+|---|---|---|
+| Frontmatter-Abdeckung | 99% (261/263) | ✅ |
+| Broken Wikilinks | **0** (60 repariert 2026-04-27) | ✅ |
+| Inbox-Stand | 1 Datei | ✅ |
+| Orphan-Quote (Graph) | ~12% | ✅ (Ziel <30%) |
+| Jahresstruktur | 2 neue Index-Dateien | ✅ neu |
+| Graph-Vernetzung | 4 isolierte Knoten aufgelöst | ✅ neu |
+
+### Reparierte Links (2026-04-27)
+
+60 Links in 26 Dateien korrigiert — alle Dateien die aus dem Eingang (Inbox) verschoben wurden hatten veraltete Pfade. Behoben durch Python-Script.
+
+**Häufigste verschobene Dateien (je Ziel-Pfad):**
+- `Idee - Apple-Strategie für WEC und MThreeD.io` → `02 Projekte/WEC Neustart mit Reiner/`
+- `Vision - Automatisierte Konstruktions-Pipeline` → `03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline`
+- `Strategie - mThreeD.io KI-Debug-Tunnel` → `03 Bereiche/Business MThreeD.io/`
+- `Für Ildi - Was ich über Sebastian gelernt habe` → `00 Kontext/`
 
 ### Strukturelle Schichten
 
@@ -39,37 +53,49 @@ status: baseline
 |---|---|
 | Karpathy-Pattern (raw/wiki) | ✅ in WEC |
 | Raum-Auto-Erkennung | ✅ in CLAUDE.md, 9 Räume |
-| Meta-Selbstreflexion | ✅ dieser Ordner angelegt |
-| Semantic Search (Embeddings) | ❌ Smart Connections nicht installiert |
-| MCP-Vault-Zugriff | ❌ aus Someday → sollte aktiv werden |
+| Meta-Selbstreflexion | ✅ `00 Kontext/Meta/` |
+| Landing-Pad-Konvention | ✅ in CLAUDE.md verankert (2026-04-27) |
+| Jahresindex-Struktur | ✅ angelegt (Finanzen 2026, ProForge5 Journal) |
+| Referenz-Dokumente (Graph-Hub) | ✅ in CLAUDE.md verlinkt (2026-04-27) |
+| Semantic Search / Smart Connections | ❌ Plugin nicht installiert |
+| MCP-Vault-Zugriff | ❌ geplant → [[02 Projekte/Obsidian-MCP Einrichtung]] |
 | Dataview-Felder | ⚠️ Schema definiert, Migration offen |
 
-### Claude-Arbeitsqualität (Session 2026-04-19)
+### Offene Strukturentscheidungen
 
-| Regel | Einhaltung |
-|---|---|
-| R1 max eine Tabelle | ❌ mehrfach verletzt |
-| R2 keine a/b/c-Fragen | ❌ mehrfach verletzt |
-| R3 Substanz-Check zuerst | ❌ nicht praktiziert bis explizit nachgefragt |
-| R4 Feedback laut integrieren | ⚠️ teilweise |
-| R5 Emojis bedeutungstragend | ❌ dekorativ eingesetzt |
-| R6 Parallel-Instanz-Schutz | ❌ Edi-Regression nicht vermieden |
-
-→ Basis für nächste Session: diese Spalte soll mehr ✅ haben.
+| Thema | Status | Wo |
+|---|---|---|
+| Datensatz_SK (4,1 GB) | Entscheidung offen | [[TASKS]] |
+| Solid-Edge-Profil (144 MB) | Entscheidung offen | [[TASKS]] |
+| Tool-Notizen Ordner konsolidieren? | Frage an Mo | `04 Ressourcen/Tool-Notizen/` |
+| claudian-Plugin prüfen (AMOS-Risiko) | 🔴 offen | [[TASKS]] |
+| Obsidian Sync aktivieren | WWDC abhängig | [[TASKS]] |
 
 ---
 
-## Offene Entscheidungen (blockieren Fortschritt)
+## Baseline 2026-04-19 (zum Vergleich)
 
-1. **Datensatz_SK** (4,1 GB) — externe SSD oder 06 Archiv?
-2. **Solid-Edge-Profil** (144 MB) — komplett zu WEC oder selektiv?
-3. **Smart Connections** — Sebastian muss Plugin installieren
-4. **Git-Remote** — GitHub Private / Gitea / nur lokal?
+| Bereich | Dateien (.md) |
+|---|---|
+| 00 Kontext | 17 + Meta/ |
+| 01 Inbox | 4 |
+| 02 Projekte | 12 (nach Cleanup) |
+| 03 Bereiche | 43 |
+| 04 Ressourcen | ~40 |
+| 05 Daily Notes | 10 |
+| 06 Archiv | 7 |
 
 ---
 
 ## Nächster Check
 
-**Sonntag 2026-04-26** — erste wöchentliche Retro.
+**Wöchentlich Sonntag** — Template: [[Retrospektive-Template]]
 
-Template: [[Retrospektive-Template]]
+---
+
+## Verknüpfungen
+
+- [[Retrospektive-Template]]
+- [[00 Kontext/Gehirn - Organisches Wachstum]]
+- [[CLAUDE]]
+- [[TASKS]]

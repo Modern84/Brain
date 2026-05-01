@@ -85,11 +85,10 @@ Das ist kein Misstrauen gegen alle Welt. Das ist professionelle Vorsicht die ver
 
 ## Arbeitsstil
 
-- **Hauptwerkzeug:** SolidWorks 2020 (Version mit viel eingebautem Kontext: Vorlagen, Profile, Materialien, Normteile)
-- **Daten:** Alles auf NAS — alle Arbeitsplätze verbunden. 4+ Jahre Projekte, Zeichnungen, DIN-Normen, Schrauben-Daten, Kundenordner, Angebote. Sehr strukturiert.
+- **Hauptwerkzeug:** Solid Edge (Siemens, 4 Lizenzen 2021 beschafft). Korrektur 2026-05-01: frühere Vault-Einträge sagten SolidWorks, war Verwechslung. Siehe auch `03 Bereiche/WEC/raw/Standards WEC/Templates/` mit `.dft`-Dateien (Solid Edge Draft) und `WEC.dwg` (AutoCAD-Erbe).
+- **Daten:** Alles auf NAS — alle Arbeitsplätze verbunden. ~~4+ Jahre Projekte~~ TODO 2026-05-01: Datenmenge real klären (siehe [[02 Projekte/WEC Neustart mit Reiner/Strategie - Korpus-Auslesen und KI-Pipeline]] Phase 2). Inhalt: Zeichnungen, DIN-Normen, Schrauben-Daten, Kundenordner, Angebote. Sehr strukturiert.
 - **Am Computer:** Mails, SolidWorks, Recherche (verliert viel Zeit mit Google-Suche — hier kann Claude massiv helfen)
 - **Kein Excel-Mensch** — lässt die Finger davon
-- **Will Fusion lernen** — möchte selber konstruieren. Claude als Assistent zum Beibringen.
 - **Stärken:** Konzeptdenker, Augenmaß, Branchenwissen, Netzwerk, Gespür für Mechanik
 - **Schwächen:** Verliert Zeit bei Recherche, nicht IT-affin, Zeichnungsableitungen und Normdetails nicht sein Ding
 
@@ -101,7 +100,7 @@ Das bedeutet für Claudes Arbeit mit Reiner:
 - Kurze, gesprochene Zusammenfassungen funktionieren besser als lange Texte
 - Visuelle Aufbereitung (Skizzen, Bilder, farbige Tabellen) statt reiner Text
 - Kernpunkte früh und klar, Details nur auf Nachfrage
-- Audio-Briefings als Option im Kopf behalten → [[01 Inbox/Idee - Audio-Workflow für Sebastian und Reiner]]
+- Audio-Briefings als Option im Kopf behalten → [[02 Projekte/WEC Neustart mit Reiner/Idee - Audio-Workflow für Sebastian und Reiner]]
 
 ## Technik-Frust — was Sebastian bei Reiner beobachtet
 
@@ -133,5 +132,5 @@ Wenn Claude mit Reiner arbeitet, ist das der Bezugsrahmen: jede Reibung die wir 
 
 - [[02 Projekte/WEC Neustart mit Reiner/WEC Neustart mit Reiner]]
 - [[02 Projekte/WEC Neustart mit Reiner/Reiners Gehirn - Setup Plan]]
-- [[01 Inbox/Idee - Audio-Workflow für Sebastian und Reiner]]
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Audio-Workflow für Sebastian und Reiner]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]

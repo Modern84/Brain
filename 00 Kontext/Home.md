@@ -90,7 +90,7 @@ LIMIT 10
 - 💰 [[03 Bereiche/Finanzen/Finanzen]]
 - 🧠 [[03 Bereiche/KI-Anwendungen/KI-Anwendungen]]
 - 📐 [[03 Bereiche/Konstruktion/Konstruktion]]
-- 💑 [[03 Bereiche/Edi/README]]
+- 💑 [[03 Bereiche/Ildi/README]]
 - 👤 [[00 Kontext/Über mich]]
 - 📅 [[TASKS]]
 

@@ -17,9 +17,20 @@ Alles rund um den Einsatz von KI als praktisches Werkzeug. Fokus auf technische 
 - Obsidian-MCP einrichten (offen)
 - Claude in den Arbeitsalltag integrieren
 
-## Referenzen
+## Aktive Projekte
 
-- [[04 Ressourcen/Automatisierung/Automatisierung|Automatisierung]]
-- [[04 Ressourcen/Klipper/Klipper|Klipper]] (klipper-mcp)
-- [[02 Projekte/ProForge5 Build|ProForge5]] (klipper-mcp Anwendungsfall)
+- [[02 Projekte/Obsidian-MCP Einrichtung]] — Vault-Zugriff via Queries (Prio A, fällig 2026-05-17)
+- [[02 Projekte/Lokale LLMs - Roadmap]] — Ollama + Pi-Hosting
+
+## Werkzeuge & Workflows
+
+- [[04 Ressourcen/Tool-Notizen/Claude Projekte - Setup-Plan]] — 5 claude.ai-Projekträume geplant
+- [[04 Ressourcen/Tool-Notizen/Fusion360 - Arbeiten mit Claude]] — CAD + KI Workflow
+- [[04 Ressourcen/Automatisierung/Automatisierung|Automatisierung]] — Scripts, Automation-Flows
+
+## Kontext
+
+- [[04 Ressourcen/Klipper/Klipper|Klipper]] (klipper-mcp Anwendungsfall)
+- [[02 Projekte/ProForge5 Build|ProForge5]] — Drucker als KI-gesteuerte Maschine
+- [[00 Kontext/Meta/AI-First]] — Richtungsentscheidung KI-nativ
 

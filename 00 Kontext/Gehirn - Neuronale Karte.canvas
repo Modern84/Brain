@@ -21,8 +21,8 @@
     { "id": "macinv_phase", "type": "file", "file": "02 Projekte/Mac Inventur - Phase 3 Vorsortierung.md", "x": -1200, "y": 650, "width": 500, "height": 180, "color": "#FCBF49" },
     { "id": "macinv_label", "type": "text", "text": "### 🧹 Cluster Mac-Inventur\n\n23 Dateien · laufender Aufräum-Cluster\n\n19 Hub-Links · Pilot für WEC-Rollout", "x": -1800, "y": 500, "width": 400, "height": 220, "color": "#FCBF49" },
 
-    { "id": "edi_hub", "type": "file", "file": "03 Bereiche/Edi/README.md", "x": -400, "y": 700, "width": 500, "height": 200, "color": "#52B788" },
-    { "id": "edi_label", "type": "text", "text": "### 💑 Cluster EDI (Ildikó)\n\n12 Dateien · ungarischer Raum\n\nNapi, Pályázatok, Projektek", "x": 300, "y": 700, "width": 400, "height": 200, "color": "#52B788" },
+    { "id": "ildi_hub", "type": "file", "file": "03 Bereiche/Ildi/README.md", "x": -400, "y": 700, "width": 500, "height": 200, "color": "#52B788" },
+    { "id": "ildi_label", "type": "text", "text": "### 💑 Cluster Ildi (Ildikó)\n\n12 Dateien · ungarischer Raum\n\nNapi, Pályázatok, Projektek", "x": 300, "y": 700, "width": 400, "height": 200, "color": "#52B788" },
 
     { "id": "ressourcen_label", "type": "text", "text": "### 📚 Ressourcen-Gewebe\n\n27 Tags `ressource`\n• Skills (7)\n• Klipper (6)\n• Templates (5)\n• Playbook (4)\n\nquer zu allen Clustern", "x": -400, "y": 400, "width": 400, "height": 260, "color": "#8D99AE" },
 

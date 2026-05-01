@@ -1,0 +1,246 @@
+# ─────────────────────────────────────────────────────────────────────
+# mapping_lagerschalenhalter.yaml
+#
+# v5-Patcher Mapping für die Bens-Lieferung Lagerschalenhalter.
+# Nach PDF-Inspektion vom 21.04.2026 (v5_pdf_inspection.md) mit
+# realen Anchors und realen Alt-Nummern. Ersetzt die v-1-Version
+# vom Vormittag, die noch auf nicht existente Label-Anchors setzte.
+#
+# Input-Quelle (echter Liefer-Staging-Stand):
+#   2026-04-21 Montag-Session/_An_Volker/PDF/
+#
+# SCHEMA: BE-LS-202603-XYZ-R (siehe _Register/Volker-Bens-Nummernregister)
+#
+# ANCHOR-STRATEGIE (wichtig, weil Fusion keine Feldnamen druckt):
+#
+#   Einzelteil-/Schweißgruppe-PDFs:
+#     Das Schriftfeld enthält die Nummer genau EINMAL mit Bauteilname
+#     direkt darunter, gefolgt von "----". In der Stückliste steht die
+#     Nummer eventuell auch, aber dort folgt nach dem Namen das
+#     Material ("Blech 10", "Rundstahl" etc.) statt "----".
+#     → context_after: "<Bauteilname>\n----" ergibt einen eindeutigen
+#        Schriftfeld-Anchor.
+#
+#   Zusammenbau-PDFs:
+#     Das Schriftfeld hat vor der Nummer noch "SM_Lagerschale".
+#     Weil die globale SM_-Regel jetzt NACH den per-file Regeln läuft
+#     (Script-Update 21.04.), ist der Anchor noch da, wenn die
+#     drawing_number-Regel feuert.
+#     → context_before: "SM_Lagerschale\n"
+#
+# MODE-UNTERSCHEIDUNG:
+#   mode: unique (Default) — muss genau 1× matchen, sonst BLOCK
+#   mode: all               — alle Vorkommen ersetzen, keine Ambiguitätsprüfung
+#                             (erforderlich für Fixes, die pro Seite mehrfach
+#                             vorkommen: 1.44.04, SM_, AM_, ~recovered)
+# ─────────────────────────────────────────────────────────────────────
+
+project:
+  name: "Lagerschalenhalter Lebensmittelindustrie"
+  customer: "Volker Bens (Bens Edelstahl GmbH)"
+  scheme: "BE-LS-202603-XYZ-R (X=Scope, Y=Ebene, Z=lfd, R=Rev)"
+  number_register: "../_Register/Volker-Bens-Nummernregister.md"
+  delivery_date: "2026-04-21"
+  source_pdfs: "2026-04-21 Montag-Session/_An_Volker/PDF/"
+
+
+# ─────────────────────────────────────────────────────────────────────
+# GLOBAL RULES — auf ALLE Input-PDFs (nach den per-file Regeln)
+# Alle mode: all, weil jedes dieser Artefakte pro PDF mehrfach vorkommt.
+# ─────────────────────────────────────────────────────────────────────
+
+global_rules:
+
+  # White-Label: SM_Lagerschale (Sachsenmilch-Altbestand) → neutraler Projektname
+  - kind: white_label
+    find: "SM_Lagerschale"
+    replace: "Lagerschalenhalter"
+    mode: all
+    required: false   # taucht nur in Zusammenbau-PDFs auf
+
+  # White-Label: AM_Lagerschale (Fusion-Placeholder) → neutraler Projektname
+  - kind: white_label
+    find: "AM_Lagerschale"
+    replace: "Lagerschalenhalter"
+    mode: all
+    required: false
+
+  # Werkstoff-Tippfehler aus Fusion-Teileliste — kommt pro PDF
+  # mehrfach vor (Material-Spalte jeder Stücklisten-Zeile)
+  - kind: material
+    find: "1.44.04"
+    replace: "1.4404"
+    mode: all
+    required: false
+
+  # Onshape-Export-Artefakt: "(~recovered)"-Suffix entfernen
+  - kind: white_label
+    find: " (~recovered)"
+    replace: ""
+    mode: all
+    required: false
+
+
+# ─────────────────────────────────────────────────────────────────────
+# PER-FILE RULES — Drawing-Number-Transforms pro Zeichnung
+# Anchor: Bauteilname nach der Nummer + "----" (Schriftfeld-unique).
+# ─────────────────────────────────────────────────────────────────────
+
+files:
+
+  # ─── Gemeinsame Einzelteile (X=0, Y=1) ───────────────────────────────
+
+  "Scheibe_t=1 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-011-0_Scheibe_t1"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-203-0"
+        replace: "BE-LS-202603-011-0"
+        context_after: "Scheibe_t=1"
+        required: true
+
+  "Lagerhalter Zeichnung.pdf":
+    new_basename: "BE-LS-202603-012-0_Lagerhalter"
+    rules:
+      - kind: drawing_number
+        # Sowohl Schriftfeld als auch Stückliste enthalten "BE-LS-202603-200"
+        # gefolgt von "Lagerhalter". Der Audit vom 1. Run (133322) zeigte
+        # beide Vorkommen als ambig. Unterscheidung: nach "Lagerhalter"
+        # folgt im Schriftfeld "----", in der Stückliste "Blech 10".
+        # Daher context_after um die "----"-Sequenz erweitert.
+        find: "BE-LS-202603-200"
+        replace: "BE-LS-202603-012-0"
+        context_after: "Lagerhalter\n----"
+        required: true
+
+  "Lagerschale Zeichnung.pdf":
+    new_basename: "BE-LS-202603-013-0_Lagerschale"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-201-0"
+        replace: "BE-LS-202603-013-0"
+        context_after: "Lagerschale"
+        required: true
+
+
+  # ─── Variante V1 Einzelteile (X=1, Y=1) ──────────────────────────────
+
+  "Welle_V1 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-111-0_Welle_V1"
+    rules:
+      - kind: drawing_number
+        # Schriftfeld trägt -204 (ohne Suffix). In der eigenen Stückliste
+        # erscheint zusätzlich -206 (recovered-Dublette) — wird durch
+        # die (~recovered)-Global-Regel abgeräumt.
+        find: "BE-LS-202603-204"
+        replace: "BE-LS-202603-111-0"
+        context_after: "Welle_V1"
+        required: true
+
+  "Scheibe_t=3 Zeichnung.pdf":
+    # Entscheidung Mo 21.04. nachmittags: t=3 und t=5 sind dasselbe
+    # Teil (5 mm Blech). Gehört zur Welle_V1-Gruppe (BOM Pos 7.1/8.2).
+    # Dateiname bleibt historisch "Scheibe_t=3", Nummer wechselt auf
+    # V1-Scheibe = -112-0. Zielname als "Scheibe_Welle_V1" damit klar
+    # ist wozu sie gehört.
+    new_basename: "BE-LS-202603-112-0_Scheibe_Welle_V1"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-205-0"
+        replace: "BE-LS-202603-112-0"
+        context_after: "Scheibe_t=3"
+        required: true
+
+
+  # ─── Variante V1 Schweißgruppe (X=1, Y=5) ────────────────────────────
+
+  "Schweißgruppe_Halter Zeichnung.pdf":
+    new_basename: "BE-LS-202603-151-0_Schweissgruppe_Halter_V1"
+    rules:
+      - kind: drawing_number
+        find: "BE-LS-202603-1-0"
+        replace: "BE-LS-202603-151-0"
+        context_after: "Schweißgruppe_Halter"
+        required: true
+
+
+  # ─── Variante V2 Einzelteile (X=2, Y=1) ──────────────────────────────
+
+  "Welle_V2 Zeichnung.pdf":
+    new_basename: "BE-LS-202603-211-0_Welle_V2"
+    rules:
+      # PDF-Schriftfeld trägt aktuell -206-0 (Fusion-Kollision von heute
+      # morgen — in Reiners Umnummerierung wurde im Zusammenbau-BOM
+      # bereits -207-0 gesetzt, aber die Einzelteilzeichnung nicht neu
+      # exportiert). v5 patcht direkt von -206-0 auf die Zielnummer,
+      # kein Fusion-Nachzug nötig.
+      - kind: drawing_number
+        find: "BE-LS-202603-206-0"
+        replace: "BE-LS-202603-211-0"
+        context_after: "Welle_V2"
+        required: true
+
+
+  # ─── Variante V2 Zusammenbau (X=2, Y=9) ──────────────────────────────
+  #
+  # Nach Mo-Entscheidung 21.04. nachmittags:
+  #   "Zusammenbau_Lagerschalehalter Zeichnung.pdf" (kurz) enthält nur
+  #   Welle_V2 → das ist der saubere V2-only-Zusammenbau, bekommt -291-0.
+  #
+  # Die LANGE Variante ("Zeichnung lang.pdf") enthält beide Wellen
+  # gleichzeitig → Konstruktionsfehler, fliegt aus der Lieferung und
+  # muss in Fusion als reiner V1-only-Zusammenbau neu exportiert werden
+  # (Ziel -191-0). Kein Mapping-Eintrag für die lange Version.
+
+  "Zusammenbau_Lagerschalehalter Zeichnung.pdf":
+    new_basename: "BE-LS-202603-291-0_Zusammenbau_V2"
+    rules:
+      - kind: drawing_number
+        # Zusammenbau-Schriftfeld: "...SM_Lagerschale\nBE-LS-202603-000-0\n
+        # Zusammenbau_Lagerschalehalter". SM_ ist der eindeutige Anchor
+        # vor der Nummer (wird danach durch Global-Regel abgeräumt).
+        find: "BE-LS-202603-000-0"
+        replace: "BE-LS-202603-291-0"
+        context_before: "SM_Lagerschale"
+        context_after: "Zusammenbau_Lagerschalehalter"
+        required: true
+
+
+# ─────────────────────────────────────────────────────────────────────
+# BEWUSST NICHT IN DIESEM LAUF
+#
+# - "Zusammenbau_Lagerschalehalter Zeichnung lang.pdf": enthält Welle_V1
+#   UND Welle_V2 in einem Blatt (siehe v5_pdf_inspection.md). Reiner-TODO
+#   in Fusion: als V1-only-Zusammenbau neu exportieren. Danach bekommt
+#   die neue Datei den Mapping-Eintrag für Ziel -191-0.
+#
+# - Steg_Lagerschalenhalter (-014-0): keine eigene Zeichnungs-PDF im
+#   Staging. Fusion-TODO: separate Zeichnung exportieren oder klären,
+#   ob Teil nur als BOM-Eintrag geführt wird (rohes Blech, ohne eigene
+#   Zeichnung).
+#
+# - Schweißgruppe_Halter V2 (-251-0): muss in Fusion neu konstruiert
+#   werden (Reiner-Hinweis vom 19.04.-Scan). Inhalt analog V1.
+# ─────────────────────────────────────────────────────────────────────
+
+
+# ─────────────────────────────────────────────────────────────────────
+# NACH ERSTEM DRY-RUN
+#
+# Audit unter _staging/v5_run_*/02_audit/ lesen. Übliche Blocker:
+#   - "not_found" (required):
+#       Such-String stimmt nicht oder PDF wurde zwischenzeitlich neu
+#       exportiert mit anderer Alt-Nummer. find anpassen auf tatsächlich
+#       enthaltene Nummer.
+#   - "ambiguous_text":
+#       context_before/context_after nicht eindeutig genug. Anchor auf
+#       längere Unique-Sequenz erweitern.
+#   - "no_rect":
+#       PDF-Text als Outline/Vektor. v5 kann das nicht. → Fusion-Re-Export
+#       mit Text-Layer oder manuelles Overlay via v4.
+#   - "config_error":
+#       mode=all mit context_before/_after kombiniert (ungültig).
+#
+# Nach sauberem v5-Run: v4-Patcher (Info-Block) auf 01_patched/*.pdf.
+# Dann Paket-Build mit expliziter Dateiliste, Mo-Freigabe, Rausgang.
+# ─────────────────────────────────────────────────────────────────────

@@ -41,6 +41,6 @@ Was ich tun muss, wenn Reiners T9 bei mir landet, bevor sie zurück zu Reiner ge
 
 ## Verknüpfungen
 
-- [[01 Inbox/Anleitung Reiner - Externe SSD Projektspiegel]]
+- [[02 Projekte/WEC Neustart mit Reiner/Anleitung Reiner - Externe SSD Projektspiegel]]
 - [[Reiners Gehirn - Setup Plan]]
 - [[Konzept Zwei Gehirne]]

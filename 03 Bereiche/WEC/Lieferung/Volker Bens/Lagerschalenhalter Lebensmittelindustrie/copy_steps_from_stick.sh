@@ -1,0 +1,19 @@
+#!/bin/bash
+# STEP-Dateien vom USB-Stick in den Vault kopieren
+
+STICK="/Volumes/NO NAME"
+TARGET="/Users/sh/Brain/03 Bereiche/WEC/Lieferung/Volker Bens/Lagerschalenhalter Lebensmittelindustrie/2026-04-21 Montag-Session/_An_Volker/3D"
+
+echo "Suche STEP-Dateien auf Stick..."
+find "$STICK" -name "*.stp" -o -name "*.step" 2>/dev/null
+
+echo ""
+echo "Kopiere nach: $TARGET"
+echo ""
+
+# Alle STEP-Dateien finden und kopieren
+find "$STICK" \( -name "*.stp" -o -name "*.step" \) -exec cp -v {} "$TARGET/Einzelteile/" \; 2>/dev/null
+
+echo ""
+echo "✅ Fertig. Prüfe Zielordner:"
+ls -lh "$TARGET/Einzelteile/"/*.{stp,step} 2>/dev/null

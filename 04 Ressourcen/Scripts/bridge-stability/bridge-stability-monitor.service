@@ -1,0 +1,6 @@
+[Unit]
+Description=Hybrid-Bridge Stability Snapshot (oneshot)
+
+[Service]
+Type=oneshot
+ExecStart=%h/livediag_bridge_stability.sh

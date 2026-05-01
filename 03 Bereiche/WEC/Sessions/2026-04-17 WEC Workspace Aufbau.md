@@ -73,7 +73,7 @@ Leer angelegt (warten auf Inhalt):
 
 ## Offene Punkte für Folge-Sessions
 
-- [ ] **NAS-Zugriff klären** — Reiner besorgt T9, befüllt sie mit Volker-Bens-Projektdaten (Anleitung: [[01 Inbox/Anleitung Reiner - Externe SSD Projektspiegel]])
+- [ ] **NAS-Zugriff klären** — Reiner besorgt T9, befüllt sie mit Volker-Bens-Projektdaten (Anleitung: [[02 Projekte/WEC Neustart mit Reiner/Anleitung Reiner - Externe SSD Projektspiegel]])
 - [ ] **Erste Ingest-Lieferung** — wenn T9 da ist, raw/ befüllen, Claude kompiliert ins wiki/
 - [ ] **EHEDG-Norm-Eintrag** in wiki/Normen/
 - [ ] **Standards WEC** aus Reiners Erfahrung extrahieren (im Gespräch mit Reiner)

@@ -1,0 +1,91 @@
+=== Chrome Extensions — Klartext + Permissions ===
+Datum: 2026-04-30T17:14:35+02:00
+
+════════════════════════════════════════
+ID: cnjifjpddelmedmihgijeibhnjfabmlf
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/cnjifjpddelmedmihgijeibhnjfabmlf/1.6.1_0/
+Name:        Obsidian Web Clipper
+Version:     1.6.1
+Description: Save and highlight web pages in a private and durable format that you can access offline. The official extension for Obsidian.
+Permissions: activeTab, clipboardWrite, commands, contextMenus, sidePanel, storage, scripting, declarativeNetRequest
+Hosts:       <all_urls>, http://*/*, https://*/*
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: cofdbpoegempjloogbagkncekinflcnj
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/cofdbpoegempjloogbagkncekinflcnj/1.84.0_0/
+Name:        DeepL: translate and write with AI
+Version:     1.84.0
+Description: Translate while you read and write with DeepL Translate, the world’s most accurate translator.
+Permissions: activeTab, storage, contextMenus, tabs, scripting, declarativeNetRequest, identity, tts, alarms, webRequest, cookies, sidePanel
+Hosts:       *://*.deepl.com/*, https://api-test.deepl.com/v1/*, https://api.deepl.com/v1/*
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: fcoeoabgfenejglbffodgkkbkcdhcgfn
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/fcoeoabgfenejglbffodgkkbkcdhcgfn/1.0.69_0/
+Name:        Claude
+Version:     1.0.69
+Description: Claude in Chrome (Beta)
+Permissions: sidePanel, storage, activeTab, scripting, debugger, tabGroups, tabs, alarms, notifications, webNavigation, declarativeNetRequestWithHostAccess, offscreen, nativeMessaging, unlimitedStorage, downloads, identity
+Hosts:       <all_urls>
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: lopnbnfpjmgpbppclhclehhgafnifija
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/lopnbnfpjmgpbppclhclehhgafnifija/5.2.2_0/
+Name:        Translate in Side Panel
+Version:     5.2.2
+Description: Google Translate in your browser side panel
+Permissions: storage, sidePanel, contextMenus, declarativeNetRequest, scripting
+Hosts:       https://translate.googleapis.com/*, https://translate.google.com/*, https://translate-pa.googleapis.com/*, https://edge.microsoft.com/*, https://api-edge.cognitive.microsofttranslator.com/*, https://*.bing.com/*, https://bing.com/*, https://www.bing.com/*, https://fanyi.baidu.com/*, https://www.deepl.com/*
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: lpcaedmchfhocbbapmcbpinfpgnhiddi
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/lpcaedmchfhocbbapmcbpinfpgnhiddi/4.26171.540.1_0/
+Name:        Google Keep Chrome Extension
+Version:     4.26171.540.1
+Description: Save to Google Keep in a single click!
+Permissions: activeTab, identity, identity.email, contextMenus, tabs, unlimitedStorage, scripting
+Hosts:       file://*/*, http://*/, https://*/
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: mpdjakileikddgilaegaijhmfhendcji
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/mpdjakileikddgilaegaijhmfhendcji/1_0/
+Name:        Smart Dark Mode
+Version:     1
+Description: Does not use heavy codes. It doesn't break the web design. Detects only bright sites and invert them to dark sites.
+Permissions: storage, activeTab, background
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: nmmhkkegccagdldgiimedpiccmgmieda
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/nmmhkkegccagdldgiimedpiccmgmieda/1.0.0.6_0/
+Name:        Chrome Web Store Payments
+Version:     1.0.0.6
+Description: Chrome Web Store Payments
+Permissions: identity, webview, https://www.google.com/, https://www.googleapis.com/*, https://payments.google.com/payments/v4/js/integrator.js, https://sandbox.google.com/payments/v4/js/integrator.js
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: odpbmohjoagkjaekafpmcabjlckbngom
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/odpbmohjoagkjaekafpmcabjlckbngom/2.1.2_0/
+Name:        DXF Viewer
+Version:     2.1.2
+Description: Lightweight DXF viewer for opening and viewing DXF files online. A simple AutoCAD & Autodesk viewer alternative in Chrome browser.
+Permissions: contextMenus, scripting, storage, unlimitedStorage
+Hosts:       <all_urls>
+Update-URL:  https://clients2.google.com/service/update2/crx
+
+════════════════════════════════════════
+ID: pejdijmoenmkgeppbflobdenhhabjlaj
+Version-Pfad: /Users/sh/Library/Application Support/Google/Chrome/Default/Extensions/pejdijmoenmkgeppbflobdenhhabjlaj/3.3.0_0/
+Name:        iCloud Passwords
+Version:     3.3.0
+Description: iCloud Passwords lets you fill passwords from iCloud Keychain when signing in to websites using Chrome.
+Permissions: privacy, declarativeContent, nativeMessaging, webNavigation, storage, contextMenus, scripting
+Hosts:       *://*/*
+Update-URL:  https://clients2.google.com/service/update2/crx
+

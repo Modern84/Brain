@@ -5,6 +5,8 @@ date: 2026-04-04
 
 # ProForge 5 – CAN-Bus Setup (04.04.2026)
 
+> **Korrigiert 2026-04-30:** Ursprüngliche Doku zeigte ein Breakout-Board im Live-Pfad zwischen U2C und EBB36 — falsch. Live-Topologie ist **U2C ↔ EBB direkt** über ein 4-poliges Original-MX3.0-Kabel (VIN/GND/CAN_H/CAN_L). Das Breakout-Board war NIE im Drucker verbaut, es dient nur zum DFU-Flashen der EBB36 außerhalb. Siehe [[ProForge5 Build]] §Lessons Learned 2026-04-30.
+
 ## Status: Step 1 ABGESCHLOSSEN ✅
 
 ---
@@ -27,7 +29,9 @@ date: 2026-04-04
 Raspberry Pi 5
 ├── USB → BTT Octopus (STM32H723) → /dev/ttyACM0
 └── USB → BTT U2C V2 → can0 (1 MBit/s)
-                └── CAN (H/L) → Breakout-Board → EBB36 Gen2
+        (U2C ist gleichzeitig 24V-Verteiler:
+         LRS-450 → U2C V+/V- Schraubklemmen → seitlicher Molex)
+                └── 4-pol-Kabel (VIN+GND+CAN_H+CAN_L) → MX3.0 → EBB36 Gen2
                                                     └── I2C → Eddy Coil (LDC1612)
 ```
 
@@ -48,11 +52,12 @@ Raspberry Pi 5
 
 ### Stromversorgung
 - Mean Well LRS-450-24 (24V, 18.8A)
-- 24V → Breakout-Board (VIN/GND Schraubklemmen)
-- Breakout-Board → EBB36 (über MX3.0 Kabel, liefert 24V + CAN)
+- 24V → U2C V2 (V+/V- Schraubklemmen)
+- U2C → EBB36 über seitlichen 4-pol Molex Microfit 3.0 → 4-adriges Original-MX3.0-Kabel → EBB36-Hauptstecker
+- Das eine Kabel führt VIN(24V) + GND + CAN_H + CAN_L gemeinsam
 
 ### CAN-Bus
-- U2C CAN_H/CAN_L (Schraubklemmen) → 2 dünne Kabel → Breakout-Board CAN H/L Pins
+- CAN_H/CAN_L laufen im selben 4-pol-Kabel wie 24V/GND (U2C → EBB36 direkt)
 - 120Ω Termination: U2C (per Software) + EBB36 (Jumper)
 - Bitrate: 1.000.000
 
@@ -90,9 +95,9 @@ Raspberry Pi 5
 1. ✅ Mainsail (Port 80) und Fluidd (Port 81) online
 2. ✅ Octopus per USB erkannt
 3. ✅ U2C V2 als CAN-Bridge eingerichtet
-4. ✅ CAN-Verkabelung: U2C → Breakout-Board → EBB36
+4. ✅ CAN-Verkabelung: U2C → 4-pol-Kabel → EBB36 (direkt, ohne Breakout im Live-Pfad)
 5. ✅ EBB36 Klipper-Firmware kompiliert (CAN-Modus, PB12/PB13, 1M)
-6. ✅ EBB36 per DFU über Breakout-Board geflasht
+6. ✅ EBB36 per DFU über Breakout-Board geflasht (außerhalb des Druckers)
 7. ✅ EBB36 UUID in printer.cfg aktualisiert (71c47e0b85cf)
 8. ✅ Klipper gestartet – beide MCUs verbunden
 
@@ -120,7 +125,7 @@ Raspberry Pi 5
 
 - EBB36 Gen2 V1.0 kann **nur** über das Breakout-Board per USB geflasht werden (DFU)
 - USB/CAN Jumper muss für DFU **ab** sein, für Betrieb **drauf**
-- Das Breakout-Board kann die EBB36 **nicht** über USB-C mit Strom versorgen – 24V muss separat anliegen
-- CAN-Kabel (H/L) müssen separat vom U2C zum Breakout-Board verlegt werden
+- Das Breakout-Board kann die EBB36 **nicht** über USB-C mit Strom versorgen – 24V muss separat anliegen (relevant nur bei DFU-Flash, nicht im Live-Setup)
+- Live-Strom + CAN laufen direkt vom U2C zur EBB36 über ein 4-poliges Kabel — keine separate CAN-Verkabelung, kein Breakout im Pfad (Korrektur 2026-04-30)
 - Bei vertauschten CAN-H/L: Bus geht auf BUS-OFF, einfach Kabel tauschen
 - Firmware muss für **CAN (PB12/PB13)** kompiliert werden, nicht USB (PA11/PA12)

@@ -47,10 +47,10 @@ Was dauerhaft gepflegt werden muss.
 - [[00 Kontext/Schreibstil]] — Kommunikationston
 
 ### `01 Inbox/` — verwandte Ideen, noch nicht sortiert
-- [[01 Inbox/Idee - ProForge5 als Live-Service-Plattform]] — Vorläufer-Idee, spezifisch für ProForge5 (17.04.2026 Vormittag)
-- [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]] — CAD-Pipeline (WEC/MThreeD)
-- [[01 Inbox/Idee - Claude SolidWorks Integration]] — API-Anbindung für Reiner
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io|Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[03 Bereiche/Business MThreeD.io/Idee - ProForge5 als Live-Service-Plattform]] — Vorläufer-Idee, spezifisch für ProForge5 (17.04.2026 Vormittag)
+- [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]] — CAD-Pipeline (WEC/MThreeD)
+- [[03 Bereiche/WEC/Idee - Claude SolidWorks Integration]] — API-Anbindung für Reiner
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io|Idee - Apple-Strategie für WEC und MThreeD.io]]
 
 ### `04 Ressourcen/` — Wissen und Referenzmaterial
 - [[04 Ressourcen/Klipper/Klipper|Klipper-Wissen]] — Fundament für KI-Debug-Tunnel-Produkt
@@ -76,7 +76,7 @@ Drei parallele Arbeitslinien die zusammen MThreeD.io formen:
 - Kundenanfrage → CAD → Zeichnung → BOM → PDF → Rechnung
 - Zwei Gehirne als Substrat (Reiners + Sebastians Obsidian-Vaults)
 - SolidWorks-/Fusion-API-Integration als technische Brücke
-- Siehe [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]
+- Siehe [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]
 
 ## Referenzprojekte (bewiesen)
 

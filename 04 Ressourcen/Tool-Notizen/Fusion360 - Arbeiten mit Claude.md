@@ -32,5 +32,5 @@ Wenn der Filesystem-Connector nicht antwortet (Timeout) → Claude Desktop neu s
 
 ## Verknüpfungen
 
-- [[01 Inbox/Vision - Automatisierte Konstruktions-Pipeline]]
-- [[01 Inbox/Idee - Claude SolidWorks Integration]]
+- [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]
+- [[03 Bereiche/WEC/Idee - Claude SolidWorks Integration]]

@@ -89,7 +89,7 @@ Heißt: Das Gerüst steht. Der Audio-Workflow wäre eine **zusätzliche Ausgabe-
 - **Stimmenqualität** — macOS-Stimmen sind steif. Eine Woche damit testen, dann bewerten.
 - **Datenschutz bei TTS-Diensten** — ElevenLabs und OpenAI hosten in USA. Bei Kundendaten Vorsicht, bei internen Briefings unkritisch. Später zu klären.
 - **Reiner als Mithörer** — wenn das Konzept für Reiner nicht passt, macht Sebastian das allein. Kein Problem, aber dann reduziert sich der Nutzen.
-- **Windows-Seite** — Reiner ist aktuell auf Windows. Die Apple-Strategie (→ [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]) entscheidet ob sich das langfristig ändert.
+- **Windows-Seite** — Reiner ist aktuell auf Windows. Die Apple-Strategie (→ [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]) entscheidet ob sich das langfristig ändert.
 
 ## Verbindung zum größeren Plan
 
@@ -103,5 +103,5 @@ Das hängt zusammen mit:
 
 - [[00 Kontext/WEC Kontakte/Profil Reiner]]
 - [[00 Kontext/Über mich]]
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]
 - [[02 Projekte/WEC Neustart mit Reiner/Konzept Zwei Gehirne]]

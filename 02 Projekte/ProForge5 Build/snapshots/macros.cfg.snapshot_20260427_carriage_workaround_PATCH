@@ -1,0 +1,31 @@
+!!! NICHT ANGEWENDET — Patch liegt als Plan B bereit !!!
+
+Erstellt: 2026-04-27
+Zweck: Carriage-Tool-Sensor logisch durch Dock-Sensor-Berechnung ersetzen,
+       falls neuer Hardware-Sensor nicht rechtzeitig kommt.
+
+Logik: tool_on_carriage = (active_tools - docked_count) >= 1
+       Alle 5 Dock-Sensoren PRESSED -> kein Tool am Wagen
+       1 Dock-Sensor RELEASED      -> Tool am Wagen
+
+7 Patch-Stellen in macros.cfg:
+1. _END_PRINT (Z.28-30): DOCK-Trigger aus Dock-Sensoren
+2. toolchanger_sensor_status: zeigt Tool_on_carriage=YES/NO
+3. DOCK Macro: Hauptlogik + Sanity-Checks entfernt
+4. _PRE_SELECT_CHECK: carriage_pressed berechnet
+5. _PRE_SELECT_VERIFY: gleiche Berechnung
+6. _delayed_post_select_check: Carriage-Check entfernt (redundant)
+7. _delayed_post_dock_check: Carriage-Check durch Vollstaendigkeitspruefung ersetzt
+
+Verlust beim Anwenden: Sicherheits-Meldung "carriage_lost_before_docking_PHx"
+entfaellt — kein Unterschied mehr zwischen "Tool am Wagen" und "Tool verloren".
+
+Patch-Script: /home/claude/patch_macros.py (lokal in Claude-Session)
+Original-Snapshot: macros.cfg.snapshot_20260427_premacrofix
+Gepatchte Datei lag bei Erstellung in: /home/claude/macros_patched.cfg
+
+Falls dieser Patch doch angewendet werden muss:
+- Backup macros.cfg auf Pi
+- scp macros_patched.cfg m3d@PI:/home/m3d/printer_data/config/macros.cfg
+- FIRMWARE_RESTART
+- Trockentest SELECT_PH1

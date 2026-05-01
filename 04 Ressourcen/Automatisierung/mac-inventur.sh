@@ -15,7 +15,7 @@
 #   mac-inventur              → verschiebt alles
 #   mac-inventur --preview    → zeigt Zusammenfassung ohne zu verschieben
 
-BRAIN="/Users/sh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain"
+BRAIN="/Users/sh/Brain"
 SCREENSHOTS="$BRAIN/07 Anhänge/Screenshots"
 INVENTUR="$HOME/Mac-Inventur"
 QUELLEN=("$HOME/Desktop" "$HOME/Downloads")

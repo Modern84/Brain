@@ -6,5 +6,6 @@
   "dataview",
   "obsidian-tasks-plugin",
   "omnisearch",
-  "templater-obsidian"
+  "templater-obsidian",
+  "copilot"
 ]

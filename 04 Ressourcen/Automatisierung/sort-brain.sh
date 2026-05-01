@@ -9,7 +9,7 @@
 #   sort-brain              → verschiebt alles
 #   sort-brain --preview    → zeigt nur was verschoben würde, ohne es zu tun
 
-BRAIN="/Users/sh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain"
+BRAIN="/Users/sh/Brain"
 EINGANG="$BRAIN/01 Inbox/_Eingang Dateien"
 SCREENSHOTS="$BRAIN/07 Anhänge/Screenshots"
 QUELLEN=("$HOME/Desktop" "$HOME/Downloads")

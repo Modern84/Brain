@@ -3,12 +3,12 @@ tags: [projekt, mthreed, mos-eigenes, strategie, klipper, ki-tunnel]
 status: entscheidungsreif
 date: 2026-04-17
 abgrenzung: Mos eigene Produktspur — NICHT Reiner-WEC, NICHT Konstruktions-Pipeline
-verknuepft: ["[[_MThreeD.io]]", "[[01 Inbox/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]", "[[01 Inbox/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]]"]
+verknuepft: ["[[_MThreeD.io]]", "[[03 Bereiche/Business MThreeD.io/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]", "[[03 Bereiche/Business MThreeD.io/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]]"]
 ---
 
 # Analyse — Klipper KI-Debug-Tunnel
 
-> **Kurzform dieser Datei:** Strategische Einordnung und Entscheidungsstand. Vollständige Analyse mit allen Quellen und Modellen: [[01 Inbox/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]
+> **Kurzform dieser Datei:** Strategische Einordnung und Entscheidungsstand. Vollständige Analyse mit allen Quellen und Modellen: [[03 Bereiche/Business MThreeD.io/Strategie - mThreeD.io KI-Debug-Tunnel als eigenes Produkt]]
 
 ---
 
@@ -74,7 +74,7 @@ Obico/OctoEverywhere machen visuelle AI-Fehlererkennung (Webcam → Spaghetti-De
 
 - [ ] Makertech Discord + Voron-Forum still beobachten (2 Wochen, Top-10-Probleme auflisten)
 - [ ] Technisches PoC: Install-Script + Cloudflare-Tunnel + Claude-Code-Session-Flow
-- [ ] Landing-Page `mthreed.io`: E-Mail-Capture, Hook, drei-Schritte-Erklärung → [[01 Inbox/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]]
+- [ ] Landing-Page `mthreed.io`: E-Mail-Capture, Hook, drei-Schritte-Erklärung → [[03 Bereiche/Business MThreeD.io/Entwurf - Landing-Page mThreeD.io Debug-Tunnel]]
 - [ ] Erste 5 Beta-Nutzer aus Voron-Discord, kostenlos gegen Feedback
 - [ ] Preistest: 15 / 25 / 35 € Conversion-Quote messen
 - [ ] Makertech kontaktieren erst **nach** PoC (partnership@makertech3d.com)

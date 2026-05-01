@@ -11,7 +11,7 @@ raum: MThreeD
 
 ## Worum geht's
 
-Mo hatte zwischenzeitlich Chrome als Hauptbrowser genutzt, inklusive Google-Passwort-Manager. Rückwirkend betrachtet nicht zur Apple-Strategie passend (siehe [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]). Jetzt soll migriert werden:
+Mo hatte zwischenzeitlich Chrome als Hauptbrowser genutzt, inklusive Google-Passwort-Manager. Rückwirkend betrachtet nicht zur Apple-Strategie passend (siehe [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]). Jetzt soll migriert werden:
 
 - **Browser**: Chrome → Safari als Standard
 - **Passwörter**: Google-Passwort-Manager → Apple Schlüsselbund
@@ -71,7 +71,7 @@ Mo hatte zwischenzeitlich Chrome als Hauptbrowser genutzt, inklusive Google-Pass
 
 ## Verknüpfungen
 
-- [[01 Inbox/Idee - Apple-Strategie für WEC und MThreeD.io]]
+- [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io]]
 - [[05 Daily Notes/2026-04-17]]
 - [[TASKS]]
 

@@ -46,7 +46,7 @@ Aufbau und Umbau des ProForge5 von MakerTech auf Industrial-High-End-Niveau: 500
 | BTT U2C V2 | USB-zu-CAN Adapter (CAN-Bridge zwischen Pi und Bus) | ✅ verbunden |
 | BTT EBB36 Gen 2 V1.0 | Schlitten-Board (Carriage) | ✅ geflasht & verbunden |
 | BTT Eddy Coil V1 | Bed-Leveling-Sensor, I2C am EBB36 | ✅ in Config |
-| BTT EBB USB Adapter (Breakout-Board) | Strom + CAN-Durchleitung + DFU-Flashen | ✅ verkabelt |
+| BTT EBB USB Adapter (Breakout-Board) | NUR DFU-Flash-Werkzeug (nicht im Live-Setup verbaut) | ✅ vorhanden, im Schrank |
 
 **Erledigt:**
 - EBB36 Gen2 mit Klipper CAN-Firmware geflasht (STM32G0B1, PB12/PB13, 1M)
@@ -98,8 +98,8 @@ Aufbau und Umbau des ProForge5 von MakerTech auf Industrial-High-End-Niveau: 500
 
 - **Octopus Pro** ✅ `v0.13.0-623-gaea1bcf56` — am 16.04. per Software-DFU erneut geflasht, Persistenz nach Pi-Reboot bestätigt. Der erste Versuch vom 14.04. (v0.13.0-593) hatte nicht persistiert.
 - **EBB36** ⚠️ `v0.13.0-623-gaea1bcf56-dirty-20260413_184659` — dirty flag, Funktion OK. Clean-Flash offen.
-- **PH1–PH5 SO3 Boards** ❌ `v0.13.0-623-gaea1bcf56` — aber **ohne `WANT_BUTTONS=y`**. Beweis: Workaround-Entfernen in `so3_0.cfg` → `Unknown command: buttons_ack`. Müssen mit `.config.so3_buttons` (liegt unter `~/klipper/.config.so3_buttons` auf Pi, verifiziert enthält `CONFIG_WANT_BUTTONS=y`) neu gebaut und per Boot+Reset geflasht werden.
-- **Config-Workaround in `so3_0..4.cfg` ist zwingend nötig** solange SO3-Firmware ohne Buttons läuft. Jeweils 20× `#DISABLED#` pro Datei deaktivieren `gcode_button t*_dock_sensor`, `filament_switch_sensor SO3Sensor_*`, `gcode_button _filament_unload_*`, `tachometer_*`. **Nicht entfernen vor SO3-Flash!**
+- **PH1–PH5 SO3 Boards** ✅ `v0.13.0-623-gaea1bcf56` mit `WANT_BUTTONS=y` + `WANT_TMCUART=y` + `WANT_NEOPIXEL=y` (geflasht 2026-04-26, Pi-Reboot-Persistenz bestätigt). Build-Config: `STM32_FLASH_START_0000=y`, Flash-Adresse `0x08000000:force:mass-erase:leave`. Bins liegen unter `~/klipper/out_so3_v4/klipper_PHx.bin`.
+- **Config-Workaround in `so3_*.cfg` reduziert** seit 2026-04-26: nur noch 3 Zeilen pro Datei (`tachometer_pin`, `tachometer_ppr`, `tachometer_poll_interval` per `#DISABLED#` deaktiviert), weil `WANT_PULSE_COUNTER` nicht in Build-Config ist. Lüfter-RPM-Anzeige fehlt → akzeptierter Trade-off. `gcode_button`, `filament_switch_sensor`, `neopixel`, `tmc2209 extruder` sind alle aktiv und funktional.
 
 **Erledigt (15.04.2026) — Moonraker Auth & Config-Audit:**
 
@@ -108,8 +108,10 @@ Aufbau und Umbau des ProForge5 von MakerTech auf Industrial-High-End-Niveau: 500
 
 **Offen in Etappe 1:**
 
-- **SO3 Boards nochmal flashen** — 5× Boot+Reset mit `.config.so3_buttons` Firmware, danach Workaround rückgängig
+- ~~**SO3 Boards nochmal flashen**~~ — erledigt 2026-04-26 ✅ (alle 5 mit BUTTONS+TMCUART+NEOPIXEL, Pi-Reboot-Persistenz bestätigt)
+- **Tool-Offset-Probe ("kleine Kugel") anschließen + einmessen** — Stage 09 in MakerTech-Doku, jetzt möglich da Buttons + Dock-Sensoren aktiv
 - **EBB36 clean flashen** — v0.13.0-623 ohne "-dirty"
+- **Octopus auf v0.13.0-623 bringen** — läuft aktuell auf v593 (Versions-Mismatch zum Host, funktional aber unsauber)
 - ~~**4.7kΩ Pull-Up Widerstände**~~ — nicht nötig, Eddy läuft über `i2c3_PA7_PA6`
 - ~~**Eddy Coil kalibrieren**~~ — erledigt ✅
 - **Input Shaping kalibrieren** — ADXL345 am EBB36
@@ -160,37 +162,52 @@ run_current: 0.55  # bis 0.85 je nach Bauraumtemp
 
 ---
 
-## System-Architektur (Stand 14.04.2026)
+## System-Architektur (verifiziert 2026-04-29 via `lsusb -t`)
 
 ```
 [Raspberry Pi 5]
+  Hinweis: Ein blauer USB-3.0-Port ist abgebrochen (bei Inbetriebnahme zerstört).
       |
-      ├── USB → [BTT Octopus Pro H723] → /dev/ttyACM1
-      |              → 4× XY (AWD, TMC5160 SPI ✅)
-      |              → 4× Z (Quad-Z, TMC2209 UART ✅)
-      |              → X-Endstop (^PG6 ✅)
-      |              → SSR → 1300W Bett
+      ├── USB direkt am Pi → [BTT Octopus Pro H723] → /dev/ttyACM*
+      |       → 4× XY (AWD, TMC5160 SPI ✅)
+      |       → 4× Z (Quad-Z, TMC2209 UART ✅)
+      |       → X-Endstop (^PG6 ✅)
+      |       → SSR → 1300W Bett
       |
-      ├── USB → [BTT U2C V2] → can0 (1 MBit/s)
-      |                |
-      |                └── CAN (H/L) → [Breakout-Board]
-      |                                      |
-      |                                      └── MX3.0 → [EBB36 Gen2 V1.0]
-      |                                                       → Y-Endstop (PA15 ✅)
-      |                                                       → Dock-Sensor (PB6)
-      |                                                       → Eddy Coil (I2C PB3/PB4 ⚠️)
-      |                                                       → ADXL345 (Input Shaping)
-      |                                                       → Servo (PB5 ✅)
+      ├── USB direkt am Pi → [BTT U2C V2] → can0 (1 MBit/s)
+      |       |   U2C V2 ist gleichzeitig CAN-Bridge UND 24V-Verteiler:
+      |       |   LRS-450 → U2C V+/V- Schraubklemmen → intern auf
+      |       |   seitlichen 4-pol Molex Microfit 3.0 (VIN/GND/CAN_H/CAN_L)
+      |       |
+      |       └── 4-pol-Kabel (VIN+GND+CAN_H+CAN_L) → MX3.0 → [EBB36 Gen2 V1.0]
+      |                                              → Y-Endstop (PA15 ✅)
+      |                                              → Dock-Sensor (PB6)
+      |                                              → Eddy Coil (I2C PA7/PA6 ✅)
+      |                                              → ADXL345 (Input Shaping)
+      |                                              → Servo (PB5 ✅)
       |
-      └── USB → [5× SO3 Boards] (so3_0 bis so3_4)
-                    → PH1–PH5 Toolhead-MCUs
-                    → ⚠️ WANT_BUTTONS fehlt, Config-Workaround aktiv
+      |   Anmerkung: Breakout-Board (BTT EBB USB Adapter) ist NICHT im
+      |   Live-Pfad — nur DFU-Flash-Werkzeug, liegt im Schrank.
+      |
+      └── USB → [Aktiv 5V-versorgter USB-Hub] (eigene Lösung wegen Strombedarf)
+                    |
+                    └── [5× SO3 Boards] (so3_0 bis so3_4)
+                            → PH1–PH5 Toolhead-MCUs
+                            → ✅ v0.13.0-623, BUTTONS+TMCUART+NEOPIXEL aktiv (2026-04-26)
+                            → Config-Workaround minimal (nur tachometer_pin disabled)
 ```
+
+**Single-Point-of-Failure (neu 2026-04-29, korrigiert nach `lsusb -t`-Verifikation):**
+- **Hub-Pfad** (Pi-Hub-Kabel, Hub-PSU, Hub selbst): SPoF **nur für die 5× SO3-Toolheads** — kein Drucker-Totalausfall, CAN-Bus und Mainboard laufen weiter.
+- **Pi-USB-Layer** (verbliebener Pi-Port, Pi-Hardware): wäre der echte universelle SPoF, da U2C V2 und Octopus Pro beide direkt am Pi hängen.
+- Vorgeschichte 26.04.: zwei USB-Disconnect-Events betrafen vermutlich den Hub-Pfad (siehe [[05 Daily Notes/2026-04-26]]).
+- Topologie-Eintrag früher als „alle Devices über Hub" geführt — falsch, korrigiert nach lsusb-Realität. Details: [[project_proforge5_usb_topology]] und [[05 Daily Notes/2026-04-29]] Phase 4.
 
 **Strom-Aufteilung:**
 - 24V (MeanWell LRS-450): Elektronik, Heizpatronen, Lüfter, EBB36-Versorgung
 - 48V (MeanWell LRS-150): Nur XY-Motoren am Octopus Pro (Etappe 3)
 - 230V AC: Bett via SSR (gesteuert vom Octopus Pro)
+- 5V (separates Netzteil): Aktiver USB-Hub am Pi
 
 ---
 
@@ -201,6 +218,7 @@ run_current: 0.55  # bis 0.85 je nach Bauraumtemp
 | EBB36 CAN UUID | `71c47e0b85cf` | ✅ aktiv |
 | Octopus USB | `/dev/serial/by-id/usb-Klipper_stm32h723xx_1D0015001251313531383332-if00` | ✅ aktiv (ttyACM1) |
 | U2C USB | `1d50:606f` (gs_usb) | ✅ aktiv |
+| Pi USB-Topologie | Verifiziert 2026-04-29 via `lsusb -t`:<br>• U2C V2 → direkt am Pi USB-Port<br>• Octopus Pro → direkt am Pi USB-Port<br>• 5× SO3 → hinter aktiv 5V-versorgtem USB-Hub<br>Hub-Ausfall trifft nur SO3-Pfad, NICHT CAN-Bus oder Mainboard. Ein blauer USB-3.0-Port am Pi 5 ist abgebrochen (Inbetriebnahme). Faktencheck: 5994 USB-Disconnect-Roh-Events seit 26.04. klassifiziert als HARMLOS (U2C-Kabel-Wackler 27.04. + Watchdog-Logs). Details: [[05 Daily Notes/2026-04-29]] Phase 4. | ✅ Topologie verifiziert, SPoF nur für SO3-Pfad |
 | Pi Name | mThreeD-IO | Hostname |
 | Pi SSH-User | `m3d` | `ssh m3d@<IP>` |
 | Pi Passwort | gesetzt | M3DistOK |
@@ -227,18 +245,26 @@ run_current: 0.55  # bis 0.85 je nach Bauraumtemp
 ## Verkabelung
 
 ### Stromversorgung
-- Mean Well LRS-450-24 → Breakout-Board (VIN/GND Schraubklemmen)
-- Breakout-Board → EBB36 (über MX3.0 Kabel, liefert 24V + CAN)
-- Wichtig: USB-C am Breakout-Board liefert KEINEN Strom — 24V muss separat anliegen
+- Mean Well LRS-450-24 → U2C V2 (V+/V- Schraubklemmen)
+- U2C V2 → EBB36 über seitlichen 4-pol Molex Microfit 3.0 → 4-adriges Kabel → MX3.0-Stecker am EBB36
+- Das 4-pol-Kabel führt VIN(24V) + GND + CAN_H + CAN_L gemeinsam — eine Leitung, nicht getrennt
+- Separates 5V-Netzteil → aktiver USB-Hub (eigene Versorgung, nicht über Pi-USB-Bus)
+- **Breakout-Board ist NICHT im Live-Setup** — siehe Lessons Learned 2026-04-30
 
 ### CAN-Bus
-- U2C CAN_H/CAN_L (Schraubklemmen) → 2 dünne Kabel → Breakout-Board CAN H/L Pins
+- CAN_H/CAN_L laufen im selben 4-pol-Kabel wie 24V/GND vom U2C zur EBB — keine separaten CAN-Adern, keine Breakout-Zwischenstation
 - 120Ω Termination: U2C (per Software, `termination 120`) + EBB36 (Jumper)
 - Bitrate: 1.000.000
 
-### USB
-- Pi USB → U2C (USB-C)
-- Pi USB → Octopus
+### USB-Topologie (korrigiert 2026-04-29 via `lsusb -t`)
+- Pi 5 hat einen abgebrochenen blauen USB-3.0-Port (bei Inbetriebnahme zerstört)
+- **U2C V2** und **Octopus Pro** hängen **direkt** am Pi USB (nicht über Hub)
+- Der **aktiv 5V-versorgte USB-Hub** speist **nur die 5× SO3 Boards** (PH1–PH5)
+- **SPoF-Klassifikation:**
+  - Hub-Ausfall (Pi→Hub-Kabel, Hub-PSU, Hub selbst) → trifft **nur SO3-Pfad**, kein Drucker-Totalausfall
+  - Pi-USB-Layer-Ausfall (Pi-Port, Pi-Hardware) → echter universeller SPoF, weil U2C+Octopus dort direkt angebunden sind
+- Bei Disconnect-Symptomen erst klassifizieren: nur SO3 betroffen → Hub-Pfad. Auch U2C/Octopus weg → Pi-USB-Layer.
+- Faktencheck 2026-04-29: 5994 USB-Disconnect-Roh-Events seit 26.04. klassifiziert als HARMLOS (siehe [[05 Daily Notes/2026-04-29]] Phase 4).
 
 ---
 
@@ -351,6 +377,7 @@ Config-Dateien auf dem Pi (`~/printer_data/config/`):
 
 ## Lessons Learned
 
+- **Breakout-Board nicht im Live-Setup (Klarstellung 2026-04-30):** Live-Strom + CAN laufen direkt vom U2C V2 zur EBB36 über ein 4-poliges Original-MX3.0-Kabel (180° gedreht im U2C-Molex eingesteckt wegen gespiegelter Pin-Belegung). Brain-Doku war bis 2026-04-30 falsch und zeigte Breakout im Live-Pfad — korrigiert in [[ProForge5 CAN-Bus Setup 2026-04-04]], [[EBB36 Anschlussplan]], [[EBB36 Gen2 Board-Wissen]]. Breakout dient ausschließlich zum DFU-Flashen der EBB36 außerhalb des Druckers.
 - EBB36 Gen2 V1.0 kann **nur** über das Breakout-Board per USB geflasht werden (DFU)
 - USB/CAN Jumper muss für DFU **ab** sein, für Betrieb **drauf**
 - Das Breakout-Board kann die EBB36 **nicht** über USB-C mit Strom versorgen — 24V muss separat anliegen
@@ -367,12 +394,27 @@ Config-Dateien auf dem Pi (`~/printer_data/config/`):
 - Eddy Coil via I2C über CAN-Bus (i2c1_PB3_PB4) verursacht BUS_TIMEOUT bei Kalibrierung. Lösung: I2C-Bus auf i2c3_PA7_PA6 umgestellt → läuft stabil, keine Pull-Ups nötig. USB-Kalibrierungs-Workaround (Jumper AB, USB-Serial statt CAN-UUID) wurde nie benötigt.
 - SO3 Boards (5×) haben eigene MCUs (`so3_0` bis `so3_4`), müssen separat geflasht werden (physischer BOOT0-Zugang am SO3-Board nötig — Hardware-Only Entry!)
 - `flash_usb.py` und `enter_bootloader()` für SO3 nicht ausreichend — Board bootet direkt in Klipper-App, kein DFU
-- SO3 Flash-Adresse: `0x8002000:leave` (8KB-Bootloader bei 0x8000000, App bei 0x8002000). NIEMALS 0x8000000 — zerstört Bootloader!
+- ~~SO3 Flash-Adresse: `0x8002000:leave` (8KB-Bootloader bei 0x8000000, App bei 0x8002000). NIEMALS 0x8000000 — zerstört Bootloader!~~ **FALSCH dokumentiert (vor 2026-04-26)** — galt für EBB36/Katapult-Setups, NICHT für SO3. Korrekt: SO3 läuft **bare-metal bei 0x08000000**, kein App-Bootloader davor. Flash-Befehl: `sudo dfu-util -a 0 -D <bin> --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11`. Build-Config muss `STM32_FLASH_START_0000=y` haben (NICHT `_2000`). Verifikationsquellen: (1) Klippy-Log MCU-Selbstauskunft `CONFIG_FLASH_APPLICATION_ADDRESS=0x8000000`, (2) Klipper Linker-Script ORIGIN, (3) erfolgreicher Reflash 2026-04-26 bei 0x08000000.
 - SO3 USB-Serial: `USB_SERIAL_NUMBER_STR="PHx"` pro Board in Build-Config (PH1–PH5), KEIN CHIPID — sonst findet Klipper die MCUs nicht mehr
 - **Octopus Pro V1.1**: DFU-Buttons elektrisch wirkungslos (0 USB-Events bei Button-Druck). Software-DFU via `flash_usb.py` → `dfu-util -s 0x8020000:leave` funktioniert zuverlässig
 - Octopus Flash-Adresse: `0x8020000:leave` (128KB-Bootloader, App-Slot). Kein mass-erase — Bootloader bleibt erhalten
 - Keine SD-Karte im Octopus: verhindert dass `firmware.bin` nach Power-Cycle den App-Slot überschreibt
 - `flash_usb.py NIEMALS auf SO3 Boards verwenden` — war zu pauschal. Genauer: `enter_bootloader()` kann SO3 nicht in DFU bringen (Hardware-Only Entry). flash_usb.py voll laufen lassen crasht ggf. den Pi.
+- **Re-Test SO3 Software-DFU mit Klipper v0.13.0-623 (2026-04-26)** ❌ — Klipper-Doku-Weg `python3 -c 'import flash_usb as u; u.enter_bootloader("<DEV>")'` direkt auf PH1 ausgeführt: Befehl meldete „Entering bootloader on PH1", aber **kein 0483:df11 in lsusb** und PH1 blieb als `usb-Klipper_stm32f042x6_PH1-if00` sichtbar. Erklärung: STM32F042 hat den DFU-Bootloader im System Memory — den kann nur BOOT0=1-beim-Reset aktivieren, kein Software-Sprung möglich, weil kein zusätzlicher Bootloader (wie Katapult) vor Klipper im Flash sitzt. **Hardware-BOOT0+RST-Weg bleibt der einzige Pfad.** Auch in der aktuellen Klipper-Version unverändert.
+- **SO3 Build-Config — vollständige WANT_*-Liste (2026-04-26):** Für ProForge5 SO3-Toolheads sind in `.config.so3_buttons` mindestens nötig: `CONFIG_MACH_STM32F042=y`, `CONFIG_STM32_FLASH_START_0000=y`, `CONFIG_WANT_BUTTONS=y`, `CONFIG_WANT_TMCUART=y`, `CONFIG_WANT_NEOPIXEL=y`, `CONFIG_USB_SERIAL_NUMBER="PHx"`. `WANT_PULSE_COUNTER` wäre für Lüfter-Tachometer nötig — wir verzichten darauf (3 `tachometer_pin`-Zeilen pro `so3_*.cfg` per `#DISABLED#` deaktiviert), spart Flash-Platz. Bin-Größe mit allen drei WANT_*: 17908 Bytes (54% von 32KB). MCU lädt 75 Commands. Heater-Sicherheit hängt am Thermistor-Cutoff, nicht am Lüfter-Tacho — daher unkritisch.
+- **STM32F042 System-Memory-DFU ist immer erreichbar** (auch nach falschem Flash, der den User-Flash zerstört) — der DFU-ROM sitzt bei `0x1FFFC400`, separat vom User-Flash. BOOT0=1 + RST aktiviert ihn unabhängig davon was im User-Flash steht. **Heißt: SO3-Boards können nicht durch Software-Flash gebrickt werden, solange BOOT0+RST physisch erreichbar ist.**
+- **Bus-Pfad-paralleles Flashing (Trick):** Wenn mehrere SO3 gleichzeitig im DFU sind (z.B. nach Sammel-BOOT0+RST), gezielt einzeln flashen via `sudo dfu-util ... --path "1-1.1.X"` — Bus-Pfade aus `lsusb -t` ablesen. Vorteil: einmal Schraubarbeit für alle 5 statt fünfmal.
+- **🔥 USB-Topologie und SPoF-Klassifikation (2026-04-26 / korrigiert 2026-04-29 via `lsusb -t`):** Ein blauer USB-3.0-Port am Pi 5 ist physisch abgebrochen (Inbetriebnahme). **U2C V2 + Octopus Pro hängen direkt am Pi**, nur die **5× SO3 Boards** sitzen hinter dem aktiv 5V-versorgten USB-Hub. **Hub-Ausfall** (Pi→Hub-Kabel, Hub-PSU, Hub selbst) trifft daher **nur den SO3-Pfad** — kein Drucker-Totalausfall, CAN-Bus + Mainboard laufen weiter. **Pi-USB-Layer-Ausfall** (Pi-Port, Pi-Hardware) wäre der echte universelle SPoF. Diagnose-Reihenfolge bei Disconnect-Symptomen: erst klassifizieren — nur SO3 betroffen → Hub-Pfad; auch U2C/Octopus weg → Pi-USB-Layer. Dann (1) `vcgencmd get_throttled` → `0x0` erwartet, (2) Stecker physisch prüfen + Zugentlastung, (3) Hub-Upstream testweise auf einen schwarzen USB-2.0-Port am Pi 5 stecken — by-id-Aliase bleiben gleich. Hub selbst ist KEIN Tausch-Kandidat (Mos bewusste Wahl wegen Strombedarf).
+- **Servo-Default-Werte aus MakerTech-Repo sind nicht universell (2026-04-26):** Servo-Arm-Spline-Position variiert pro Build, Winkel müssen pro Drucker gemessen werden mit abgeschraubter Tool-Aufnahme-Platte. Mos echte Werte: `_SERVO_DOCK ANGLE=52`, `_SERVO_SELECT ANGLE=125` (Repo-Defaults waren 28°/110°). `minimum_pulse_width`/`maximum_pulse_width` können NICHT getauscht werden zur Drehrichtungs-Inversion (Klipper-Validierung lehnt ab) — Macros mit echten Winkeln statt Pulse-Width-Trick.
+- **gs_usb (BTT U2C V2) unterstützt KEIN `restart-ms` (2026-04-27):** Versuch vom 26.04., per `ip link set can0 up ... restart-ms 100` Auto-Recovery nach BUS-OFF zu erreichen, schlägt fehl. Der `gs_usb`-Treiber lehnt den Parameter ab: `Error: Device doesn't support restart from Bus Off` → `INVALIDARGUMENT` → `can0.service` failt → Bus bleibt nach jedem Reboot DOWN. `restart-ms` ist nur für native CAN-Controller (mcp2515, m_can) implementiert, nicht für USB-CAN. **Korrekt für U2C:** `ExecStart=/sbin/ip link set can0 up type can bitrate 1000000` (ohne restart-ms). Backup der kaputten Datei: `can0.service.backup_20260427_restartms_revert`. **Auto-Recovery nach Wackler bleibt offen** — braucht externen Watchdog (systemd-Timer prüft `state` und ruft `ip link set can0 down/up` bei ERROR/STOPPED). USB-Hub-SPoF-Fix ist die wirkliche Lösung; Watchdog wäre nur Pflaster.
+- **`t{n}_dock_sensor` taugt NICHT zur dock_x-Messung (2026-04-26):** Der Schalter erkennt "Tool im Dock", nicht "Schlitten an Aufnahme-Position". `dock_x` muss visuell ermittelt werden (Stift mittig im Schlüsselloch der Tool-Platte, ggf. Spiegel). `carriage_tool_sensor` ist permanent PRESSED → Hardware/Verkabelung am EBB36 prüfen vor Toolchange-Tests.
+
+---
+
+## Ersatzteile & Vorräte
+
+- **Zweites EBB-Kabel verfügbar** (Stand 2026-04-30): MX3.0 EBB-seitig + offene Litzen U2C-seitig. Erlaubt freie Pin-Zuordnung — relevant für künftige Topologie-Änderungen (z.B. Octopus-CAN-Bridge-Migration ohne U2C, Split 24V/CAN aus unterschiedlichen Quellen).
+- **BTT EBB USB Adapter (Breakout-Board):** im Schrank, nur für DFU-Flash der EBB36 außerhalb des Druckers.
 
 ---
 
@@ -389,6 +431,8 @@ Config-Dateien auf dem Pi (`~/printer_data/config/`):
 
 | Datum      | Was |
 |------------|-----|
+| 2026-04-26 | **Stage 07 Toolchanger-Kalibrierung — select_*-Werte gesetzt, Hardware-Realität dokumentiert**: (1) Servo-Winkel final gemessen am abgeschraubten PH: DOCK=52°, SELECT=125° (Repo-Defaults waren falsch wegen Spline-Position). (2) Alle 10 select_x/y-Werte für PH1–PH5 in `variables.cfg` per SAVE_VARIABLE persistiert (PH1+PH5 gemessen, PH3 verifiziert, PH2/PH4 interpoliert mit Pitch 101.5mm). (3) USB-Topologie ins Brain dokumentiert: Pi 5 hat einen abgebrochenen blauen USB-3.0-Port (Inbetriebnahme), der zweite trägt aktiv 5V-versorgten USB-Hub mit ALLEN Devices — Single-Point-of-Failure. Zwei USB-Disconnect-Events am 26.04. (17:49 + 18:08) deuten auf diesen Pfad. Diagnose-Plan vorbereitet, KEINE Hardware-Bestellung. (4) Sensor-Erkenntnis: `t{n}_dock_sensor` zeigt "Tool im Dock", nicht "Schlitten-Position" — `dock_x` muss visuell ermittelt werden. `carriage_tool_sensor` permanent PRESSED, Hardware-Check ausstehend. Details: [[05 Daily Notes/2026-04-26]]. |
+| 2026-04-26 | **SO3 Flash-Marathon ✅ Pi-Reboot-stabil**: Drei Reflash-Runden, drei Lehren. (1) Build-Config-Bug entdeckt: `.config.so3_buttons` hatte `STM32_FLASH_START_2000=y` — falsch für SO3 (bare-metal bei 0x08000000). PH1 durch ersten falschen Flash kurz unbootbar, per System-Memory-DFU recovered. Flash-Adresse-Lehre revidiert: SO3 ist `STM32_FLASH_START_0000=y` mit Flash-Befehl `0x08000000:force:mass-erase:leave`, nicht `0x8002000` (galt für EBB36/Katapult). (2) Drei zusätzliche WANT_*-Flags sequenziell aufgedeckt: `WANT_TMCUART` (für tmc2209 extruder), `WANT_NEOPIXEL` (für Hotend-RGB-LEDs), `WANT_PULSE_COUNTER` (für tachometer — verzichtet, 3 Zeilen pro `so3_*.cfg` per `#DISABLED#` deaktiviert). Finale v4-Bin: 17908 Bytes, 75 Commands je MCU. (3) Bus-Pfad-paralleles Flashing als neue Methode etabliert: bei mehreren Boards in DFU gezielt einzeln flashen via `dfu-util ... --path "1-1.1.X"` aus `lsusb -t`. Endzustand: 5/5 SO3 mit BUTTONS+TMCUART+NEOPIXEL aktiv, Workaround reduziert von 20 auf 3 Zeilen pro Datei, Pi-Reboot-Test bestanden ~15:37. Erstmals seit Build-Beginn alle 7 MCUs (Octopus + EBB36 + 5× SO3) ohne Errors. Tool-Offset-Probe (Stage 09) jetzt möglich. Details: [[05 Daily Notes/2026-04-26]]. |
 | 2026-04-18 | **Mac-Inventur Phase 3 Session 2 — Projekt auf Ordner umgestellt ✅**: `02 Projekte/ProForge5 Build.md` → `02 Projekte/ProForge5 Build/` mit Unterordnern `assets/`, `backups/`, `snapshots/`, `firmware/`, `slicer-profile/`. 19 ProForge5-Artefakte aus `~/Mac-Inventur/05_Projekt_Material/` strukturiert abgelegt: `backups/` (5: Mainsail-Backups umbenannt nach Datum, Klipper-Config-Zip vom 20.03., Logs vom 22.03., print_history.csv); `firmware/` (P5FW_aktuell_2026-03-19.zip 2,5 GB + Octopus_Pro_stock_2026-03-25_aus_Repo.bin — letztere via md5-Match `c99a226…` als Stock-Firmware aus Snapshot 2026-03-28 identifiziert); `snapshots/` (Repo-Snapshot 2026-03-28); `assets/` (5: Proforge4-Referenzmodell 193 MB, Docking Bracket, Display Case 3mf+stl, Z-OffsetTest); `slicer-profile/` (ProForge 300 + 4.1 Orca-Profile). Klipper-Setup-Notiz vom 04.04. nach `04 Ressourcen/Klipper/ProForge5 CAN-Bus Setup 2026-04-04.md`, drei YouTube-Transkripte (EBB36/BTT EBB Gen 2/U2C-CAN) nach `04 Ressourcen/Klipper/Transkripte/`. Gelöscht (Papierkorb): P5FW_alt_2026-03-19.zip (1,7 GB, ältere Firmware-Revision), Snapshot 2026-03-20 (8 Tage älter als 28.03.), CAN-Bus-Setup-Duplikat `_1` (md5-identisch), LDC-Drive-Current-Clipping (als Notiz in Klipper.md aufgenommen). **Hinweis Sicherheit:** `backup-mainsail_2026-04-06_mobile.json` enthält in `gcodehistory` den Befehl `sudo passwd pi` — kein Passwort, nur Befehlsverlauf. Bei AMOS-Audit (17.04.) berücksichtigen. |
 | 2026-04-17 | **Read-Only-Proxy für externe Gäste ✅**: Python-aiohttp-Service `moonraker-readonly-proxy` auf `127.0.0.1:2096`, filtert schreibende JSON-RPC-Methoden (WebSocket) und modifizierende POST/DELETE (REST). `printer.emergency_stop` bleibt aus Sicherheitsgründen erlaubt. nginx macht Split-Routing via `map $http_cf_connecting_ip $moonraker_backend`: CF-Traffic → Proxy, Tailscale/LAN → Moonraker direkt. Externe Besucher sehen Mainsail live, können nichts steuern. Tailscale-Admin-Zugang unverändert. Tests: 5× HTTP + 4× WebSocket, alle grün. Backups angelegt. Lehre: Emergency-Stop-Pass-Through im Live-Test nicht real feuern — `FIRMWARE_RESTART` rettet, aber würde laufende Drucke zerstören. |
 | 2026-04-17 | **Cloudflare Tunnel + Access produktionsreif ✅ — `https://drucker.mthreed.io`**: Mainsail + Moonraker öffentlich erreichbar, ohne Port-Forwarding, ohne VPN, abgesichert durch E-Mail-OTP-Login. Tunnel-ID `378a4792-1636-4a40-b97f-b17ae4184755`. Protokoll: `http2` (iPhone-Hotspot blockt QUIC/UDP:7844 — bei echtem WLAN auf QUIC umstellbar). cloudflared v2026.3.0 auf Pi via `.deb` (trixie hat noch kein APT-Release). systemd-Service `cloudflared` persistent, DNS CNAME `drucker.mthreed.io` → `cfargotunnel.com`, proxied. nginx-Backend auf Port 80, vier Forwarded-Header (`X-Forwarded-For`, `X-Real-IP`, `X-Forwarded-Proto`, `Cf-Connecting-Ip`) in beiden Moonraker-Locations geleert, damit `trusted_clients` die 127.0.0.1-Quelle akzeptiert. `moonraker.conf` `cors_domains` um `*://drucker.mthreed.io` erweitert. **Zero-Trust-Team:** `mthreed` → `mthreed.cloudflareaccess.com`. **Access-App** `ProForge 5 Mainsail` (ID `f4ff7e08-d44b-4a28-a4c3-cc30d8c04ec7`, Session 24 h, IdP `onetimepin`), **Policy** `Nur Sebastian` (ID `35da1cb2-1105-470b-87ee-81c6761d9478`, allow nur `modern3b@icloud.com`). Browser-Test bestanden: Login-Screen → E-Mail-Code → Mainsail lädt ✅. Gäste (z.B. Ildiko) durch temporäres Eintragen in die Policy. Pi Stromversorgung intern gelöst ✅ (USB-C aus ProForge5, `vcgencmd get_throttled=0x0`). Details: [[05 Daily Notes/2026-04-17]], [[02 Projekte/Cloudflare Tunnel Setup — ProForge 5]]. |
