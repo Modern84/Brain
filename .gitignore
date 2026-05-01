@@ -16,6 +16,7 @@
 # Claude / Claudian Session-State (enthalten Klartext-Conversation-Logs)
 .claude/sessions/
 .claude/settings.local.json
+.claude/scheduled_tasks.lock
 .claudian/
 
 # Obsidian Copilot Plugin: enthält API-Keys im Klartext — NIE committen
