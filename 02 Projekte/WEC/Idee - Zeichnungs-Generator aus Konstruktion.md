@@ -4,7 +4,7 @@ status: festgehalten
 datum: 2026-04-21 abends
 verknuepft:
   - "[[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]"
-  - "[[03 Bereiche/WEC/Idee - Claude SolidWorks Integration]]"
+  - "[[03 Bereiche/WEC/Idee - Claude Solid Edge Integration]]"
   - "[[04 Ressourcen/Playbook/Fusion-zu-Liefer-Pipeline]]"
 ---
 

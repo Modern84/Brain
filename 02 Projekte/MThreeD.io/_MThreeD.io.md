@@ -49,7 +49,7 @@ Was dauerhaft gepflegt werden muss.
 ### `01 Inbox/` — verwandte Ideen, noch nicht sortiert
 - [[03 Bereiche/Business MThreeD.io/Idee - ProForge5 als Live-Service-Plattform]] — Vorläufer-Idee, spezifisch für ProForge5 (17.04.2026 Vormittag)
 - [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]] — CAD-Pipeline (WEC/MThreeD)
-- [[03 Bereiche/WEC/Idee - Claude SolidWorks Integration]] — API-Anbindung für Reiner
+- [[03 Bereiche/WEC/Idee - Claude Solid Edge Integration]] — API-Anbindung für Reiner
 - [[02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io|Idee - Apple-Strategie für WEC und MThreeD.io]]
 
 ### `04 Ressourcen/` — Wissen und Referenzmaterial
