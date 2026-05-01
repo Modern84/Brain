@@ -403,7 +403,8 @@ Konzept-Vault unter [[02 Projekte/mThreeD-X1/README|02 Projekte/mThreeD-X1/]].
 ## Inbox
 
 - [ ] Wake-Sound aussuchen und einsetzen (jarvis 19:58)
-- [ ] Phase 2.1 — Test 3 live über Mikro nachholen wenn Whisper klarer transkribiert (oder durch Phase 1.7 LLM-Router obsolet)
-- [ ] Phase 1.7 — Router auf LLM-Klassifizierung umstellen prüfen (keyword-basiert ist fragil bei Whisper-Verhörern, Latenz-Trade erst nach Messung entscheiden)
+- [ ] Phase 2.1 — Test 3 live über Mikro nachholen wenn Whisper klarer transkribiert (oder durch Phase 1.8 LLM-Router obsolet)
+- [ ] Phase 1.7 — Whisper-small + initial_prompt (Verhörer-Reduktion an der STT-Wurzel, hilft auch Tool-Argumenten). ZUERST testen.
+- [ ] Phase 1.8 — Router auf LLM-Klassifizierung umstellen, falls Whisper-small allein nicht reicht. Trade-off: Latenz +200–500 ms vs. semantische Robustheit.
 - [ ] Will Task (jarvis 04:02)
 - [ ] Eilman Sound vor Jarvis-Sprechen einbauen (jarvis 03:43)
