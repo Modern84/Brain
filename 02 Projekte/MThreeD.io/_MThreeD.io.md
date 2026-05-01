@@ -75,7 +75,7 @@ Drei parallele Arbeitslinien die zusammen MThreeD.io formen:
 ### 3. Automatisierte Konstruktions-Pipeline — gemeinsam mit WEC
 - Kundenanfrage → CAD → Zeichnung → BOM → PDF → Rechnung
 - Zwei Gehirne als Substrat (Reiners + Sebastians Obsidian-Vaults)
-- SolidWorks-/Fusion-API-Integration als technische Brücke
+- Solid-Edge-/Fusion-API-Integration als technische Brücke
 - Siehe [[03 Bereiche/WEC/WEC Vision - Automatisierte Pipeline]]
 
 ## Referenzprojekte (bewiesen)

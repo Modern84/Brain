@@ -46,14 +46,14 @@ Beim Mac-Inventur-Pilot ist klar geworden: Der spätere WEC-Rollout umfasst **6 
 ### 5. Reiner — Geschäftsführung + Innovation (Fördermittel, Patente, Fahrrad-System)
 
 - **Rechner-Schwerpunkt laut Sebastian: Innovationsrechner**
-- Rollen: Inhaber WEC, SolidWorks 2020, 30 Jahre Erfahrung
+- Rollen: Inhaber WEC, Solid Edge (Siemens, 4 Lizenzen seit 2021), 30 Jahre Konstruktions-Erfahrung
 - **Innovations-Domäne auf diesem Rechner:**
   - **Fördermittel:** Förderanträge, Bewilligungsbescheide, Förderprogramm-Unterlagen, Fristen
   - **Patente:** Patentanmeldungen, Patentrecherchen, Anwaltskorrespondenz
   - **Fahrrad-Federungssystem:** Reiners eigene Erfindung, TOP SECRET — CAD, Zeichnungen, Prototyp-Dokumentation, alle zugehörigen Notizen. Siehe [[02 Projekte/WEC Neustart mit Reiner/Fahrrad Federungssystem]]
   - **Sonstige Innovationen:** Ideen, Konzepte, F&E-Material
 - **Standardbetrieb:**
-  - SolidWorks-Projekte der Kunden (Bens, Knauf, etc.)
+  - Solid-Edge-Projekte der Kunden (Bens, Knauf, etc.)
   - Kunden-Korrespondenz, Angebote, Vertragsunterlagen, Stücklisten
 - ⚠ **Sicherheitsanforderung besonders hoch:** Patentwesen und Fahrrad-System dürfen nicht aus dem Haus, nicht in unverschlüsselte Cloud, nicht in fremde Hände.
 

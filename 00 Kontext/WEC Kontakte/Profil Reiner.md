@@ -87,7 +87,7 @@ Das ist kein Misstrauen gegen alle Welt. Das ist professionelle Vorsicht die ver
 
 - **Hauptwerkzeug:** Solid Edge (Siemens, 4 Lizenzen 2021 beschafft). Korrektur 2026-05-01: frühere Vault-Einträge sagten SolidWorks, war Verwechslung. Siehe auch `03 Bereiche/WEC/raw/Standards WEC/Templates/` mit `.dft`-Dateien (Solid Edge Draft) und `WEC.dwg` (AutoCAD-Erbe).
 - **Daten:** Alles auf NAS — alle Arbeitsplätze verbunden. ~~4+ Jahre Projekte~~ TODO 2026-05-01: Datenmenge real klären (siehe [[02 Projekte/WEC Neustart mit Reiner/Strategie - Korpus-Auslesen und KI-Pipeline]] Phase 2). Inhalt: Zeichnungen, DIN-Normen, Schrauben-Daten, Kundenordner, Angebote. Sehr strukturiert.
-- **Am Computer:** Mails, SolidWorks, Recherche (verliert viel Zeit mit Google-Suche — hier kann Claude massiv helfen)
+- **Am Computer:** Mails, Solid Edge, Recherche (verliert viel Zeit mit Google-Suche — hier kann Claude massiv helfen)
 - **Kein Excel-Mensch** — lässt die Finger davon
 - **Stärken:** Konzeptdenker, Augenmaß, Branchenwissen, Netzwerk, Gespür für Mechanik
 - **Schwächen:** Verliert Zeit bei Recherche, nicht IT-affin, Zeichnungsableitungen und Normdetails nicht sein Ding

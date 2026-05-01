@@ -68,7 +68,7 @@ Das ist wichtig: Nur weil etwas in einem Modul steht, heißt nicht dass Claude e
 - Änderungen lokal → wenn sich die Flash-Prozedur ändert, muss nur `Hardware-Sicherheit.md` angepasst werden, nicht die ganze CLAUDE.md
 
 **Für Reiner:**
-- Wenn sein Gehirn aufgesetzt wird, bekommt er dieselbe Struktur — aber angepasst auf seinen Kontext (SolidWorks statt Klipper, Kundenarbeit statt Drucker-Konfiguration)
+- Wenn sein Gehirn aufgesetzt wird, bekommt er dieselbe Struktur — aber angepasst auf seinen Kontext (Solid Edge statt Klipper, Kundenarbeit statt Drucker-Konfiguration)
 - Er muss nicht alle 450 Zeilen lesen um zu verstehen wie das System tickt
 - Gemeinsame Kern-CLAUDE.md für beide Gehirne als "das arbeiten wir immer so" — dann pro Gehirn die spezifischen Module
 

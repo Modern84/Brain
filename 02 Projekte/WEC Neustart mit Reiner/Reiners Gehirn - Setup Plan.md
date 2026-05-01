@@ -158,7 +158,7 @@ Statt in die bestehende WEC-IT einzugreifen, **paralleles System** aufbauen:
 > **Status 17.04.2026 Nachmittag:** Reiner prüft wegen der Kosten einen alternativen Hersteller. Pflicht-Anforderungen bleiben: 2 TB Kapazität, USB-C, ≥ 1.000 MB/s Lese-/Schreibrate. Modell/Hersteller/Preis wird aktualisiert sobald entschieden.
 
 **Warum 2 TB, nicht 1 TB oder 4 TB:**
-- SolidWorks-Einzelteile: 1–50 MB
+- Solid-Edge-Einzelteile (.par): 1–50 MB
 - Baugruppen: 50–500 MB  
 - Zeichnungen: 5–20 MB
 - 30 Jahre Projektbestand realistisch: 500 GB–1,5 TB

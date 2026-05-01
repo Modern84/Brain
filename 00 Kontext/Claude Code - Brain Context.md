@@ -50,7 +50,7 @@ Brain/
 **WEC** = WOLDRICH ENGINEERING + CONSULTING (Reiner Woldrich)
 
 Ich (Mo/Sebastian) arbeite eng mit **Reiner** zusammen:
-- Reiner: 30 Jahre SolidWorks-Erfahrung, Konstruktion, Praktiker
+- Reiner: 30 Jahre Konstruktions-Erfahrung (Solid Edge), Praktiker
 - Mo: CAD-Automation, Fusion 360, Claude-Integration, Digital-Layer
 - Gemeinsame Projekte: Konstruktionsaufträge, Lebensmittelindustrie (Bens Edelstahl)
 

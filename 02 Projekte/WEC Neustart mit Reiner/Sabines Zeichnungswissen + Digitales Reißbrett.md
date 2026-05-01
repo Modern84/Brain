@@ -24,7 +24,7 @@ Sabine ist konservativ und hält Sebastian für einen Spinner. Sie wird sich wah
 
 ## Reiners Rolle — Update 16.04.2026
 
-Reiner arbeitet ausschließlich auf Papier. Kein CAD, kein SolidWorks, kein Fusion — will auch keins. Das ist kein Problem, das ist eine Arbeitsteilung:
+Reiner arbeitet ausschließlich auf Papier. Kein CAD, kein Solid Edge, kein Fusion — will auch keins. Das ist kein Problem, das ist eine Arbeitsteilung:
 - **Reiner = Kopf.** Denkt Lösungen, kennt Kunden, generiert Aufträge. 30 Jahre Erfahrung.
 - **Sebastian + KI = Rest.** Konstruktion in Fusion 360, Ableitung, Stückliste, PDF, Versand.
 - **Ziel:** Reiners Körper wird so wenig wie möglich beansprucht. Sein Kopf denkt, alles andere läuft automatisch.

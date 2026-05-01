@@ -189,7 +189,7 @@ date: 2026-04-17
 
 ## Erfahrung
 
-- 30 Jahre Konstruktion, hauptsächlich SolidWorks
+- 30 Jahre Konstruktion, hauptsächlich Solid Edge (Siemens)
 - Windows-PC, NAS für Projekte
 
 ## Ziele 2026

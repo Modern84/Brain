@@ -62,7 +62,7 @@ Geschäftsfelder: Lebensmittel/Pharma (Bens), Bau/Gips (Knauf), Anlagenbau, F&E 
 
 - **Sebastian** — Konstrukteur, Fusion 360, INTP, LRS. Stark in Komplexem, Werkzeuge fürs Banale.
   → [[00 Kontext/Über mich]]
-- **Reiner Woldrich** (~70) — Inhaber, SolidWorks 2020, NAS-Besitzer, INTP-ähnlich, anti-IT, BWL-Vakuum.
+- **Reiner Woldrich** (~70) — Inhaber, Solid Edge (Siemens), NAS-Besitzer, INTP-ähnlich, anti-IT, BWL-Vakuum.
   → [[00 Kontext/WEC Kontakte/Profil Reiner]]
 - **Volker Bens** — Hauptkunde, Bens Edelstahl GmbH, Pharma/Lebensmittel, Halle Pirna.
   → [[00 Kontext/WEC Kontakte/Volker Bens]]

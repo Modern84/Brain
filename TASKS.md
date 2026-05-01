@@ -75,7 +75,12 @@ Neu strukturiert 2026-04-30 nach Review der Stage-09-Recherche. Stage 09 hat ein
 ### WEC Korpus-Pipeline (Strategie 2026-05-01)
 
 Konzept: [[02 Projekte/WEC Neustart mit Reiner/Strategie - Korpus-Auslesen und KI-Pipeline]]. Stress-Test 2026-05-01 abgeschlossen, Schweregrad-Sortierung in Konzept-Notiz. Klärungs-Tasks:
-- [ ] **🔴 Vault-Sweep „SolidWorks" → „Solid Edge" (30 Dateien offen)** — Profil Reiner 2026-05-01 gefixt; 30 weitere Dateien betroffen (`grep -l SolidWorks`). Pro Datei prüfen ob Auto-Replace passt oder Kontext-Edit nötig
+- [ ] **🔴 Vault-Sweep „SolidWorks" → „Solid Edge" — Restarbeiten** (Update 2026-05-01): 12 Auto-Replaces gemacht (Profil-/Setup-/Doku-Stellen), 8 historische Stellen bewusst gelassen (Daily Notes, Korrektur-Hinweise, Sweep-Meta). Offen — semantischer Eingriff nötig:
+  - [ ] `03 Bereiche/WEC/Idee - Claude SolidWorks Integration.md` — komplette Prämisse falsch (Solid-Edge-API ≠ SolidWorks-API). Notiz neu denken oder umbenennen
+  - [ ] `02 Projekte/WEC Neustart mit Reiner/Idee - Apple-Strategie für WEC und MThreeD.io.md` — Sektion „Die große offene Frage — SolidWorks" + Tool-Migrations-Argumente überarbeiten
+  - [ ] `02 Projekte/MThreeD.io/_MThreeD.io.md:52` + `02 Projekte/WEC/Idee - Zeichnungs-Generator aus Konstruktion.md:7` — Wikilinks nach Umbenennung anpassen
+  - [ ] `03 Bereiche/WEC/raw/README.md:15` — Datei-Endungen `.sldprt/.sldasm/.slddrw` → `.par/.asm/.dft`. **raw/-Schutz: nur mit explizitem Auftrag editieren**
+  - [ ] `01 Inbox/2026-04-29 Anthropic Anfrage Entwurf.md` — Entwurf vor Versand prüfen
 - [ ] **🔴 Daten-Inventar Sebnitz (Phase-2-Vorzieher)** — WinDirStat-Lauf pro Rechner + NAS, IN/OUT-Filter (STEP/DXF/DWG/DFT/PDF/XLSX), Frage-Schema, Aggregations-Datei. Details: Konzept-Notiz Sektion „Phase 2 Vorzieher". Voraussetzung: Sebnitz-/Pirna-Besuch + Reiner-Slot ~3 h
 - [ ] **🔴 Sabine-Wissens-Transfer-Pfad** — 4 Monate bis Rente August 2026, in Pipeline-Roadmap fehlend. Norm-/Zeichnungs-Wissen extrahieren bevor sie geht
 - [ ] **🔴 Volker-Zustimmung schriftlich** — Bens-Daten-Cloud-Verarbeitung (nicht nur Anthropic-DPA, auch Volker-Verkäufer-Risiko: mündlich begeistert, schriftlich vergessen)

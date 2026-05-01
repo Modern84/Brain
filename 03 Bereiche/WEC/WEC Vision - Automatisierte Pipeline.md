@@ -47,7 +47,7 @@ Von der Kundenanfrage bis zur Rechnung — alles in einem Fluss:
 ```
 Kundenanfrage
     ↓
-Konzept & Konstruktion (Fusion 360 / SolidWorks)
+Konzept & Konstruktion (Fusion 360 / Solid Edge)
     ↓
 Zeichnungsableitung (automatisch: Maße, Material, Toleranzen)
     ↓
@@ -67,7 +67,7 @@ Kein manuelles Zusammensuchen, kein Copy-Paste, kein "wo war nochmal die Zeichnu
 Was wir heute schon gemacht haben beweist das Prinzip:
 - Stückliste aus Fusion exportiert → Claude hat sie überarbeitet, Fehler gefunden, Links recherchiert, CSV erstellt
 - Das war in einer Session, vom Handy, mit Diktierfunktion
-- Mit SolidWorks-API und Fusion-API geht das automatisiert
+- Mit Solid-Edge-API und Fusion-API geht das automatisiert
 
 ## Was dafür nötig ist
 

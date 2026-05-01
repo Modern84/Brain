@@ -25,9 +25,9 @@ Reiner, ich rede hier einfach. Auf dem Sofa. Und hinten raus kommt ein sortierte
 
 Stell dir vor du machst das Gleiche. Du redest über ein Projekt, über einen Kunden, über eine Idee — und Claude schreibt mit, sortiert ein, recherchiert Materialien, schlägt Normen nach, schreibt das Angebot. Während du einfach redest.
 
-Und jetzt kommt der Teil der dich richtig interessieren wird: Claude kann an SolidWorks und Fusion ran. Über die API. Das heißt — und das ist keine Spinnerei — der kann perspektivisch Zeichnungen ableiten, Stücklisten generieren, Normteile nachschlagen, Materialien zuweisen. Du sagst "mach mir aus dem 3D-Modell eine Fertigungszeichnung mit Bemaßung" und er macht das. Automatisch. Oder du gibst ihm eine bestehende Konstruktion und sagst "bau das von Item-Profilen auf geschweißtes 40x40 um" — und er hat die Daten, die Normen, die Materialbibliothek.
+Und jetzt kommt der Teil der dich richtig interessieren wird: Claude kann an Solid Edge und Fusion ran. Über die API. Das heißt — und das ist keine Spinnerei — der kann perspektivisch Zeichnungen ableiten, Stücklisten generieren, Normteile nachschlagen, Materialien zuweisen. Du sagst "mach mir aus dem 3D-Modell eine Fertigungszeichnung mit Bemaßung" und er macht das. Automatisch. Oder du gibst ihm eine bestehende Konstruktion und sagst "bau das von Item-Profilen auf geschweißtes 40x40 um" — und er hat die Daten, die Normen, die Materialbibliothek.
 
-Stell dir dein SolidWorks vor — 30 Jahre Vorlagen, Profile, Kundenspezifikationen. Claude liest das und nutzt es. Dein Wissen geht nicht verloren, es wird skalierbar. Zu zweit, aber mit der Power von zwanzig.
+Stell dir dein Solid Edge vor — 30 Jahre Vorlagen, Profile, Kundenspezifikationen. Claude liest das und nutzt es. Dein Wissen geht nicht verloren, es wird skalierbar. Zu zweit, aber mit der Power von zwanzig.
 
 Das ist kein Zukunftskram. Die Grundlage steht jetzt. Heute. Von der Couch.
 

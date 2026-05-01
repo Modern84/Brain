@@ -14,7 +14,7 @@ due: 2026-08-01
 
 **Das hier ist der Pilot für die spätere WEC-Gerätesicht-Integration.** Wenn in Zukunft Mitarbeiter-PCs ins System kommen, müssen deren Daten und Dokumente genauso sauber in Reiners bzw. Sebastians Gehirn einfließen. Was wir hier auf Sebastians Mac entwickeln — Kategorien, Stapel-Logik, Skript-Muster, Dokumentation — wird zum **Playbook für jeden weiteren Rechner**.
 
-Konkreter Scope der späteren Skalierung: **6 PCs bei WEC** mit fünf verschiedenen Nutzerprofilen (Sekretariat, zwei Zeichnungs-Profile, Präzisions-Konstruktion mit Berechnung, Autodesk-Stahlbau, Geschäftsführung mit SolidWorks). Details: [[02 Projekte/WEC-Geraete Pilotscope]]
+Konkreter Scope der späteren Skalierung: **6 PCs bei WEC** mit fünf verschiedenen Nutzerprofilen (Sekretariat, zwei Zeichnungs-Profile, Präzisions-Konstruktion mit Berechnung, Autodesk-Stahlbau, Geschäftsführung mit Solid Edge). Details: [[02 Projekte/WEC-Geraete Pilotscope]]
 
 Konsequenz für diese Arbeit:
 

@@ -90,6 +90,6 @@ Obico/OctoEverywhere machen visuelle AI-Fehlererkennung (Webcam → Spaghetti-De
 | Klipper KI-Debug-Tunnel | Automatisierte Konstruktions-Pipeline |
 | Mos eigenes IP + Bugfixes | Gemeinsames Projekt mit Reiner |
 | SaaS / Pay-per-Session | B2B Ingenieurbüro-Workflow |
-| Skalierbar ohne Reiner | Setzt SolidWorks + Reiners Wissen voraus |
+| Skalierbar ohne Reiner | Setzt Solid Edge + Reiners Wissen voraus |
 
 Beide Spuren können sich später über mThreeD.io-Infrastruktur treffen — strategisch und finanziell aber getrennt führen.

@@ -12,7 +12,7 @@ Was ich tun muss, wenn Reiners T9 bei mir landet, bevor sie zurück zu Reiner ge
 
 - [ ] SSD einstecken, Volume erkannt? (sollte als `WEC-Transfer` auftauchen — sonst Reiner hat nicht formatiert, mach ich dann selbst)
 - [ ] `01_WEC-Projekte/` auf meinen Mac übernehmen → `~/Documents/WEC-Projekte-Backup/` (vollständig, nicht verschieben — Kopie bleibt auf SSD)
-- [ ] Kurz prüfen: SolidWorks-Ordner vollständig? Zeichnungen-PDF ok? Stücklisten da?
+- [ ] Kurz prüfen: Solid-Edge-Ordner vollständig? Zeichnungen-PDF ok? Stücklisten da?
 
 ## Phase 2 — `02_Reiner-Gehirn/` befüllen
 

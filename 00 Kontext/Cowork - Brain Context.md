@@ -66,7 +66,7 @@ Diese Dateien enthalten ALLE Regeln wie du mit dem Brain arbeiten sollst.
 
 **Reiner Woldrich:**
 - Inhaber WEC
-- 30 Jahre SolidWorks-Erfahrung
+- 30 Jahre Konstruktions-Erfahrung (Solid Edge)
 - Konstruktion, Praktiker
 - Arbeitet papier-basiert + Windows PC
 - Nutzt Obsidian über Claude als Interface

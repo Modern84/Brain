@@ -28,7 +28,7 @@ Die Platte ist also gleichzeitig Transport und Willkommens-Paket. Ein Weg hin, e
 **Modellnummer:** MU-PG2T0B/EU (schwarz)  
 **Preis:** ca. 188–250 € (Stand April 2026, Geizhals-Vergleich Deutschland)  
 **Wo:** Amazon, Alternate, Mindfactory, Cyberport, computeruniverse, Saturn, MediaMarkt  
-**Warum 2 TB statt 1 TB:** 30 Jahre SolidWorks-Daten sind überraschend kompakt — realistisch 500 GB bis 1,5 TB. Mit 2 TB haben wir Luft für PDFs, Stücklisten und Dokumentation. Kein zweiter Upgrade nötig.
+**Warum 2 TB statt 1 TB:** 30 Jahre Solid-Edge-Daten sind überraschend kompakt — realistisch 500 GB bis 1,5 TB. Mit 2 TB haben wir Luft für PDFs, Stücklisten und Dokumentation. Kein zweiter Upgrade nötig.
 
 **Im Lieferumfang:** Zwei Kabel (USB-C auf USB-C und USB-C auf USB-A). Passt sowohl an deinen Windows-PC als auch an Mos Mac ohne Adapter.
 
@@ -63,7 +63,7 @@ Auf der Platte zwei Hauptbereiche erstellen:
 WEC-Transfer/
 │
 ├── 01_WEC-Projekte/       ← DEIN Bereich: NAS-Daten hier reinkopieren
-│   ├── SolidWorks/          ← alle .sldprt, .sldasm, .slddrw
+│   ├── Solid-Edge/          ← alle .par (Einzelteile), .asm (Baugruppen), .dft (Zeichnungen)
 │   ├── Zeichnungen-PDF/     ← exportierte PDFs
 │   ├── Stuecklisten/        ← BOMs als .xlsx oder .csv
 │   ├── Dokumentation/       ← Anleitungen, Notizen, Bilder
