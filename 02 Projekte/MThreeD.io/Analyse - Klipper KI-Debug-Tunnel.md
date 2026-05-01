@@ -61,6 +61,28 @@ Obico/OctoEverywhere machen visuelle AI-Fehlererkennung (Webcam → Spaghetti-De
 
 ---
 
+## Architektur-Match: Managed Agents (Beta)
+
+**Befund 2026-05-01:** Anthropic Managed Agents (Beta `managed-agents-2026-04-01`) ist architektonisch genau auf dieses Profil zugeschnitten. Wörtlich aus der Overview-Doku: *„Long-running, Multi-Tenant-Sessions, Anthropic übernimmt Hosting + Auth-Refresh."*
+
+Konkret passend:
+- **Kunde startet die Session**, nicht Mo — die Session ist pro Drucker-Debug-Anfrage.
+- **Long-running, multi-step, autonom** — exakt das Workload-Profil, für das die API laut Doku gebaut wurde.
+- **Cloud-Container mit Tools** (Bash, File-Ops, Web) ohne dass Mo eine eigene Sandbox/Agent-Loop bauen muss.
+- **MCP-Anbindung** an Klipper-Logs/Mainsail über den Cloudflare-Tunnel, den der Kunde eh hat.
+- **Vault-IDs** für OAuth-Token-Refresh — Anthropic verwaltet Credentials, Mo betreibt keine Token-Infrastruktur.
+- **Agent-Versionierung** — Prompt/Tools/MCPs lassen sich versionieren, ohne dass parallele Sessions kaputtgehen.
+
+Status: Beta `managed-agents-2026-04-01`, alle API-Accounts haben Zugang per Default. Bestimmte Features (outcomes, multi-agent) sind Research-Preview mit Antrag.
+
+**Konsequenz für PoC:** Statt eigene Agent-Loop + Container-Sandbox + Auth-Refresh bauen → Managed-Agents-Stack nutzen. Der PoC-Aufwand verschiebt sich von „Infrastruktur" auf „MCP-Server für Klipper-Logs" und „System-Prompt + Tool-Whitelist". Das ist der eigentliche Wert-Hebel.
+
+Doku: https://platform.claude.com/docs/en/managed-agents/overview
+
+Verworfener Pilot-Pfad: [[02 Projekte/Brain-Pflege-Agent (Managed-Agents-Pilot)]] — Brain-Vault ist als lokaler Use-Case ungeeignet, Klipper-Tunnel ist der echte Match.
+
+---
+
 ## Markenkern
 
 **mThreeD.io** = `.io` auf Englisch (input/output, Tech-SaaS-Konnotation) + `.io` auf Deutsch gelesen = „i.O." (in Ordnung, Qualitätsversprechen). Für einen Debug-Service quasi perfekt.
