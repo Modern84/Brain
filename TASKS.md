@@ -327,9 +327,10 @@ Konzept: [[02 Projekte/WEC Neustart mit Reiner/Strategie - Korpus-Auslesen und K
 
 - [x] **Phase 1.1 — Streaming-Path** (2026-05-01). Satz-für-Satz-Streaming: Claude `messages.stream` → ElevenLabs `convert` pro Satz → afplay-Queue im Player-Thread. Gemessen: 3.4 s erreicht (vorher 71 s, 95 % Reduktion). 446 ms über 3-s-Ziel — akzeptiert weil weitere Optimierung schlechter Trade (Komma-Trigger=Prosodie-Risiko, Kontext kürzen=schlechtere Briefings, Whisper tiny=mehr STT-Fehler).
 - [x] **Phase 1.2 — VAD statt 4s-Festfenster** (2026-05-01). webrtcvad-wheels, Aggressiveness 2, 30-ms-Frames, Stop bei 800 ms Stille (min 500 ms, max 15 s). Aufnahme-Dauer dynamisch (1.6 s kurz / 4 s lang gemessen). Bonus: bei kurzer Aufnahme first_audio = 2823 ms (Phase-1.1-Ziel erreicht).
-- [ ] **Phase 1.3 — Tool-fähige Claude-Klasse.** Refactor `messages.create` → ToolUse-fähige Wrapper-Klasse. Vorbereitung für Phase 2 (Schreibrechte Brain/Calendar/Mail).
+- [ ] **Phase 1.3 — Tool-fähige Claude-Klasse — Code fertig, Live-Test ausstehend** (2026-05-01). `claude_client.py` `JarvisClient`-Klasse mit `register_tool` + Streaming-Loop für Tool-Use bis `max_tool_iters`. In `jarvis.py` integriert (haupt + tool-client). Live-Test ausstehend. Commit: 1d0d42c.
 - [x] **Phase 1.4 — Wake-Word-Debounce** (2026-05-01). 500 ms Stream-Drain nach Detection in `listen_for_wake`. Defensive Maßnahme — der ursprüngliche Doppel-Wake-Bug war vermutlich Multi-Prozess-Log-Artefakt (mehrere Jarvis-Instanzen schrieben parallel ins selbe JSONL), nicht echter Doppel-Trigger.
-- [x] **Phase 1.5 — Single-Instance-Lock** (2026-05-01). `~/jarvis/jarvis.pid`: tote PID wird überschrieben, lebendige PID → exit 1 mit Hinweis-Meldung. atexit + SIGTERM/SIGINT räumen auf. Tests: tote PID überschrieben ✅, lebendige PID blockiert Zweitstart ✅.
+- [x] **Phase 1.5 — Single-Instance-Lock** (2026-05-01). `~/jarvis/jarvis.pid`: tote PID wird überschrieben, lebendige PID → exit 1 mit Hinweis-Meldung. atexit + SIGTERM/SIGINT räumen auf. Unit-Tests + Live-Test ✅.
+- [x] **Phase 2.1 — Schreibrechte Brain** (2026-05-01). Tools `write_inbox`, `append_daily`, `add_task` mit Pfad-Validator (`_safe_join`) gegen Path-Traversal. Live-Test ✅.
 
 ---
 
