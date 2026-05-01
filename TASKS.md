@@ -334,7 +334,7 @@ Konzept: [[02 Projekte/WEC Neustart mit Reiner/Strategie - Korpus-Auslesen und K
 - [ ] **Phase 1.3 — Tool-fähige Claude-Klasse — Code fertig, Live-Test ausstehend** (2026-05-01). `claude_client.py` `JarvisClient`-Klasse mit `register_tool` + Streaming-Loop für Tool-Use bis `max_tool_iters`. In `jarvis.py` integriert (haupt + tool-client). Live-Test ausstehend. Commit: 1d0d42c.
 - [x] **Phase 1.4 — Wake-Word-Debounce** (2026-05-01). 500 ms Stream-Drain nach Detection in `listen_for_wake`. Defensive Maßnahme — der ursprüngliche Doppel-Wake-Bug war vermutlich Multi-Prozess-Log-Artefakt (mehrere Jarvis-Instanzen schrieben parallel ins selbe JSONL), nicht echter Doppel-Trigger.
 - [x] **Phase 1.5 — Single-Instance-Lock** (2026-05-01). `~/jarvis/jarvis.pid`: tote PID wird überschrieben, lebendige PID → exit 1 mit Hinweis-Meldung. atexit + SIGTERM/SIGINT räumen auf. Unit-Tests + Live-Test ✅.
-- [x] **Phase 2.1 — Schreibrechte Brain** (2026-05-01). Tools `write_inbox`, `append_daily`, `add_task` mit Pfad-Validator (`_safe_join`) gegen Path-Traversal. Live-Test ✅.
+- [x] **Phase 2.1 — Schreibrechte Brain** (✅ verified 2026-05-01, 3 live, 1 direct). Tools `write_inbox`, `append_daily`, `add_task` mit Pfad-Validator (`_safe_join`) gegen Path-Traversal. Test 1+2 live über Mikro, Test 3 (`add_task`) direkt im Code wegen Whisper-base-Verhörern, Test 4 (Validator) direkt — alle 4 grün.
 
 ---
 
@@ -402,5 +402,8 @@ Konzept-Vault unter [[02 Projekte/mThreeD-X1/README|02 Projekte/mThreeD-X1/]].
 
 ## Inbox
 
+- [ ] Wake-Sound aussuchen und einsetzen (jarvis 19:58)
+- [ ] Phase 2.1 — Test 3 live über Mikro nachholen wenn Whisper klarer transkribiert (oder durch Phase 1.7 LLM-Router obsolet)
+- [ ] Phase 1.7 — Router auf LLM-Klassifizierung umstellen prüfen (keyword-basiert ist fragil bei Whisper-Verhörern, Latenz-Trade erst nach Messung entscheiden)
 - [ ] Will Task (jarvis 04:02)
 - [ ] Eilman Sound vor Jarvis-Sprechen einbauen (jarvis 03:43)
